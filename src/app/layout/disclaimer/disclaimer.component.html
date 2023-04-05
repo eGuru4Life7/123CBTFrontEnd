@@ -1,0 +1,124 @@
+<!doctype html>
+<!--
+* Tabler - Premium and Open Source dashboard template with responsive and high quality UI.
+* @version 1.0.0-beta17
+* @link https://tabler.io
+* Copyright 2018-2023 The Tabler Authors
+* Copyright 2018-2023 codecalm.net Paweł Kuna
+* Licensed under MIT (https://github.com/tabler/tabler/blob/master/LICENSE)
+-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Sign in</title>
+  <!-- CSS files -->
+  <style>
+    @import url('https://rsms.me/inter/inter.css');
+
+    :root {
+      --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+    }
+
+    body {
+      font-feature-settings: "cv03", "cv04", "cv11";
+    }
+  </style>
+</head>
+<body  class="layout-boxed">
+    <div class="page page-center">
+      <div class="container container-narrow py-4">
+        <div class="text-center mb-4">
+          <a href="." class="navbar-brand navbar-brand-autodark"><img src="../../../assets/static/logo1.svg" height="36" alt=""></a>
+        </div>
+
+
+
+        
+          <div class="card">
+            <form class="card card-md" action="./sign-up-evidence.html" method="get" autocomplete="off" novalidate>
+            <div class="card-header">
+              
+
+              <ul class="nav nav-tabs card-header-tabs" data-bs-toggle="tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a href="#tabs-disclaimer-7" class="nav-link active" data-bs-toggle="tab" aria-selected="true" role="tab">Disclaimer</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a href="#tabs-about-7" class="nav-link" data-bs-toggle="tab" aria-selected="false" tabindex="-1" role="tab">About</a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="tab-content">
+                <div class="tab-pane active show" id="tabs-disclaimer-7" role="tabpanel">
+                  <h4>Disclaimer</h4>
+                  <div>
+                    <p>
+                      This program does not in any way replace a real life therapist.This is self help program and therefore does not involve support by external therapist. Information and opinions expressed on this website are those of the therapist who develepved this program, based on their educvation and experince. In Case of servere mental illness or suicidal thoughts contact yout local health providers. Every necessary step has been taken to make sure that your data is safe.However in the highly unlikely event of security failure we do not assume responsibility of the events that and not under our control. While you personal data will be never closed to a third party ,the statistics from this program can be used for reserch purpose in order to improve the program
+                    </p>
+
+                  </div>
+                  
+            
+
+          
+
+                  
+                </div>
+                <div class="tab-pane" id="tabs-about-7" role="tabpanel">
+                  <h4>About the Program</h4>
+                  <div>This program will help you in dealing with stress, sadness & anxiety. In this book, we have described stories of Khushi & Khatoon. This is a 6-week long program, but you can work through it at your pace. This program will teach you a variety of ways to deal with the stress & related problems. Each week starts with an introduction and suggests exercises for the week. Please read the instructions as many times as possible during that week and practice the techniques that you have learned. Ideally, you should follow this program along with a family member or a friend. You can also go through this program along with a therapist. If, you are a carer, and you are helping out a friend or family member who cannot read or write, read the chapter for them as many times as possible. Please remind them daily to practice the exercises suggested for the week. Please remember it takes time to learn new ways of learning and thinking. The more you practice these exercises, the faster will be an improvement in your well being</div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <label class="form-check form-switch m-0"> I agree {{isAgree}}
+                    <input id="agree-checkbox" class="form-check-input position-static" type="checkbox" [(ngModel)]="isAgree" (click)="onChangeAgree()" required>
+                  </label>
+                </div>
+                <div class="col-auto ms-auto">
+                  <button id="next-button" type="button" class="btn btn-primary ms-auto" [disabled]="isDisabled" disabled (click)="navigate()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="36" height="36" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l14 0"></path>
+                      <path d="M13 18l6 -6"></path>
+                      <path d="M13 6l6 6"></path>
+                    </svg> Next &nbsp;&nbsp;&nbsp;
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <script>
+              const agreeCheckbox = document.getElementById('agree-checkbox');
+              const nextButton = document.getElementById('next-button');
+            
+              agreeCheckbox.addEventListener('change', () => {
+                nextButton.disabled = !agreeCheckbox.checked;
+              });
+            </script>
+            
+
+
+            </form>
+          </div>
+          
+
+
+
+          
+      
+      </div>
+      
+    </div>
+  </body>
+
+</html>
