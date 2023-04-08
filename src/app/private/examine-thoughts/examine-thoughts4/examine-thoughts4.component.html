@@ -1,0 +1,187 @@
+<style>
+    .card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+    }
+
+    .card-body h1 {
+        font-size: 2.5rem;
+    
+        margin-bottom: 20px;
+    }
+
+    .rounded {
+        border-radius: 10px;
+    }
+
+    .list-group {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .list-group-item {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .image-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    
+    .emotion-image {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        border: 3px solid transparent;
+        transition: border-color 0.3s;
+    }
+
+    .emotion-image.highlighted {
+        border-color: #007bff;
+    }
+
+    .mt-4 {
+        margin-top: 1.5rem;
+    }
+</style>
+
+
+
+
+<div class="page-wrapper">
+    <!-- Page header -->
+    <div class="page-header d-print-none">
+        <div class="container-xl">
+            <div class="row g-2 align-items-center">
+                <div class="col">
+                    <!-- Page pre-title -->
+                    <h2 class="page-title">
+                        Examine Thoughts
+                    </h2>
+                    <div class="page-pretitle">
+                        Module
+                    </div>
+
+                </div>
+                <!-- Page title actions -->
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Page body -->
+    <div class="page-body">
+        <div class="container-xl">
+
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                          <img src="../../../../assets/static/illustrations/examine4.svg" alt="" class="rounded img-fluid">
+                        </div>
+                        <div class="col">
+                          <h1>Can you recognize emotions?</h1>
+                          <p>Try to match these emotions with the images</p>
+                          <div class="list-group">
+                            <div class="list-group-item">Anger</div>
+                            <div class="list-group-item">Disgust</div>
+                            <div class="list-group-item">Fear</div>
+                            <div class="list-group-item">Happiness</div>
+                            <div class="list-group-item">Sadness</div>
+                            <div class="list-group-item">Surprise</div>
+                            <div class="list-group-item">Anxiety</div>
+                            <div class="list-group-item">Stress</div>
+                            <div class="list-group-item" id="added-emotions"></div>
+                          </div>
+                          <p>Please name a few other emotions that you or people around you commonly encounter.</p>
+                          <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Enter emotions here" id="other-emotions"></textarea>
+                            <label for="other-emotions">Other Emotions</label>
+                          </div>
+                          <button class="btn btn-primary" id="add-emotion-btn">Add emotion</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <script>
+                    const addEmotionBtn = document.getElementById('add-emotion-btn');
+                    const otherEmotions = document.getElementById('other-emotions');
+                    const addedEmotions = document.getElementById('added-emotions');
+                  
+                    addEmotionBtn.addEventListener('click', () => {
+                      if (otherEmotions.value.trim() !== '') {
+                        const newEmotion = document.createElement('div');
+                        newEmotion.classList.add('list-group-item');
+                        newEmotion.textContent = otherEmotions.value.trim();
+                        addedEmotions.appendChild(newEmotion);
+                        otherEmotions.value = '';
+                      }
+                    });
+                  </script>
+                  
+                
+
+
+
+                
+                
+            </div>
+            <br>
+            <div class="row row-cards">
+
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="pagination ">
+                                <li class="page-item page-prev ">
+                                    <a class="page-link" href="#" tabindex="-1" >
+                                        <div class="page-item-subtitle">previous </div>
+                                        <div class="page-item-title">Emotions</div>
+                                    </a>
+                                </li>
+                                <li class="page-item page-next">
+                                    <a class="page-link" href="#">
+                                        <div class="page-item-subtitle">next</div>
+                                        <div class="page-item-title">Thought Control</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.querySelectorAll('.list-group-item').forEach(item => {
+            item.addEventListener('click', event => {
+                const imgId = item.dataset.image;
+                const imgElement = document.getElementById(imgId);
+                if (imgElement) {
+                    imgElement.classList.toggle('highlighted');
+                }
+            });
+        });
+    </script>
