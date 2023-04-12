@@ -20,7 +20,7 @@ export class DisclaimerComponent implements OnInit {
   }
 
   navigate(){
-    this.route.navigate(['/signup']);
+    this.route.navigate(['/evidence']);
   }
 
 

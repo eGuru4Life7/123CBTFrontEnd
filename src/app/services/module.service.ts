@@ -14,5 +14,9 @@ export class ModuleService {
    return  this.http.post(environment.BASE_URL+'module',module);
   }
 
+  public getModuleScoreById(id:any,module:any):Observable<any> {
+    return  this.http.get(environment.BASE_URL+'module/score/'+id+'/'+module);
+   }
+ 
 
 }

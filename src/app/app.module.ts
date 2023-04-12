@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './layout/main/main.component';
 import { AuthComponent } from './layout/auth/auth.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ErrorInterceptor } from './_helper/error.interceptor';
 import { JwtInterceptor } from './_helper/jwt.interceptor';
@@ -19,7 +19,7 @@ import { SignUpComponent } from './layout/sign-up/sign-up.component';
 import { DisclaimerComponent } from './layout/disclaimer/disclaimer.component';
 import { StartComponent } from './layout/start/start.component';
 import { EvidenceComponent } from './layout/evidence/evidence.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,9 +32,11 @@ import { EvidenceComponent } from './layout/evidence/evidence.component';
     EvidenceComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
+    FormsModule, 
+    ReactiveFormsModule,
     HttpClientModule,
     ToastModule
   ],

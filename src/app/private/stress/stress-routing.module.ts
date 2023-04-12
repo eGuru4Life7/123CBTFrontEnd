@@ -32,13 +32,7 @@ const routes: Routes = [
   {
     path:'intro-to-danger-center',
     component:IntroToDangerCenterComponent
-  },
-  {
-    path:'scale',
-    component:StressScaleComponent
   }
-
-
 ];
 
 @NgModule({

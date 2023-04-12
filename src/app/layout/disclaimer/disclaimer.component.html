@@ -80,7 +80,7 @@
             <div class="card-footer">
               <div class="row align-items-center">
                 <div class="col-auto">
-                  <label class="form-check form-switch m-0"> I agree {{isAgree}}
+                  <label class="form-check form-switch m-0"> I agree
                     <input id="agree-checkbox" class="form-check-input position-static" type="checkbox" [(ngModel)]="isAgree" (click)="onChangeAgree()" required>
                   </label>
                 </div>
@@ -96,18 +96,6 @@
                 </div>
               </div>
             </div>
-            
-            <script>
-              const agreeCheckbox = document.getElementById('agree-checkbox');
-              const nextButton = document.getElementById('next-button');
-            
-              agreeCheckbox.addEventListener('change', () => {
-                nextButton.disabled = !agreeCheckbox.checked;
-              });
-            </script>
-            
-
-
             </form>
           </div>
           
