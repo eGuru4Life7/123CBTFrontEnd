@@ -8,15 +8,22 @@ import { environment } from 'src/environments/environment';
 })
 export class ModuleService {
 
-  constructor(private http: HttpClient ) { }
+  constructor(private http: HttpClient) { }
 
-  public addModule(module:any):Observable<any> {
-   return  this.http.post(environment.BASE_URL+'module',module);
+  public addModule(module: any): Observable<any> {
+    return this.http.post(environment.BASE_URL + 'module', module);
   }
 
-  public getModuleScoreById(id:any,module:any):Observable<any> {
-    return  this.http.get(environment.BASE_URL+'module/score/'+id+'/'+module);
-   }
- 
+  public getModuleScoreById(id: any, module: any): Observable<any> {
+    return this.http.get(environment.BASE_URL + 'module/score/' + id + '/' + module);
+  }
+  
+  public addThoughtDairy(diary: any): Observable<any> {
+    return this.http.post(environment.BASE_URL + 'module/addThoughtDairy', diary);
+  }
+
+  public getThoughtDiaryById(id: any): Observable<any> {
+    return this.http.get(environment.BASE_URL + 'module/thoughtDiary/' + id);
+  }
 
 }

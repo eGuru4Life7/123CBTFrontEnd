@@ -1,0 +1,55 @@
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.card-body h1 {
+    font-size: 2.5rem;
+
+    margin-bottom: 20px;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.list-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.list-group-item {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+
+.emotion-image {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border: 3px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.emotion-image.highlighted {
+    border-color: #007bff;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
