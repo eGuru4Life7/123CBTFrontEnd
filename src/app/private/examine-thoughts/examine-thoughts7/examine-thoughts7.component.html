@@ -1,87 +1,100 @@
 <style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-.card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Set font family and size for all inputs */
+
+
+
+/* Page Styling */
+    .card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+    }
+
+    .card-body h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f5f5f5;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f5f5f5;
+    }
+
+   
+
+    .pagination {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .page-item {
+        margin: 0 10px;
+    }
+
+    .page-link {
+        color: #007bff;
+    }
+
+    .page-link:hover {
+        color: #0056b3;
+    }
+
+    textarea:hover {
+        border-bottom-color: #007bff;
+    }
+
+    .page-item-title {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .page-item-subtitle {
+        font-size: 0.8rem;
+    }
+
+    /* Journal Writing Style */
+.journal {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
-.card-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
+.journal:focus {
+    outline: none;
+    border-color: #007bff;
 }
 
-.card-body h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+.journal::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #999;
 }
-
-textarea {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.2rem;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 10px;
-  resize: vertical;
-  min-height: 200px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 10px;
-  text-align: left;
-}
-
-th {
-  background-color: #f5f5f5;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-tr:nth-child(even) {
-  background-color: #f5f5f5;
-}
-
-td:hover {
-  background-color: #ddd;
-}
-
-.pagination {
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.page-item {
-  margin: 0 10px;
-}
-
-.page-link {
-  color: #007bff;
-}
-
-.page-link:hover {
-  color: #0056b3;
-}
-
-textarea:hover {
-  border-color: #007bff;
-}
-
-
-.page-item-title {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.page-item-subtitle {
-  font-size: 0.8rem;
-}
-
-
-
 
 </style>
 
@@ -141,29 +154,55 @@ textarea:hover {
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <textarea name="happening" required="" class="form-control" rows="10" data-form-type=""></textarea>
+                                                <input type="text" name="happening" required="" class="form-control journal" data-form-type="">
                                             </td>
                                             <td>
-                                                <textarea name="feeling" required="" class="form-control" rows="10" data-form-type=""></textarea>
+                                                <input type="text" name="feeling" required="" class="form-control journal" data-form-type="" />
                                             </td>	
                                             <td>
-                                                <textarea name="thinking" required="" class="form-control" rows="10" data-form-type=""></textarea>
+                                                <input type="text" name="thinking" required="" class="form-control journal" data-form-type="" />
                                             </td>
                                             <td>
-                                                <textarea name="physical_sensations" required="" class="form-control" rows="10" data-form-type=""></textarea>
+                                                <input type="text" name="physical_sensations" required="" class="form-control journal" data-form-type="" />
                                             </td>
                                             <td>
-                                                <textarea name="do" required=""  rows="10" class="form-control"  data-form-type=""></textarea>
+                                                <input type="text" name="do" required="" class="form-control journal" data-form-type="" />
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
-
+                               
                                 <div class="text-end mt-3">
                                     <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
 
                             </form>
+
+
+                            <form>
+                                <div class="mb-3">
+                                  <label for="happening" class="form-label">What happened?</label>
+                                  <input type="text" class="form-control journal" id="happening" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="feeling" class="form-label">Your feeling</label>
+                                  <input type="text" class="form-control journal" id="feeling" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="thinking" class="form-label">Your thoughts</label>
+                                  <input type="text" class="form-control journal" id="thinking" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="physical_sensations" class="form-label">Physical sensations</label>
+                                  <input type="text" class="form-control journal" id="physical_sensations" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="do" class="form-label">Your action</label>
+                                  <input type="text" class="form-control journal" id="do" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                              </form>
+                              
                         </div>
                     </div>
                 </div>
