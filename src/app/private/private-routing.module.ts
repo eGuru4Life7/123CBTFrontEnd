@@ -9,6 +9,7 @@ import { ChallengeThoughtsModule } from './challenge-thoughts/challenge-thoughts
 import { BalanceThoughtsModule } from './balance-thoughts/balance-thoughts.module';
 import { ProblemSolvingModule } from './problem-solving/problem-solving.module';
 import { BalancedActivitiesModule } from './balanced-activities/balanced-activities.module';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {
@@ -40,6 +41,10 @@ const routes: Routes = [
   {
     path:'balancedActivities',
     loadChildren: ()=>BalancedActivitiesModule
+  },
+  {
+    path:'profile',
+    component:ProfileComponent
   }
   
 ];

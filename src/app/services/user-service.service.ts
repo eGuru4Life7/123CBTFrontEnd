@@ -14,5 +14,7 @@ export class UserServiceService {
    return  this.http.post(environment.BASE_URL+'auth',user);
   }
   
-
+  public signUp(user:any):Observable<any> {
+    return  this.http.post(environment.BASE_URL+'auth/signUp',user);
+   }
 }

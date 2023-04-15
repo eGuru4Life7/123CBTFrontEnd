@@ -12,56 +12,81 @@ import { ExamineThoughts7Component } from "./examine-thoughts7/examine-thoughts7
 import { ExamineThoughts8Component } from "./examine-thoughts8/examine-thoughts8.component";
 import { ExamineThoughts9Component } from "./examine-thoughts9/examine-thoughts9.component";
 import { ExamineThoughts10Component } from "./examine-thoughts10/examine-thoughts10.component";
+import { CountGuard } from 'src/app/services/guards/count.guard';
 
 const routes: Routes = [
   {
     path:'danger-center-scale',
-    component:DangerCenterScaleComponent
+    component:DangerCenterScaleComponent,
+     canActivate:[CountGuard],
+    data:{ code:'E_T',completed:10,nextCode:'C_T'}
   },
   {
     path:'danger-center-score',
-    component:DangerCenterScoreComponent
+    component:DangerCenterScoreComponent,
+     canActivate:[CountGuard],
+    data:{ code:'E_T',completed:20,nextCode:'C_T'}
   },
   {
     path:'examine1',
-    component:ExamineThoughts1Component
+    component:ExamineThoughts1Component,
+     canActivate:[CountGuard],
+    data:{ code:'E_T',completed:28,nextCode:'C_T'}
   },
   {
     path:'examine2',
-    component:ExamineThoughts2Component
+    component:ExamineThoughts2Component,
+     canActivate:[CountGuard],
+    data:{ code:'E_T',completed:34,nextCode:'C_T'}
   },
   {
     path:'examine3',
-    component:ExamineThoughts3Component
+    component:ExamineThoughts3Component,
+     canActivate:[CountGuard],
+    data:{ code:'E_T',completed:40,nextCode:'C_T'}
   },
   {
     path:'examine4',
-    component:ExamineThoughts4Component
+    component:ExamineThoughts4Component,
+     canActivate:[CountGuard],
+    data:{ code:'E_T',completed:45,nextCode:'C_T'}
   },
   {
     path:'examine5',
-    component:ExamineThoughts5Component
+    component:ExamineThoughts5Component,
+     canActivate:[CountGuard],
+    data:{ code:'E_T',completed:50,nextCode:'C_T'}
   },
   {
     path:'examine6',
-    component:ExamineThoughts6Component
+    component:ExamineThoughts6Component,
+     canActivate:[CountGuard],
+    data:{ code:'E_T',completed:60,nextCode:'C_T'}
   },
   {
     path:'examine7',
-    component:ExamineThoughts7Component
+    component:ExamineThoughts7Component,
+     canActivate:[CountGuard],
+    data:{ code:'E_T',completed:70,nextCode:'C_T'}
   },
   {
     path:'examine8',
-    component:ExamineThoughts8Component
+    component:ExamineThoughts8Component,
+     canActivate:[CountGuard],
+    data:{ code:'E_T',completed:80,nextCode:'C_T'}
   },
   {
     path:'examine9',
-    component:ExamineThoughts9Component
+    component:ExamineThoughts9Component,
+     canActivate:[CountGuard],
+    data:{ code:'E_T',completed:90}
   },
   {
     path:'examine10',
-    component:ExamineThoughts10Component
-  },
+    component:ExamineThoughts10Component,
+     canActivate:[CountGuard],
+    data:{ code:'E_T',completed:100,nextCode:'C_T'}
+  }
 
 
 ];

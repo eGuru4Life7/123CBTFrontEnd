@@ -35,9 +35,10 @@ export class DangerCentreScaleComponent implements OnInit {
    this.stress.score = this.stress.q_1 + this.stress.q_2 +this.stress.q_3 +this.stress.q_4 +this.stress.q_5 +this.stress.q_6 +
    this.stress.q_7 +this.stress.q_8 +this.stress.q_9 +this.stress.q_10;
    this.stress.date = Date.now();
+   this.stress.module ='D_C';
    this.moduleService.addModule(this.stress).toPromise().then((res:any)=>{
      if(res.success){
-       this.router.navigate(['']);
+       this.router.navigate(['../dangercenter/fightscore']);
      }
    })
  }
