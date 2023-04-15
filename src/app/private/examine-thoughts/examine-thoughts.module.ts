@@ -14,6 +14,8 @@ import { ExamineThoughts7Component } from './examine-thoughts7/examine-thoughts7
 import { ExamineThoughts8Component } from './examine-thoughts8/examine-thoughts8.component';
 import { ExamineThoughts9Component } from './examine-thoughts9/examine-thoughts9.component';
 import { ExamineThoughts10Component } from './examine-thoughts10/examine-thoughts10.component';
+import { FormsModule } from '@angular/forms';
+import { NgApexchartsModule } from 'ng-apexcharts';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { ExamineThoughts10Component } from './examine-thoughts10/examine-thought
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    NgApexchartsModule,
     ExamineThoughtsRoutingModule
   ]
 })

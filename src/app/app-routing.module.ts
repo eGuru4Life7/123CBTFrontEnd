@@ -9,6 +9,7 @@ import { EvidenceComponent } from './layout/evidence/evidence.component';
 import { DisclaimerComponent } from './layout/disclaimer/disclaimer.component';
 import { ForgotPasswordComponent } from './layout/forgot-password/forgot-password.component';
 import { StartComponent } from './layout/start/start.component';
+import { LoaderComponent } from './loader/loader.component';
 
 const routes: Routes = [
   {
@@ -34,6 +35,10 @@ const routes: Routes = [
   {
     path:'signup-start',
     component:StartComponent
+  },
+  {
+    path:'loading',
+    component:LoaderComponent
   },
   {
     path:'',

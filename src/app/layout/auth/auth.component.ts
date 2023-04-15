@@ -21,8 +21,10 @@ export class AuthComponent implements OnInit {
       if (resp.success) {
         this.messageService.add({severity:'success', summary:'Success', detail:'Succesfully Login'});
         this.localService.setLoginData(resp.data);
-        this.route.navigate(['../']);
-
+        setTimeout(() => {
+          this.route.navigate(['../loading']);
+        }, 1000);
+       
       } else {
         this.messageService.add({severity:'error', summary:'warning', detail:resp.message});
         

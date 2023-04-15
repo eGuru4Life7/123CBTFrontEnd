@@ -1,104 +1,3 @@
-<style>
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
-/* Set font family and size for all inputs */
-
-
-
-/* Page Styling */
-    .card {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .card-body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-    }
-
-    .card-body h1 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-    }
-
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-
-    th, td {
-        padding: 10px;
-        text-align: left;
-    }
-
-    th {
-        background-color: #f5f5f5;
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-
-    tr:nth-child(even) {
-        background-color: #f5f5f5;
-    }
-
-   
-
-    .pagination {
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    .page-item {
-        margin: 0 10px;
-    }
-
-    .page-link {
-        color: #007bff;
-    }
-
-    .page-link:hover {
-        color: #0056b3;
-    }
-
-    textarea:hover {
-        border-bottom-color: #007bff;
-    }
-
-    .page-item-title {
-        font-weight: bold;
-        font-size: 1.2rem;
-    }
-
-    .page-item-subtitle {
-        font-size: 0.8rem;
-    }
-
-    /* Journal Writing Style */
-.journal {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-.journal:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-.journal::placeholder {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    color: #999;
-}
-
-</style>
-
-
 <div class="page-wrapper">
     <!-- Page header -->
     <div class="page-header d-print-none">
@@ -140,28 +39,40 @@
                         <h1 class="text-center">Now think of the situation that upset you recently and type in the boxes</h1>
                         <br><br>
                         <div class="row align-items-center">
-                            
+                            <form method="post" class="" style="padding-top:3%;" data-form-type="">
+                                <table class="right table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 20%;">What happened? </th>
+                                            <th style="width: 20%;">Your feeling</th>
+                                            <th style="width: 20%;">Your thoughts</th>
+                                            <th style="width: 20%;">Physical sensations</th>
+                                            <th style="width: 20%;">Your action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <textarea name="happening" required="" class="form-control" rows="10" data-form-type="" [(ngModel)]="diary.happening"></textarea>
+                                            </td>
+                                            <td>
+                                                <textarea name="feeling" required="" class="form-control" rows="10" data-form-type=""  [(ngModel)]="diary.feeling"></textarea>
+                                            </td>	
+                                            <td>
+                                                <textarea name="thinking" required="" class="form-control" rows="10" data-form-type=""  [(ngModel)]="diary.thinking"></textarea>
+                                            </td>
+                                            <td>
+                                                <textarea name="physical_sensations" required="" class="form-control" rows="10" data-form-type=""  [(ngModel)]="diary.physical_sensations"></textarea>
+                                            </td>
+                                            <td>
+                                                <textarea name="do" required=""  rows="10" class="form-control"  data-form-type=""  [(ngModel)]="diary.do"></textarea>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
 
-                            <form method="post" >
-                                <div class="mb-3">
-                                  <label for="happening" class="form-label">What happened?</label>
-                                  <input type="text" class="form-control journal" id="happening" required>
-                                </div>
-                                <div class="mb-3">
-                                  <label for="feeling" class="form-label">Your feeling</label>
-                                  <input type="text" class="form-control journal" id="feeling" required>
-                                </div>
-                                <div class="mb-3">
-                                  <label for="thinking" class="form-label">Your thoughts</label>
-                                  <input type="text" class="form-control journal" id="thinking" required>
-                                </div>
-                                <div class="mb-3">
-                                  <label for="physical_sensations" class="form-label">Physical sensations</label>
-                                  <input type="text" class="form-control journal" id="physical_sensations" required>
-                                </div>
-                                <div class="mb-3">
-                                  <label for="do" class="form-label">Your action</label>
-                                  <input type="text" class="form-control journal" id="do" required>
+                                <div class="text-end mt-3">
+                                    <button type="button" (click)="addThoughtDairy()" class="btn btn-primary">Submit</button>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                               </form>
@@ -185,17 +96,17 @@
                         <div class="card-body">
                             <ul class="pagination ">
                                 <li class="page-item page-prev ">
-                                    <a class="page-link" href="#"  tabindex="-1" aria-disabled="true">
+                                    <a class="page-link" [routerLink]="'../examine6'"  tabindex="-1" aria-disabled="true">
                                         <div class="page-item-subtitle">previous</div>
                                         <div class="page-item-title">Khatoon's Diary</div>
                                     </a>
                                 </li>
-                                <li class="page-item page-next">
-                                    <a class="page-link" href="#" >
+                                <!-- <li class="page-item page-next">
+                                    <a class="page-link" [routerLink]="'../examine8'" >
                                         <div class="page-item-subtitle">next</div>
                                         <div class="page-item-title">Circle of Thoughts</div>
                                     </a>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
