@@ -45,7 +45,10 @@ export class SignUpComponent implements OnInit {
       fourth_mod: new FormControl(''),
       fifth_mod: new FormControl(''),
       sixth_mod: new FormControl(''),
-      seventh_mod: new FormControl('')
+      seventh_mod: new FormControl(''),
+      month: new FormControl('', Validators.required),
+      day: new FormControl('', Validators.required),
+      year: new FormControl('', Validators.required)
     });
   }
 

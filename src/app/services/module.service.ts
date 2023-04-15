@@ -17,7 +17,7 @@ export class ModuleService {
   public getModuleScoreById(id: any, module: any): Observable<any> {
     return this.http.get(environment.BASE_URL + 'module/score/' + id + '/' + module);
   }
-  
+
   public addThoughtDairy(diary: any): Observable<any> {
     return this.http.post(environment.BASE_URL + 'module/addThoughtDairy', diary);
   }
@@ -25,5 +25,13 @@ export class ModuleService {
   public getThoughtDiaryById(id: any): Observable<any> {
     return this.http.get(environment.BASE_URL + 'module/thoughtDiary/' + id);
   }
-
+  public getAllModule(): Observable<any> {
+    return this.http.get(environment.BASE_URL + 'module');
+  }
+  public getAllModuleStatusById(id:any): Observable<any> {
+    return this.http.get(environment.BASE_URL + 'module/Status/'+id);
+  }
+  public updateModuleStatus(data: any): Observable<any> {
+    return this.http.post(environment.BASE_URL + 'module/updateModulesStatusById', data);
+  }
 }

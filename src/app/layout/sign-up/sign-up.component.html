@@ -108,7 +108,7 @@
                                     <label class="form-label">Date of birth</label>
                                     <div class="row g-2">
                                         <div class="col-5">
-                                            <select name="user[month]" class="form-select">
+                                            <select name="user[month]" class="form-select" formControlName="month">
                                                 <option value="">Month</option>
                                                 <option value="1">January</option>
                                                 <option value="2">February</option>
@@ -125,7 +125,7 @@
                                             </select>
                                         </div>
                                         <div class="col-3">
-                                            <select name="user[day]" class="form-select">
+                                            <select name="user[day]" class="form-select" formControlName="day">
                                                 <option value="">Day</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -161,7 +161,7 @@
                                             </select>
                                         </div>
                                         <div class="col-4">
-                                            <select name="user[year]" class="form-select">
+                                            <select name="user[year]" class="form-select" formControlName="year">
                                                 <option value="">Year</option>
                                                 <option value="2014">2014</option>
                                                 <option value="2013">2013</option>
@@ -283,6 +283,9 @@
                                                 <option value="1897">1897</option>
                                             </select>
                                         </div>
+                                        <div *ngIf="userForm.controls['day'].invalid && userForm.controls['month'].invalid && userForm.controls['year'].invalid && userForm.controls['month'].touched
+                                        && userForm.controls['day'].touched && userForm.controls['year'].touched"
+                                        style="color: red;"> date of birth is required.</div>
                                     </div>
                                 </div>
                             </div>

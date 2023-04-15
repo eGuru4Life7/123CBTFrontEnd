@@ -35,13 +35,13 @@
               <div class="mt-3">
                 <div class="row g-2 align-items-center">
                   <div class="col-auto">
-                    5%
+                    {{moduleStatus1.completed}}%
                   </div>
                   <div class="col">
                     <div class="progress progress-sm">
-                      <div class="progress-bar" style="width: 5%" role="progressbar" aria-valuenow="5" aria-valuemin="0"
-                        aria-valuemax="100" aria-label="5% Complete">
-                        <span class="visually-hidden">5% Complete</span>
+                      <div class="progress-bar" [style.width.%]="moduleStatus1.completed" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100" aria-label="0% Complete">
+                        <span class="visually-hidden">{{moduleStatus1.completed}}% Complete</span>
                       </div>
                     </div>
                   </div>
@@ -53,7 +53,7 @@
         </div>
 
         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
-          <a [routerLink]="'../dangercenter/scale'" class="card card-link card-link-pop">
+          <a [routerLink]="module2 || moduleStatus2.status ? '../dangercenter/scale' :''" class="card card-link card-link-pop">
             <div class="card-body" style="background-color: #FA6E5A; border-radius: 4px 4px 0 0;">
               <img src="../../../assets/static/illustrations/balanced_activities.svg" height="210px" width="100%" alt="">
 
@@ -62,16 +62,24 @@
               <div class="col-lg-10">
                 <div class="card-title mb-1">Danger Center</div>
                 <div class="text-muted">Module &nbsp; | &nbsp; <span class="module-time"> 20 min</span></div>
+                <svg *ngIf="!module2 && !moduleStatus2.status" style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-lock" width="24" height="24" viewBox="0 0 24 24" stroke-width="1"
+                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z"></path>
+                <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path>
+                <path d="M8 11v-4a4 4 0 1 1 8 0v4"></path>
+              </svg>
               </div>
 
               <div class="mt-3">
                 <div class="row g-2 align-items-center">
                   <div class="col-auto">
-                    0%
+                   {{moduleStatus2.completed}}%
                   </div>
                   <div class="col">
                     <div class="progress progress-sm">
-                      <div class="progress-bar" style="width: 0%" role="progressbar" aria-valuenow="5" aria-valuemin="0"
+                      <div class="progress-bar" [style.width.%]="moduleStatus2.completed" role="progressbar" aria-valuenow="5" aria-valuemin="0"
                         aria-valuemax="100" aria-label="0% Complete">
                         <span class="visually-hidden">0% Complete</span>
                       </div>
@@ -87,7 +95,7 @@
 
         <!-- Locked Module has "card-cover-blurred" class -->
         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
-          <a [routerLink]="'../examinethoughts/danger-center-scale'" class="card card-link card-link-pop" data-bs-toggle="modal" data-bs-target="#modal-small">
+          <a [routerLink]="module3 || moduleStatus3.status? '../examinethoughts/danger-center-scale':''" class="card card-link card-link-pop" data-bs-toggle="modal" data-bs-target="#modal-small">
             <div class="card-body" style="background-color: #FEB18F; border-radius: 4px 4px 0 0;">
               <img src="../../../assets/static/illustrations/staying_well.svg" height="210px" width="100%" alt="">
 
@@ -96,7 +104,7 @@
             <div class="card-body ">
               <div class="card-title mb-1">Examine Thoughts</div>
               <div class="text-muted">Module &nbsp; | &nbsp; <span class="module-time"> 10 min</span></div>
-              <svg style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg"
+              <svg *ngIf="!module3 && !moduleStatus3.status" style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-lock" width="24" height="24" viewBox="0 0 24 24" stroke-width="1"
                 stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -108,11 +116,11 @@
               <div class="mt-3">
                 <div class="row g-2 align-items-center">
                   <div class="col-auto">
-                    0%
+                   {{moduleStatus3.completed}}%
                   </div>
                   <div class="col">
                     <div class="progress progress-sm">
-                      <div class="progress-bar" style="width: 0%" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                      <div class="progress-bar" [style.width.%]="moduleStatus3.completed" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                         aria-valuemax="100" aria-label="5% Complete">
                         <span class="visually-hidden">0% Complete</span>
                       </div>
@@ -137,7 +145,7 @@
             <div class="card-body ">
               <div class="card-title mb-1">Challenge Thoughts</div>
               <div class="text-muted">Module &nbsp; | &nbsp; <span class="module-time"> 10 min</span></div>
-              <svg style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg"
+              <svg *ngIf="!module4 && !moduleStatus3.status" style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-lock" width="24" height="24" viewBox="0 0 24 24" stroke-width="1"
                 stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -149,11 +157,11 @@
               <div class="mt-3">
                 <div class="row g-2 align-items-center">
                   <div class="col-auto">
-                    0%
+                   {{moduleStatus4.completed}}%
                   </div>
                   <div class="col">
                     <div class="progress progress-sm">
-                      <div class="progress-bar" style="width: 0%" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                      <div class="progress-bar" [style.width.%]="moduleStatus4.completed" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                         aria-valuemax="100" aria-label="5% Complete">
                         <span class="visually-hidden">0% Complete</span>
                       </div>
@@ -178,7 +186,7 @@
             <div class="card-body ">
               <div class="card-title mb-1">Balanced Thoughts</div>
               <div class="text-muted">Module &nbsp; | &nbsp; <span class="module-time"> 10 min</span></div>
-              <svg style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg"
+              <svg  *ngIf="!module5" style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-lock" width="24" height="24" viewBox="0 0 24 24" stroke-width="1"
                 stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -190,11 +198,11 @@
               <div class="mt-3">
                 <div class="row g-2 align-items-center">
                   <div class="col-auto">
-                    0%
+                   {{moduleStatus5.completed}}%
                   </div>
                   <div class="col">
                     <div class="progress progress-sm">
-                      <div class="progress-bar" style="width: 0%" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                      <div class="progress-bar" [style.width.%]="moduleStatus5.completed" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                         aria-valuemax="100" aria-label="5% Complete">
                         <span class="visually-hidden">0% Complete</span>
                       </div>
@@ -221,7 +229,7 @@
             <div class="card-body ">
               <div class="card-title mb-1">Problem Solving</div>
               <div class="text-muted">Module &nbsp; | &nbsp; <span class="module-time"> 10 min</span></div>
-              <svg style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg"
+              <svg *ngIf="!module6" style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-lock" width="24" height="24" viewBox="0 0 24 24" stroke-width="1"
                 stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -233,11 +241,11 @@
               <div class="mt-3">
                 <div class="row g-2 align-items-center">
                   <div class="col-auto">
-                    0%
+                   {{moduleStatus6.completed}}%
                   </div>
                   <div class="col">
                     <div class="progress progress-sm">
-                      <div class="progress-bar" style="width: 0%" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                      <div class="progress-bar" [style.width.%]="moduleStatus6.completed" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                         aria-valuemax="100" aria-label="5% Complete">
                         <span class="visually-hidden">0% Complete</span>
                       </div>
@@ -261,7 +269,7 @@
             <div class="card-body ">
               <div class="card-title mb-1">Balanced Activities</div>
               <div class="text-muted">Module &nbsp; | &nbsp; <span class="module-time"> 10 min</span></div>
-              <svg style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg"
+              <svg *ngIf="!module7" style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-lock" width="24" height="24" viewBox="0 0 24 24" stroke-width="1"
                 stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -273,11 +281,11 @@
               <div class="mt-3">
                 <div class="row g-2 align-items-center">
                   <div class="col-auto">
-                    0%
+                   {{moduleStatus7.completed}}%
                   </div>
                   <div class="col">
                     <div class="progress progress-sm">
-                      <div class="progress-bar" style="width: 0%" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                      <div class="progress-bar" [style.width.%]="moduleStatus7.completed" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                         aria-valuemax="100" aria-label="5% Complete">
                         <span class="visually-hidden">0% Complete</span>
                       </div>
@@ -302,7 +310,7 @@
             <div class="card-body ">
               <div class="card-title mb-1">Relationships</div>
               <div class="text-muted">Module &nbsp; | &nbsp; <span class="module-time"> 10 min</span></div>
-              <svg style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg"
+              <svg *ngIf="!module8" style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-lock" width="24" height="24" viewBox="0 0 24 24" stroke-width="1"
                 stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -314,11 +322,11 @@
               <div class="mt-3">
                 <div class="row g-2 align-items-center">
                   <div class="col-auto">
-                    0%
+                   {{moduleStatus8.completed}}%
                   </div>
                   <div class="col">
                     <div class="progress progress-sm">
-                      <div class="progress-bar" style="width: 0%" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                      <div class="progress-bar" [style.width.%]="moduleStatus8.completed" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                         aria-valuemax="100" aria-label="5% Complete">
                         <span class="visually-hidden">0% Complete</span>
                       </div>
@@ -342,7 +350,7 @@
             <div class="card-body ">
               <div class="card-title mb-1">Staying Well</div>
               <div class="text-muted">Module &nbsp; | &nbsp; <span class="module-time"> 10 min</span></div>
-              <svg style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg"
+              <svg *ngIf="!module9" style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-lock" width="24" height="24" viewBox="0 0 24 24" stroke-width="1"
                 stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -354,11 +362,11 @@
               <div class="mt-3">
                 <div class="row g-2 align-items-center">
                   <div class="col-auto">
-                    0%
+                   {{moduleStatus9.completed}}%
                   </div>
                   <div class="col">
                     <div class="progress progress-sm">
-                      <div class="progress-bar" style="width: 0%" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                      <div class="progress-bar" [style.width.%]="moduleStatus9.completed" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                         aria-valuemax="100" aria-label="5% Complete">
                         <span class="visually-hidden">0% Complete</span>
                       </div>

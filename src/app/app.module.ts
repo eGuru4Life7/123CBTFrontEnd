@@ -20,6 +20,7 @@ import { DisclaimerComponent } from './layout/disclaimer/disclaimer.component';
 import { StartComponent } from './layout/start/start.component';
 import { EvidenceComponent } from './layout/evidence/evidence.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoaderComponent } from './loader/loader.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SignUpComponent,
     DisclaimerComponent,
     StartComponent,
-    EvidenceComponent
+    EvidenceComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserAnimationsModule,

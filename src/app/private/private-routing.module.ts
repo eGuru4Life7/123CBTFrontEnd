@@ -6,6 +6,7 @@ import { StressModule } from './stress/stress.module';
 import { BalanceThoughtsModule } from './balance-thoughts/balance-thoughts.module';
 import { ExamineThoughtsModule } from './examine-thoughts/examine-thoughts.module';
 import { BalancedActivitiesModule } from './balanced-activities/balanced-activities.module';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path:'balancedActivities',
     loadChildren: ()=>BalancedActivitiesModule
+  },
+  {
+    path:'profile',
+    component:ProfileComponent
   }
   
 ];
