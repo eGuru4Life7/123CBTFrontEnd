@@ -38,7 +38,7 @@ const routes: Routes = [
   {
     path:'',
     component:MainComponent,
-    //canActivate:[CanActivateAuthLayoutGuard],
+    canActivate:[CanActivateAuthLayoutGuard],
     children:[
       {
         path: '',
