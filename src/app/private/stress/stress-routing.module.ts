@@ -14,32 +14,32 @@ const routes: Routes = [
     path:'intro',
     component:StressIntroComponent,
     canActivate:[CountGuard],
-    data:{ code:'S',completed:20}
+    data:{ code:'S',completed:20,nextCode:'D_C'}
   },
   {
     path:'causes',
     component:StressCausesComponent,
     canActivate:[CountGuard],
-    data:{ code:'S',completed:36}
+    data:{ code:'S',completed:36,nextCode:'D_C'}
     
   },
   {
     path:'symptoms',
     component:StressSymptomsComponent,
     canActivate:[CountGuard],
-    data:{ code:'S',completed:52}
+    data:{ code:'S',completed:52,nextCode:'D_C'}
   },
   {
     path:'khushi-Muhammad',
     component:KhushiMuhammadComponent,
     canActivate:[CountGuard],
-    data:{ code:'S',completed:68}
+    data:{ code:'S',completed:68,nextCode:'D_C'}
   },
   {
     path:'khatoon-bibi',
     component:KhatoonBibiComponent,
     canActivate:[CountGuard],
-    data:{ code:'S',completed:84}
+    data:{ code:'S',completed:84,nextCode:'D_C'}
   },
   {
     path:'intro-to-danger-center',

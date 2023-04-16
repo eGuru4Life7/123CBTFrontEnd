@@ -53,7 +53,7 @@
         </div>
 
         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
-          <a [routerLink]="module2 || moduleStatus2.status ? '../dangercenter/scale' :''" class="card card-link card-link-pop">
+          <a [routerLink]="module2 || moduleStatus2.status ? '../dangercenter/scale' :''" (click)="openModal(moduleStatus2.status)" class="card card-link card-link-pop">
             <div class="card-body" style="background-color: #FA6E5A; border-radius: 4px 4px 0 0;">
               <img src="../../../assets/static/illustrations/balanced_activities.svg" height="210px" width="100%" alt="">
 
@@ -95,7 +95,7 @@
 
         <!-- Locked Module has "card-cover-blurred" class -->
         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
-          <a [routerLink]="module3 || moduleStatus3.status? '../examinethoughts/danger-center-scale':''" class="card card-link card-link-pop" data-bs-toggle="modal" data-bs-target="#modal-small">
+          <a [routerLink]="module3 || moduleStatus3.status? '../examinethoughts/danger-center-scale':''" (click)="openModal(moduleStatus3.status)" class="card card-link card-link-pop" data-bs-toggle="modal" data-bs-target="#modal-small">
             <div class="card-body" style="background-color: #FEB18F; border-radius: 4px 4px 0 0;">
               <img src="../../../assets/static/illustrations/staying_well.svg" height="210px" width="100%" alt="">
 
@@ -136,7 +136,7 @@
 
         <!-- Locked Module has "card-cover-blurred" class -->
         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
-          <a href="#" class="card card-link card-link-pop">
+          <a [routerLink]="''" (click)="openModal(moduleStatus4.status)" class="card card-link card-link-pop">
             <div class="card-body text-center" style="background-color: #D9A5B5; border-radius: 4px 4px 0 0;">
               <img src="../../../assets/static/illustrations/problem_solving.svg" height="210px" width="100%" alt="">
 
@@ -177,13 +177,13 @@
 
         <!-- Locked Module has "card-cover-blurred" class -->
         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
-          <a href="#" class="card card-link card-link-pop">
+          <a [routerLink]="''" (click)="openModal(moduleStatus5.status)" class="card card-link card-link-pop">
             <div class="card-body text-center" style="background-color: #7583CA; border-radius: 4px 4px 0 0;">
               <img src="../../../assets/static/illustrations/balanced_thoughts.svg" height="210px" width="100%" alt="">
 
 
             </div>
-            <div class="card-body ">
+            <div class="card-body " >
               <div class="card-title mb-1">Balanced Thoughts</div>
               <div class="text-muted">Module &nbsp; | &nbsp; <span class="module-time"> 10 min</span></div>
               <svg  *ngIf="!module5" style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg"
@@ -220,7 +220,7 @@
 
         <!-- Locked Module has "card-cover-blurred" class -->
         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
-          <a href="#" class="card card-link card-link-pop">
+          <a [routerLink]="''" (click)="openModal(moduleStatus6.status)" class="card card-link card-link-pop">
             <div class="card-body text-center" style="background-color: #D9A5B5; border-radius: 4px 4px 0 0;">
               <img src="../../../assets/static/illustrations/problem_solving.svg" height="210px" width="100%" alt="">
 
@@ -261,7 +261,7 @@
 
         <!-- Locked Module has "card-cover-blurred" class -->
         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
-          <a [routerLink]="['balanced-activities/test']" class="card card-link card-link-pop">
+          <a [routerLink]="['balanced-activities/test']" (click)="openModal(moduleStatus7.status)" class="card card-link card-link-pop">
             <div class="card-body" style="background-color: #FA6E5A; border-radius: 4px 4px 0 0;">
               <img src="../../../assets/static/illustrations/balanced_activities.svg" height="210px" width="100%" alt="">
 
@@ -301,7 +301,7 @@
 
         <!-- Locked Module has "card-cover-blurred" class -->
         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
-          <a href="#" class="card card-link card-link-pop">
+          <a [routerLink]="''"  (click)="openModal(moduleStatus8.status)" class="card card-link card-link-pop">
             <div class="card-body text-center" style="background-color: #FFCF86; border-radius: 4px 4px 0 0;">
               <img src="../../../assets/static/illustrations/relationships.svg" height="210px" width="100%" alt="">
 
@@ -341,7 +341,7 @@
 
         <!-- Locked Module has "card-cover-blurred" class -->
         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
-          <a href="#" class="card card-link card-link-pop" data-bs-toggle="modal" data-bs-target="#modal-small">
+          <a [routerLink]="''" (click)="openModal(moduleStatus9.status)" class="card card-link card-link-pop" data-bs-toggle="modal" data-bs-target="#modal-small">
             <div class="card-body" style="background-color: #FEB18F; border-radius: 4px 4px 0 0;">
               <img src="../../../assets/static/illustrations/staying_well.svg" height="210px" width="100%" alt="">
 
@@ -398,7 +398,7 @@
                 </div>
 
                 <div class="col-md-6 col-lg-6">
-                  <a href="#" class="btn btn-lg">
+                  <a [routerLink]="''" class="btn btn-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notebook" width="24"
                       height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                       stroke-linecap="round" stroke-linejoin="round">
@@ -453,11 +453,11 @@
                   <h3 class="h1">Downloads</h3>
                   <div class="markdown text-muted">
                     You Can download
-                    <a href="#" target="_blank" rel="noopener">Links</a>,
+                    <a [routerLink]="''" target="_blank" rel="noopener">Links</a>,
                     download any of the 3222 icons in SVG, PNG or&nbsp;React and use them in your favourite design tools.
                   </div>
                   <div class="mt-3">
-                    <a href="#" class="btn btn-primary" target="_blank" rel="noopener">My Download</a>
+                    <a [routerLink]="''" class="btn btn-primary" target="_blank" rel="noopener">My Download</a>
                   </div>
                 </div>
               </div>
@@ -472,5 +472,5 @@
       </div>
     </div>
 
-
+    <locked-modal [isShow]="isShow"></locked-modal>
     

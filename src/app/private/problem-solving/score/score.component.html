@@ -42,13 +42,13 @@
                     <div class="ms-auto">
                     
                     <div class="dropdown">
-                        <a href="#" class="btn-action" data-bs-toggle="dropdown" aria-expanded="true">
+                        <a [routerLink]="''" class="btn-action" data-bs-toggle="dropdown" aria-expanded="true">
                           <!-- Download SVG icon from http://tabler-icons.io/i/dots-vertical -->
                           <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path></svg>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end " style="position: absolute; inset: auto 0px 0px auto; margin: 0px; transform: translate(0px, -34px);" data-popper-placement="top-end">
                           
-                          <a href="#" class="dropdown-item">
+                          <a [routerLink]="''" class="dropdown-item">
                           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-export" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
  <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
@@ -56,7 +56,7 @@
 </svg>  
                                 Export 
                           </a>
-                          <a href="#" class="dropdown-item">
+                          <a [routerLink]="''" class="dropdown-item">
                           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-download" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
  <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
@@ -76,12 +76,21 @@
                     
                     <div class="h2 mb-0 me-2">
                       <span class="text-green ">
-                      Problem Solving [0/100]<!-- changeable -->
+                      Problem Solving [{{provlemSolving.score}}/100]<!-- changeable -->
                       </span>
                     </div>
                   </div>
                 </div>
-                  <div id="chart-completion-tasks-3"></div>
+                <div id="chart">
+                  <apx-chart
+                    [series]="chartOptions.series"
+                    [chart]="chartOptions.chart"
+                    [xaxis]="chartOptions.xaxis"
+                    [stroke]="chartOptions.stroke"
+                    [tooltip]="chartOptions.tooltip"
+                    [dataLabels]="chartOptions.dataLabels"
+                  ></apx-chart>
+                </div>
                 </div>
               </div>
             </div>
@@ -97,13 +106,13 @@
                 <div class="card-body">
                   <ul class="pagination ">
                     <li class="page-item page-prev ">
-                      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                      <a class="page-link" [routerLink]="'../scale'" tabindex="-1" aria-disabled="true">
                         <div class="page-item-subtitle">previous</div>
                         <div class="page-item-title">Scale</div>
                       </a>
                     </li>
                     <li class="page-item page-next">
-                      <a class="page-link" href="#">
+                      <a class="page-link" [routerLink]="'../intro'">
                       <div class="page-item-subtitle">next</div>
                         <div class="page-item-title">Problem solving</div>
                       </a>

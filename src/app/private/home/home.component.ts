@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { LocalCacheService } from 'src/app/services/local-cache.service';
 import { ModuleService } from 'src/app/services/module.service';
 
@@ -8,6 +8,7 @@ import { ModuleService } from 'src/app/services/module.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  
   currentUser:any={};
   modules: any =[];
   modulesStatus: any ={};
@@ -20,6 +21,7 @@ export class HomeComponent implements OnInit {
   moduleStatus7: any ={};
   moduleStatus8: any ={};
   moduleStatus9: any ={};
+  isShow: any = false;
   constructor(private localService:LocalCacheService,private moduleService:ModuleService) { }
   module1:any={};
   module2:any={};
@@ -72,4 +74,11 @@ export class HomeComponent implements OnInit {
     });
   }
 
+
+  openModal(moduleStatus:any){
+    if(!moduleStatus){
+      this.isShow = true;
+    }
+    return '';
+  }
 }
