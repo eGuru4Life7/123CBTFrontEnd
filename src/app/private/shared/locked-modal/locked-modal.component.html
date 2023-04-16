@@ -1,0 +1,14 @@
+<div class="modal modal-blur" [ngClass]="{'show':isShow == true,'fade':isShow == false }" [@dialog]  id="modal-small" tabindex="-1" role="dialog" aria-hidden="true" [style.display]="isShow?'block':'none'">
+    <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-title">The Current Module is Locked</div>
+          <div>Complete the previous modules to get access to this module</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary me-auto" data-bs-dismiss="modal" (click)="closeModal()">Okay</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
