@@ -8,13 +8,17 @@ import { environment } from 'src/environments/environment';
 })
 export class UserServiceService {
 
-  constructor(private http: HttpClient ) { }
+  constructor(private http: HttpClient) { }
 
-  public login(user:any):Observable<any> {
-   return  this.http.post(environment.BASE_URL+'auth',user);
+  public login(user: any): Observable<any> {
+    return this.http.post(environment.BASE_URL + 'auth', user);
   }
-  
-  public signUp(user:any):Observable<any> {
-    return  this.http.post(environment.BASE_URL+'auth/signUp',user);
-   }
+
+  public signUp(user: any): Observable<any> {
+    return this.http.post(environment.BASE_URL + 'auth/signUp', user);
+  }
+
+  public forgotPassword(user: any): Observable<any> {
+    return this.http.post(environment.BASE_URL + 'auth/forgotPassword', user);
+  }
 }

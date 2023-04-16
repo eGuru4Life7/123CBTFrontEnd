@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { ProblemSolvingRoutingModule } from './problem-solving-routing.module';
 import { ScoreComponent } from './score/score.component';
 import { ScaleComponent } from './scale/scale.component';
@@ -12,6 +11,8 @@ import { ProblemSolving5Component } from './problem-solving5/problem-solving5.co
 import { ProblemSolving6Component } from './problem-solving6/problem-solving6.component';
 import { ProblemSolving7Component } from './problem-solving7/problem-solving7.component';
 import { ProblemSolving8Component } from './problem-solving8/problem-solving8.component';
+import { FormsModule } from '@angular/forms';
+import { NgApexchartsModule } from 'ng-apexcharts';
 
 
 @NgModule({
@@ -29,6 +30,8 @@ import { ProblemSolving8Component } from './problem-solving8/problem-solving8.co
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    NgApexchartsModule,
     ProblemSolvingRoutingModule
   ]
 })

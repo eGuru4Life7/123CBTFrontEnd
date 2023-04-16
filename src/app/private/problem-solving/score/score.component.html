@@ -76,12 +76,21 @@
                     
                     <div class="h2 mb-0 me-2">
                       <span class="text-green ">
-                      Problem Solving [0/100]<!-- changeable -->
+                      Problem Solving [{{provlemSolving.score}}/100]<!-- changeable -->
                       </span>
                     </div>
                   </div>
                 </div>
-                  <div id="chart-completion-tasks-3"></div>
+                <div id="chart">
+                  <apx-chart
+                    [series]="chartOptions.series"
+                    [chart]="chartOptions.chart"
+                    [xaxis]="chartOptions.xaxis"
+                    [stroke]="chartOptions.stroke"
+                    [tooltip]="chartOptions.tooltip"
+                    [dataLabels]="chartOptions.dataLabels"
+                  ></apx-chart>
+                </div>
                 </div>
               </div>
             </div>
@@ -97,13 +106,13 @@
                 <div class="card-body">
                   <ul class="pagination ">
                     <li class="page-item page-prev ">
-                      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                      <a class="page-link" [routerLink]="'../scale'" tabindex="-1" aria-disabled="true">
                         <div class="page-item-subtitle">previous</div>
                         <div class="page-item-title">Scale</div>
                       </a>
                     </li>
                     <li class="page-item page-next">
-                      <a class="page-link" href="#">
+                      <a class="page-link" [routerLink]="'../intro'">
                       <div class="page-item-subtitle">next</div>
                         <div class="page-item-title">Thoughts, emotions and behaviours</div>
                       </a>
