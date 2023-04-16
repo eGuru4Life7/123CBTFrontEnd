@@ -13,70 +13,26 @@
     margin-bottom: 20px;
   }
   
-  textarea {
+  input[type="text"] {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     border: 2px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
     resize: vertical;
-    min-height: 200px;
+   
   }
   
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
   
-  th, td {
-    padding: 10px;
-    text-align: left;
-  }
   
-  th {
-    background-color: #f5f5f5;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
   
-  tr:nth-child(even) {
-    background-color: #f5f5f5;
-  }
   
-  td:hover {
-    background-color: #ddd;
-  }
-  
-  .pagination {
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .page-item {
-    margin: 0 10px;
-  }
-  
-  .page-link {
-    color: #007bff;
-  }
-  
-  .page-link:hover {
-    color: #0056b3;
-  }
-  
-  textarea:hover {
+  input[type="text"]:hover {
     border-color: #007bff;
   }
   
   
-  .page-item-title {
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
   
-  .page-item-subtitle {
-    font-size: 0.8rem;
-  }
   
   
