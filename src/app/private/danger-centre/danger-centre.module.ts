@@ -9,6 +9,10 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { FightScoreComponent } from './fight-score/fight-score.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
+import { AudioComponent } from './audio/audio.component';
+import { FoodadviceComponent } from './foodadvice/foodadvice.component';
+import { SleepadviceComponent } from './sleepadvice/sleepadvice.component';
+import { UsefultipsComponent } from './usefultips/usefultips.component';
 
 
 @NgModule({
@@ -16,7 +20,11 @@ import { NgApexchartsModule } from 'ng-apexcharts';
     DangerCentreScaleComponent,
     FightScoreComponent,
     DangerCenter1Component,
-    DangerCenter2Component
+    DangerCenter2Component,
+    AudioComponent,
+    FoodadviceComponent,
+    SleepadviceComponent,
+    UsefultipsComponent
   ],
   imports: [
     CommonModule,

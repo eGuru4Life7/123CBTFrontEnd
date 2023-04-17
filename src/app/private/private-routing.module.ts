@@ -9,7 +9,13 @@ import { ChallengeThoughtsModule } from './challenge-thoughts/challenge-thoughts
 import { BalanceThoughtsModule } from './balance-thoughts/balance-thoughts.module';
 import { ProblemSolvingModule } from './problem-solving/problem-solving.module';
 import { BalancedActivitiesModule } from './balanced-activities/balanced-activities.module';
+import { RelationshipsModule } from './relationships/relationships.module';
+import { StayingWellModule } from './staying-well/staying-well.module';
+import { HelpetcModule } from './helpetc/helpetc.module';
+
+
 import { ProfileComponent } from './profile/profile.component';
+import { DownloadsModule } from './downloads/downloads.module';
 
 const routes: Routes = [
   {
@@ -43,10 +49,27 @@ const routes: Routes = [
     loadChildren: ()=>BalancedActivitiesModule
   },
   {
+    path:'relationhips',
+    loadChildren: ()=>RelationshipsModule
+  },
+  {
+    path:'stayingwell',
+    loadChildren: ()=>StayingWellModule
+  },
+  {
     path:'profile',
     component:ProfileComponent
   }
-  
+  ,
+  {
+    path:'downloads',
+    component:DownloadsModule
+  }
+  ,
+  {
+    path:'help',
+    loadChildren: ()=>HelpetcModule
+  }
 ];
 
 @NgModule({
