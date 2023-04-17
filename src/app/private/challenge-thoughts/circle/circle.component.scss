@@ -1,0 +1,74 @@
+
+
+  .flow-text {
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid #007bff;
+    margin-bottom: 15px;
+    width: 85%;
+    max-width: 250px;
+    margin-top: 5px;
+    padding: 8px 8px;
+    background-color: #f8f9fa;
+    color: #343a40;
+    overflow-wrap: break-word;
+    vertical-align: middle;
+    display: table;
+  }
+
+  .circle {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border: 3px solid #007bff;
+    border-radius: 50%;
+  }
+
+  .situation,
+  .emotion,
+  .physical-sensation,
+  .thoughts,
+  .behaviour {
+    position: absolute;
+    width: 150px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 70px;
+    resize: none;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .situation {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 15px);
+  }
+
+  .emotion {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .behaviour {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -15px);
+  }
+
+  .thoughts {
+    top: 50%;
+    left: 0;
+    transform: translate(15px, -50%);
+  }
+
+  .physical-sensation {
+    top: 50%;
+    right: 0;
+    transform: translate(-15px, -50%);
+  }
