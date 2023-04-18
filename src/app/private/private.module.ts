@@ -4,6 +4,7 @@ import { PrivateRoutingModule } from './private-routing.module';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LockedModalComponent } from './shared/locked-modal/locked-modal.component';
+import { DownloadsComponent } from './downloads/downloads.component';
 
 
 @NgModule({
@@ -11,6 +12,7 @@ import { LockedModalComponent } from './shared/locked-modal/locked-modal.compone
     HomeComponent,
     ProfileComponent,
     LockedModalComponent,
+    DownloadsComponent,
     ],
   imports: [
     CommonModule,
