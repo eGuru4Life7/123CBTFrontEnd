@@ -17,43 +17,43 @@ const routes: Routes = [{
   path:'scale',
   component:DangerCentreScaleComponent,
     canActivate:[CountGuard],
-    data:{ code:'D_C',nextCode:'E_T',completed:30}
+    data:{ code:'D_C',nextCode:'E_T',completed:10}
 },
 {
   path:'fightscore',
   component:FightScoreComponent,
     canActivate:[CountGuard],
-    data:{ code:'D_C',nextCode:'E_T',completed:60}
+    data:{ code:'D_C',nextCode:'E_T',completed:20}
 },
 {
   path:'1',
   component:DangerCenter1Component,
     canActivate:[CountGuard],
-    data:{ code:'D_C',nextCode:'E_T',completed:80}
+    data:{ code:'D_C',nextCode:'E_T',completed:30}
 },
 {
   path:'audio',
   component:AudioComponent,
     canActivate:[CountGuard],
-    data:{ code:'D_C',nextCode:'E_T',completed:30}
+    data:{ code:'D_C',nextCode:'E_T',completed:40}
 },
 {
   path:'foodadvice',
   component:FoodadviceComponent,
     canActivate:[CountGuard],
-    data:{ code:'D_C',nextCode:'E_T',completed:30}
+    data:{ code:'D_C',nextCode:'E_T',completed:60}
 },
 {
   path:'sleepadvice',
   component:SleepadviceComponent,
     canActivate:[CountGuard],
-    data:{ code:'D_C',nextCode:'E_T',completed:30}
+    data:{ code:'D_C',nextCode:'E_T',completed:80}
 },
 {
   path:'usefultips',
   component:UsefultipsComponent,
     canActivate:[CountGuard],
-    data:{ code:'D_C',nextCode:'E_T',completed:30}
+    data:{ code:'D_C',nextCode:'E_T',completed:90}
 },
 {
   path:'2',

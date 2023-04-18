@@ -15,6 +15,10 @@ import { EndComponent } from './end/end.component';
 
 const routes: Routes = [
   {
+    path:'',
+    component:ScaleComponent
+  },
+  {
     path:'scale',
     component:ScaleComponent
   },
