@@ -16,6 +16,12 @@ import { CountGuard } from 'src/app/services/guards/count.guard';
 
 const routes: Routes = [
   {
+    path:'',
+    component:DangerCenterScaleComponent,
+     canActivate:[CountGuard],
+    data:{ code:'E_T',completed:10,nextCode:'C_T'}
+  },
+  {
     path:'danger-center-scale',
     component:DangerCenterScaleComponent,
      canActivate:[CountGuard],

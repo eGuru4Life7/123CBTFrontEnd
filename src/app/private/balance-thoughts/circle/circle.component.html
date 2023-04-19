@@ -47,7 +47,7 @@
                       <span>Situation</span>
 
                       <input disabled="" class="flow-text" required="" type="text" name="happening"
-                        value="previous page entry value" data-form-type="other" >
+                        value="previous page entry value" data-form-type="other" [(ngModel)]="dairy.happening">
 
                     </div>
                     <div class="flow-diagram">
@@ -65,7 +65,7 @@
                       <span>Emotions</span>
 
                       <input disabled="" class="flow-text" type="text" required="" value="previous page entry value"
-                        name="feeling" data-form-type="other">
+                        name="feeling" data-form-type="other" [(ngModel)]="dairy.feeling">
 
                     </div>
 
@@ -88,13 +88,13 @@
                     </div>
 
                     <div class="flow-text" data-dashlane-rid="186c34859f0260c6" data-form-type="other"
-                      >
+                      [(ngModel)]="dairy.happening">
 
                       <span>Physical Sensations</span>
 
                       <input disabled="" class="flow-text" type="text" required="" name="physical_sensations"
                         value="the previous page entry value" data-form-type="other"
-                       >
+                        [(ngModel)]="dairy.physical_sensations">
 
                     </div>
 
@@ -121,7 +121,7 @@
                       <span>Thoughts</span>
 
                       <input disabled="" class="flow-text" required="" type="text" value="previous page entry value"
-                        name="thinking" data-dashlane-rid="" data-form-type="other" >
+                        name="thinking" data-dashlane-rid="" data-form-type="other" [(ngModel)]="dairy.thinking">
 
                     </div>
 
@@ -139,7 +139,7 @@
                       <span>Behaviour</span>
 
                       <input disabled="" class="flow-text" type="text" required="" name="do"
-                        value="the previous page entry value" data-form-type="other" >
+                        value="the previous page entry value" data-form-type="other" [(ngModel)]="dairy.do">
 
 
 
@@ -149,7 +149,6 @@
               </div>
 
             </div>
-
 
 
 

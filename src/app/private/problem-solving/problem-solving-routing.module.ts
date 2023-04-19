@@ -14,7 +14,12 @@ import { CountGuard } from 'src/app/services/guards/count.guard';
 
 
 const routes: Routes = [
-
+  {
+    path: '',
+    component: ScaleComponent,
+    canActivate: [CountGuard],
+    data: { code: 'P_S', completed: 10, nextCode: 'B_A' }
+  },
   {
     path: 'scale',
     component: ScaleComponent,

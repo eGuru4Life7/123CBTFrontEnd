@@ -76,9 +76,13 @@ export class HomeComponent implements OnInit {
 
 
   openModal(moduleStatus:any){
-    if(!moduleStatus){
+    if(moduleStatus == 0){
       this.isShow = true;
+    }else{
+      this.isShow = false;
     }
-    return '';
+  }
+  setShowValue(event:boolean){
+    this.isShow = event;
   }
 }
