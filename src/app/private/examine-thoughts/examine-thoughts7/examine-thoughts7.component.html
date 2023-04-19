@@ -43,32 +43,41 @@
                               
 
 
-                              <form method="post" class="" style="padding-top:3%;" data-form-type="">
+                            <form  [formGroup]="diaryForm" class="" style="padding-top:3%;">
                                 <div class="mb-3">
                                     <label for="happening" class="form-label">What happened?</label>
-                                    <input type="text" name="happening" required class="form-control" [(ngModel)]="diary.happening" id="happening">
-                                  </div>
+                                    <input type="text" name="happening" required class="form-control" formControlName="happening" id="happening">
+                                    <div *ngIf="diaryForm.controls['happening'].invalid"
+                                        style="color: red;"> happening is required.</div>
+                                </div>
                                   <div class="mb-3">
                                     <label for="feeling" class="form-label">Your feeling</label>
-                                    <input type="text" name="feeling" required class="form-control" [(ngModel)]="diary.feeling" id="feeling">
-                                  </div>
+                                    <input type="text" name="feeling" required class="form-control" formControlName="feeling" id="feeling">
+                                    <div *ngIf="diaryForm.controls['feeling'].invalid"
+                                        style="color: red;"> feeling is required.</div>
+                                </div>
                                   <div class="mb-3">
                                     <label for="thinking" class="form-label">Your thoughts</label>
-                                    <input type="text" name="thinking" required class="form-control" [(ngModel)]="diary.thinking" id="thinking">
-                                  </div>
+                                    <input type="text" name="thinking" required class="form-control" formControlName="thinking" id="thinking">
+                                    <div *ngIf="diaryForm.controls['thinking'].invalid"
+                                        style="color: red;"> thinking is required.</div>
+                                </div>
                                   <div class="mb-3">
                                     <label for="physical_sensations" class="form-label">Physical sensations</label>
-                                    <input type="text" name="physical_sensations" required class="form-control" [(ngModel)]="diary.physical_sensations" id="physical_sensations">
-                                  </div>
+                                    <input type="text" name="physical_sensations" required class="form-control" formControlName="physical_sensations" id="physical_sensations">
+                                    <div *ngIf="diaryForm.controls['physical_sensations'].invalid"
+                                        style="color: red;"> physical sensations is required.</div>
+                                </div>
                                   <div class="mb-3">
                                     <label for="do" class="form-label">Your action</label>
-                                    <input type="text" name="do" required class="form-control" [(ngModel)]="diary.do" id="do">
-                                  </div>
+                                    <input type="text" name="do" required class="form-control" formControlName="do" id="do">
+                                    <div *ngIf="diaryForm.controls['do'].invalid"
+                                        style="color: red;"> action is required.</div>
+                                </div>
 
                                 <div class="text-end mt-3">
-                                    <button type="button" (click)="addThoughtDairy()" class="btn btn-primary">Submit</button>
+                                    <button type="button" (click)="addThoughtDairy()" [disabled]="!diaryForm.valid" class="btn btn-primary">Submit</button>
                                 </div>
-                               
                               </form>
 
 

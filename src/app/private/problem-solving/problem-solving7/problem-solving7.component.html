@@ -30,19 +30,21 @@
   <div class="page-body">
     <div class="container-xl">
 
-           
 
-<div class="row row-cards">
-<div class="col-12">
-<div class="card card1">
-  <div class="card-body p-0">
-    <p class="card-text" style="font-size: 2.5rem;">
-      Khushi Muhammad's eldest son Munir, who was studying in the city, was on holidays and was trying to help his father with the program. He was stressed due to a lot of problems in his life. He found the information on problem-solving useful to get help with his tuition fees.
-    </p>
-  </div>
-  <br> <br> 
-  <div class="arrow">&#8595;</div>
-</div>
+
+      <div class="row row-cards">
+        <div class="col-12" *ngIf="problems">
+          <div class="card card1">
+            <div class="card-body p-0">
+              <p class="card-text" style="font-size: 2.5rem;">
+                Khushi Muhammad's eldest son Munir, who was studying in the city, was on holidays and was trying to help
+                his father with the program. He was stressed due to a lot of problems in his life. He found the
+                information on problem-solving useful to get help with his tuition fees.
+              </p>
+            </div>
+            <br> <br>
+            <div class="arrow" (click)="showProblem()">&#8595;</div>
+          </div>
 
         </div>
 
@@ -97,7 +99,7 @@
           </div>
         </div>
 
-        <div class="col-sm-6 col-lg-6"  *ngIf="chooseSolution">
+        <div class="col-sm-6 col-lg-6" *ngIf="chooseSolution">
           <div class="card card1 ">
             <div class="card-body p-0">
               <p class="card-text card-text1" style="font-size: 2.2rem;">
@@ -108,7 +110,7 @@
           </div>
         </div>
 
-        <div class="col-sm-12 col-lg-12"  *ngIf="advDisAdv">
+        <div class="col-sm-12 col-lg-12" *ngIf="advDisAdv">
           <div class="card card1">
             <div class="card-body p-0">
               <div class="table-responsive">
@@ -199,7 +201,7 @@
           </div>
         </div>
       </div>
-<!-- 
+      <!-- 
       <script>
         var arrows = document.querySelectorAll(".arrow");
         var hiddenCards = document.querySelectorAll(".card1.hidden");

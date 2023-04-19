@@ -11,6 +11,8 @@ import { SituationComponent } from './situation/situation.component';
 import { CircleComponent } from './circle/circle.component';
 import { EvidenceComponent } from './evidence/evidence.component';
 import { EndComponent } from './end/end.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgApexchartsModule } from 'ng-apexcharts';
 
 
 @NgModule({
@@ -28,7 +30,10 @@ import { EndComponent } from './end/end.component';
   ],
   imports: [
     CommonModule,
-    ChallengeThoughtsRoutingModule
+    FormsModule,
+    NgApexchartsModule,
+    ChallengeThoughtsRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class ChallengeThoughtsModule { }

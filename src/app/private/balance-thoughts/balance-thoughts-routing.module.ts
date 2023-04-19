@@ -11,52 +11,75 @@ import { EvidenceComponent } from './evidence/evidence.component';
 import { AlternativeComponent } from './alternative/alternative.component';
 
 import { EndComponent } from './end/end.component';
+import { CountGuard } from 'src/app/services/guards/count.guard';
 
 
 const routes: Routes = [
   {
     path:'',
-    component:ScaleComponent
+    component:ScaleComponent,
+    canActivate: [CountGuard],
+    data: { code: 'B_T', completed: 10, nextCode: 'P_S' }
   },
   {
     path:'scale',
-    component:ScaleComponent
+    component:ScaleComponent,
+    canActivate: [CountGuard],
+    data: { code: 'B_T', completed: 10, nextCode: 'P_S' }
   },
   {
     path:'score',
-    component:ScoreComponent
+    component:ScoreComponent,
+    canActivate: [CountGuard],
+    data: { code: 'B_T', completed: 20, nextCode: 'P_S' }
   },
   {
     path:'start',
-    component:StartComponent
+    component:StartComponent,
+    canActivate: [CountGuard],
+    data: { code: 'B_T', completed: 30, nextCode: 'P_S' }
   },
   {
     path:'tips',
-    component:TipsComponent
+    component:TipsComponent,
+    canActivate: [CountGuard],
+    data: { code: 'B_T', completed: 40, nextCode: 'P_S' }
   },
   {
     path:'diary-week3',
-    component:DiaryWeek3Component
+    component:DiaryWeek3Component,
+    canActivate: [CountGuard],
+    data: { code: 'B_T', completed: 50, nextCode: 'P_S' }
   },
   {
     path:'situation',
-    component:SituationComponent
+    component:SituationComponent,
+    canActivate: [CountGuard],
+    data: { code: 'B_T', completed: 60, nextCode: 'P_S' }
   },
   {
     path:'circle',
-    component:CircleComponent
+    component:CircleComponent,
+    canActivate: [CountGuard],
+    data: { code: 'B_T', completed: 70, nextCode: 'P_S' }
   },
   {
     path:'evidence',
-    component:EvidenceComponent
+    component:EvidenceComponent,
+    canActivate: [CountGuard],
+    data: { code: 'B_T', completed: 80, nextCode: 'P_S' }
   },
   {
     path:'alternative',
-    component:AlternativeComponent
+    component:AlternativeComponent,
+    canActivate: [CountGuard],
+    data: { code: 'B_T', completed: 90, nextCode: 'P_S' }
   },
   {
     path:'end',
-    component:EndComponent
+    component:EndComponent,
+    canActivate: [CountGuard],
+    data: { code: 'B_T', completed: 100, nextCode: 'P_S' }
   }
 
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Route, Router } from '@angular/router';
 import { LocalCacheService } from 'src/app/services/local-cache.service';
 import { ModuleService } from 'src/app/services/module.service';
@@ -10,22 +11,39 @@ import { ModuleService } from 'src/app/services/module.service';
 })
 export class ExamineThoughts7Component implements OnInit {
 
-  diary:any ={};
   currentUser: any;
   constructor(private moduleService: ModuleService, private localService: LocalCacheService,private router:Router) {
-
+    this.createForm();
   }
-
+  user: any = {};
+  diaryForm!: FormGroup;
+  
   ngOnInit(): void {
     this.currentUser = this.localService.getCurrentUser();
-    this.diary.uid = this.currentUser.id;
+    //this.diary.uid = this.currentUser.id;
   }
   
+  createForm() {
+    this.diaryForm = new FormGroup({
+      happening: new FormControl('', Validators.required),
+      thinking: new FormControl('', Validators.required),
+      do: new FormControl('', Validators.required),
+      physical_sensations: new FormControl('', Validators.required),
+      feeling: new FormControl('', Validators.required),
+      uid: new FormControl('')
+    });
+  }
+
+
+
   async addThoughtDairy() {
-    await this.moduleService.addThoughtDairy(this.diary).toPromise().then((res: any) => {
+    this.diaryForm.get('uid')?.setValue(this.currentUser.id);
+    await this.moduleService.addThoughtDairy(this.diaryForm.value).toPromise().then((res: any) => {
+      debugger
       if (res.success) {
         this.router.navigate(['../examinethoughts/examine8']);
       }
     })
   }
+  
 }

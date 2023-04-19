@@ -1,28 +1,23 @@
 import { trigger, transition, style, animate } from '@angular/animations';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'locked-modal',
   templateUrl: './locked-modal.component.html',
-  styleUrls: ['./locked-modal.component.scss'],
-  animations: [
-    trigger('dialog', [
-     transition('start => end', [
-            animate('1s 2s')
-         ]),
-         transition('end => start', [
-            animate('1s 2s')
-         ])
-    ])
-  ]
+  styleUrls: ['./locked-modal.component.scss']
 })
 export class LockedModalComponent implements OnInit {
   @Input() isShow = false;
+  @Output() isShowEvent = new EventEmitter<boolean>(); 
   constructor() { }
 
   ngOnInit(): void {
+    debugger;
+    console.log(this.isShow);
   }
+
   closeModal(){
     this.isShow =false;
+    this.isShowEvent.emit(this.isShow);
   }
 }

@@ -12,6 +12,8 @@ import { CircleComponent } from './circle/circle.component';
 import { EvidenceComponent } from './evidence/evidence.component';
 import { AlternativeComponent } from './alternative/alternative.component';
 import { EndComponent } from './end/end.component';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -29,6 +31,9 @@ import { EndComponent } from './end/end.component';
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    NgApexchartsModule,
+    ReactiveFormsModule,
     BalanceThoughtsRoutingModule
   ]
 })
