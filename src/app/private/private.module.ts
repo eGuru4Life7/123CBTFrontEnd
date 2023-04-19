@@ -5,6 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LockedModalComponent } from './shared/locked-modal/locked-modal.component';
 import { DownloadsComponent } from './downloads/downloads.component';
+import { ProfileEditComponent } from './profile-edit/profile-edit.component';
+
 
 
 @NgModule({
@@ -13,6 +15,8 @@ import { DownloadsComponent } from './downloads/downloads.component';
     ProfileComponent,
     LockedModalComponent,
     DownloadsComponent,
+    ProfileEditComponent,
+
     ],
   imports: [
     CommonModule,

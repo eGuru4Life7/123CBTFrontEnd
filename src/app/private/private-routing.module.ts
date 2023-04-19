@@ -16,6 +16,7 @@ import { HelpetcModule } from './helpetc/helpetc.module';
 
 import { ProfileComponent } from './profile/profile.component';
 import { DownloadsComponent } from './downloads/downloads.component';
+import { ProfileEditComponent } from './profile-edit/profile-edit.component';
 
 
 const routes: Routes = [
@@ -60,7 +61,12 @@ const routes: Routes = [
   {
     path:'profile',
     component:ProfileComponent
+  },
+  {
+    path:'profile-edit',
+    component:ProfileEditComponent
   }
+
   ,
   {
     path:'downloads',
