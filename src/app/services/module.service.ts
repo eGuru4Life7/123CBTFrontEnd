@@ -34,4 +34,7 @@ export class ModuleService {
   public updateModuleStatus(data: any): Observable<any> {
     return this.http.post(environment.BASE_URL + 'module/updateModulesStatusById', data);
   }
+  public updateAlternativeThought(data: any): Observable<any> {
+    return this.http.post(environment.BASE_URL + 'module/updateAlternativeThoughts', data);
+  }
 }

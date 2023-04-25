@@ -36,9 +36,9 @@ export class ExamineThoughts7Component implements OnInit {
 
 
 
-  async addThoughtDairy() {
+   addThoughtDairy() {
     this.diaryForm.get('uid')?.setValue(this.currentUser.id);
-    await this.moduleService.addThoughtDairy(this.diaryForm.value).toPromise().then((res: any) => {
+     this.moduleService.addThoughtDairy(this.diaryForm.value).subscribe((res: any) => {
       debugger
       if (res.success) {
         this.router.navigate(['../examinethoughts/examine8']);

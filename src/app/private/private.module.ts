@@ -6,6 +6,10 @@ import { ProfileComponent } from './profile/profile.component';
 import { LockedModalComponent } from './shared/locked-modal/locked-modal.component';
 import { DownloadsComponent } from './downloads/downloads.component';
 import { ProfileEditComponent } from './profile-edit/profile-edit.component';
+import { ChangePasswordModalComponent } from './shared/change-password-modal/change-password-modal.component';
+import { EmailSuccesModalComponent } from './shared/email-succes-modal/email-succes-modal.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ToastModule } from 'primeng/toast';
 
 
 
@@ -16,11 +20,16 @@ import { ProfileEditComponent } from './profile-edit/profile-edit.component';
     LockedModalComponent,
     DownloadsComponent,
     ProfileEditComponent,
+    ChangePasswordModalComponent,
+    EmailSuccesModalComponent,
 
     ],
   imports: [
     CommonModule,
-    PrivateRoutingModule
+    FormsModule,
+    ReactiveFormsModule,
+    PrivateRoutingModule,
+    ToastModule
   ]
 })
 export class PrivateModule { }
