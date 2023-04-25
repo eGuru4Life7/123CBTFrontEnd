@@ -1,3 +1,4 @@
+<p-toast position="top-right"></p-toast>
 <div class="page-wrapper">
     <!-- Page header -->
     <div class="page-header d-print-none">
@@ -37,18 +38,18 @@
                 <div class="card">
                     <div class="card-body">
                         <h1 class="text-center mb-4">Alternative Thought</h1>
-                        <p class="text-center mb-4">Your thought: <strong>[Your Thought value from the Circle of Thought]</strong></p>
+                        <p class="text-center mb-4">Your thought: <strong>[{{thoughts}}]</strong></p>
                         <form>
                             <div class="row">
                                 
                                 <div class="mb-3">
                                     <label for="alternative" class="form-label">Write an alternative or balanced thought here.</label>
-                                    <input type="text" name="alternative" required class="form-control"  id="alternative">
+                                    <input type="text" name="alternative" required class="form-control" id="alternative" [(ngModel)]="alternative.thoughts">
                                   </div>
                             
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary" >Save your thought</button>
+                                <button type="submit" class="btn btn-primary" (click)="updateAlternativeThought()">Save your thought</button>
                                 
                             </div>
                         </form>

@@ -30,6 +30,7 @@ export class ScoreComponent implements OnInit {
   @ViewChild("chart")
   chart!: ChartComponent;
   public chartOptions!: Partial<ChartOptions>;
+  isShownChart: boolean = false;
   constructor(private moduleService: ModuleService, private localService: LocalCacheService) {
 
   }
@@ -67,6 +68,7 @@ export class ScoreComponent implements OnInit {
           }
 
         };
+        this.isShownChart = true;
       }
     })
   }

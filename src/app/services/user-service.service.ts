@@ -21,4 +21,13 @@ export class UserServiceService {
   public forgotPassword(user: any): Observable<any> {
     return this.http.post(environment.BASE_URL + 'auth/forgotPassword', user);
   }
+  public updatePassword(user: any): Observable<any> {
+    return this.http.post(environment.BASE_URL + 'auth/updatePassword', user);
+  }
+  public updateUser(user: any): Observable<any> {
+    return this.http.post(environment.BASE_URL + 'auth/updateUser', user);
+  }
+  public updateEmail(user: any): Observable<any> {
+    return this.http.post(environment.BASE_URL + 'auth/updateEmail', user);
+  }
 }

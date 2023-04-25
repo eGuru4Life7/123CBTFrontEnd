@@ -34,27 +34,27 @@
                 <div class="card">
                     <div class="card-body">
                         <h1 class="text-center mb-4">Evidence for & Evidence Against</h1>
-                        <p class="text-center mb-4">Your thought: <strong>[Your Thought value from the Circle of Thought]</strong></p>
-                        <form>
+                        <p class="text-center mb-4">Your thought: <strong>[{{thoughts}}]</strong></p>
+                        
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
                                         <label for="evidence-for">Evidence For:</label>
-                                        <textarea id="evidence-for" class="form-control" rows="5"></textarea>
+                                        <textarea id="evidence-for" class="form-control" rows="5" [(ngModel)]="evidence.for"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
                                         <label for="evidence-against">Evidence Against:</label>
-                                        <textarea id="evidence-against" class="form-control" rows="5"></textarea>
+                                        <textarea id="evidence-against" class="form-control" rows="5" [(ngModel)]="evidence.against"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-large">Save</button>
+                                <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-large" (click)="showModal()">Save</button>
                                 
                             </div>
-                        </form>
+                        
 
 
                      <span>Modal is here in the comment</span>
@@ -129,3 +129,39 @@
             </div>
         </div>
     </div>
+    <div class="modal modal-blur fade show" *ngIf="isShowModal" id="modal-large" tabindex="-1" style="display: block;" aria-modal="true"
+    role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Evidence for & Evidence Against</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="closeModal()"></button>
+            </div>
+            <div class="modal-body">
+                <h2 class="mb-4">Your thought: [{{thoughts}}]</h2>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h4 class="mb-3">Evidence For</h4>
+                        <ul class="evidence-list" id="evidence-for-display" *ngFor="let item of for">
+
+                            <li>{{item}}</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h4 class="mb-3">Evidence Against</h4>
+                        <ul class="evidence-list" id="evidence-against-display" *ngFor="let item of against">
+
+                            <li>{{item}}</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="closeModal()">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>

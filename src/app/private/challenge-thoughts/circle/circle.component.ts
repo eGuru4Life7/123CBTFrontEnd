@@ -23,6 +23,7 @@ export class CircleComponent implements OnInit {
     await this.moduleService.getThoughtDiaryById(this.currentUser.id).toPromise().then((res: any) => {
       if (res.success) {
         this.dairy = res.data[0];
+        localStorage.setItem('Ct_E',this.dairy.thinking);
       }
     })
   }
