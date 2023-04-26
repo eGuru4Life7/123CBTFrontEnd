@@ -30,6 +30,7 @@ export class DangerCenterScoreComponent implements OnInit {
   @ViewChild("chart")
   chart!: ChartComponent;
   public chartOptions!: Partial<ChartOptions>;
+  isShowChart: boolean = false;
   constructor(private moduleService: ModuleService, private localService: LocalCacheService) {
 
   }
@@ -67,6 +68,7 @@ export class DangerCenterScoreComponent implements OnInit {
           }
 
         };
+        this.isShowChart = true;
       }
     })
   }

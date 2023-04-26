@@ -14,6 +14,7 @@ import { AlternativeComponent } from './alternative/alternative.component';
 import { EndComponent } from './end/end.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ToastModule } from 'primeng/toast';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     NgApexchartsModule,
     ReactiveFormsModule,
+    ToastModule,
     BalanceThoughtsRoutingModule
   ]
 })
