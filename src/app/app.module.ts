@@ -21,6 +21,7 @@ import { StartComponent } from './layout/start/start.component';
 import { EvidenceComponent } from './layout/evidence/evidence.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoaderComponent } from './loader/loader.component';
+
 @NgModule({
   declarations: [
     AppComponent,
