@@ -30,6 +30,7 @@ export class ProblemSolving7Component implements OnInit {
     this.problemsList = false;
     this.next = false;
     this.solutionList= true;
+    
   }
   showNext2(){
    
