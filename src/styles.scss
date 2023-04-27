@@ -3,6 +3,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+
 .card-body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -63,4 +65,33 @@
     from { opacity: 0; }
     to { opacity: 1; }
   }
+  
+  
+
+  .fade-in-2s {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+  
+  
+  .fade-in-3s {
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+  }
+  
+  
+
+
+  .fade-in li {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInListItem 1s ease-in-out forwards;
+    animation-delay: 0.3s;
+  }
+  
+  @keyframes fadeInListItem {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
   
