@@ -34,7 +34,7 @@
 
       <div class="row row-cards">
         <div class="col-12" *ngIf="problems">
-          <div class="card card1">
+          <div class="card card1 fade-in" >
             <div class="card-body p-0">
               <p class="card-text" style="font-size: 2.5rem;">
                 Khushi Muhammad's eldest son Munir, who was studying in the city, was on holidays and was trying to help
@@ -48,8 +48,8 @@
 
         </div>
 
-        <div class="col-sm-6 col-lg-6" *ngIf="problemsList">
-          <div class="card card1">
+        <div class="col-sm-12 col-lg-12" *ngIf="problemsList">
+          <div class="card card1 fade-in">
             <div class="card-body p-0 ">
               <h1 class="card-title">List of problems:</h1>
 
@@ -62,13 +62,13 @@
                 <li class="list-group-item list-group-item-action">6- Shyness</li>
               </ul>
             </div><br> <br>
-            <div class="arrow" (click)="showNext()">&#8594;</div>
+            <div class="arrow" (click)="showNext()">&#8595;</div>
           </div>
 
         </div>
 
-        <div class="col-sm-6 col-lg-6" *ngIf="next">
-          <div class="card card1">
+        <div class="col-sm-12 col-lg-12" *ngIf="next">
+          <div class="card card1 fade-in">
             <div class="card-body p-0">
               <p class="card-text card-text1" style="font-size: 2.5rem;">
                 He chose to solve the problem number 3, as it was doable, and was likely to have a significant impact on
@@ -80,7 +80,7 @@
         </div>
 
         <div class="col-sm-6 col-lg-6" *ngIf="solutionList">
-          <div class="card card1">
+          <div class="card card1 fade-in">
             <div class="card-body p-0">
               <h2 class="card-title">List of solutions: </h2>
 
@@ -100,7 +100,7 @@
         </div>
 
         <div class="col-sm-6 col-lg-6" *ngIf="chooseSolution">
-          <div class="card card1 ">
+          <div class="card card1 fade-in">
             <div class="card-body p-0">
               <p class="card-text card-text1" style="font-size: 2.2rem;">
                 Choosing a solution: He examined all the solutions, one by one. Finally, he chose to speak to the
@@ -111,7 +111,7 @@
         </div>
 
         <div class="col-sm-12 col-lg-12" *ngIf="advDisAdv">
-          <div class="card card1">
+          <div class="card card1 fade-in">
             <div class="card-body p-0">
               <div class="table-responsive">
                 <table class="table table-vcenter card-table " style="font-size: 1.5rem;">
@@ -184,7 +184,7 @@
 
 
         <div class="col-sm-12 col-lg-12" *ngIf="appSol">
-          <div class="card card1 ">
+          <div class="card card1 fade-in">
             <div class="card-body p-0">
               <h2 class="card-title">Steps in applying the solution: </h2>
 
