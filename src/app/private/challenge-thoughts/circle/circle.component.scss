@@ -1,74 +1,108 @@
+.card-body h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
 
+.flow-text {  
+  font-size: 1.5vw;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 2px solid #007bff;
+  margin-bottom: 15px;
+  width: 20vw;
+  max-width: 20vw;
+  margin-top: 5px;
+  padding: 8px 8px;
+  background-color: #f8f9fa;
+  color: #343a40;
+  overflow-wrap: break-word;
+  vertical-align: middle;
+  display: table;
+  transition: background-color 0.3s, color 0.3s;
 
-  .flow-text {
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 8px;
-    border: 2px solid #007bff;
-    margin-bottom: 15px;
-    width: 85%;
-    max-width: 250px;
-    margin-top: 5px;
-    padding: 8px 8px;
-    background-color: #f8f9fa;
-    color: #343a40;
-    overflow-wrap: break-word;
-    vertical-align: middle;
-    display: table;
-  }
+  text-align: center;
+}
+.flow-text span {
+  display: block;
+  text-align: center;
+}
 
-  .circle {
-    position: relative;
-    width: 600px;
-    height: 600px;
-    border: 3px solid #007bff;
-    border-radius: 50%;
-  }
+input[type="text"]{
+  font-weight: normal; 
+}
+input[type="text"]:hover{
+  background-color: white; 
+  color: #007bff;
 
-  .situation,
-  .emotion,
-  .physical-sensation,
-  .thoughts,
-  .behaviour {
-    position: absolute;
-    width: 150px;
-  }
+}
+.flow-text:hover {
+  background-color: #007bff;
+  color: #f8f9fa;
+}
 
-  textarea {
-    width: 100%;
-    height: 70px;
-    resize: none;
-    border: none;
-    text-align: center;
-    font-size: 16px;
-  }
+.circle {
+  position: relative;
+  width: 75vw;
+  height: 71vw;
+  border: 3px solid #007bff;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  //  background-color: #c1d699;
+}
 
-  .situation {
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 15px);
-  }
+.situation,
+.emotion,
+.physical-sensation,
+.thoughts,
+.behaviour {
+  position: absolute;
+  width: auto;
+  margin:a
 
-  .emotion {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+}
 
-  .behaviour {
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -15px);
-  }
+textarea {
+  width: 100%;
+  height: 70px;
+  resize: none;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
 
-  .thoughts {
-    top: 50%;
-    left: 0;
-    transform: translate(15px, -50%);
-  }
+.situation {
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 15px);
+}
 
-  .physical-sensation {
-    top: 50%;
-    right: 0;
-    transform: translate(-15px, -50%);
-  }
+.emotion {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.behaviour {
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -15px);
+}
+
+.thoughts {
+  top: 34%;
+  left: 9%;
+  transform: translate(15px, -50%);
+}
+
+.physical-sensation {
+  top: 34%;
+  right: 9%;
+  transform: translate(-15px, -50%);
+}
+
+.flow-diagram{
+  display: flex;
+justify-content: center;
+
+}
