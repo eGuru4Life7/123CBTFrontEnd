@@ -39,6 +39,8 @@
   }
   
 
+  
+
 .diary-entry {
   background-color: #f8f9fa;
   border-radius: 5px;
@@ -46,6 +48,7 @@
   margin-bottom: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
+  font-size: 1rem;
   }
   
   .diary-entry:hover {
@@ -65,7 +68,7 @@
   }
 
 .card-body h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 
     margin-bottom: 20px;
 }
