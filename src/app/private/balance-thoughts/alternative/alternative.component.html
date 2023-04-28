@@ -35,16 +35,16 @@
                 
                 
                 
-                <div class="card">
+                <div class="card fade-in">
                     <div class="card-body">
                         <h1 class="text-center mb-4">Alternative Thought</h1>
-                        <p class="text-center mb-4">Your thought: <strong>[{{thoughts}}]</strong></p>
+                        <h2 class="text-center">Your thought: <span style="font-size:1.6rem; color:#007bff;"><strong>{{thoughts}}</strong></span></h2>
                         <form>
                             <div class="row">
                                 
                                 <div class="mb-3">
-                                    <label for="alternative" class="form-label">Write an alternative or balanced thought here.</label>
-                                    <input type="text" name="alternative" required class="form-control" id="alternative" [(ngModel)]="alternative.thoughts">
+                                   
+                                    <input type="text" placeholder="Enter your alternative or balanced thought here" name="alternative" required class="form-control" id="alternative" [(ngModel)]="alternative.thoughts">
                                   </div>
                             
                             </div>
