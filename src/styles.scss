@@ -1,4 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+
+.pagination li:hover {
+  border-radius: 50%;
+  background-color: rgb(247, 250, 253);  
+}
+
+.pagination {
+ padding-right: 2%;
+ --tblr-pagination-hover-bg: none !important;
+     --tblr-pagination-focus-color: none !important;
+    --tblr-pagination-focus-bg: none !important;
+    --tblr-pagination-focus-box-shadow: none !important;
+    --tblr-pagination-active-color: #ffffff;
+    --tblr-pagination-active-bg: var(--tblr-primary);
+    --tblr-pagination-active-border-color: var(--tblr-primary);
+}
+
+
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
