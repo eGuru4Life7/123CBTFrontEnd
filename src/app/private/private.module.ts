@@ -10,6 +10,7 @@ import { ChangePasswordModalComponent } from './shared/change-password-modal/cha
 import { EmailSuccesModalComponent } from './shared/email-succes-modal/email-succes-modal.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastModule } from 'primeng/toast';
+import { MyhealthythoughtsComponent } from './myhealthythoughts/myhealthythoughts.component';
 
 
 
@@ -22,6 +23,7 @@ import { ToastModule } from 'primeng/toast';
     ProfileEditComponent,
     ChangePasswordModalComponent,
     EmailSuccesModalComponent,
+    MyhealthythoughtsComponent,
 
     ],
   imports: [
