@@ -98,13 +98,29 @@
 
 
                     </div>
+
+                    <ul class="pagination justify-content-end">
+                        <li class=" page-prev ">
+                            <a class="page-link" [routerLink]="'../circle'">
+                                <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
+                            </a>
+                        </li>
+                        <li class=" page-next">
+                            <a class="page-link" [routerLink]="'../alternative'">
+                               
+                                <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
+                            </a>
+                        </li>
+                    </ul>
+
+
                 </div>
             </div>
 
 
             <br>
 
-            <div class="row row-cards">
+            <!-- <div class="row row-cards">
 
                 <div class="col-12">
                     <div class="card">
@@ -126,7 +142,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="modal modal-blur bg-primary-lt fade show" style="background-color: rgba(var(--tblr-primary-rgb),var(--tblr-bg-opacity))!important;" *ngIf="isShowModal" id="modal-large" tabindex="-1" style="display: block;" aria-modal="true"
