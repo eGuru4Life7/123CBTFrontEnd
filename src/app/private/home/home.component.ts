@@ -1,11 +1,13 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { LocalCacheService } from 'src/app/services/local-cache.service';
 import { ModuleService } from 'src/app/services/module.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  providers:[TranslateService]
 })
 export class HomeComponent implements OnInit {
   
@@ -22,7 +24,9 @@ export class HomeComponent implements OnInit {
   moduleStatus8: any ={};
   moduleStatus9: any ={};
   isShow: any = false;
-  constructor(private localService:LocalCacheService,private moduleService:ModuleService) { }
+  constructor(private localService:LocalCacheService,private moduleService:ModuleService,private translate: TranslateService) {
+  
+  } 
   module1:any={};
   module2:any={};
   module3:any={};

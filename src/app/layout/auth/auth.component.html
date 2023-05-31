@@ -74,7 +74,7 @@
                               <div class="row align-items-center">
                                 <span class="flag flag-country-us"></span>
                                 <div class="col text-truncate">
-                                  <a [routerLink]="''" class="text-body d-block">English</a>
+                                  <a href='javascript:void(0)' (click)="changeLanguage('en')" class="text-body d-block">English</a>
 
                                 </div>
 
@@ -84,63 +84,32 @@
                               <div class="row align-items-center">
                                 <span class="flag flag-country-pk"></span>
                                 <div class="col text-truncate">
-                                  <a [routerLink]="''" class="text-body d-block">Urdu</a>
+                                  <a href='javascript:void(0)' (click)="changeLanguage('ur')" class="text-body d-block">Urdu</a>
 
                                 </div>
 
                               </div>
                             </div>
-
-                            <div class="list-group-item">
-                              <div class="row align-items-center">
-                                <span class="flag flag-country-in"></span>
-                                <div class="col text-truncate">
-                                  <a [routerLink]="''" class="text-body d-block">Hindi</a>
-
-                                </div>
-
-                              </div>
-                            </div>
-
-                            <div class="list-group-item">
-                              <div class="row align-items-center">
-                                <span class="flag flag-country-np"></span>
-                                <div class="col text-truncate">
-                                  <a [routerLink]="''" class="text-body d-block">Nepali</a>
-
-                                </div>
-
-                              </div>
-                            </div>
-
-
                           </div>
                         </div>
                       </div>
                     </div>
 
-
-
-
-
-
-
-
                   </div>
                 </div>
               </div>
               <div class="card-body">
-                <h2 class="h2 text-center mb-4">Login to your account</h2>
+                <h2 class="h2 text-center mb-4">{{ 'login.title' | translate }}</h2>
                 <div class="mb-3">
-                  <label class="form-label">Email address</label>
+                  <label class="form-label">{{ 'login.email' | translate }}</label>
                   <input type="email" [(ngModel)]="user.email" class="form-control" placeholder="your@email.com"
                     autocomplete="off">
                 </div>
                 <div class="mb-2">
                   <label class="form-label">
-                    Password
+                    {{ 'login.password' | translate }}
                     <span class="form-label-description">
-                      <a  [routerLink]="'/forgotpassword'">I forgot password</a>
+                      <a  [routerLink]="'/forgotpassword'">{{ 'login.reset' | translate }}</a>
                     </span>
                   </label>
                   <div class="input-group input-group-flat">
@@ -164,11 +133,11 @@
                 <div class="mb-2">
                   <label class="form-check">
                     <input type="checkbox" class="form-check-input" />
-                    <span class="form-check-label">Remember me on this device</span>
+                    <span class="form-check-label">{{ 'login.remember' | translate }}</span>
                   </label>
                 </div>
                 <div class="form-footer">
-                  <button type="button" class="btn btn-primary w-100" (click)="loginUser()">Sign in</button>
+                  <button type="button" class="btn btn-primary w-100" (click)="loginUser()">{{ 'login.signin' | translate }}</button>
                 </div>
 
               </div>
@@ -176,7 +145,7 @@
 
             </div>
             <div class="text-center text-muted mt-3">
-              Don't have account yet? <a [routerLink]="'/signup-start'" tabindex="-1">Sign up</a>
+              {{ 'login.signup' | translate }} <a [routerLink]="'/signup-start'" tabindex="-1">{{ 'login.signup1' | translate }}</a>
             </div>
           </div>
         </div>

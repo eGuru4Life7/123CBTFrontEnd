@@ -30,7 +30,7 @@
       <div class="col-lg-12">
         <div class="card">
           <div class="card-body">
-            <h1 class="text-center">Your circle of thoughts</h1>
+            <h1 class="text-center">{{ 'thought_8.heading' | translate }}</h1>
             <br><br>
             
             <div class="row d-flex justify-content-center align-items-center">
@@ -47,7 +47,7 @@
                   <div class="situation">
                     <div class="flow-text">
 
-                      <span>Situation</span>
+                      <span>{{ 'thought_8.situation' | translate }}</span>
 
                       <input disabled="" class="flow-text" required="" type="text" name="happening"
                         value="previous page entry value" data-form-type="other" [(ngModel)]="dairy.happening">
@@ -64,7 +64,7 @@
                   <div class="emotion">
                     <div class="flow-text">
 
-                      <span>Emotions</span>
+                      <span>{{ 'thought_8.emotions' | translate }}</span>
 
                       <input disabled="" class="flow-text" type="text" required="" value="previous page entry value"
                         name="feeling" data-form-type="other" [(ngModel)]="dairy.feeling">
@@ -88,9 +88,9 @@
                     </div>
 
                     <div class="flow-text" data-dashlane-rid="186c34859f0260c6" data-form-type="other"
-                      [(ngModel)]="dairy.happening">
+                      [(ngModel)]="dairy.physical_sensations">
 
-                      <span>Physical Sensations</span>
+                      <span>{{ 'thought_8.physical-sensations' | translate }}</span>
 
                       <input disabled="" class="flow-text" type="text" required="" name="physical_sensations"
                         value="the previous page entry value" data-form-type="other"
@@ -114,7 +114,7 @@
 
                     <div class="flow-text" data-dashlane-rid="3d7d4ea553ccb07d" data-form-type="other">
 
-                      <span>Thoughts</span>
+                      <span>{{ 'thought_8.thoughts' | translate }}</span>
 
                       <input disabled="" class="flow-text" required="" type="text" value="previous page entry value"
                         name="thinking" data-dashlane-rid="" data-form-type="other" [(ngModel)]="dairy.thinking">
@@ -130,7 +130,7 @@
                   <div class="behaviour">
                     <div class="flow-text">
 
-                      <span>Behaviour</span>
+                      <span>{{ 'thought_8.behaviour' | translate }}</span>
 
                       <input disabled="" class="flow-text" type="text" required="" name="do"
                         value="the previous page entry value" data-form-type="other" [(ngModel)]="dairy.do">

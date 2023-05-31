@@ -1,13 +1,16 @@
 {
-
+        "home":"Home",
         "login": {
-            "title": "Login",
-            "email": "Email",
+            "signin":"Sign In",
+            "title": "Login to your account",
+            "email": "Email address",
             "password": "Password",
             "clicklogin": "Click Here To Login",
-            "reset": "Reset Your Password",
-            "signup": "Don't Have An Account! Sign Up",
-            "copyrights": "Copyrights 2017 � illuminator.ca"
+            "reset": "I forgot Password",
+            "signup": "Don't have an account yet!",
+            "signup1":"Sign up",
+            "copyrights": "Copyrights 2017 � illuminator.ca",
+            "remember":"Remember me on this device"
         },
         "reset": {
             "title": "Reset Your Password",
@@ -56,13 +59,16 @@
             "third-paragraph": "Finally, this program is based on a self-help manual that was found to be effective in treating depression and anxiety. F Naeem, Ishaque Sarhandi, Mirrat Gul, Mehwish Khalid, Muhammad Aslam, Aqila Anbrin, Sofiya Saeed, Madeeha Noor, Ghulam Fatima, Fareed Minhas, Nusat Hussain, Muhammad Ayub (2014) A multicentre randomised controlled trial of a Carer supervised Culturally adapted CBT (CaCBT) based Self Help for depression in Pakistan. Journal of Affective Disorders, 156, 224-227 "
         },
         "index": {
-            "Home page":"Home",
+            "gm":"Good Morning",
+            "gmmsg":"We Wish you have a good day",
+            "home":"Home",
             "title": "Khushi Aur Khatoon",
             "description": "A CBT Based Self Help Manual For Stress",
             "logout": "Logout",
             "stress": "Stress",
             "fight": "Fight And Flight",
             "thoughts": "Thoughts",
+            "journal-writing":"Journal Writing",
             "examine-thoughts": "Examine Thoughts",
             "balanced-thoughts": "Balanced Thoughts",
             "problem-solving": "Problem Solving",
@@ -70,6 +76,7 @@
             "relationship": "Relationships",
             "staying-well": "Staying Well",
             "my-progress": "My Progress",
+            "weekly-progress":"Your Weekly Progress",
             "my-healthy-thoughts": "My Healthy Thoughts",
             "stress-heading": " What is stress? ",
             "stress-para": "Stress is a normal human response to threatening events. Stress isn’t always bad. The stress response is the body’s way of protecting you. In small doses, it can help you perform under pressure and motivate you to do your best. However, if you face the stressful situation for an extended period, it can have a devastating effect on your emotional and physical health, relationships and quality of life. ",
@@ -77,12 +84,14 @@
             "stress-cause-para": " Life events or losses, for example, changes at work, housing problems, the death of a relative, relationship issues or children's problems etc. Sometimes even the promotion at work can cause stress. Now, think about the causes of stress in your life.",
             "next": "NEXT",
             "Danger-Centre":"Danger centre",
-            "Challenge thoughts":"Challenge thoughts",
+            "Challengethoughts":"Challenge thoughts",
             "Downloads":"Downloads",
+            "Downloads1":"My Downloads",
             "Profile":"Profile",
             "Anger":"Anger",
             "Disgust":"Disgust",
             "Fear":"Fear",
+            "Module":"Module",
             "Happiness":"Happiness",
             "Sadness":"Sadness",
             "Surprise":"Surprise",
@@ -94,7 +103,8 @@
             "fearandphobia":"Fear & Phobia",
             "trauma":"Trauma",
             "click_here_for_download":"Click here to download",
-            "RelaxationExcercises":"Relaxation Excercises"
+            "RelaxationExcercises":"Relaxation Excercises",
+            "help":"help"
 
         },
         "evidence":{
@@ -184,9 +194,9 @@
         "amb": {
             "heading1": "From now on start using the breathing exerise daily. Click on below icons. Your next module starts from ",
             "paragraph": "We can not control most of the reaction discussed in the flight of fight response. However, there is one thing we can control, that is our breathing. You can also use muscle relaction exercise. Please download the breathing exercise and try them for next week.",
-            "food":"Food Advice",
-            "sleep":"Sleep Advice",
-            "tips":"Useful Tips",
+            "food":"Food<br>Advice",
+            "sleep":"Sleep <br>Advice",
+            "tips":"Useful<br> Tips",
             "end": "Module End",
             "heading2":"We can not control most of the reaction discussed in the flight of fight response. However, there is one thing we can control, that is our breathing. You can also use muscle relaxation exercise.",
             "paragraph2":"Please download the breathing exercise and use them every day. Try using them as often as possible. Your next module will start on",

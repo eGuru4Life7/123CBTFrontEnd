@@ -13,6 +13,7 @@ import { AudioComponent } from './audio/audio.component';
 import { FoodadviceComponent } from './foodadvice/foodadvice.component';
 import { SleepadviceComponent } from './sleepadvice/sleepadvice.component';
 import { UsefultipsComponent } from './usefultips/usefultips.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { UsefultipsComponent } from './usefultips/usefultips.component';
     CommonModule,
     FormsModule,
     NgApexchartsModule,
+    TranslateModule,
     DangerCentreRoutingModule,
   ]
 })

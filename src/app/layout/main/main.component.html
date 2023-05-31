@@ -78,7 +78,7 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Home
+                {{ 'index.home' | translate }}
               </span>
             </a>
 
@@ -97,7 +97,7 @@
                   <path d="M8 16l2 -2l2 2l2 -2l2 2"></path>
                 </svg> </span>
               <span class="nav-link-title">
-                Stress
+                {{ 'index.stress' | translate }}
               </span>
             </a>
             <!-- <div class="dropdown-menu">
@@ -140,7 +140,7 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Danger Center
+                {{ 'index.Danger-Centre' | translate }}
               </span>
               <span class="ms-auto" *ngIf="!module2 && !moduleStatus2.status"><i class="ti ti-lock"></i></span>
             </a>
@@ -165,7 +165,7 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Examine Thoughts
+                {{ 'index.examine-thoughts' | translate }}
               </span>
               <span class="ms-auto"*ngIf="!module3 && !moduleStatus3.status"><i class="ti ti-lock"></i></span>
             </a>
@@ -186,7 +186,7 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Challenge Thoughts
+                {{ 'index.Challengethoughts' | translate }}
               </span>
               <span class="ms-auto"*ngIf="!module4 && !moduleStatus4.status"><i class="ti ti-lock"></i></span>
             </a>
@@ -208,7 +208,7 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Balanced Thoughts
+                {{ 'index.balanced-thoughts' | translate }}
               </span>
               <span class="ms-auto"*ngIf="!module5 && !moduleStatus5.status"><i class="ti ti-lock"></i></span>
             </a>
@@ -229,7 +229,7 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Problem Solvings
+                {{ 'index.problem-solving' | translate }}
               </span>
               <span class="ms-auto"*ngIf="!module6 && !moduleStatus6.status"><i class="ti ti-lock"></i></span>
             </a>
@@ -257,7 +257,7 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Balanced Activities
+                {{ 'index.balanced-activities' | translate }}
               </span>
               <span class="ms-auto"*ngIf="!module7 && !moduleStatus7.status"><i class="ti ti-lock"></i></span>
             </a>
@@ -279,7 +279,7 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Relationships
+                {{ 'index.relationship' | translate }}
               </span>
               <span class="ms-auto"*ngIf="!module8 && !moduleStatus8.status"><i class="ti ti-lock"></i></span>
             </a>
@@ -304,7 +304,7 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Staying Well
+                {{ 'index.staying-well' | translate }}
               </span>
               <span class="ms-auto"*ngIf="!module9 && !moduleStatus9.status"><i class="ti ti-lock"></i></span>
             </a>
@@ -323,7 +323,7 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                My Progress
+                {{ 'index.my-progress' | translate }}
               </span>
             </a>
           </li>
@@ -343,7 +343,7 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                My Healthy Thoughts
+                {{ 'index.my-healthy-thoughts' | translate }}
               </span>
             </a>
 
@@ -363,7 +363,7 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Downloads
+                {{ 'index.Downloads' | translate }}
               </span>
             </a>
           </li>
@@ -386,7 +386,7 @@
               </span>
 
               <span class="nav-link-title">
-                Help
+                {{ 'index.help' | translate }}
               </span>
             </a>
             <div class="dropdown-menu">
@@ -412,7 +412,7 @@
       <div class="navbar-nav flex-row order-md-last">
 
         <div class="nav-item dropdown d-none d-md-flex me-3">
-          <a [routerLink]="''" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1" aria-label="Language">
+          <a href="javascript:void(0)" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1" aria-label="Language">
             <span class="flag flag-country-us"></span>
             <!-- Download SVG icon from http://tabler-icons.io/i/bell -->
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24"
@@ -437,7 +437,7 @@
                   <div class="row align-items-center">
                     <span class="flag flag-country-us"></span>
                     <div class="col text-truncate">
-                      <a [routerLink]="''" class="text-body d-block">English</a>
+                      <a href='javascript:void(0)' (click)="changeLanguage('en')" class="text-body d-block">English</a>
 
                     </div>
 
@@ -447,35 +447,12 @@
                   <div class="row align-items-center">
                     <span class="flag flag-country-pk"></span>
                     <div class="col text-truncate">
-                      <a [routerLink]="''" class="text-body d-block">Urdu</a>
+                      <a href='javascript:void(0)' (click)="changeLanguage('ur')" class="text-body d-block">Urdu</a>
 
                     </div>
 
                   </div>
                 </div>
-
-                <div class="list-group-item">
-                  <div class="row align-items-center">
-                    <span class="flag flag-country-in"></span>
-                    <div class="col text-truncate">
-                      <a [routerLink]="''" class="text-body d-block">Hindi</a>
-
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="list-group-item">
-                  <div class="row align-items-center">
-                    <span class="flag flag-country-np"></span>
-                    <div class="col text-truncate">
-                      <a [routerLink]="''" class="text-body d-block">Nepali</a>
-
-                    </div>
-
-                  </div>
-                </div>
-
 
               </div>
             </div>
@@ -646,11 +623,11 @@
           </a>
           <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
             <!-- <a [routerLink]="''" class="dropdown-item">Status</a> -->
-            <a [routerLink]="'./profile'" class="dropdown-item">Profile</a>
+            <a [routerLink]="'./profile'" class="dropdown-item">{{ 'index.Profile' | translate }}</a>
             <!-- <a [routerLink]="''" class="dropdown-item">Feedback</a> -->
             <div class="dropdown-divider"></div>
             <!-- <a href="./settings.html" class="dropdown-item">Settings</a> -->
-            <a href="javascript:void(0)" class="dropdown-item" (click)="logout()">Logout</a>
+            <a href="javascript:void(0)" class="dropdown-item" (click)="logout()">{{ 'index.logout' | translate }}</a>
           </div>
         </div>
       </div>

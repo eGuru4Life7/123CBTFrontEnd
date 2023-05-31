@@ -1,13 +1,16 @@
 {
     
         "login": {
+            "signin":"سائن ان",
             "title": "لاگ ان",
             "email": "ای میل",
             "password": "پاس ورڈ",
             "clicklogin": "لاگ ان کرنے کے لئے یہاں کلک کریں",
             "reset": "آپ کا پاس ورڈ دوبارہ ترتیب دیں",
-            "signup": "ایک اکاؤنٹ نہیں ہے! سائن اپ",
-            "copyrights": ""
+            "signup": "ابھی تک کوئی اکاؤنٹ نہیں ہے!",
+            "signup1": "سائن اپ",
+            "copyrights": "",
+            "remember":"مجھے اس ڈیوائس پر یاد رکھیں"
         },
         "reset": {
             "title": "آپ کا پاس ورڈ دوبارہ ترتیب دیں",
@@ -51,7 +54,9 @@
             "third-paragraph": "Finally, this program is based on a self-help manual that was found to be effective in treating depression and anxiety. F Naeem, Ishaque Sarhandi, Mirrat Gul, Mehwish Khalid, Muhammad Aslam, Aqila Anbrin, Sofiya Saeed, Madeeha Noor, Ghulam Fatima, Fareed Minhas, Nusat Hussain, Muhammad Ayub (2014) A multicentre randomised controlled trial of a Carer supervised Culturally adapted CBT (CaCBT) based Self Help for depression in Pakistan. Journal of Affective Disorders, 156, 224-227 "
         },
         "index": {
-           "Home page":"گھر",
+            "gm":"صبح بخیر",
+            "gmmsg":"ہماری خواہش ہے کہ آپ کا دن اچھا گزرے۔",
+            "home":"گھر",
             "title": "خوشی اور خاتون",
             "description": "ذہنی تناو کا اپنی مدد آپ کے تحت علاج",
             "logout": "لاگ آوٹ",
@@ -64,6 +69,8 @@
             "balanced-activities": "جذبات اور رویے",
             "relationship": "تعلقات",
             "staying-well": "تندرست رہیں",
+            "journal-writing":"جرنل رائٹنگ",
+            "weekly-progress":"آپ کی ہفتہ وار پیشرفت",
             "my-progress": "میری پیش رفت",
             "my-healthy-thoughts": "میرے صحت مند خیالات",
             "stress-heading": "تناؤ کیا ہے؟",
@@ -72,10 +79,12 @@
             "stress-cause-para": "تبدیلیاں یا دکھ درد– جیسے گھر یا نوکری کی تبدیلی یا کسی عزیز کی فوتیگی۔ معاشی مسائل۔ گھریلو یا کام کاج کے مسائل۔ مصروفیت۔ تعلقات کے مسائل۔ بال بچوں کے مسائل۔ دائمی پریشانی۔غیر حقیقی توقعات۔ اکثر اوقات کامیابی بھی تناؤ کی وجہ بن سکتی ہے۔ اپنی زندگی میں تناؤ کی وجوہات کے بارے میں سوچیں۔",
             "next": "اگلا",
             "Home":"گھر",
+            "Module":"ماڈیول",
             "Tension":"کھچا ؤ",
             "Danger-Centre":"خطرہ سنٹر",
-            "Challenge thoughts":"سوچوں کی جانچ پڑتال",
+            "Challengethoughts":"سوچوں کی جانچ پڑتال",
             "Downloads":"ڈا ؤ ن لوڈ",
+            "Downloads1":"میرے ڈاؤن لوڈ",
             "Profile":"خاکہ",
             "Anger":"غصہ",
             "Disgust":"نفرت",
@@ -91,7 +100,8 @@
             "fearandphobia":"ڈر اور فوبیا",
             "trauma":"صدمہ",
             "click_here_for_download":"ڈاؤن لوڈ کیلئے یہاں کلک کریں۔",
-            "RelaxationExcercises":"سکون کی مشقیں"
+            "RelaxationExcercises":"سکون کی مشقیں",
+            "help":"مدد"
 
         },
         "stressb": {
