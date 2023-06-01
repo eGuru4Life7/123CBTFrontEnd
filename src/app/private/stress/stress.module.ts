@@ -11,6 +11,7 @@ import { IntroToDangerCenterComponent } from './intro-to-danger-center/intro-to-
 import { StressScaleComponent } from './stress-scale/stress-scale.component';
 import { FormsModule } from '@angular/forms';
 import { TooltipModule } from 'primeng/tooltip';
+import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
   
   declarations: [
@@ -26,6 +27,7 @@ import { TooltipModule } from 'primeng/tooltip';
     CommonModule,
     FormsModule,
     TooltipModule,
+    TranslateModule,
     StressRoutingModule
   ]
 })

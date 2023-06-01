@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { MessageService } from 'primeng/api';
 import { LocalCacheService } from 'src/app/services/local-cache.service';
 import { UserServiceService } from 'src/app/services/user-service.service';
@@ -11,10 +12,34 @@ import { UserServiceService } from 'src/app/services/user-service.service';
 })
 export class AuthComponent implements OnInit {
   user:any= {};
-  constructor(private userService:UserServiceService,private route:Router,private localService:LocalCacheService,private messageService:MessageService) { }
+  dir:any ="ltr";
+  constructor(private userService:UserServiceService,private route:Router,private localService:LocalCacheService,
+    private messageService:MessageService,private translate:TranslateService) { }
 
   ngOnInit(): void {
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
+    localStorage.setItem("dir","ltr");
+    localStorage.setItem("lang","en");
+    this.dir= "ltr";
   }
+
+  changeLanguage(lang:any){
+    if(lang == "ur"){
+      localStorage.setItem("dir","rtl");
+      localStorage.setItem("lang","ur");
+      this.dir= "rtl";
+    }else{
+      localStorage.setItem("dir","ltr");
+      localStorage.setItem("lang","en");
+      this.dir= "ltr";
+    }
+    
+    this.translate.setDefaultLang(lang);
+    this.translate.use(lang);
+    
+  }
+
 
   loginUser() {
     this.userService.login(this.user).toPromise().then((resp: any) => {

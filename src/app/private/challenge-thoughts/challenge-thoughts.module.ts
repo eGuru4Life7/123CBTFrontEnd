@@ -13,6 +13,7 @@ import { EvidenceComponent } from './evidence/evidence.component';
 import { EndComponent } from './end/end.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgApexchartsModule } from 'ng-apexcharts';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { NgApexchartsModule } from 'ng-apexcharts';
     FormsModule,
     NgApexchartsModule,
     ChallengeThoughtsRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TranslateModule
   ]
 })
 export class ChallengeThoughtsModule { }

@@ -7,7 +7,7 @@ import { MainComponent } from './layout/main/main.component';
 import { AuthComponent } from './layout/auth/auth.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS, HttpClient } from '@angular/common/http';
 import { ErrorInterceptor } from './_helper/error.interceptor';
 import { JwtInterceptor } from './_helper/jwt.interceptor';
 import { LocalCacheService } from './services/local-cache.service';
@@ -21,7 +21,12 @@ import { StartComponent } from './layout/start/start.component';
 import { EvidenceComponent } from './layout/evidence/evidence.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoaderComponent } from './loader/loader.component';
-
+import { TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { PrivateModule } from './private/private.module';
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +46,14 @@ import { LoaderComponent } from './loader/loader.component';
     FormsModule, 
     ReactiveFormsModule,
     HttpClientModule,
-    ToastModule
+    ToastModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+          useFactory: createTranslateLoader,
+          deps: [HttpClient]
+      }
+  })
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },
@@ -50,7 +62,7 @@ import { LoaderComponent } from './loader/loader.component';
    LocalCacheService,
    CanActivateAuthLayoutGuard,
    MessageService
-  ],
+  ], 
   bootstrap: [AppComponent]
 })
 export class AppModule { }

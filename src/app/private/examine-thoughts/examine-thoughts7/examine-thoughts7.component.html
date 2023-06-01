@@ -6,10 +6,10 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Examine Thoughts
+                        {{ 'index.examine-thoughts' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -36,7 +36,7 @@
                 
                 <div class="card fade-in">
                     <div class="card-body">
-                        <h1 class="text-center">Now think of the situation that upset you recently and type in the boxes</h1>
+                        <h1 class="text-center">{{ 'thought_7.heading'|translate}}</h1>
                         <br><br>
                         <div class="row align-items-center">
                             
@@ -45,32 +45,32 @@
 
                             <form  [formGroup]="diaryForm" class="" style="padding-top:3%;">
                                 <div class="mb-3">
-                                    <label for="happening" class="form-label">What happened?</label>
-                                    <input type="text" placeholder="Describe the situation that upset you e.g. a bad grade on a test etc" name="happening" required class="form-control" formControlName="happening" id="happening">
+                                    <label for="happening" class="form-label">{{ 'thought_7.what-was-happening'|translate}}</label>
+                                    <input type="text" placeholder="Describe the situation that upset you e.g. a bad grade on a test etc"  required class="form-control" formControlName="happening" id="happening">
                                     <div *ngIf="diaryForm.controls['happening'].invalid"
                                         style="color: red;"> *</div>
                                 </div>
                                   <div class="mb-3">
-                                    <label for="feeling" class="form-label">Your feeling</label>
-                                    <input type="text" placeholder="e.g. angry, sad, frustrated" name="feeling" required class="form-control" formControlName="feeling" id="feeling">
+                                    <label for="feeling" class="form-label">{{ 'thought_7.how-was-i-feeling'|translate}}</label>
+                                    <input type="text" placeholder="e.g. angry, sad, frustrated"  required class="form-control" formControlName="feeling" id="feeling">
                                     <div *ngIf="diaryForm.controls['feeling'].invalid"
                                         style="color: red;"> *</div>
                                 </div>
                                   <div class="mb-3">
-                                    <label for="thinking" class="form-label">Your thoughts</label>
-                                    <input type="text" placeholder="e.g. 'This always happens to me'" name="thinking" required class="form-control" formControlName="thinking" id="thinking">
+                                    <label for="thinking" class="form-label">{{ 'thought_7.what-was-i-thinking'|translate}}</label>
+                                    <input type="text" placeholder="e.g. 'This always happens to me'"  required class="form-control" formControlName="thinking" id="thinking">
                                     <div *ngIf="diaryForm.controls['thinking'].invalid"
                                         style="color: red;"> *</div>
                                 </div>
                                   <div class="mb-3">
-                                    <label for="physical_sensations" class="form-label">Physical sensations</label>
-                                    <input type="text" placeholder="e.g. shoulders tension, racing heart" name="physical_sensations" required class="form-control" formControlName="physical_sensations" id="physical_sensations">
+                                    <label for="physical_sensations" class="form-label">{{ 'thought_7.experienced'|translate}}</label>
+                                    <input type="text" placeholder="e.g. shoulders tension, racing heart" required class="form-control" formControlName="physical_sensations" id="physical_sensations">
                                     <div *ngIf="diaryForm.controls['physical_sensations'].invalid"
                                         style="color: red;"> *</div>
                                 </div>
                                   <div class="mb-3">
-                                    <label for="do" class="form-label">Your action</label>
-                                    <input type="text" placeholder="What action did you take ? (e.g. avoiding the situation, confronting the issue)" name="do" required class="form-control" formControlName="do" id="do">
+                                    <label for="do" class="form-label">{{ 'thought_7.what-did-i-do'|translate}}</label>
+                                    <input type="text" placeholder="What action did you take ? (e.g. avoiding the situation, confronting the issue)"  required class="form-control" formControlName="do" id="do">
                                     <div *ngIf="diaryForm.controls['do'].invalid"
                                         style="color: red;"> *</div>
                                 </div>
@@ -128,7 +128,7 @@
                                 <li class="page-item page-next disabled">
                                     <a class="page-link" [routerLink]="'../examine8'" tabindex="-1"  aria-disabled="true">
                                         <div class="page-item-subtitle">next</div>
-                                        <div class="page-item-title">Circle of Thoughts</div>
+                                        <div class="page-item-title">Circle of Thought</div>
                                     </a>
                                 </li>
                             </ul>

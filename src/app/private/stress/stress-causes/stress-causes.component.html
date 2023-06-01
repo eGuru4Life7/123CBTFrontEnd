@@ -6,10 +6,10 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Stress
+                        {{ 'index.stress' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -34,36 +34,36 @@
                 <div class="card fade-in">
                     <div class="card-body">
                         <h1 class="text-center" style="font-size: 2.5rem;
-                        margin-bottom: 20px;">Move cursor on an image to learn causes of stress</h1>
+                        margin-bottom: 20px;"> {{ 'stressb.heading' | translate }}</h1>
                         <br><br>
                         <div class="row align-items-center">
 
 
-                            <div class="col-sm-12 col-md-4 col-lg-4 " tooltipPosition="top" pTooltip="Financial Problems">
+                            <div class="col-sm-12 col-md-4 col-lg-4 " tooltipPosition="top" [pTooltip]="'stressb.p1' | translate">
                                 <img src="../../../../assets/static/illustrations/Stress_module2.1.svg" alt=""
                                     class="rounded" aria-label="Financial Problems">
                             </div>
 
-                            <div class="col-sm-12 col-md-4 col-lg-4 " tooltipPosition="top" pTooltip="Child's Marriage">
+                            <div class="col-sm-12 col-md-4 col-lg-4 " tooltipPosition="top" [pTooltip]="'stressb.p2' | translate">
                                 <img src="../../../../assets/static/illustrations/Stress_module2.2.svg" alt=""
                                     style="max-width: 80%;" class="rounded" aria-label="Child's Marriage">
                             </div>
 
-                            <div class="col-sm-12 col-md-4 col-lg-4 " tooltipPosition="top" pTooltip="Health Problems">
+                            <div class="col-sm-12 col-md-4 col-lg-4 " tooltipPosition="top" [pTooltip]="'stressb.p3' | translate">
                                 <img src="../../../../assets/static/illustrations/Stress_module2.3.svg" alt=""
                                     class="rounded" aria-label="Health Problems">
                             </div>
                             <div class="col-sm-12 col-md-4 col-lg-4 ">
                                 <img src="../../../../assets/static/illustrations/Stress_module2.4.svg" alt=""
-                                    class="rounded" aria-label="Educational Problems" tooltipPosition="top" pTooltip="Educational Problems">
+                                    class="rounded" aria-label="Educational Problems" tooltipPosition="top" [pTooltip]="'stressb.p4' | translate">
                             </div>
                             <div class="col-sm-12 col-md-4 col-lg-4 ">
                                 <img src="../../../../assets/static/illustrations/Stress_module2.5.svg" alt=""
-                                    class="rounded" aria-label="Relationship Problems" tooltipPosition="top" pTooltip="Relationship Problems">
+                                    class="rounded" aria-label="Relationship Problems" tooltipPosition="top" [pTooltip]="'stressb.p5' | translate">
                             </div>
                             <div class="col-sm-12 col-md-4 col-lg-4 ">
                                 <img src="../../../../assets/static/illustrations/Stress_module2.6.svg" alt=""
-                                    class="rounded" aria-label="Work Related Problems" tooltipPosition="top" pTooltip="Work Related Problems">
+                                    class="rounded" aria-label="Work Related Problems" tooltipPosition="top" [pTooltip]="'stressb.p6' | translate">
                             </div>
 
 

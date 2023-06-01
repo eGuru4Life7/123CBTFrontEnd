@@ -13,6 +13,7 @@ import { ProblemSolving7Component } from './problem-solving7/problem-solving7.co
 import { ProblemSolving8Component } from './problem-solving8/problem-solving8.component';
 import { FormsModule } from '@angular/forms';
 import { NgApexchartsModule } from 'ng-apexcharts';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { NgApexchartsModule } from 'ng-apexcharts';
     CommonModule,
     FormsModule,
     NgApexchartsModule,
-    ProblemSolvingRoutingModule
+    ProblemSolvingRoutingModule,
+    TranslateModule
   ]
 })
 export class ProblemSolvingModule { }
