@@ -12,17 +12,32 @@ import { UserServiceService } from 'src/app/services/user-service.service';
 })
 export class AuthComponent implements OnInit {
   user:any= {};
+  dir:any ="ltr";
   constructor(private userService:UserServiceService,private route:Router,private localService:LocalCacheService,
     private messageService:MessageService,private translate:TranslateService) { }
 
   ngOnInit(): void {
     this.translate.setDefaultLang('en');
     this.translate.use('en');
+    localStorage.setItem("dir","ltr");
+    localStorage.setItem("lang","en");
+    this.dir= "ltr";
   }
 
   changeLanguage(lang:any){
+    if(lang == "ur"){
+      localStorage.setItem("dir","rtl");
+      localStorage.setItem("lang","ur");
+      this.dir= "rtl";
+    }else{
+      localStorage.setItem("dir","ltr");
+      localStorage.setItem("lang","en");
+      this.dir= "ltr";
+    }
+    
     this.translate.setDefaultLang(lang);
     this.translate.use(lang);
+    
   }
 
 

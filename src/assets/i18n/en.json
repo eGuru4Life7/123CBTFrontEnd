@@ -1,5 +1,8 @@
 {
         "home":"Home",
+        "submit":"Submit",
+        "yourScore":"Your Score",
+        "printScore":"Print Score",
         "login": {
             "signin":"Sign In",
             "title": "Login to your account",
@@ -83,7 +86,7 @@
             "stress-cause": " What are the causes of stress?",
             "stress-cause-para": " Life events or losses, for example, changes at work, housing problems, the death of a relative, relationship issues or children's problems etc. Sometimes even the promotion at work can cause stress. Now, think about the causes of stress in your life.",
             "next": "NEXT",
-            "Danger-Centre":"Danger centre",
+            "Danger-Centre":"Danger Centre",
             "Challengethoughts":"Challenge thoughts",
             "Downloads":"Downloads",
             "Downloads1":"My Downloads",

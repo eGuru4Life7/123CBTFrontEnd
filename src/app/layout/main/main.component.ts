@@ -22,9 +22,13 @@ export class MainComponent implements OnInit {
   moduleStatus8: any = {};
   moduleStatus9: any = {};
   isShow: any = false;
+  dir:any ="ltr";
   constructor(private localService: LocalCacheService, private moduleService: ModuleService, private route: Router,private translate: TranslateService) {
-    this.translate.setDefaultLang('ur');
-    this.translate.use('ur');
+    var lang :any = localStorage.getItem("lang");
+    this.dir= localStorage.getItem("dir");
+    this.translate.setDefaultLang(lang);
+    this.translate.use(lang);
+    
   }
   module1: any = {};
   module2: any = {};
@@ -45,6 +49,15 @@ export class MainComponent implements OnInit {
   changeLanguage(lang:any){
     this.translate.setDefaultLang(lang);
     this.translate.use(lang);
+    localStorage.setItem("lang",lang)
+    if(lang == "ur"){
+      localStorage.setItem("dir","rtl");  
+      this.dir= "rtl";
+    }else{
+      localStorage.setItem("dir","ltr");
+      this.dir= "ltr";
+    }
+    
   }
 
   getAllModule() {

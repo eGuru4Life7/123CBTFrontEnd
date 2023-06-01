@@ -1,5 +1,7 @@
 {
-    
+        "submit": "اسے جمع کرو",
+        "yourScore": "آپ کا سکور",
+        "printScore":"پرنٹ سکور",
         "login": {
             "signin":"سائن ان",
             "title": "لاگ ان",

@@ -17,12 +17,6 @@ const routes: Routes = [
     data:{ code:'S',completed:20,nextCode:'D_C'}
   },
   {
-    path:'intro',
-    component:StressIntroComponent,
-    canActivate:[CountGuard],
-    data:{ code:'S',completed:20,nextCode:'D_C'}
-  },
-  {
     path:'causes',
     component:StressCausesComponent,
     canActivate:[CountGuard],

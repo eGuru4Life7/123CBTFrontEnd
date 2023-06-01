@@ -15,6 +15,7 @@ import { EndComponent } from './end/end.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastModule } from 'primeng/toast';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { ToastModule } from 'primeng/toast';
     NgApexchartsModule,
     ReactiveFormsModule,
     ToastModule,
-    BalanceThoughtsRoutingModule
+    BalanceThoughtsRoutingModule,
+    TranslateModule
   ]
 })
 export class BalanceThoughtsModule { }
