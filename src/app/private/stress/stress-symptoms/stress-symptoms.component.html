@@ -6,10 +6,10 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Stress
+                        {{ 'index.stress' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -26,39 +26,39 @@
             <div class="col-lg-12">
                 <div class="card fade-in">
                     <div class="card-body">
-                        <h1 class="text-center">Click on organs to learn about symptoms of stress</h1>
+                        <h1 class="text-center"> {{ 'organ.heading' | translate }}</h1>
                         <br><br>
                         <div class="row align-items-center ">
                             <div class="col-4 " style="margin-top: 40px; text-align: right;"><!---left icons-->
                                 <div><!-- Human Head icon by Icons8 -->
                                     <span class="" data-toggle="tooltip" tooltipPosition="right" title=""
-                                        pTooltip=" Racing thoughts, light headedness, headache"><i class="ti ti-brain"
+                                        [pTooltip]="'organ.pic1' | translate "><i class="ti ti-brain"
                                             style="font-size: 6vw; color: #4262b8;"></i></span>
 
                                 </div>
                                 <div><!-- Visible icon by Icons8 -->
                                     <span class="" data-toggle="tooltip" tooltipPosition="right" title=""
-                                        pTooltip="Blurred Vision"><i class="ti ti-eye-exclamation"
+                                    [pTooltip]="'organ.pic2' | translate "><i class="ti ti-eye-exclamation"
                                             style="font-size: 6vw; color: #4262b8;"></i></span>
 
                                 </div>
                                 <div><!-- Neck icon by Icons8 -->
                                     <span class="" style="padding-top: 4px;" data-toggle="tooltip"
-                                        tooltipPosition="right" title="" pTooltip="Pain in neck and shoulder"><i
+                                        tooltipPosition="right" title=""  [pTooltip]="'organ.pic3' | translate "><i
                                             class="ti ti-shirt" style="font-size: 6vw; color: #4262b8;"></i></span>
 
                                 </div>
                                 <div><!-- Stomach icon by Icons8 -->
                                     <span class="" style="padding-top: 4px;" data-toggle="tooltip"
                                         tooltipPosition="right" title=""
-                                        pTooltip="Nausea, lack of appetite, vomiting, diarrhoea"><i
+                                        [pTooltip]="'organ.pic4' | translate "><i
                                             class="ti ti-mood-sad-dizzy"
                                             style="font-size: 6vw; color: #4262b8;"></i></span>
 
                                 </div>
                                 <div><!-- Whole Hand Filled icon by Icons8 -->
                                     <span class="" data-toggle="tooltip" tooltipPosition="right"
-                                        pTooltip="Tremors, sweat, pins and needles" style="padding-top: 4px;"><i
+                                    [pTooltip]="'organ.pic5' | translate " style="padding-top: 4px;"><i
                                             class="ti ti-hand-click" style="font-size: 6vw; color: #4262b8;"></i></span>
 
                                 </div>
@@ -73,28 +73,28 @@
                                 <div><!-- Brain icon by Icons8 -->
                                     <span class="" data-toggle="tooltip" tooltipPosition="left" title=""
                                         style="padding-bottom: 4px;"
-                                        pTooltip="Low mood, anxiety, fatigue, sleep disturbance"><i class="ti ti-brain"
+                                        [pTooltip]="'organ.pic6' | translate "><i class="ti ti-brain"
                                             style="font-size: 6vw; color: #4262b8;"></i></span>
                                 </div>
                                 <div><!-- Medical Heart Filled icon by Icons8 -->
-                                    <span class="" data-toggle="tooltip" tooltipPosition="left" pTooltip="Heart racing"
+                                    <span class="" data-toggle="tooltip" tooltipPosition="left"  [pTooltip]="'organ.pic7' | translate "
                                         style="padding-bottom: 4px;"><i class="ti ti-heartbeat"
                                             style="font-size: 6vw; color: #4262b8;"></i></span>
 
                                 </div>
                                 <div><!-- Lungs icon by Icons8 -->
-                                    <span class="" data-toggle="tooltip" tooltipPosition="left" pTooltip="Breathlessness"
+                                    <span class="" data-toggle="tooltip" tooltipPosition="left"  [pTooltip]="'organ.pic8' | translate "
                                         style="padding-bottom: 4px;"><i class="ti ti-lungs"
                                             style="font-size: 6vw; color: #4262b8;"></i></span>
                                 </div>
                                 <div><!-- Leg icon by Icons8 -->
                                     <span class="" data-toggle="tooltip" tooltipPosition="left" title=""
-                                        pTooltip="Tension in muscles" style="padding-bottom: 4px;"><i
+                                    [pTooltip]="'organ.pic9' | translate " style="padding-bottom: 4px;"><i
                                             class="ti ti-circuit-battery"
                                             style="font-size: 6vw; color: #4262b8;"></i></span>
                                 </div>
                                 <div><!-- Running icon by Icons8 -->
-                                    <span class="" data-toggle="tooltip" tooltipPosition="left" pTooltip="Jelly legs"
+                                    <span class="" data-toggle="tooltip" tooltipPosition="left"  [pTooltip]="'organ.pic10' | translate "
                                         style="padding-bottom: 4px;"><i class="ti ti-run"
                                             style="font-size: 6vw; color: #4262b8;"></i></span>
                                 </div>

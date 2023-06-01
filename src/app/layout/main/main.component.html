@@ -1,4 +1,4 @@
-<div class="page">
+<div class="page" [dir]="dir">
   <!-- Sidebar -->
   <aside class="navbar navbar-vertical navbar-expand-lg navbar-dark">
     <div class="container-fluid">
@@ -78,13 +78,13 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Home
+                {{ 'index.home' | translate }}
               </span>
             </a>
 
           </li>
           <li class="nav-item ">
-            <a class="nav-link " [routerLink]="'../stress'">
+            <a class="nav-link " [routerLink]="'/stress'">
               <span
                 class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/package -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-nervous" width="36"
@@ -97,7 +97,7 @@
                   <path d="M8 16l2 -2l2 2l2 -2l2 2"></path>
                 </svg> </span>
               <span class="nav-link-title">
-                Stress
+                {{ 'index.stress' | translate }}
               </span>
             </a>
             <!-- <div class="dropdown-menu">
@@ -127,7 +127,7 @@
 
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="module2 || moduleStatus2.status? '../dangercenter':''">
+            <a class="nav-link" [routerLink]="module2 || moduleStatus2?.status? '/dangercenter':''">
               <span 
                 class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/checkbox -->
                 <svg   xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-triangle" width="24"
@@ -140,9 +140,9 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Danger Center
+                {{ 'index.Danger-Centre' | translate }}
               </span>
-              <span class="ms-auto" *ngIf="!module2 && !moduleStatus2.status"><i class="ti ti-lock"></i></span>
+              <span class="ms-auto" *ngIf="!module2 && !moduleStatus2?.status"><i class="ti ti-lock"></i></span>
             </a>
           </li>
 
@@ -151,7 +151,7 @@
 
 
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="module3 || moduleStatus3.status?'../examinethoughts':''">
+            <a class="nav-link" [routerLink]="module3 || moduleStatus3?.status?'/examinethoughts':''">
               <span
                 class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/ghost -->
                 <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-zoom-code" width="24"
@@ -165,14 +165,14 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Examine Thoughts
+                {{ 'index.examine-thoughts' | translate }}
               </span>
-              <span class="ms-auto"*ngIf="!module3 && !moduleStatus3.status"><i class="ti ti-lock"></i></span>
+              <span class="ms-auto"*ngIf="!module3 && !moduleStatus3?.status"><i class="ti ti-lock"></i></span>
             </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="module4 || moduleStatus4.status? '../challengethoughts':''">
+            <a class="nav-link" [routerLink]="module4 || moduleStatus4?.status? '/challengethoughts':''">
               <span
                 class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/ghost -->
                 <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-gamepad" width="24"
@@ -186,14 +186,14 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Challenge Thoughts
+                {{ 'index.Challengethoughts' | translate }}
               </span>
-              <span class="ms-auto"*ngIf="!module4 && !moduleStatus4.status"><i class="ti ti-lock"></i></span>
+              <span class="ms-auto"*ngIf="!module4 && !moduleStatus4?.status"><i class="ti ti-lock"></i></span>
             </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="module5 || moduleStatus5.status? '../balancethought':''">
+            <a class="nav-link" [routerLink]="module5 || moduleStatus5?.status? '/balancethought':''">
               <span
                 class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/ghost -->
                 <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scale" width="36"
@@ -208,14 +208,14 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Balanced Thoughts
+                {{ 'index.balanced-thoughts' | translate }}
               </span>
-              <span class="ms-auto"*ngIf="!module5 && !moduleStatus5.status"><i class="ti ti-lock"></i></span>
+              <span class="ms-auto"*ngIf="!module5 && !moduleStatus5?.status"><i class="ti ti-lock"></i></span>
             </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="module6 || moduleStatus6.status? '../problemsolving':''">
+            <a class="nav-link" [routerLink]="module6 || moduleStatus6?.status? '/problemsolving':''">
               <span
                 class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/ghost -->
 
@@ -229,14 +229,14 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Problem Solvings
+                {{ 'index.problem-solving' | translate }}
               </span>
-              <span class="ms-auto"*ngIf="!module6 && !moduleStatus6.status"><i class="ti ti-lock"></i></span>
+              <span class="ms-auto"*ngIf="!module6 && !moduleStatus6?.status"><i class="ti ti-lock"></i></span>
             </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="module7 || moduleStatus7.status? '':''">
+            <a class="nav-link" [routerLink]="module7 || moduleStatus7?.status? '':''">
               <span
                 class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/ghost -->
                 <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-load-balancer" width="36"
@@ -257,15 +257,15 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Balanced Activities
+                {{ 'index.balanced-activities' | translate }}
               </span>
-              <span class="ms-auto"*ngIf="!module7 && !moduleStatus7.status"><i class="ti ti-lock"></i></span>
+              <span class="ms-auto"*ngIf="!module7 && !moduleStatus7?.status"><i class="ti ti-lock"></i></span>
             </a>
           </li>
 
 
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="module8 || moduleStatus8.status? '':''">
+            <a class="nav-link" [routerLink]="module8 || moduleStatus8?.status? '':''">
               <span
                 class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/ghost -->
                 <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-friends" width="36"
@@ -279,15 +279,15 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Relationships
+                {{ 'index.relationship' | translate }}
               </span>
-              <span class="ms-auto"*ngIf="!module8 && !moduleStatus8.status"><i class="ti ti-lock"></i></span>
+              <span class="ms-auto"*ngIf="!module8 && !moduleStatus8?.status"><i class="ti ti-lock"></i></span>
             </a>
           </li>
 
 
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="module9 || moduleStatus9.status? '':''">
+            <a class="nav-link" [routerLink]="module9 || moduleStatus9?.status? '':''">
               <span
                 class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/ghost -->
                 <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-health-recognition"
@@ -304,9 +304,9 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Staying Well
+                {{ 'index.staying-well' | translate }}
               </span>
-              <span class="ms-auto"*ngIf="!module9 && !moduleStatus9.status"><i class="ti ti-lock"></i></span>
+              <span class="ms-auto"*ngIf="!module9 && !moduleStatus9?.status"><i class="ti ti-lock"></i></span>
             </a>
           </li>
 
@@ -323,13 +323,13 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                My Progress
+                {{ 'index.my-progress' | translate }}
               </span>
             </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="'../healthythoughts'">
+            <a class="nav-link" [routerLink]="'/healthythoughts'">
               <span
                 class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/ghost -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notebook" width="24"
@@ -343,14 +343,14 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                My Healthy Thoughts
+                {{ 'index.my-healthy-thoughts' | translate }}
               </span>
             </a>
 
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="'../downloads'">
+            <a class="nav-link" [routerLink]="'/downloads'">
               <span
                 class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/ghost -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-download" width="24"
@@ -363,7 +363,7 @@
                 </svg>
               </span>
               <span class="nav-link-title">
-                Downloads
+                {{ 'index.Downloads' | translate }}
               </span>
             </a>
           </li>
@@ -386,11 +386,11 @@
               </span>
 
               <span class="nav-link-title">
-                Help
+                {{ 'index.help' | translate }}
               </span>
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" [routerLink]="'../help/faqs'">
+              <a class="dropdown-item" [routerLink]="'/help/faqs'">
                 FAQ's
               </a>
               <a class="dropdown-item" [routerLink]="''">
@@ -415,7 +415,7 @@
       <div class="navbar-nav flex-row order-md-last">
 
         <div class="nav-item dropdown d-none d-md-flex me-3">
-          <a [routerLink]="''" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1" aria-label="Language">
+          <a href="javascript:void(0)" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1" aria-label="Language">
             <span class="flag flag-country-us"></span>
             <!-- Download SVG icon from http://tabler-icons.io/i/bell -->
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24"
@@ -440,7 +440,7 @@
                   <div class="row align-items-center">
                     <span class="flag flag-country-us"></span>
                     <div class="col text-truncate">
-                      <a [routerLink]="''" class="text-body d-block">English</a>
+                      <a href='javascript:void(0)' (click)="changeLanguage('en')" class="text-body d-block">English</a>
 
                     </div>
 
@@ -450,35 +450,12 @@
                   <div class="row align-items-center">
                     <span class="flag flag-country-pk"></span>
                     <div class="col text-truncate">
-                      <a [routerLink]="''" class="text-body d-block">Urdu</a>
+                      <a href='javascript:void(0)' (click)="changeLanguage('ur')" class="text-body d-block">Urdu</a>
 
                     </div>
 
                   </div>
                 </div>
-
-                <div class="list-group-item">
-                  <div class="row align-items-center">
-                    <span class="flag flag-country-in"></span>
-                    <div class="col text-truncate">
-                      <a [routerLink]="''" class="text-body d-block">Hindi</a>
-
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="list-group-item">
-                  <div class="row align-items-center">
-                    <span class="flag flag-country-np"></span>
-                    <div class="col text-truncate">
-                      <a [routerLink]="''" class="text-body d-block">Nepali</a>
-
-                    </div>
-
-                  </div>
-                </div>
-
 
               </div>
             </div>
@@ -649,11 +626,11 @@
           </a>
           <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
             <!-- <a [routerLink]="''" class="dropdown-item">Status</a> -->
-            <a [routerLink]="'./profile'" class="dropdown-item">Profile</a>
+            <a [routerLink]="'./profile'" class="dropdown-item">{{ 'index.Profile' | translate }}</a>
             <!-- <a [routerLink]="''" class="dropdown-item">Feedback</a> -->
             <div class="dropdown-divider"></div>
             <!-- <a href="./settings.html" class="dropdown-item">Settings</a> -->
-            <a href="javascript:void(0)" class="dropdown-item" (click)="logout()">Logout</a>
+            <a href="javascript:void(0)" class="dropdown-item" (click)="logout()">{{ 'index.logout' | translate }}</a>
           </div>
         </div>
       </div>

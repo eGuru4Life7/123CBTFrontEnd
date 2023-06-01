@@ -6,10 +6,10 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Examine Thoughts
+                        {{ 'index.examine-thoughts' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -39,13 +39,13 @@
                                     class="rounded img-fluid fade-in">
                             </div>
                             <div class="col fade-in-3s">
-                                <h1>Can you recognize emotions?</h1>
-                                <p>Try to match these emotions with the images</p>
+                                <h1>{{ 'thought_4b.heading1' | translate }}</h1>
+                                <p>{{ 'thought_4b.subheading' | translate }}</p>
                                 <div class="list-group">
                                     <div class="list-group-item" *ngFor="let item of emotions">{{item}}</div>
                                     
                                 </div>
-                                <p>Please name a few other emotions that you or people around you commonly encounter.
+                                <p>{{ 'thought_4b.para2' | translate }}
                                 </p>
                                 <div class="form-floating mb-3">
                                     <textarea class="form-control" placeholder="Enter emotions here"

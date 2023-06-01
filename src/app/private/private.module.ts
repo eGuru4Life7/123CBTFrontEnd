@@ -10,6 +10,9 @@ import { ChangePasswordModalComponent } from './shared/change-password-modal/cha
 import { EmailSuccesModalComponent } from './shared/email-succes-modal/email-succes-modal.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastModule } from 'primeng/toast';
+import { HttpClient } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { MyhealthythoughtsComponent } from './myhealthythoughts/myhealthythoughts.component';
 
 
@@ -31,7 +34,8 @@ import { MyhealthythoughtsComponent } from './myhealthythoughts/myhealthythought
     FormsModule,
     ReactiveFormsModule,
     PrivateRoutingModule,
-    ToastModule
+    ToastModule,
+    TranslateModule
   ]
 })
 export class PrivateModule { }
