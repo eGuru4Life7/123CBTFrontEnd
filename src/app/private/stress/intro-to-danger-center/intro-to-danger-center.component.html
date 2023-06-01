@@ -31,12 +31,12 @@
         <div class="container-xl">
 
             <div class="col-lg-12">
-                <div class="card">
+                <div class="card fade-in">
                     <div class="card-body">
                         <div class="row align-items-center">
                             <div class="col-sm-12 col-md-4 col-lg-4 ">
                                 <img src="../../../../assets/static/illustrations/Stress_module6.svg"
-                                    alt="Food Deliver UI dashboards" class="rounded">
+                                    alt="Danger Center" class=" rounded">
                             </div>
                             <div class="col">
 
@@ -46,6 +46,21 @@
                                 <p>{{ 'story_begin3.story-para2' | translate }}</p>
                             </div>
                         </div>
+
+                        <ul class="pagination justify-content-end">
+                            <li class=" page-prev ">
+                                <a class="page-link" [routerLink]="'../khatoon-bibi'">
+                                    <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
+                                </a>
+                            </li>
+                            <li class=" page-next">
+                                <a class="page-link" href=".">
+                                   
+                                    <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #434851;"></i>                
+                                </a>
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
 
@@ -56,7 +71,7 @@
 
                 <br>
 
-                <div class="row row-cards">
+                <!-- <div class="row row-cards">
 
                     <div class="col-12">
                         <div class="card">
@@ -80,5 +95,7 @@
                         </div>
                     </div>
                 </div>
+
+                 -->
             </div>
         </div>

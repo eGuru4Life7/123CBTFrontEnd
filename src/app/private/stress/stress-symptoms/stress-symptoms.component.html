@@ -24,7 +24,7 @@
         <div class="container-xl">
 
             <div class="col-lg-12">
-                <div class="card">
+                <div class="card fade-in">
                     <div class="card-body">
                         <h1 class="text-center">Click on organs to learn about symptoms of stress</h1>
                         <br><br>
@@ -67,7 +67,7 @@
 
                             <div class="col-4">
                                 <img src="../../../../assets/static/illustrations/Stress_module_symtoms.svg"
-                                    alt="Symptoms" class="rounded" style="padding-right: 0px; padding-left:0px;" />
+                                    alt="Symptoms" class="rounded fade-in-3s" style="padding-right: 0px; padding-left:0px;" />
                             </div>
                             <div class="col-4 " style="margin-top: 40px; text-align: left;"><!---right icons-->
                                 <div><!-- Brain icon by Icons8 -->
@@ -103,6 +103,20 @@
 
                         </div>
                     </div>
+
+                    <ul class="pagination justify-content-end">
+                        <li class=" page-prev ">
+                            <a class="page-link" [routerLink]="'../causes'">
+                                <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
+                            </a>
+                        </li>
+                        <li class=" page-next">
+                            <a class="page-link" [routerLink]="'../khushi-Muhammad'">
+                               
+                                <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -111,7 +125,7 @@
 
             <br>
 
-            <div class="row row-cards">
+           <!--  <div class="row row-cards">
 
                 <div class="col-12">
                     <div class="card">
@@ -133,6 +147,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+
+            
         </div>
     </div>

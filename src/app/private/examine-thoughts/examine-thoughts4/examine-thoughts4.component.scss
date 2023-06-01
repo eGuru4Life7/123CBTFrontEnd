@@ -31,6 +31,17 @@
     text-align: center;
 }
 
+      
+.list-group-item:hover {
+    background-color: #00bcd4;
+    color: #fff;
+    border-color: #00bcd4;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+      
+
 .image-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));

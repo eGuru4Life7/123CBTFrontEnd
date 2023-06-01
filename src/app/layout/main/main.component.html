@@ -329,7 +329,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="''">
+            <a class="nav-link" [routerLink]="'../healthythoughts'">
               <span
                 class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/ghost -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notebook" width="24"
@@ -350,7 +350,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="''">
+            <a class="nav-link" [routerLink]="'../downloads'">
               <span
                 class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/ghost -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-download" width="24"
@@ -390,6 +390,9 @@
               </span>
             </a>
             <div class="dropdown-menu">
+              <a class="dropdown-item" [routerLink]="'../help/faqs'">
+                FAQ's
+              </a>
               <a class="dropdown-item" [routerLink]="''">
                 Documentation
               </a>

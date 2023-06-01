@@ -1,6 +1,6 @@
 
 .card-text {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .card1 {
@@ -56,3 +56,16 @@ padding: 35px;
 padding: 50px;
 }
 }
+
+
+    .list-group-item:hover {
+    background-color: #00bcd4;
+    color: #fff;
+    border-color: #00bcd4;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+      
+
+    

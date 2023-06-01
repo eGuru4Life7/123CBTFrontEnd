@@ -31,14 +31,14 @@
         <div class="container-xl">
 
             <div class="col-lg-12">
-                <div class="card">
+                <div class="card fade-in">
                     <div class="card-body">
                         <div class="row align-items-center">
                             <div class="col-sm-12 col-md-6 col-lg-6">
                                 <img src="../../../../assets/static/illustrations/examine4.svg" alt=""
-                                    class="rounded img-fluid">
+                                    class="rounded img-fluid fade-in">
                             </div>
-                            <div class="col">
+                            <div class="col fade-in-3s">
                                 <h1>{{ 'thought_4b.heading1' | translate }}</h1>
                                 <p>{{ 'thought_4b.subheading' | translate }}</p>
                                 <div class="list-group">
@@ -56,12 +56,30 @@
                             </div>
                         </div>
                     </div>
+
+                    <ul class="pagination justify-content-end">
+                        <li class=" page-prev ">
+                                          <a class="page-link" [routerLink]="'../examine3'">
+                                              <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
+                                          </a>
+                                      </li>
+                                      <li class=" page-next">
+                                          <a class="page-link" [routerLink]="'../examine5'">
+                                             
+                                              <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
+                                          </a>
+                                      </li>
+                                  </ul>
+                        
+
+
                 </div>
 
 
             </div>
             <br>
-            <div class="row row-cards">
+
+            <!-- <div class="row row-cards">
 
                 <div class="col-12">
                     <div class="card">
@@ -83,7 +101,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+
+
         </div>
     </div>
 

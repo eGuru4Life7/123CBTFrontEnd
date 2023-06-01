@@ -13,6 +13,7 @@ import { ToastModule } from 'primeng/toast';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { MyhealthythoughtsComponent } from './myhealthythoughts/myhealthythoughts.component';
 
 
 
@@ -25,6 +26,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
     ProfileEditComponent,
     ChangePasswordModalComponent,
     EmailSuccesModalComponent,
+    MyhealthythoughtsComponent,
 
     ],
   imports: [

@@ -44,134 +44,110 @@
 
                 <div class="row row-cards">
 
-                  <div class="col-6 col-md-6 col-xl-3">
-                    <a [routerLink]="'../audio'" class="card card-link">
-                      <div class="card-cover card-cover-blurred text-center card-cover-blurred ">
-                        <span class="avatar avatar-xl avatar-thumb rounded"><svg xmlns="http://www.w3.org/2000/svg"
-                            class="icon icon-tabler icon-tabler-lungs" width="24" height="24" viewBox="0 0 24 24"
-                            stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path
-                              d="M6.081 20c1.612 0 2.919 -1.335 2.919 -2.98v-9.763c0 -.694 -.552 -1.257 -1.232 -1.257c-.205 0 -.405 .052 -.584 .15l-.13 .083c-1.46 1.059 -2.432 2.647 -3.404 5.824c-.42 1.37 -.636 2.962 -.648 4.775c-.012 1.675 1.261 3.054 2.877 3.161l.203 .007z">
-                            </path>
-                            <path
-                              d="M17.92 20c-1.613 0 -2.92 -1.335 -2.92 -2.98v-9.763c0 -.694 .552 -1.257 1.233 -1.257c.204 0 .405 .052 .584 .15l.13 .083c1.46 1.059 2.432 2.647 3.405 5.824c.42 1.37 .636 2.962 .648 4.775c.012 1.675 -1.261 3.054 -2.878 3.161l-.202 .007z">
-                            </path>
-                            <path d="M9 12a3 3 0 0 0 3 -3a3 3 0 0 0 3 3"></path>
-                            <path d="M12 4v5"></path>
-                          </svg></span>
-                      </div>
-                      <div class="card-body text-center">
-                        <div class="card-title mb-1">{{ 'amb.Breathing' | translate }}</div>
-
-
-                      </div>
-
-                    </a>
-                  </div>
-
-                  <div class="col-6 col-md-6 col-xl-3">
-                    <a [routerLink]="'../foodadvice'" class="card card-link">
-                      <div class="card-cover card-cover-blurred text-center card-cover-blurred ">
-                        <span class="avatar avatar-xl avatar-thumb rounded"><svg xmlns="http://www.w3.org/2000/svg"
-                            class="icon icon-tabler icon-tabler-salad" width="36" height="36" viewBox="0 0 24 24"
-                            stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path
-                              d="M4 11h16a1 1 0 0 1 1 1v.5c0 1.5 -2.517 5.573 -4 6.5v1a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-1c-1.687 -1.054 -4 -5 -4 -6.5v-.5a1 1 0 0 1 1 -1z">
-                            </path>
-                            <path
-                              d="M18.5 11c.351 -1.017 .426 -2.236 .5 -3.714v-1.286h-2.256c-2.83 0 -4.616 .804 -5.64 2.076">
-                            </path>
-                            <path
-                              d="M5.255 11.008a12.204 12.204 0 0 1 -.255 -2.008v-1h1.755c.98 0 1.801 .124 2.479 .35">
-                            </path>
-                            <path d="M8 8l1 -4l4 2.5"></path>
-                            <path d="M13 11v-.5a2.5 2.5 0 1 0 -5 0v.5"></path>
-                          </svg></span>
-                      </div>
-                      <div class="card-body text-center">
-                        <div class="card-title mb-1">{{ 'amb.food' | translate }}</div>
-
-
-                      </div>
-
-                    </a>
-                  </div>
-
-
-                  <div class="col-6 col-md-6 col-xl-3">
-                    <a [routerLink]="'../sleepadvice'" class="card card-link">
-                      <div class="card-cover card-cover-blurred text-center card-cover-blurred ">
-                        <span class="avatar avatar-xl avatar-thumb rounded"><svg xmlns="http://www.w3.org/2000/svg"
-                            class="icon icon-tabler icon-tabler-bed" width="36" height="36" viewBox="0 0 24 24"
-                            stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M3 7v11m0 -4h18m0 4v-8a2 2 0 0 0 -2 -2h-8v6"></path>
-                            <path d="M7 10m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                          </svg></span>
-                      </div>
-                      <div class="card-body text-center">
-                        <div class="card-title mb-1">{{ 'amb.sleep' | translate }}</div>
-
-
-                      </div>
-
-                    </a>
-                  </div>
-
-                  <div class="col-6 col-md-6 col-xl-3">
-                    <a [routerLink]="'../usefultips'" class="card card-link">
-                      <div class="card-cover card-cover-blurred text-center card-cover-blurred ">
-                        <span class="avatar avatar-xl avatar-thumb rounded"><svg xmlns="http://www.w3.org/2000/svg"
-                            class="icon icon-tabler icon-tabler-bulb" width="36" height="36" viewBox="0 0 24 24"
-                            stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7"></path>
-                            <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"></path>
-                            <path d="M9.7 17l4.6 0"></path>
-                          </svg></span>
-                      </div>
-                      <div class="card-body text-center">
-                        <div class="card-title mb-1">{{ 'amb.tips' | translate }}</div>
-
-
-                      </div>
-
-                    </a>
-                  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </div>
-              </div>
-
+                    <div class="col-6 col-md-6 col-xl-3" >
+          <a [routerLink]="'../audio'" class="card card-link">
+            <div class="card-cover card-cover-blurred text-center card-cover-blurred ">
+            <span class="avatar avatar-xl avatar-thumb rounded"><i class="ti ti-lungs" style="font-size: 2em; color: #5190B7;"></i></span>
             </div>
+            <div class="card-body text-center">
+              <div class="card-title mb-1">Breathing Excercise</div>
+             
+              
+          </div>
+            
+          </a>
+        </div>  
+        
+        <div class="col-6 col-md-6 col-xl-3" >
+          <a [routerLink]="'../foodadvice'" class="card card-link">
+            <div class="card-cover card-cover-blurred text-center card-cover-blurred ">
+            <span class="avatar avatar-xl avatar-thumb rounded">
+                      
+                        <i class="ti ti-salad" style="font-size: 2em; color: #5190B7;"></i>
+                      </span>
+            </div>
+            <div class="card-body text-center">
+              <div class="card-title mb-1">Food <br> Advice</div>
+             
+              
+          </div>
+            
+          </a>
+        </div>  
+
+
+        <div class="col-6 col-md-6 col-xl-3" >
+          <a [routerLink]="'../sleepadvice'" class="card card-link">
+            <div class="card-cover card-cover-blurred text-center card-cover-blurred ">
+            <span class="avatar avatar-xl avatar-thumb rounded"><i class="ti ti-bed" style="font-size: 2em; color: #5190B7;"></i></span>
+            </div>
+            <div class="card-body text-center">
+              <div class="card-title mb-1">Sleep <br> Advice </div>
+             
+              
+          </div>
+            
+          </a>
+        </div>  
+
+        <div class="col-6 col-md-6 col-xl-3" >
+          <a [routerLink]="'../usefultips'" class="card card-link">
+            <div class="card-cover card-cover-blurred text-center card-cover-blurred ">
+            <span class="avatar avatar-xl avatar-thumb rounded"><i class="ti ti-bulb" style="font-size: 2em; color: #5190B7;"></i></span>
+            </div>
+            <div class="card-body text-center">
+              <div class="card-title mb-1">Useful <br> Tips</div>
+             
+              
+          </div>
+            
+          </a>
+        </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+
+            <ul class="pagination justify-content-end">
+              <li class=" page-prev ">
+                  <a class="page-link" [routerLink]="'../1'">
+                      <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
+                  </a>
+              </li>
+              <li class=" page-next">
+                  <a class="page-link" [routerLink]="''">
+                     
+                      <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #434851;"></i>  
+                     
+                  </a>
+              </li>
+          </ul>
+
+
           </div>
         </div>
-      </div>
-
+    
 
 
 
       <br>
 
-      <div class="row row-cards">
-
+    <!-- <div class="row row-cards">
+        
         <div class="col-12">
           <div class="card">
             <div class="card-body">
@@ -192,6 +168,9 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div> -->
+
+
+
   </div>
+</div>

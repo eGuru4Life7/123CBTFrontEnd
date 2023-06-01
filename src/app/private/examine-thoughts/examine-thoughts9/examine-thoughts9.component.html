@@ -1,46 +1,4 @@
-<style>
 
-
-
-.card-body {
-    position: relative;
-    flex: 1 1 auto;
-    padding: var(--tblr-card-spacer-y) var(--tblr-card-spacer-x);
-    color: var(--tblr-card-color);
-}
-.card-body h1 {
-        font-size: 2.5rem;
-    
-        margin-bottom: 20px;
-    }   
-
-.think-text {
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    color: #2d3748;
-    background-color: #f7fafc;
-    padding: 15px 20px;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.think-text strong {
-    color: #1a202c;
-    margin-right: 5px;
-}
-
-.row.align-items-center {
-    margin-bottom: 20px;
-}
-
-@media screen and (max-width: 767px) {
-    .think-text {
-        font-size: 1rem;
-    }
-}
-
-</style>
 
 <div class="page-wrapper">
     <!-- Page header -->
@@ -75,12 +33,12 @@
         <div class="container-xl">
 
             <div class="col-lg-12">
-                <div class="card">
+                <div class="card fade-in">
                     <div class="card-body">
                         <h1 class="text-center">{{ 'thought_9.heading' | translate }}</h1>
                         <br><br>
                         <div class="row align-items-center">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 fade-in-3s">
                                 <p class="think-text"><strong>{{ 'thought_9.para1' | translate }}:</strong>{{ 'thought_9.para1-desc' | translate }}</p>
                                 <p class="think-text"><strong>{{ 'thought_9.para2' | translate }}:</strong>{{ 'thought_9.para2-desc' | translate }}</p>
                                 <p class="think-text"><strong>{{ 'thought_9.para3' | translate }}:</strong>{{ 'thought_9.para3-desc' | translate }}</p>
@@ -90,6 +48,21 @@
                             </div>
                         </div>
                     </div>
+
+
+                    <ul class="pagination justify-content-end">
+                        <li class=" page-prev ">
+                            <a class="page-link" [routerLink]="'../examine8'">
+                                <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
+                            </a>
+                        </li>
+                        <li class=" page-next">
+                            <a class="page-link" [routerLink]="'../examine10'">
+                               
+                                <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 
             </div>
@@ -97,7 +70,7 @@
 
             <br>
 
-            <div class="row row-cards">
+            <!-- <div class="row row-cards">
 
                 <div class="col-12">
                     <div class="card">
@@ -119,6 +92,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+
+
+
         </div>
     </div>

@@ -34,7 +34,7 @@
                 
                 
                 
-                <div class="card">
+                <div class="card fade-in">
                     <div class="card-body">
                         <h1 class="text-center">Now think of the situation that upset you recently and type in the boxes</h1>
                         <br><br>
@@ -46,33 +46,33 @@
                             <form  [formGroup]="diaryForm" class="" style="padding-top:3%;">
                                 <div class="mb-3">
                                     <label for="happening" class="form-label">What happened?</label>
-                                    <input type="text" name="happening" required class="form-control" formControlName="happening" id="happening">
+                                    <input type="text" placeholder="Describe the situation that upset you e.g. a bad grade on a test etc" name="happening" required class="form-control" formControlName="happening" id="happening">
                                     <div *ngIf="diaryForm.controls['happening'].invalid"
-                                        style="color: red;"> happening is required.</div>
+                                        style="color: red;"> *</div>
                                 </div>
                                   <div class="mb-3">
                                     <label for="feeling" class="form-label">Your feeling</label>
-                                    <input type="text" name="feeling" required class="form-control" formControlName="feeling" id="feeling">
+                                    <input type="text" placeholder="e.g. angry, sad, frustrated" name="feeling" required class="form-control" formControlName="feeling" id="feeling">
                                     <div *ngIf="diaryForm.controls['feeling'].invalid"
-                                        style="color: red;"> feeling is required.</div>
+                                        style="color: red;"> *</div>
                                 </div>
                                   <div class="mb-3">
                                     <label for="thinking" class="form-label">Your thoughts</label>
-                                    <input type="text" name="thinking" required class="form-control" formControlName="thinking" id="thinking">
+                                    <input type="text" placeholder="e.g. 'This always happens to me'" name="thinking" required class="form-control" formControlName="thinking" id="thinking">
                                     <div *ngIf="diaryForm.controls['thinking'].invalid"
-                                        style="color: red;"> thinking is required.</div>
+                                        style="color: red;"> *</div>
                                 </div>
                                   <div class="mb-3">
                                     <label for="physical_sensations" class="form-label">Physical sensations</label>
-                                    <input type="text" name="physical_sensations" required class="form-control" formControlName="physical_sensations" id="physical_sensations">
+                                    <input type="text" placeholder="e.g. shoulders tension, racing heart" name="physical_sensations" required class="form-control" formControlName="physical_sensations" id="physical_sensations">
                                     <div *ngIf="diaryForm.controls['physical_sensations'].invalid"
-                                        style="color: red;"> physical sensations is required.</div>
+                                        style="color: red;"> *</div>
                                 </div>
                                   <div class="mb-3">
                                     <label for="do" class="form-label">Your action</label>
-                                    <input type="text" name="do" required class="form-control" formControlName="do" id="do">
+                                    <input type="text" placeholder="What action did you take ? (e.g. avoiding the situation, confronting the issue)" name="do" required class="form-control" formControlName="do" id="do">
                                     <div *ngIf="diaryForm.controls['do'].invalid"
-                                        style="color: red;"> action is required.</div>
+                                        style="color: red;"> *</div>
                                 </div>
 
                                 <div class="text-end mt-3">
@@ -95,7 +95,7 @@
 
             <br>
 
-            <div class="row row-cards">
+           <!--  <div class="row row-cards">
 
                 <div class="col-12">
                     <div class="card">
@@ -117,6 +117,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
