@@ -16,9 +16,13 @@
             "remember":"Remember me on this device"
         },
         "reset": {
-            "title": "Reset Your Password",
-            "email": "Enter Your Email",
-            "click-reset": "Click Here To Reset"
+            "title": "Forgot Password",
+            "emailText": "Enter your email address and your password will be reset and emailed to you.",
+            "sendMeNewPassword": "send me new password",
+            "text1":"Forget it, ",
+            "text2":"send me back ",
+            "text13":"to the sign in screen."
+            
         },
          "reset-redirect": {
             "code": "Enter Code",
@@ -28,7 +32,7 @@
         "about": {
             "heading1": "Disclaimer",
             "heading1-desc": "This program does not in any way replace a real life therapist.This is self help program and therefore does not involve support by external therapist. Information and opinions expressed on this website are those of the therapist who develepved this program, based on their educvation and experince. In Case of servere mental illness or suicidal thoughts contact yout local health providers. Every necessary step has been taken to make sure that your data is safe.However in the highly unlikely event of security failure we do not assume responsibility of the events that and not under our control. While you personal data will be never closed to a third party ,the statistics from this program can be used for reserch purpose in order to improve the program",
-            "heading2": "About The Program",
+            "heading2": "About",
             "heading2-desc": "This program will help you in dealing with stress, sadness & anxiety. In this book, we have described stories of Khushi & Khatoon. This is a 6-week long program, but you can work through it at your pace. This program will teach you a variety of ways to deal with the stress & related problems. Each week starts with an introduction and suggests exercises for the week. Please read the instructions as many times as possible during that week and practice the techniques that you have learned. Ideally, you should follow this program along with a family member or a friend. You can also go through this program along with a therapist. If, you are a carer, and you are helping out a friend or family member who cannot read or write, read the chapter for them as many times as possible. Please remind them daily to practice the exercises suggested for the week. Please remember it takes time to learn new ways of learning and thinking. The more you practice these exercises, the faster will be an improvement in your well being",
             "agree":"Agree",
             "disagree":"Disagree"
@@ -42,23 +46,25 @@
             "title": "Please Register",
             "fname": "First Name",
             "lname": "Last Name",
-            "email": "EmailAddress",
+            "email": "Email Address",
             "password": "Password",
-            "age": "Age",
-            "country": "SelectCountry",
-            "gender": "Male",
-            "diagnose": "DiagnoseIfAny",
-            "single": "Single",
+            "age": "Date of birth",
+            "country": "Country",
+            "gender": "Gender",
+            "diagnose": "Diagnose If Any",
+            "status": "Maritial Status",
             "religion": "Islam",
-            "education": "EducationInYears",
+            "education": "Education In Years",
             "employed": "Employed",
             "register": "Register",
+            "account":"Create new account",
+            "alreadyAcc":"Already have an account?",
             "fill-field": "Please fill out this field"
         },
         "evidence": {
             "title": " What Is The Evidence That This Program Works",
             "first-paragraph": "various CBT based self-help materials have been assessed and shown to be effective in the West. Cuijpers, P.,1997.Bibliotherapyinunipolardepression:a meta-analysis.J.Behav. Ther.Exp.Psychiatry28,139�147. Gould, R.A., Clum, G.A.,1993.A meta-analysis of self-help treatment approaches. Clin. Psychol.Rev.13,169�186. ",
-            "second-paragra[h": "There is also evidence that online therapy works. Calear, A. L., Christensen, H., Mackinnon, A., Griffiths, K. M. & O'Kearney, R. (2009). The YouthMood Project: a cluster randomized controlled trial of an online cognitive behavioral program with adolescents. Journal of Consulting and Clinical Psychology, 77(6), 1021-1032. Christensen, H., Griffiths, K. M., & Korten, A. (2002). Web-based cognitive behavior therapy: analysis of site usage and changes in depression and anxiety scores. Journal of Medical Internet Research, 4(1), e3. Christensen, H., Griffiths, K. M., Korten, A. E., Brittliffe, K., & Groves, C. (2004). A comparison of changes in anxiety and depression symptoms of spontaneous users and trial participants of a cognitive behavior therapy website. Journal of Medical Internet Research, 6(4), e46. Christensen, H., Griffiths, K., Groves, C., & Korten, A. (2006). Free range users and one hit wonders: Community users of an Internet-based cognitive behavior therapy program. Australian and New Zealand Journal of Psychiatry, 40, 59-62. Christensen, H., Griffiths, K. M., Mackinnon, A. J., & Brittliffe, K. (2006). An online randomized controlled trial of brief and full cognitive behavior therapy for depression. Psychological Medicine, 36, 1737-1746. Ellis, L., Campbell, A.J., Sethi, S., O'Dea, B.M. (2011) Comparative Randomized Trial of an online cognitive-behavioral therapy program and an online support group for depression and anxiety. Journal of CyberTherapy & Rehabilitation, 4(4): 461-467. Sethi, S., Campbell, A. J., Ellis, L. A. (2010). The use of computerized self-help packages to treat adolescent depression and anxiety. Journal of Technology in Human Services, 28(3), 144-160. ",
+            "second-paragraph": "There is also evidence that online therapy works. Calear, A. L., Christensen, H., Mackinnon, A., Griffiths, K. M. & O'Kearney, R. (2009). The YouthMood Project: a cluster randomized controlled trial of an online cognitive behavioral program with adolescents. Journal of Consulting and Clinical Psychology, 77(6), 1021-1032. Christensen, H., Griffiths, K. M., & Korten, A. (2002). Web-based cognitive behavior therapy: analysis of site usage and changes in depression and anxiety scores. Journal of Medical Internet Research, 4(1), e3. Christensen, H., Griffiths, K. M., Korten, A. E., Brittliffe, K., & Groves, C. (2004). A comparison of changes in anxiety and depression symptoms of spontaneous users and trial participants of a cognitive behavior therapy website. Journal of Medical Internet Research, 6(4), e46. Christensen, H., Griffiths, K., Groves, C., & Korten, A. (2006). Free range users and one hit wonders: Community users of an Internet-based cognitive behavior therapy program. Australian and New Zealand Journal of Psychiatry, 40, 59-62. Christensen, H., Griffiths, K. M., Mackinnon, A. J., & Brittliffe, K. (2006). An online randomized controlled trial of brief and full cognitive behavior therapy for depression. Psychological Medicine, 36, 1737-1746. Ellis, L., Campbell, A.J., Sethi, S., O'Dea, B.M. (2011) Comparative Randomized Trial of an online cognitive-behavioral therapy program and an online support group for depression and anxiety. Journal of CyberTherapy & Rehabilitation, 4(4): 461-467. Sethi, S., Campbell, A. J., Ellis, L. A. (2010). The use of computerized self-help packages to treat adolescent depression and anxiety. Journal of Technology in Human Services, 28(3), 144-160. ",
             "third-paragraph": "Finally, this program is based on a self-help manual that was found to be effective in treating depression and anxiety. F Naeem, Ishaque Sarhandi, Mirrat Gul, Mehwish Khalid, Muhammad Aslam, Aqila Anbrin, Sofiya Saeed, Madeeha Noor, Ghulam Fatima, Fareed Minhas, Nusat Hussain, Muhammad Ayub (2014) A multicentre randomised controlled trial of a Carer supervised Culturally adapted CBT (CaCBT) based Self Help for depression in Pakistan. Journal of Affective Disorders, 156, 224-227 "
         },
         "index": {
@@ -107,6 +113,7 @@
             "trauma":"Trauma",
             "click_here_for_download":"Click here to download",
             "RelaxationExcercises":"Relaxation Excercises",
+            "r_para":"This page offers various audio tracks that can help you to relax and unwind. Each audio track is specially designed to help reduce stress, anxiety and improve your mental well-being. Take some time out of your day to listen to these audio tracks and focus on your breathing. With regular practice, you can develop the skill of relaxation and improve your overall well-being.",
             "help":"help"
 
         },
@@ -197,9 +204,9 @@
         "amb": {
             "heading1": "From now on start using the breathing exerise daily. Click on below icons. Your next module starts from ",
             "paragraph": "We can not control most of the reaction discussed in the flight of fight response. However, there is one thing we can control, that is our breathing. You can also use muscle relaction exercise. Please download the breathing exercise and try them for next week.",
-            "food":"Food<br>Advice",
-            "sleep":"Sleep <br>Advice",
-            "tips":"Useful<br> Tips",
+            "food":"Food Advice",
+            "sleep":"Sleep Advice",
+            "tips":"Useful Tips",
             "end": "Module End",
             "heading2":"We can not control most of the reaction discussed in the flight of fight response. However, there is one thing we can control, that is our breathing. You can also use muscle relaxation exercise.",
             "paragraph2":"Please download the breathing exercise and use them every day. Try using them as often as possible. Your next module will start on",
@@ -1020,11 +1027,11 @@
         },
         "usefulltips":{
             "heading":"Some tips for dealing with stress",
-            "paragraph1":"Spiritual & religious practices: Spiritual and religious practices can help with your stress levels.",
-             "paragraph2":"Imagery: You can also reduce stress with the help of imagining beautiful places and pleasant events and things.",
-             "paragraph3":"Massage: It is common in our culture for people to get a head and neck massage. It can help with stress and anxiety .",
-             "paragraph4":"Distraction: Talking to someone, religious activities (for example, saying your prayers, reciting Quran or using beads), reading, watching TV, listening to the radio and physical activities.",
-             "paragraph5":"Change in lifestyle: a healthy lifestyle and regular exercise help. Being very competitive, pessimistic, controlling, perfectionism, narcissism can all lead to stress, anxiety & depression. "
+            "paragraph1":"<strong>Spiritual & religious practices</strong>: Spiritual and religious practices can help with your stress levels.",
+             "paragraph2":"<strong>Imagery</strong>: You can also reduce stress with the help of imagining beautiful places and pleasant events and things.",
+             "paragraph3":"<strong>Massage</strong>: It is common in our culture for people to get a head and neck massage. It can help with stress and anxiety .",
+             "paragraph4":"<strong>Distraction</strong>: Talking to someone, religious activities (for example, saying your prayers, reciting Quran or using beads), reading, watching TV, listening to the radio and physical activities.",
+             "paragraph5":"<strong>Change in lifestyle</strong>: a healthy lifestyle and regular exercise help. Being very competitive, pessimistic, controlling, perfectionism, narcissism can all lead to stress, anxiety & depression. "
         }, 
         "sleepadvice":{
 
@@ -1034,12 +1041,12 @@
             "p3":"Noise free environment",
             "p4":"A room without excessive light",
             "heading1":"Tips for improving sleep",
-            "p5":"Cooling down time: Your brain needs some time to switch off. Some people find reading in bed helpful others might see that reading keep them awake. Try to find out what helps you. ",
-            "p6":"Physical problems:Physical problems can cause sleeplessness. Physical discomfort or pain can cause sleep disturbance.",
-            "p7":"Sleep routine:Keeping a sleep routine is crucial. Going to bed and leaving it at regular times can be helpful for many people.",
-            "p8":"Psychological problems:Sleep problems resolve once depression gets treated. Simple anxiety management techniques like breathing exercise etc. (mentioned earlier) can be very helpful.",
-            "p9":"Tea, coffee and nicotine:Drinking tea or coffee before going to bed can make people feel alerted. Not drinking tea or coffee after 6 PM can help many people. Similarly, cutting down on cigarettes before going to bed can also be helpful.",
-            "p10":"Day Naps:Day naps can lead to disturbed sleep. In fact, it has been suggested that sleeping in the morning hours might be linked to depression."
+            "p5":"<strong>Cooling down time</strong>: Your brain needs some time to switch off. Some people find reading in bed helpful others might see that reading keep them awake. Try to find out what helps you. ",
+            "p6":"<strong>Physical problems</strong>:Physical problems can cause sleeplessness. Physical discomfort or pain can cause sleep disturbance.",
+            "p7":"<strong>Sleep routine</strong>:Keeping a sleep routine is crucial. Going to bed and leaving it at regular times can be helpful for many people.",
+            "p8":"<strong>Psychological problems</strong>:Sleep problems resolve once depression gets treated. Simple anxiety management techniques like breathing exercise etc. (mentioned earlier) can be very helpful.",
+            "p9":"<strong>Tea, coffee and nicotine</strong>:Drinking tea or coffee before going to bed can make people feel alerted. Not drinking tea or coffee after 6 PM can help many people. Similarly, cutting down on cigarettes before going to bed can also be helpful.",
+            "p10":"<strong>Day Naps</strong>:Day naps can lead to disturbed sleep. In fact, it has been suggested that sleeping in the morning hours might be linked to depression."
         }
 
     }

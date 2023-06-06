@@ -44,10 +44,10 @@
 
               <ul class="nav nav-tabs card-header-tabs" data-bs-toggle="tabs" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <a href="#tabs-disclaimer-7" class="nav-link active" data-bs-toggle="tab" aria-selected="true" role="tab">Disclaimer</a>
+                  <a href="#tabs-disclaimer-7" class="nav-link active" data-bs-toggle="tab" aria-selected="true" role="tab"> {{ 'about.heading1' | translate }}</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <a href="#tabs-about-7" class="nav-link" data-bs-toggle="tab" aria-selected="false" tabindex="-1" role="tab">About</a>
+                  <a href="#tabs-about-7" class="nav-link" data-bs-toggle="tab" aria-selected="false" tabindex="-1" role="tab"> {{ 'about.heading2' | translate }}</a>
                 </li>
                 
               </ul>
@@ -55,10 +55,10 @@
             <div class="card-body">
               <div class="tab-content">
                 <div class="tab-pane active show" id="tabs-disclaimer-7" role="tabpanel">
-                  <h4>Disclaimer</h4>
+                  <h4>{{ 'about.heading1' | translate }}</h4>
                   <div>
                     <p>
-                      This program does not in any way replace a real life therapist.This is self help program and therefore does not involve support by external therapist. Information and opinions expressed on this website are those of the therapist who develepved this program, based on their educvation and experince. In Case of servere mental illness or suicidal thoughts contact yout local health providers. Every necessary step has been taken to make sure that your data is safe.However in the highly unlikely event of security failure we do not assume responsibility of the events that and not under our control. While you personal data will be never closed to a third party ,the statistics from this program can be used for reserch purpose in order to improve the program
+                      {{ 'about.heading1-desc' | translate }}
                     </p>
 
                   </div>
@@ -70,8 +70,8 @@
                   
                 </div>
                 <div class="tab-pane" id="tabs-about-7" role="tabpanel">
-                  <h4>About the Program</h4>
-                  <div>This program will help you in dealing with stress, sadness & anxiety. In this book, we have described stories of Khushi & Khatoon. This is a 6-week long program, but you can work through it at your pace. This program will teach you a variety of ways to deal with the stress & related problems. Each week starts with an introduction and suggests exercises for the week. Please read the instructions as many times as possible during that week and practice the techniques that you have learned. Ideally, you should follow this program along with a family member or a friend. You can also go through this program along with a therapist. If, you are a carer, and you are helping out a friend or family member who cannot read or write, read the chapter for them as many times as possible. Please remind them daily to practice the exercises suggested for the week. Please remember it takes time to learn new ways of learning and thinking. The more you practice these exercises, the faster will be an improvement in your well being</div>
+                  <h4> {{ 'about.heading2' | translate }}</h4>
+                  <div>{{ 'about.heading2-desc' | translate }}</div>
                 </div>
                 
               </div>
@@ -80,7 +80,7 @@
             <div class="card-footer">
               <div class="row align-items-center">
                 <div class="col-auto">
-                  <label class="form-check form-switch m-0"> I agree
+                  <label class="form-check form-switch m-0"> {{ 'about.agree' | translate }}
                     <input id="agree-checkbox" class="form-check-input position-static" type="checkbox" [(ngModel)]="isAgree" (click)="onChangeAgree()" required>
                   </label>
                 </div>

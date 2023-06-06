@@ -41,12 +41,12 @@
                 <form [formGroup]="userForm" class="card fade-in card-md">
                     <div class="card-body">
                         <div class="row row-cards">
-                            <h2 class="card-title text-center mb-4">Create new account</h2>
+                            <h2 class="card-title text-center mb-4">{{ 'register.account' | translate }}</h2>
 
 
                             <div class="col-sm-6 col-md-6">
                                 <div class="mb-3">
-                                    <label class="form-label required">First Name</label>
+                                    <label class="form-label required">{{ 'register.fname' | translate }}</label>
                                     <input type="text" class="form-control" formControlName="first_name"
                                         name="first_name" placeholder="Enter first name" required="">
                                     <div *ngIf="userForm.controls['first_name'].invalid && (userForm.controls['first_name'].dirty || userForm.controls['first_name'].touched)"
@@ -59,7 +59,7 @@
 
                             <div class="col-sm-6 col-md-6">
                                 <div class="mb-3">
-                                    <label class="form-label required">Last Name</label>
+                                    <label class="form-label required">{{ 'register.lname' | translate }}</label>
                                     <input type="text" class="form-control" name="last_name"
                                         placeholder="Enter last name" formControlName="last_name">
                                     <div *ngIf="userForm.controls['last_name'].invalid && userForm.controls['last_name'].touched"
@@ -69,7 +69,7 @@
                             </div>
                             <div class="col-sm-6 col-md-6">
                                 <div class="mb-3">
-                                    <label class="form-label required">Email address</label>
+                                    <label class="form-label required">{{ 'register.email' | translate }}</label>
                                     <input type="email" class="form-control" formControlName="email" name="email"
                                         placeholder="Enter email">
                                     <div *ngIf="userForm.controls['email'].invalid && userForm.controls['email'].touched"
@@ -79,7 +79,7 @@
 
                             <div class="col-sm-6 col-md-6">
                                 <div class="mb-3">
-                                    <label class="form-label required">Password</label>
+                                    <label class="form-label required">{{ 'register.password' | translate }}</label>
                                     <div class="input-group input-group-flat">
                                         <input type="password" class="form-control" placeholder="Password"
                                             name="password" autocomplete="off" formControlName="password">
@@ -105,7 +105,7 @@
                             </div>
                             <div class="col-sm-6 col-md-6">
                                 <div class="mb-3">
-                                    <label class="form-label">Date of birth</label>
+                                    <label class="form-label">{{ 'register.age' | translate }}</label>
                                     <div class="row g-2">
                                         <div class="col-5">
                                             <select name="user[month]" class="form-select" formControlName="month">
@@ -292,7 +292,7 @@
 
                             <div class="col-sm-6 col-md-6">
                                 <div class="mb-3">
-                                    <div class="form-label required">Gender</div>
+                                    <div class="form-label required">{{ 'register.gender' | translate }}</div>
                                     <select class="form-select" formControlName="gender">
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
@@ -305,7 +305,7 @@
 
                             <div class="col-sm-6 col-md-6">
                                 <div class="mb-3">
-                                    <label class="form-label required">Country</label>
+                                    <label class="form-label required">{{ 'register.country' | translate }}</label>
                                     <!-- Country names and Country Name -->
                                     <select class="form-control form-select" formControlName="country">
                                         <option value="">Select Country</option>
@@ -584,7 +584,7 @@
 
                             <div class="col-sm-6 col-md-6">
                                 <div class="mb-3">
-                                    <label class="form-label">Diagnosis</label>
+                                    <label class="form-label">{{ 'register.diagnose' | translate }}</label>
                                     <input type="text" class="form-control " placeholder="if any"
                                         formControlName="diagnose">
                                 </div>
@@ -592,7 +592,7 @@
 
                             <div class="col-sm-6 col-md-6">
                                 <div class="mb-3">
-                                    <div class="form-label">Maritial Status</div>
+                                    <div class="form-label">{{ 'register.age' | translate }}</div>
                                     <select class="form-select" formControlName="martial_status">
 
 
@@ -618,7 +618,7 @@
 
                             <div class="col-sm-6 col-md-6">
                                 <div class="mb-3">
-                                    <div class="form-label">Religion</div>
+                                    <div class="form-label">{{ 'register.religion' | translate }}</div>
                                     <select class="form-select" formControlName="religion">
 
 
@@ -647,7 +647,7 @@
 
                             <div class="col-sm-6 col-md-6">
                                 <div class="mb-3">
-                                    <div class="form-label">Education in Years</div>
+                                    <div class="form-label">{{ 'register.education' | translate }}</div>
                                     <input type="number" required="" name="education" id="education"
                                         class="form-control" placeholder="i.e 14" formControlName="education">
                                 </div>
@@ -656,7 +656,7 @@
 
                             <div class="col-sm-6 col-md-6">
                                 <div class="mb-3">
-                                    <div class="form-label">Employment</div>
+                                    <div class="form-label">{{ 'register.employed' | translate }}</div>
                                     <select class="form-select" formControlName="employment">
 
 
@@ -676,8 +676,7 @@
                             </div>
                             <div class="form-footer">
                                 <button type="submit" (click)="saveUser()" [disabled]="!userForm.valid"
-                                    class="btn btn-primary w-100">Create new
-                                    account</button>
+                                    class="btn btn-primary w-100">{{ 'register.account' | translate }}</button>
                             </div>
                         </div>
                     </div>
@@ -685,7 +684,7 @@
             </div>
 
             <div class="text-center text-muted mt-3">
-                Already have account? <a [routerLink]="'/auth'" tabindex="-1">Sign in</a>
+                {{ 'register.alreadyAcc' | translate }} <a [routerLink]="'/auth'" tabindex="-1">{{ 'login.signin' | translate }}</a>
             </div>
         </div>
 

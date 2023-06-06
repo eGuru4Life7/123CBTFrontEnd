@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { MessageService } from 'primeng/api';
 import { LocalCacheService } from 'src/app/services/local-cache.service';
 import { UserServiceService } from 'src/app/services/user-service.service';
@@ -13,11 +14,16 @@ import { UserServiceService } from 'src/app/services/user-service.service';
 export class SignUpComponent implements OnInit {
   user: any = {};
   userForm!: FormGroup;
-  constructor(private userService: UserServiceService, private route: Router, private localService: LocalCacheService, private messageService: MessageService) {
+  dir:any;
+  constructor(private userService: UserServiceService, private route: Router, private localService: LocalCacheService, private messageService: MessageService, private translate: TranslateService) {
     this.createForm();
   }
 
   ngOnInit(): void {
+    var lang :any = localStorage.getItem("lang");
+    this.dir= localStorage.getItem("dir");
+    this.translate.setDefaultLang(lang);
+    this.translate.use(lang);
   }
 
   createForm() {

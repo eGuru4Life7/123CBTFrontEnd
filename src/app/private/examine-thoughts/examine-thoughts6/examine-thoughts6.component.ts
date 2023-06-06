@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-examine-thoughts6',
@@ -9,7 +10,7 @@ export class ExamineThoughts6Component implements OnInit {
 
   fadeIns: any;
 
-  constructor(private el: ElementRef) { }
+  constructor(private el: ElementRef,private router:Router) { }
 
   ngOnInit(): void {
     this.fadeIns = this.el.nativeElement.querySelectorAll('.fade-in-l');
@@ -29,6 +30,10 @@ export class ExamineThoughts6Component implements OnInit {
         fadeEl.classList.add('fade-in');
       }
     });
+  }
+
+  next(){
+    this.router.navigateByUrl('../examinethoughts/examine7');
   }
 
 }

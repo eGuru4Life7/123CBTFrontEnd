@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { MessageService } from 'primeng/api';
 import { ModuleService } from 'src/app/services/module.service';
 import { UserServiceService } from 'src/app/services/user-service.service';
@@ -12,9 +13,14 @@ import { UserServiceService } from 'src/app/services/user-service.service';
 export class ForgotPasswordComponent implements OnInit {
   user:any ={};
   email:any = "";
-  constructor(private userService:UserServiceService,private messageService:MessageService,private route:Router) { }
+  dir: any;
+  constructor(private userService:UserServiceService,private messageService:MessageService,private route:Router,private translate:TranslateService) { }
 
   ngOnInit(): void {
+    var lang :any = localStorage.getItem("lang");
+    this.dir= localStorage.getItem("dir");
+    this.translate.setDefaultLang(lang);
+    this.translate.use(lang);
   }
   sendEmail(){
     let data = Math.random().toString(36).slice(2, 10);

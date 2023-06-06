@@ -20,7 +20,7 @@ const routes: Routes = [
   component:TestComponent
 }, */
 {
-  path:'scale',
+  path:'',
   component:ScaleComponent
 },
 {

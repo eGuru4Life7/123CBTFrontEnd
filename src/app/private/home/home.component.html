@@ -265,7 +265,7 @@
 
         <!-- Locked Module has "card-cover-blurred" class -->
         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
-          <a [routerLink]="''" (click)="openModal(moduleStatus7?.status)" class="card card-link card-link-pop">
+          <a [routerLink]="module7 || moduleStatus7?.status? '/balancedActivities':''" (click)="openModal(moduleStatus7?.status)" class="card card-link card-link-pop">
             <div class="card-body" style="background-color: #FA6E5A; border-radius: 4px 4px 0 0;">
               <img src="../../../assets/static/illustrations/balanced_activities.svg" height="210px" width="100%" alt="">
 
@@ -306,7 +306,7 @@
 
         <!-- Locked Module has "card-cover-blurred" class -->
         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
-          <a [routerLink]="''"  (click)="openModal(moduleStatus8?.status)" class="card card-link card-link-pop">
+          <a [routerLink]="module8 || moduleStatus8?.status? '/relationhips':''"  (click)="openModal(moduleStatus8?.status)" class="card card-link card-link-pop">
             <div class="card-body text-center" style="background-color: #FFCF86; border-radius: 4px 4px 0 0;">
               <img src="../../../assets/static/illustrations/relationships.svg" height="210px" width="100%" alt="">
 

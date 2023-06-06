@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-disclaimer',
@@ -9,9 +10,14 @@ import { Router } from '@angular/router';
 export class DisclaimerComponent implements OnInit {
   isAgree:boolean = false;
   isDisabled:boolean = true;
-  constructor(private route:Router) { }
+  dir:any;
+  constructor(private route:Router,private translate: TranslateService) { }
 
   ngOnInit(): void {
+    var lang :any = localStorage.getItem("lang");
+    this.dir= localStorage.getItem("dir");
+    this.translate.setDefaultLang(lang);
+    this.translate.use(lang);
   }
 
   onChangeAgree(){
