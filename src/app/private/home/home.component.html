@@ -23,11 +23,16 @@
   <div class="page-body">
     <div class="container-xl">
       <div class="row row-cards">
+
+        
+
         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
           <a [routerLink]="'/stress'" class="card card-link card-link-pop">
             <div class="card-body " style="background-color: #808AFF;  border-radius: 4px 4px 0 0;">
-              <img src="../../../assets/static/illustrations/stress.svg" height="210px" width="100%" alt="">
-
+              <!-- <img src="../../../assets/static/illustrations/dashboard/stress_c.svg" height="210px" width="100%" alt=""> -->
+              <svg height="13rem" width="100%">
+                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite1.svg#stress_c"></use>
+              </svg>
             </div>
             <div class="card-body">
               <div class="card-title mb-1">{{ 'index.stress' | translate }} </div>
@@ -55,7 +60,12 @@
         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
           <a [routerLink]="module2 || moduleStatus2?.status ? '/dangercenter/scale' :''" (click)="openModal(moduleStatus2?.status)" class="card card-link card-link-pop">
             <div class="card-body" style="background-color: #FA6E5A; border-radius: 4px 4px 0 0;">
-              <img src="../../../assets/static/illustrations/danger-center-main.svg" height="210px" width="100%" alt="">
+              <!-- <img src="../../../assets/static/illustrations//dashboard/danger-center-main_c.svg" height="210px" width="100%" alt=""> -->
+              
+              <svg height="13rem" width="100%">
+                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite2.svg#danger-center-main"></use>
+              </svg>
+
 
             </div>
             <div class="card-body ">
@@ -98,8 +108,11 @@
 
           <a [routerLink]="module3 || moduleStatus3?.status? '/examinethoughts/danger-center-scale':''" (click)="openModal(moduleStatus3?.status)" class="card card-link card-link-pop" >
             <div class="card-body" style="background-color: #FEB18F; border-radius: 4px 4px 0 0;">
-                <img src="../../../assets/static/illustrations/examine-thoughts-main.svg" height="210px" width="100%" alt="">
+                <!-- <img src="../../../assets/static/illustrations/dashboard/examine-thoughts-main_c.svg" height="210px" width="100%" alt=""> -->
 
+                <svg height="13rem" width="100%">
+                  <use xlink:href="../../../assets/static/illustrations/dashboard/sprite3.svg#examine-thoughts-main"></use>
+                </svg>
 
             </div>
             <div class="card-body ">
@@ -140,7 +153,11 @@
 
           <a [routerLink]="module4 || moduleStatus4?.status? '/challengethoughts/scale':''" (click)="openModal(moduleStatus4?.status)" class="card card-link card-link-pop">
             <div class="card-body text-center" style="background-color: #D9A5B5; border-radius: 4px 4px 0 0;">
-              <img src="../../../assets/static/illustrations/challenge-thoughts-main.svg" height="210px" width="100%" alt="">
+              <!-- <img src="../../../assets/static/illustrations/dashboard/challenge-thoughts-main.svg" height="210px" width="100%" alt=""> -->
+              <svg height="13rem" width="100%">
+                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite3.svg#challenge-thoughts-main"></use>
+              </svg>
+              
 
             </div>
             <div class="card-body ">
@@ -180,7 +197,10 @@
         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
           <a [routerLink]="module5 || moduleStatus5?.status? '/balancethought':''" (click)="openModal(moduleStatus5?.status)" class="card card-link card-link-pop">
             <div class="card-body text-center" style="background-color: #7583CA; border-radius: 4px 4px 0 0;">
-              <img src="../../../assets/static/illustrations/balanced_thoughts.svg" height="210px" width="100%" alt="">
+              <!-- <img src="../../../assets/static/illustrations/dashboard/balanced_thoughts_c.svg" height="210px" width="100%" alt=""> -->
+              <svg height="13rem" width="100%">
+                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite1.svg#balanced_thoughts_c"></use>
+              </svg>
 
 
             </div>
@@ -225,8 +245,10 @@
         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
           <a [routerLink]="module6 || moduleStatus6?.status? '/problemsolving':''" (click)="openModal(moduleStatus6?.status)" class="card card-link card-link-pop">
             <div class="card-body text-center" style="background-color: #D9A5B5; border-radius: 4px 4px 0 0;">
-              <img src="../../../assets/static/illustrations/problem_solving.svg" height="210px" width="100%" alt="">
-
+              <!-- <img src="../../../assets/static/illustrations/dashboard/problem_solving_c.svg" height="210px" width="100%" alt=""> -->
+              <svg height="13rem" width="100%">
+                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite1.svg#problem_solving_c"></use>
+              </svg>
 
             </div>
             <div class="card-body ">
@@ -267,7 +289,11 @@
         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
           <a [routerLink]="''" (click)="openModal(moduleStatus7?.status)" class="card card-link card-link-pop">
             <div class="card-body" style="background-color: #FA6E5A; border-radius: 4px 4px 0 0;">
-              <img src="../../../assets/static/illustrations/balanced_activities.svg" height="210px" width="100%" alt="">
+              <!-- <img src="../../../assets/static/illustrations/dashboard/balanced_activities_c.svg" height="210px" width="100%" alt=""> -->
+
+              <svg height="13rem" width="100%">
+                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite2.svg#balanced_activities_c"></use>
+              </svg>
 
             </div>
             <div class="card-body ">
@@ -308,8 +334,10 @@
         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
           <a [routerLink]="''"  (click)="openModal(moduleStatus8?.status)" class="card card-link card-link-pop">
             <div class="card-body text-center" style="background-color: #FFCF86; border-radius: 4px 4px 0 0;">
-              <img src="../../../assets/static/illustrations/relationships.svg" height="210px" width="100%" alt="">
-
+              <!-- <img src="../../../assets/static/illustrations/dashboard/relationships_c.svg" height="210px" width="100%" alt=""> -->
+              <svg height="13rem" width="100%">
+                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite2.svg#relationships_c"></use>
+              </svg>
 
             </div>
             <div class="card-body ">
@@ -348,7 +376,11 @@
         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
           <a [routerLink]="''" (click)="openModal(moduleStatus9?.status)" class="card card-link card-link-pop" >
             <div class="card-body" style="background-color: #FEB18F; border-radius: 4px 4px 0 0;">
-              <img src="../../../assets/static/illustrations/staying_well.svg" height="210px" width="100%" alt="">
+              <!-- <img src="../../../assets/static/illustrations/dashboard/staying_well_c.svg" height="210px" width="100%" alt=""> -->
+
+              <svg height="13rem" width="100%">
+                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite2.svg#staying_well_c"></use>
+              </svg>
 
 
             </div>
