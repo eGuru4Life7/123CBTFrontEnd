@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-start',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./start.component.scss']
 })
 export class StartComponent implements OnInit {
-
-  constructor() { }
+  dir:any;
+  constructor(private translate: TranslateService) { }
 
   ngOnInit(): void {
+    var lang :any = localStorage.getItem("lang");
+    this.dir= localStorage.getItem("dir");
+    this.translate.setDefaultLang(lang);
+    this.translate.use(lang);
   }
 
 }

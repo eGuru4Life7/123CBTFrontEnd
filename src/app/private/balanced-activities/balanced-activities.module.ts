@@ -14,28 +14,35 @@ import { ActivitylistCreativeComponent } from './activitylist-creative/activityl
 import { ActivitylistRecreationalComponent } from './activitylist-recreational/activitylist-recreational.component';
 import { ActivitylistWorkrelatedComponent } from './activitylist-workrelated/activitylist-workrelated.component';
 import { ActivitylistSocialspiritualComponent } from './activitylist-socialspiritual/activitylist-socialspiritual.component';
+import { TranslateModule } from '@ngx-translate/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { ToastModule } from 'primeng/toast';
 
 
 
 @NgModule({
   declarations: [
-
-  
     ScaleComponent,
-        ScoreComponent,
-        StartComponent,
-        WriteActivitiesComponent,
-        FirstStepComponent,
-        FirstStep2Component,
-        ActivitylistComponent,
-        EndComponent,
-        ActivitylistCreativeComponent,
-        ActivitylistRecreationalComponent,
-        ActivitylistWorkrelatedComponent,
-        ActivitylistSocialspiritualComponent
+    ScoreComponent,
+    StartComponent,
+    WriteActivitiesComponent,
+    FirstStepComponent,
+    FirstStep2Component,
+    ActivitylistComponent,
+    EndComponent,
+    ActivitylistCreativeComponent,
+    ActivitylistRecreationalComponent,
+    ActivitylistWorkrelatedComponent,
+    ActivitylistSocialspiritualComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    NgApexchartsModule,
+    ReactiveFormsModule,
+    ToastModule,
+    TranslateModule,
     BalancedActivitiesRoutingModule
   ]
 })

@@ -1,22 +1,22 @@
 <div class="page-wrapper">
-    <!-- Page header -->
-    <div class="page-header d-print-none">
-        <div class="container-xl">
-            <div class="row g-2 align-items-center">
-                <div class="col">
-                    <!-- Page pre-title -->
-                   <h2 class="page-title">
+  <!-- Page header -->
+  <div class="page-header d-print-none">
+    <div class="container-xl">
+      <div class="row g-2 align-items-center">
+        <div class="col">
+          <!-- Page pre-title -->
+          <h2 class="page-title">
             {{ 'index.Danger-Centre' | translate }}
-        </h2>
-        <div class="page-pretitle">
+          </h2>
+          <div class="page-pretitle">
             {{ 'index.Module' | translate }}
+          </div>
         </div>
-                </div>
-                <!-- Page title actions -->
+        <!-- Page title actions -->
 
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 
 
 
@@ -25,47 +25,46 @@
 
 
 
-     <!-- Page body -->
- <div class="page-body">
+  <!-- Page body -->
+  <div class="page-body">
     <div class="container-xl">
 
-        <div class="col-lg-12">
+      <div class="col-lg-12">
         <div class="card  fade-in">
           <div class="card-body">
             <div class="row align-items-center">
               <div class="col-sm-12 col-md-6 col-lg-6 ">
                 <img src="../../../../assets/static/illustrations/sleep-advice.svg" alt="Sleep" class="rounded fade-in">
-                
+
               </div>
               <div class="col fade-in">
                 <h2 style="font-size: 1.5rem;
-                      margin-bottom: 20px;">Healthy sleep environment consists of the following:</h2>
+                      margin-bottom: 20px;">{{ 'sleepadvice.heading' | translate }}</h2>
                 <ul class="list-group list-group-flush " style="font-size: 1rem;">
-                    <li class="list-group-item list-group-item-action">Comfortable bed</li>
-                    <li class="list-group-item list-group-item-action">Temperature of the room (neither too hot nor too cold)
-                    </li>
-                    <li class="list-group-item list-group-item-action">Noise free environment</li>
-                    <li class="list-group-item list-group-item-action">A room without excessive light</li>
-                    
-                  </ul>
-                     
-                         
-                </div>
-                <h2 style="font-size: 1.5rem;
-                margin-bottom: 20px;">Tips for improving sleep:</h2>
-               
-            <div class="row align-items-center fade-in-l">
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <p class="think-text"><strong>Cooling down time: </strong> Your brain needs some time to switch off. Some people find reading in bed helpful others might see that reading keep them awake. Try to find out what helps you.</p>
-                  <p class="think-text"><strong>Physical problems: </strong>Physical problems can cause sleeplessness. Physical discomfort or pain can cause sleep disturbance.</p>
-                  <p class="think-text"><strong>Sleep routine: </strong> Keeping a sleep routine is crucial. Going to bed and leaving it at regular times can be helpful for many people.</p>
-                  <p class="think-text"><strong>Psychological problems: </strong> Sleep problems resolve once depression gets treated. Simple anxiety management techniques like breathing exercise etc. (mentioned earlier) can be very helpful.</p>
-                  <p class="think-text"><strong>Tea, coffee and nicotine: </strong> Drinking tea or coffee before going to bed can make people feel alerted. Not drinking tea or coffee after 6 PM can help many people. Similarly, cutting down on cigarettes before going to bed can also be helpful.</p>
-                  <p class="think-text"><strong>Day Naps:</strong> Day naps can lead to disturbed sleep. In fact, it has been suggested that sleeping in the morning hours might be linked to depression.</p>
+                  <li class="list-group-item list-group-item-action">{{ 'sleepadvice.p1' | translate }}</li>
+                  <li class="list-group-item list-group-item-action">{{ 'sleepadvice.p2' | translate }}</li>
+                  <li class="list-group-item list-group-item-action">{{ 'sleepadvice.p3' | translate }}</li>
+                  <li class="list-group-item list-group-item-action">{{ 'sleepadvice.p4' | translate }}</li>
+
+                </ul>
+
+
               </div>
-          </div>
-              
-              
+              <h2 style="font-size: 1.5rem;
+                margin-bottom: 20px;">{{ 'sleepadvice.heading1' | translate }}</h2>
+
+              <div class="row align-items-center fade-in-l">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <p class="think-text"  [innerHTML]="'sleepadvice.p5' | translate" ></p>
+                  <p class="think-text"  [innerHTML]="'sleepadvice.p6' | translate"></p>
+                  <p class="think-text"  [innerHTML]="'sleepadvice.p7' | translate"></p>
+                  <p class="think-text"  [innerHTML]="'sleepadvice.p8' | translate"></p>
+                  <p class="think-text"  [innerHTML]="'sleepadvice.p9' | translate"></p>
+                  <p class="think-text"  [innerHTML]="'sleepadvice.p10' | translate"></p>
+                </div>
+              </div>
+
+
             </div>
           </div>
 
@@ -75,25 +74,25 @@
               <a class="page-link" [routerLink]="'../2'" tabindex="-1" aria-disabled="true">
                     <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
                 </a>
-            </li> --> 
+            </li> -->
             <li class=" page-next">
-                <a class="page-link" [routerLink]="'../2'">
-                   
-                    <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>                
-                </a>
-            </li>
-        </ul>
+              <a class="page-link" [routerLink]="'../2'">
 
-        
+                <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>
+              </a>
+            </li>
+          </ul>
+
+
         </div>
       </div>
-    
 
 
 
-<br>
 
-   <!--  <div class="row row-cards">
+      <br>
+
+      <!--  <div class="row row-cards">
         
         <div class="col-12">
           <div class="card">
@@ -119,5 +118,5 @@
 
 
 
+    </div>
   </div>
-</div>

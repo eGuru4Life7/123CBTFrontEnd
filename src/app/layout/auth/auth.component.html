@@ -10,51 +10,46 @@
 <html lang="en" [dir]="dir">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Sign in</title>
-  <!-- CSS files -->
-  <style>
-    @import url('https://rsms.me/inter/inter.css');
-
-    :root {
-      --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
-    }
-
-    body {
-      font-feature-settings: "cv03", "cv04", "cv11";
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign in</title>
+    <!-- CSS files -->
+    <style>
+        @import url('https://rsms.me/inter/inter.css');
+         :root {
+            --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+        }
+        
+        body {
+            font-feature-settings: "cv03", "cv04", "cv11";
+        }
+    </style>
 </head>
 
 <body class=" d-flex flex-column">
 
-  <p-toast position="top-right"></p-toast>
+    <p-toast position="top-right"></p-toast>
 
-  <div class="page page-center">
-    <div class="container container-normal py-4">
-      <div class="row align-items-center g-4">
-        <div class="col-lg">
-          <div class="container-tight">
-            <div class="text-center mb-4">
-              <a href="." class="navbar-brand navbar-brand-autodark"><img src="../../../assets/static/logo1.svg"
-                  height="42" alt=""></a>
-            </div>
-            <div class="card card-md">
-              <div class="card-header">
+    <div class="page page-center">
+        <div class="container container-normal py-4">
+            <div class="row align-items-center g-4">
+                <div class="col-lg">
+                    <div class="container-tight">
+                        <div class="text-center mb-4">
+                            <a href="." class="navbar-brand navbar-brand-autodark"><img src="../../../assets/static/logo1.svg" height="42" alt=""></a>
+                        </div>
+                        <div class="card card-md">
+                            <div class="card-header">
 
-                <div class="card-actions">
-                  <div class="navbar-nav flex-row order-md-last">
+                                <div class="card-actions">
+                                    <div class="navbar-nav flex-row order-md-last">
 
-                    <div class="nav-item dropdown d-none d-md-flex me-3">
-                      <a [routerLink]="''" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1" aria-label="Language"
-                        aria-expanded="false">
-                        <span class="flag flag-country-us"></span>
-                        <!-- Download SVG icon from http://tabler-icons.io/i/bell -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24"
-                          height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                          stroke-linecap="round" stroke-linejoin="round">
+                                        <div class="nav-item dropdown d-none d-md-flex me-3">
+                                            <a [routerLink]="''" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1" aria-label="Language" aria-expanded="false">
+                                                <span [ngClass]="dir=='rtl'?'flag flag-country-pk':'flag flag-country-us'"></span>
+                                                <!-- Download SVG icon from http://tabler-icons.io/i/bell -->
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                           <path d="M4 5h7"></path>
                           <path d="M9 3v2c0 4.418 -2.239 8 -5 8"></path>
@@ -63,59 +58,57 @@
                           <path d="M19.1 18h-6.2"></path>
                         </svg>
 
-                      </a>
-                      <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-end dropdown-menu-card">
-                        <div class="card">
-                          <div class="card-header">
-                            <h3 class="card-title">Language</h3>
-                          </div>
-                          <div class="list-group list-group-flush list-group-hoverable">
-                            <div class="list-group-item">
-                              <div class="row align-items-center">
-                                <span class="flag flag-country-us"></span>
-                                <div class="col text-truncate">
-                                  <a href='javascript:void(0)' (click)="changeLanguage('en')" class="text-body d-block">English</a>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-end dropdown-menu-card">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h3 class="card-title">Language</h3>
+                                                    </div>
+                                                    <div class="list-group list-group-flush list-group-hoverable">
+                                                        <div class="list-group-item">
+                                                            <div class="row align-items-center">
+                                                                <span class="flag flag-country-us"></span>
+                                                                <div class="col text-truncate">
+                                                                    <a href='javascript:void(0)' (click)="changeLanguage('en')" class="text-body d-block">English</a>
 
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item">
+                                                            <div class="row align-items-center">
+                                                                <span class="flag flag-country-pk"></span>
+                                                                <div class="col text-truncate">
+                                                                    <a href='javascript:void(0)' (click)="changeLanguage('ur')" class="text-body d-block">Urdu</a>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
-
-                              </div>
                             </div>
-                            <div class="list-group-item">
-                              <div class="row align-items-center">
-                                <span class="flag flag-country-pk"></span>
-                                <div class="col text-truncate">
-                                  <a href='javascript:void(0)' (click)="changeLanguage('ur')" class="text-body d-block">Urdu</a>
-
+                            <div class="card-body">
+                                <h2 class="h2 text-center mb-4">{{ 'login.title' | translate }}</h2>
+                                <div class="mb-3">
+                                    <label class="form-label">{{ 'login.email' | translate }}</label>
+                                    <input type="email" [(ngModel)]="user.email" class="form-control" placeholder="your@email.com" autocomplete="off">
                                 </div>
-
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <h2 class="h2 text-center mb-4">{{ 'login.title' | translate }}</h2>
-                <div class="mb-3">
-                  <label class="form-label">{{ 'login.email' | translate }}</label>
-                  <input type="email" [(ngModel)]="user.email" class="form-control" placeholder="your@email.com"
-                    autocomplete="off">
-                </div>
-                <div class="mb-2">
-                  <label class="form-label">
+                                <div class="mb-2">
+                                    <label class="form-label">
                     {{ 'login.password' | translate }}
                     <span class="form-label-description">
                       <a  [routerLink]="'/forgotpassword'">{{ 'login.reset' | translate }}</a>
                     </span>
                   </label>
-                  <div class="input-group input-group-flat">
-                    <input type="password" [(ngModel)]="user.password" class="form-control" placeholder="Your password"
-                      autocomplete="off">
-                    <span class="input-group-text">
+                                    <div class="input-group input-group-flat">
+                                        <input type="password" [(ngModel)]="user.password" class="form-control" placeholder="Your password" autocomplete="off">
+                                        <span class="input-group-text">
                       <a [routerLink]="''" class="link-secondary" title="Show password"
                         data-bs-toggle="tooltip"><!-- Download SVG icon from http://tabler-icons.io/i/eye -->
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
@@ -128,33 +121,33 @@
                         </svg>
                       </a>
                     </span>
-                  </div>
-                </div>
-                <div class="mb-2">
-                  <label class="form-check">
+                                    </div>
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-check">
                     <input type="checkbox" class="form-check-input" />
                     <span class="form-check-label">{{ 'login.remember' | translate }}</span>
                   </label>
+                                </div>
+                                <div class="form-footer">
+                                    <button type="button" class="btn btn-primary w-100" (click)="loginUser()">{{ 'login.signin' | translate }}</button>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="text-center text-muted mt-3">
+                            {{ 'login.signup' | translate }} <a [routerLink]="'/signup-start'" tabindex="-1">{{ 'login.signup1' | translate }}</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-footer">
-                  <button type="button" class="btn btn-primary w-100" (click)="loginUser()">{{ 'login.signin' | translate }}</button>
+                <div class="col-lg d-none d-lg-block">
+                    <img src="../../../assets/static/illustrations/main page.svg" height="300" class="d-block mx-auto" alt="">
                 </div>
-
-              </div>
-
-
             </div>
-            <div class="text-center text-muted mt-3">
-              {{ 'login.signup' | translate }} <a [routerLink]="'/signup-start'" tabindex="-1">{{ 'login.signup1' | translate }}</a>
-            </div>
-          </div>
         </div>
-        <div class="col-lg d-none d-lg-block">
-          <img src="../../../assets/static/illustrations/main page.svg" height="300" class="d-block mx-auto" alt="">
-        </div>
-      </div>
     </div>
-  </div>
 
 </body>
 
