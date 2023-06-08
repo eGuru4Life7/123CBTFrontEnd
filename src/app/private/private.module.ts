@@ -14,6 +14,7 @@ import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { MyhealthythoughtsComponent } from './myhealthythoughts/myhealthythoughts.component';
+import { NgApexchartsModule } from 'ng-apexcharts';
 
 
 
@@ -35,7 +36,8 @@ import { MyhealthythoughtsComponent } from './myhealthythoughts/myhealthythought
     ReactiveFormsModule,
     PrivateRoutingModule,
     ToastModule,
-    TranslateModule
+    TranslateModule,
+    NgApexchartsModule
   ]
 })
 export class PrivateModule { }

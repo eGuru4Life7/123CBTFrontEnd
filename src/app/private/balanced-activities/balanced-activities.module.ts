@@ -15,14 +15,14 @@ import { ActivitylistRecreationalComponent } from './activitylist-recreational/a
 import { ActivitylistWorkrelatedComponent } from './activitylist-workrelated/activitylist-workrelated.component';
 import { ActivitylistSocialspiritualComponent } from './activitylist-socialspiritual/activitylist-socialspiritual.component';
 import { TranslateModule } from '@ngx-translate/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { ToastModule } from 'primeng/toast';
 
 
 
 @NgModule({
   declarations: [
-
-
     ScaleComponent,
     ScoreComponent,
     StartComponent,
@@ -39,6 +39,9 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
+    NgApexchartsModule,
+    ReactiveFormsModule,
+    ToastModule,
     TranslateModule,
     BalancedActivitiesRoutingModule
   ]
