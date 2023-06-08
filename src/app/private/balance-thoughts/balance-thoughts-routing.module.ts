@@ -18,13 +18,13 @@ const routes: Routes = [
   {
     path:'',
     component:ScaleComponent,
-    canActivate: [CountGuard],
+   // canActivate: [CountGuard],
     data: { code: 'B_T', completed: 10, nextCode: 'P_S' }
   },
   {
     path:'scale',
     component:ScaleComponent,
-    canActivate: [CountGuard],
+   // canActivate: [CountGuard],
     data: { code: 'B_T', completed: 10, nextCode: 'P_S' }
   },
   {
@@ -54,13 +54,13 @@ const routes: Routes = [
   {
     path:'situation',
     component:SituationComponent,
-    canActivate: [CountGuard],
-    data: { code: 'B_T', completed: 60, nextCode: 'P_S' }
+  //  canActivate: [CountGuard],
+   // data: { code: 'B_T', completed: 60, nextCode: 'P_S' }
   },
   {
     path:'circle',
     component:CircleComponent,
-    canActivate: [CountGuard],
+   // canActivate: [CountGuard],
     data: { code: 'B_T', completed: 70, nextCode: 'P_S' }
   },
   {

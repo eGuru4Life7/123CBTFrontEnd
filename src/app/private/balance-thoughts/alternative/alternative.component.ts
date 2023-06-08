@@ -19,7 +19,7 @@ export class AlternativeComponent implements OnInit {
   }
 
   updateAlternativeThought(){
-    if(!this.alternative.thoughts){
+    if(!this.alternative.healthy_thoughts){
       this.messageService.add({ severity: 'warn', summary: 'Thoughts', detail: "please write some thoughts." }); 
       return;
     }

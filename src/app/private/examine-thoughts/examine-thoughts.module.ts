@@ -17,6 +17,7 @@ import { ExamineThoughts10Component } from './examine-thoughts10/examine-thought
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { TranslateModule } from '@ngx-translate/core';
+import { PrevNextButtonComponent } from '../shared/prev-next-button/prev-next-button.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { TranslateModule } from '@ngx-translate/core';
     ExamineThoughts7Component,
     ExamineThoughts8Component,
     ExamineThoughts9Component,
-    ExamineThoughts10Component
+    ExamineThoughts10Component,
+    PrevNextButtonComponent
   ],
   imports: [
     CommonModule,
