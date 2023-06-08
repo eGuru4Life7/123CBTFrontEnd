@@ -15,13 +15,13 @@ const routes: Routes = [
   {
     path: '',
     component: ScaleComponent,
-    canActivate: [CountGuard],
+    //canActivate: [CountGuard],
     data: { code: 'C_T', completed: 10, nextCode: 'B_T' }
   },
   {
     path: 'scale',
     component: ScaleComponent,
-    canActivate: [CountGuard],
+    //canActivate: [CountGuard],
     data: { code: 'C_T', completed: 10, nextCode: 'B_T' }
   },
   {
@@ -45,14 +45,14 @@ const routes: Routes = [
   {
     path: 'diary-week2',
     component: DiaryWeek2Component,
-    canActivate: [CountGuard],
-    data: { code: 'C_T', completed: 50, nextCode: 'B_T' }
+   // canActivate: [CountGuard],
+   // data: { code: 'C_T', completed: 50, nextCode: 'B_T' }
   },
   {
     path: 'situation',
     component: SituationComponent,
-    canActivate: [CountGuard],
-    data: { code: 'C_T', completed: 60, nextCode: 'B_T' }
+   // canActivate: [CountGuard],
+    //data: { code: 'C_T', completed: 60, nextCode: 'B_T' }
   },
   {
     path: 'circle',

@@ -39,11 +39,11 @@ export class ExamineThoughts7Component implements OnInit {
    addThoughtDairy() {
     this.diaryForm.get('uid')?.setValue(this.currentUser.id);
     debugger
-     this.moduleService.addThoughtDairy(null).subscribe((res: any) => {
+     this.moduleService.addThoughtDairy(this.diaryForm.value).subscribe((res: any) => {
       debugger
       if (res.success) {
 
-        this.router.navigateByUrl('../examinethoughts/examine8');
+        this.router.navigateByUrl('/examinethoughts/examine8');
       }
     })
   }

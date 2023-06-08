@@ -72,20 +72,18 @@ const routes: Routes = [
   {
     path:'examine7',
     component:ExamineThoughts7Component,
-     canActivate:[CountGuard],
-    data:{ code:'E_T',completed:70,nextCode:'C_T'}
+     //canActivate:[CountGuard],
+    //data:{ code:'E_T',completed:70,nextCode:'C_T'}
   },
   {
     path:'examine8',
-    component:ExamineThoughts8Component,
-     canActivate:[CountGuard],
-    data:{ code:'E_T',completed:80,nextCode:'C_T'}
+    component:ExamineThoughts8Component
   },
   {
     path:'examine9',
     component:ExamineThoughts9Component,
-     canActivate:[CountGuard],
-    data:{ code:'E_T',completed:90}
+     //canActivate:[CountGuard],
+   // data:{ code:'E_T',completed:90}
   },
   {
     path:'examine10',

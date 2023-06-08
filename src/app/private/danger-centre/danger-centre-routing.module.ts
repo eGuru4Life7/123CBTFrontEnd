@@ -17,13 +17,13 @@ const routes: Routes = [
   {
     path:'',
     component:DangerCentreScaleComponent,
-      canActivate:[CountGuard],
+    //  canActivate:[CountGuard],
       data:{ code:'D_C',nextCode:'E_T',completed:10}
   },
   {
     path: 'scale',
     component: DangerCentreScaleComponent,
-    canActivate: [CountGuard],
+  //  canActivate: [CountGuard],
     data: { code: 'D_C', nextCode: 'E_T', completed: 10 }
   },
   {

@@ -15,6 +15,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { MyhealthythoughtsComponent } from './myhealthythoughts/myhealthythoughts.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
+import { PrevNextButtonComponent } from './shared/prev-next-button/prev-next-button.component';
 
 
 
@@ -27,7 +28,7 @@ import { NgApexchartsModule } from 'ng-apexcharts';
     ProfileEditComponent,
     ChangePasswordModalComponent,
     EmailSuccesModalComponent,
-    MyhealthythoughtsComponent,
+    MyhealthythoughtsComponent
 
     ],
   imports: [
