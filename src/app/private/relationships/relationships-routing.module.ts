@@ -13,65 +13,87 @@ import { Relation10Component } from './relation10/relation10.component';
 import { Relation11Component } from './relation11/relation11.component';
 import { Relation12Component } from './relation12/relation12.component';
 import { Relation13Component } from './relation13/relation13.component';
+import { CountGuard } from 'src/app/services/guards/count.guard';
 
 const routes: Routes = [
- /*  {
-    path: '',
-    component: ScaleComponent,
-    canActivate: [CountGuard],
-    data: { code: 'P_S', completed: 10, nextCode: 'B_A' }
-  }, */
+
   {
-    path:'improve',
-    component:Relation1Component
+    path:'',
+    component:Relation1Component,
+    canActivate:[CountGuard],
+    data: { code: 'R', completed: 10, nextCode: 'S_W' }
   },
   {
     path:'aggressive',
-    component:Relation2Component
+    component:Relation2Component,
+    canActivate:[CountGuard],
+    data: { code: 'R', completed: 20, nextCode: 'S_W' }
   },
   {
     path:'passive',
-    component:Relation3Component
+    component:Relation3Component,
+    canActivate:[CountGuard],
+    data: { code: 'R', completed: 20, nextCode: 'S_W' }
   },
   {
     path:'manipulative',
-    component:Relation4Component
+    component:Relation4Component,
+    canActivate:[CountGuard],
+    data: { code: 'R', completed: 30, nextCode: 'S_W' }
   },
   {
     path:'assertive',
-    component:Relation5Component
+    component:Relation5Component,
+    canActivate:[CountGuard],
+    data: { code: 'R', completed: 40, nextCode: 'S_W' }
   },
   {
     path:'howtobeassertive',
-    component:Relation6Component
+    component:Relation6Component,
+    canActivate:[CountGuard],
+    data: { code: 'R', completed: 50, nextCode: 'S_W' }
   },
   {
     path:'fog',
-    component:Relation7Component
+    component:Relation7Component,
+    canActivate:[CountGuard],
+    data: { code: 'R', completed: 60, nextCode: 'S_W' }
   },
   {
     path:'cooldown',
-    component:Relation8Component
+    component:Relation8Component,
+    canActivate:[CountGuard],
+    data: { code: 'R', completed: 70, nextCode: 'S_W' }
   },
   {
     path:'howtosayno',
-    component:Relation9Component
+    component:Relation9Component,
+    canActivate:[CountGuard],
+    data: { code: 'R', completed: 80, nextCode: 'S_W' }
   },
   {
     path:'brokentape',
-    component:Relation10Component
+    component:Relation10Component,
+    canActivate:[CountGuard],
+    data: { code: 'R', completed: 90, nextCode: 'S_W' }
   },
   {
     path:'conflicts',
-    component:Relation11Component
+    component:Relation11Component,
+    canActivate:[CountGuard],
+    data: { code: 'R', completed: 90, nextCode: 'S_W' }
   },
   {
     path:'goldenrule1',
-    component:Relation12Component
+    component:Relation12Component,
+    canActivate:[CountGuard],
+    data: { code: 'R', completed: 90, nextCode: 'S_W' }
   },
   {
     path:'goldenrule2',
-    component:Relation13Component
+    component:Relation13Component,
+    canActivate:[CountGuard],
+    data: { code: 'R', completed: 100, nextCode: 'S_W' }
   }
   
 ];

@@ -287,13 +287,13 @@
                         <div class="card-body ">
                             <div class="card-title mb-1">{{ 'index.balanced-activities' | translate }}</div>
                             <div class="text-muted">{{ 'index.Module' | translate }} &nbsp; | &nbsp; <span class="module-time"> 20 min</span></div>
-                            <svg *ngIf="!module7 && !moduleStatus7" style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z"></path>
-                <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path>
-                <path d="M8 11v-4a4 4 0 1 1 8 0v4"></path>
-              </svg>
+                            <svg *ngIf="!module7 && !moduleStatus7?.status" style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z"></path>
+                                <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path>
+                                <path d="M8 11v-4a4 4 0 1 1 8 0v4"></path>
+                            </svg>
 
 
                             <div class="mt-3">
@@ -329,8 +329,8 @@
                         <div class="card-body ">
                             <div class="card-title mb-1"> {{ 'index.relationship' | translate }}</div>
                             <div class="text-muted">{{ 'index.Module' | translate }} &nbsp; | &nbsp; <span class="module-time"> 10 min</span></div>
-                            <svg *ngIf="!module8" style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
-                                stroke-linejoin="round">
+                            <svg *ngIf="!module8 && !moduleStatus8?.status" style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z"></path>
                 <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path>
@@ -358,26 +358,26 @@
 
                 <!-- Locked Module has "card-cover-blurred" class -->
                 <div class="col-6 col-sm-6 col-md-6 col-lg-4">
-                    <a [routerLink]="''" (click)="openModal(moduleStatus9?.status)" class="card card-link card-link-pop">
+                    <a [routerLink]="module9 || moduleStatus9?.status? '/relationhips':''" (click)="openModal(moduleStatus9?.status)" class="card card-link card-link-pop">
                         <div class="card-body" style="background-color: #FEB18F; border-radius: 4px 4px 0 0;">
                             <!-- <img src="../../../assets/static/illustrations/dashboard/staying_well_c.svg" height="210px" width="100%" alt=""> -->
 
                             <svg height="13rem" width="100%">
-                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite2.svg#staying_well_c"></use>
-              </svg>
+                                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite2.svg#staying_well_c"></use>
+                            </svg>
 
 
                         </div>
                         <div class="card-body ">
                             <div class="card-title mb-1">{{ 'index.staying-well' | translate }}</div>
                             <div class="text-muted">{{ 'index.Module' | translate }} &nbsp; | &nbsp; <span class="module-time"> 5 min</span></div>
-                            <svg *ngIf="!module9" style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
-                                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z"></path>
-                <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path>
-                <path d="M8 11v-4a4 4 0 1 1 8 0v4"></path>
-              </svg>
+                            <svg *ngIf="!module9 && !moduleStatus9?.status" style="position: absolute;right: 30; top: 50;" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z"></path>
+                                <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path>
+                                <path d="M8 11v-4a4 4 0 1 1 8 0v4"></path>
+                            </svg>
 
                             <div class="mt-3">
                                 <div class="row g-2 align-items-center">
