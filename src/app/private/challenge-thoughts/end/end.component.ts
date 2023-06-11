@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LocalCacheService } from 'src/app/services/local-cache.service';
 
 @Component({
   selector: 'app-end',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EndComponent implements OnInit {
 
-  constructor() { }
+  userfourthMod:any;
+  constructor(private localCache:LocalCacheService) { }
 
   ngOnInit(): void {
+    this.userfourthMod = this.localCache.getCurrentUser().fourth_mod;
   }
 
 }

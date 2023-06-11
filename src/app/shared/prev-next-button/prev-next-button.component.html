@@ -1,5 +1,5 @@
 <ul class="pagination justify-content-end">
-    <li class=" page-prev ">
+    <li class=" page-prev " *ngIf="prev!=null">
         <a class="page-link" [routerLink]="prev">
             <i [ngClass]="dir == 'rtl' ?'ti ti-circle-arrow-right-filled':'ti ti-circle-arrow-left-filled'" style="font-size: 5em; color: #5190B7;"></i>
         </a>

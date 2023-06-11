@@ -18,6 +18,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { DownloadsComponent } from './downloads/downloads.component';
 import { ProfileEditComponent } from './profile-edit/profile-edit.component';
 import { MyhealthythoughtsComponent } from './myhealthythoughts/myhealthythoughts.component';
+import { ProgressComponent } from './progress/progress.component';
 
 
 const routes: Routes = [
@@ -81,6 +82,10 @@ const routes: Routes = [
   {
     path:'help',
     loadChildren: ()=>HelpetcModule
+  },
+  {
+    path:'progress',
+    component:ProgressComponent
   }
 ];
 

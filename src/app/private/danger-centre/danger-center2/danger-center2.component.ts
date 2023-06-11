@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LocalCacheService } from 'src/app/services/local-cache.service';
 
 @Component({
   selector: 'app-danger-center2',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./danger-center2.component.scss']
 })
 export class DangerCenter2Component implements OnInit {
-
-  constructor() { }
+  userSecondMod:any;
+  constructor(private localCache:LocalCacheService) { }
 
   ngOnInit(): void {
+    this.userSecondMod = this.localCache.getCurrentUser().second_mod;
   }
 
 }

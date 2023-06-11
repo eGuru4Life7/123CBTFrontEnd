@@ -13,6 +13,7 @@ import {
   ApexTooltip,
   ApexStroke
 } from "ng-apexcharts";
+import { DatePipe } from '@angular/common';
 export type ChartOptions = {
   series: ApexAxisChartSeries;
   chart: ApexChart;
@@ -25,7 +26,7 @@ export type ChartOptions = {
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  providers:[TranslateService]
+  providers:[TranslateService,DatePipe]
 })
 export class HomeComponent implements OnInit {
   moduleScore: any = 0;
@@ -45,7 +46,7 @@ export class HomeComponent implements OnInit {
   moduleStatus8: any ={};
   moduleStatus9: any ={};
   isShow: any = false;
-  constructor(private localService:LocalCacheService,private moduleService:ModuleService,private translate: TranslateService) {
+  constructor(private localService:LocalCacheService,private moduleService:ModuleService,private translate: TranslateService,private datePipe:DatePipe) {
   
   } 
   module1:any={};
@@ -88,12 +89,19 @@ export class HomeComponent implements OnInit {
       if(res){
         this.modulesStatus = res.data;
         this.moduleStatus1 = this.modulesStatus.filter((s:any)=>s.name == 'S')[0];
-        this.moduleStatus2 = this.modulesStatus.filter((s:any)=>s.name == 'D_C')[0];
-        this.moduleStatus3 = this.modulesStatus.filter((s:any)=>s.name == 'E_T')[0];
-        this.moduleStatus4 = this.modulesStatus.filter((s:any)=>s.name == 'C_T')[0];
-        this.moduleStatus5 = this.modulesStatus.filter((s:any)=>s.name == 'B_T')[0];
-        this.moduleStatus6 = this.modulesStatus.filter((s:any)=>s.name == 'P_S')[0];
-        this.moduleStatus7 = this.modulesStatus.filter((s:any)=>s.name == 'B_A')[0];
+
+        this.moduleStatus2 = this.modulesStatus.filter((s:any)=>s.name == 'D_C')[0]; //;
+        this.moduleStatus2.status = (new Date(this.currentUser.first_mod) <= new Date(Date.now()) && this.moduleStatus2.status ? true:false); 
+        this.moduleStatus3 = this.modulesStatus.filter((s:any)=>s.name == 'E_T')[0]; //&& (this.currentUser.second_mod <= new Date(Date.now()) ? true:false);
+        this.moduleStatus3.status = (new Date(this.currentUser.second_mod) <= new Date(Date.now()) && this.moduleStatus3.status ? true:false); 
+        this.moduleStatus4 = this.modulesStatus.filter((s:any)=>s.name == 'C_T')[0]; //&& (this.currentUser.third_mod <= new Date(Date.now()) ? true:false);
+        this.moduleStatus4.status = (new Date(this.currentUser.third_mod) <= new Date(Date.now()) && this.moduleStatus4.status ? true:false); 
+        this.moduleStatus5 = this.modulesStatus.filter((s:any)=>s.name == 'B_T')[0]; //&& (this.currentUser.fourth_mod <= new Date(Date.now()) ? true:false);
+        this.moduleStatus5.status = (new Date(this.currentUser.fourth_mod) <= new Date(Date.now()) && this.moduleStatus5.status ? true:false); 
+        this.moduleStatus6 = this.modulesStatus.filter((s:any)=>s.name == 'P_S')[0]; //&& (this.currentUser.fifth_mod <= new Date(Date.now()) ? true:false);
+        this.moduleStatus6.status = (new Date(this.currentUser.fifth_mod) <= new Date(Date.now()) && this.moduleStatus6.status ? true:false); 
+        this.moduleStatus7 = this.modulesStatus.filter((s:any)=>s.name == 'B_A')[0]; //&& (this.currentUser.sixth_mod <= new Date(Date.now()) ? true:false);
+        this.moduleStatus7.status = (new Date(this.currentUser.sixth_mod) <= new Date(Date.now()) && this.moduleStatus7.status ? true:false); 
         this.moduleStatus8 = this.modulesStatus.filter((s:any)=>s.name == 'R')[0];
         this.moduleStatus9 = this.modulesStatus.filter((s:any)=>s.name == 'S_W')[0];
       }
@@ -112,14 +120,36 @@ export class HomeComponent implements OnInit {
     this.isShow = event;
   }
   async getModuleScore() {
-    await this.moduleService.getModuleScoreById(this.currentUser.id,'D_C').toPromise().then((res: any) => {
+    let currentDate = this.datePipe.transform(new Date(Date.now()),'yyyy-MM-dd');
+    await this.moduleService.getAllModuleById(this.currentUser.id).toPromise().then((res: any) => {
       if (res.success) {
-        this.moduleScore = res.data[0];
+        console.log(res);
+     
+        let user = res.data.user;
+        let score1 = res.data.stress?res.data.stress.score:0;
+        let score2 = res.data.examineThought? res.data.examineThought.score:0;
+        let score3 = res.data.thoughts?res.data.thoughts.score:0;
+        let score4 = res.data.balance? res.data.balance.score:0;
+        let score5 = res.data.problemSolving?res.data.problemSolving.score:0;
+        let score6 = res.data.blanceActivities?res.data.blanceActivities.score:0;
+        let date1 = res.data.stress?res.data.stress.date:user.first_mod;
+        let date2 = res.data.examineThought? res.data.examineThought.date:user.second_mod;
+        let date3 = res.data.thoughts?res.data.thoughts.date:user.third_mod;
+        let date4 = res.data.balance? res.data.balance.date:user.fourth_mod;
+        let date5 = res.data.problemSolving?res.data.problemSolving.date:user.fifth_mod;
+        let date6 = res.data.blanceActivities?res.data.blanceActivities.date:user.sixth_mod;
         this.chartOptions = {
           series: [
             {
-              name: "Question",
-              data: [this.moduleScore.q_1, this.moduleScore.q_2, this.moduleScore.q_3, this.moduleScore.q_4, this.moduleScore.q_5, this.moduleScore.q_6, this.moduleScore.q_7, this.moduleScore.q_8, this.moduleScore.q_9, this.moduleScore.q_10]
+              name: "Score",
+              data: [score1,
+                     score2,
+                     score3,
+                     score4,
+                     score5,
+                     score6,
+                     0
+                    ]
             }
           ],
           chart: {
@@ -134,7 +164,52 @@ export class HomeComponent implements OnInit {
           },
           xaxis: {
             type: "category",
-            categories: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+            categories: [
+               date1
+              ,date2
+              ,date3
+              ,date4
+              ,date5
+              ,date6
+              ,currentDate]
+          }
+  
+        };
+      }else{
+        this.chartOptions = {
+          series: [
+            {
+              name: "Score",
+              data: [0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0
+                    ]
+            }
+          ],
+          chart: {
+            height: 350,
+            type: "area"
+          },
+          dataLabels: {
+            enabled: false
+          },
+          stroke: {
+            curve: "smooth"
+          },
+          xaxis: {
+            type: "category",
+            categories: [
+              currentDate
+              ,currentDate
+              ,currentDate
+              ,currentDate
+              ,currentDate
+              ,currentDate
+              ,currentDate]
           }
   
         };
