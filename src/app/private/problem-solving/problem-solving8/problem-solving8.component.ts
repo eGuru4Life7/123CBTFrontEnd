@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LocalCacheService } from 'src/app/services/local-cache.service';
 
 @Component({
   selector: 'app-problem-solving8',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProblemSolving8Component implements OnInit {
 
-  constructor() { }
+  userfifthMod:any;
+  constructor(private localCache:LocalCacheService) { }
 
   ngOnInit(): void {
+    this.userfifthMod = this.localCache.getCurrentUser().fifth_mod;
   }
+
 
 }

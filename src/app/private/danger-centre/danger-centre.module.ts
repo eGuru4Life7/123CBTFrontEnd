@@ -14,6 +14,8 @@ import { FoodadviceComponent } from './foodadvice/foodadvice.component';
 import { SleepadviceComponent } from './sleepadvice/sleepadvice.component';
 import { UsefultipsComponent } from './usefultips/usefultips.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { SharedModule } from 'src/app/shared/shared.module';
+
 
 
 @NgModule({
@@ -33,6 +35,7 @@ import { TranslateModule } from '@ngx-translate/core';
     NgApexchartsModule,
     TranslateModule,
     DangerCentreRoutingModule,
+    SharedModule
   ]
 })
 export class DangerCentreModule { }

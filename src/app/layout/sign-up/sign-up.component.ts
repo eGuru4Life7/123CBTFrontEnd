@@ -60,16 +60,21 @@ export class SignUpComponent implements OnInit {
 
 
   saveUser() {
-    this.userForm.get('id')?.setValue
-    var currentDate = new Date(Date.now());
-    this.userForm.get('first_mod')?.setValue(currentDate);
-    this.userForm.get('second_mod')?.setValue(this.addDays(7, currentDate));
-    this.userForm.get('third_mod')?.setValue(this.addDays(14, currentDate));
-    this.userForm.get('fourth_mod')?.setValue(this.addDays(21, currentDate));
-    this.userForm.get('fifth_mod')?.setValue(this.addDays(28, currentDate));
-    this.userForm.get('sixth_mod')?.setValue(this.addDays(35, currentDate));
-    this.userForm.get('seventh_mod')?.setValue(this.addDays(42, currentDate));
-
+    this.userForm.get('id')?.setValue;
+    let secondMod =new Date(this.addDays(7, new Date(Date.now())));
+    let thirdMod =new Date(this.addDays(14, new Date(Date.now())));
+    let fourthMod =new Date(this.addDays(21, new Date(Date.now())));
+    let fifthMod =new Date(this.addDays(28, new Date(Date.now())));
+    let sixthMod =new Date(this.addDays(35, new Date(Date.now())));
+    let seventhMod =new Date(this.addDays(42, new Date(Date.now())));
+    this.userForm.get('first_mod')?.setValue(new Date(Date.now()));
+    this.userForm.get('second_mod')?.setValue(secondMod);
+    this.userForm.get('third_mod')?.setValue(thirdMod);
+    this.userForm.get('fourth_mod')?.setValue(fourthMod);
+    this.userForm.get('fifth_mod')?.setValue(fifthMod);
+    this.userForm.get('sixth_mod')?.setValue(sixthMod);
+    this.userForm.get('seventh_mod')?.setValue(seventhMod);
+   
     if (this.userForm.valid) {
       this.userService.signUp(this.userForm.value).toPromise().then((resp: any) => {
         if (resp.success) {
@@ -88,6 +93,7 @@ export class SignUpComponent implements OnInit {
     }
   }
   addDays(days: any, date: any) {
+    debugger
     date.setDate(date.getDate() + days);
     return date;
   }

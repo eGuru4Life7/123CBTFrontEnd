@@ -40,4 +40,7 @@ export class ModuleService {
   public getAllHealthyThoughts(id:any): Observable<any> {
     return this.http.get(environment.BASE_URL + 'module/getAllHealthyThoughts/'+id);
   }
+  public getAllModuleById(id:any): Observable<any> {
+    return this.http.get(environment.BASE_URL + 'module/getAllModuleById/'+id);
+  }
 }

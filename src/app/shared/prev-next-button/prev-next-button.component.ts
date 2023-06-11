@@ -6,8 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./prev-next-button.component.scss']
 })
 export class PrevNextButtonComponent {
-  @Input() next:any;
-  @Input() prev:any;
+  @Input() next:any =null;
+  @Input() prev:any =null;
   dir:any;
   ngOnInit(): void {
    this.dir= localStorage.getItem('dir');

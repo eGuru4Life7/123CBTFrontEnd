@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ExamineThoughtsRoutingModule } from './examine-thoughts-routing.module';
@@ -17,7 +17,10 @@ import { ExamineThoughts10Component } from './examine-thoughts10/examine-thought
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { TranslateModule } from '@ngx-translate/core';
-import { PrevNextButtonComponent } from '../shared/prev-next-button/prev-next-button.component';
+import { SharedModule } from 'src/app/shared/shared.module';
+
+
+
 
 
 @NgModule({
@@ -33,8 +36,8 @@ import { PrevNextButtonComponent } from '../shared/prev-next-button/prev-next-bu
     ExamineThoughts7Component,
     ExamineThoughts8Component,
     ExamineThoughts9Component,
-    ExamineThoughts10Component,
-    PrevNextButtonComponent
+    ExamineThoughts10Component
+   
   ],
   imports: [
     CommonModule,
@@ -42,7 +45,10 @@ import { PrevNextButtonComponent } from '../shared/prev-next-button/prev-next-bu
     TranslateModule,
     NgApexchartsModule,
     ReactiveFormsModule,
-    ExamineThoughtsRoutingModule
+    ExamineThoughtsRoutingModule,
+    SharedModule
+    
   ]
+
 })
 export class ExamineThoughtsModule { }

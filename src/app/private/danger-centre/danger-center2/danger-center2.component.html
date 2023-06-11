@@ -1,23 +1,23 @@
 <div class="page-wrapper">
-  <!-- Page header -->
-  <div class="page-header d-print-none">
-    <div class="container-xl">
-      <div class="row g-2 align-items-center">
-        <div class="col">
-          <!-- Page pre-title -->
-          <h2 class="page-title">
-            {{ 'index.Danger-Centre' | translate }}
-          </h2>
-          <div class="page-pretitle">
-            {{ 'index.Module' | translate }}
-          </div>
+    <!-- Page header -->
+    <div class="page-header d-print-none">
+        <div class="container-xl">
+            <div class="row g-2 align-items-center">
+                <div class="col">
+                    <!-- Page pre-title -->
+                    <h2 class="page-title">
+                        {{ 'index.Danger-Centre' | translate }}
+                    </h2>
+                    <div class="page-pretitle">
+                        {{ 'index.Module' | translate }}
+                    </div>
 
+                </div>
+                <!-- Page title actions -->
+
+            </div>
         </div>
-        <!-- Page title actions -->
-
-      </div>
     </div>
-  </div>
 
 
 
@@ -26,89 +26,86 @@
 
 
 
-  <!-- Page body -->
-  <div class="page-body">
-    <div class="container-xl">
+    <!-- Page body -->
+    <div class="page-body">
+        <div class="container-xl">
 
-      <div class="col-lg-12">
-        <div class="card">
-          <div class="card-body">
-            <div class="row align-items-center">
-              <div class="col-sm-12 col-md-4 col-lg-4 ">
-                <img src="../../../../assets/static/illustrations/khushi_meditating.svg" alt="Meditation">
-              </div>
-              <div class="col">
-                <p>{{ 'amb.paragraph' | translate }}</p>
-                <p><strong>{{ 'amb.heading1' | translate }}</strong></p>
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-sm-12 col-md-4 col-lg-4 ">
+                                <img src="../../../../assets/static/illustrations/khushi_meditating.svg" alt="Meditation">
+                            </div>
+                            <div class="col">
+                                <p>{{ 'amb.paragraph' | translate }}</p>
+                                <p><strong>{{ 'amb.heading1' | translate }} {{userSecondMod}}</strong></p>
 
 
-                <div class="row row-cards">
+                                <div class="row row-cards">
 
-                  <div class="col-6 col-md-6 col-xl-3">
-                    <a [routerLink]="'../audio'" class="card card-link">
-                      <div class="card-cover card-cover-blurred text-center card-cover-blurred ">
-                        <span class="avatar avatar-xl avatar-thumb rounded"><i class="ti ti-lungs"
+                                    <div class="col-6 col-md-6 col-xl-3">
+                                        <a [routerLink]="'../audio'" class="card card-link">
+                                            <div class="card-cover card-cover-blurred text-center card-cover-blurred ">
+                                                <span class="avatar avatar-xl avatar-thumb rounded"><i class="ti ti-lungs"
                             style="font-size: 2em; color: #5190B7;"></i></span>
-                      </div>
-                      <div class="card-body text-center">
-                        <div class="card-title mb-1">{{ 'amb.Breathing' | translate }}</div>
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <div class="card-title mb-1">{{ 'amb.Breathing' | translate }}</div>
 
 
-                      </div>
+                                            </div>
 
-                    </a>
-                  </div>
+                                        </a>
+                                    </div>
 
-                  <div class="col-6 col-md-6 col-xl-3">
-                    <a [routerLink]="'../foodadvice'" class="card card-link">
-                      <div class="card-cover card-cover-blurred text-center card-cover-blurred ">
-                        <span class="avatar avatar-xl avatar-thumb rounded">
+                                    <div class="col-6 col-md-6 col-xl-3">
+                                        <a [routerLink]="'../foodadvice'" class="card card-link">
+                                            <div class="card-cover card-cover-blurred text-center card-cover-blurred ">
+                                                <span class="avatar avatar-xl avatar-thumb rounded">
 
                           <i class="ti ti-salad" style="font-size: 2em; color: #5190B7;"></i>
                         </span>
-                      </div>
-                      <div class="card-body text-center">
-                        <div class="card-title mb-1">{{ 'amb.food' | translate }}</div>
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <div class="card-title mb-1">{{ 'amb.food' | translate }}</div>
 
 
-                      </div>
+                                            </div>
 
-                    </a>
-                  </div>
+                                        </a>
+                                    </div>
 
 
-                  <div class="col-6 col-md-6 col-xl-3">
-                    <a [routerLink]="'../sleepadvice'" class="card card-link">
-                      <div class="card-cover card-cover-blurred text-center card-cover-blurred ">
-                        <span class="avatar avatar-xl avatar-thumb rounded"><i class="ti ti-bed"
+                                    <div class="col-6 col-md-6 col-xl-3">
+                                        <a [routerLink]="'../sleepadvice'" class="card card-link">
+                                            <div class="card-cover card-cover-blurred text-center card-cover-blurred ">
+                                                <span class="avatar avatar-xl avatar-thumb rounded"><i class="ti ti-bed"
                             style="font-size: 2em; color: #5190B7;"></i></span>
-                      </div>
-                      <div class="card-body text-center">
-                        <div class="card-title mb-1">{{ 'amb.sleep' | translate }}</div>
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <div class="card-title mb-1">{{ 'amb.sleep' | translate }}</div>
 
 
-                      </div>
+                                            </div>
 
-                    </a>
-                  </div>
+                                        </a>
+                                    </div>
 
-                  <div class="col-6 col-md-6 col-xl-3">
-                    <a [routerLink]="'../usefultips'" class="card card-link">
-                      <div class="card-cover card-cover-blurred text-center card-cover-blurred ">
-                        <span class="avatar avatar-xl avatar-thumb rounded"><i class="ti ti-bulb"
+                                    <div class="col-6 col-md-6 col-xl-3">
+                                        <a [routerLink]="'../usefultips'" class="card card-link">
+                                            <div class="card-cover card-cover-blurred text-center card-cover-blurred ">
+                                                <span class="avatar avatar-xl avatar-thumb rounded"><i class="ti ti-bulb"
                             style="font-size: 2em; color: #5190B7;"></i></span>
-                      </div>
-                      <div class="card-body text-center">
-                        <div class="card-title mb-1">{{ 'amb.tips' | translate }}</div>
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <div class="card-title mb-1">{{ 'amb.tips' | translate }}</div>
 
 
-                      </div>
+                                            </div>
 
-                    </a>
-                  </div>
-
-
-
+                                        </a>
+                                    </div>
 
 
 
@@ -119,13 +116,16 @@
 
 
 
-                </div>
-              </div>
 
-            </div>
-          </div>
 
-          <ul class="pagination justify-content-end">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <prev-next-button [next]="''" [prev]="'../1'"></prev-next-button>
+                    <!-- <ul class="pagination justify-content-end">
             <li class=" page-prev ">
               <a class="page-link" [routerLink]="'../1'">
                 <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>
@@ -138,18 +138,18 @@
 
               </a>
             </li>
-          </ul>
+          </ul> -->
 
 
-        </div>
-      </div>
+                </div>
+            </div>
 
 
 
 
-      <br>
+            <br>
 
-      <!-- <div class="row row-cards">
+            <!-- <div class="row row-cards">
         
         <div class="col-12">
           <div class="card">
@@ -175,5 +175,5 @@
 
 
 
+        </div>
     </div>
-  </div>

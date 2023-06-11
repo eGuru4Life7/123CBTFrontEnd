@@ -40,49 +40,30 @@
 
 
                             <div class="col-sm-12 col-md-4 col-lg-4 " tooltipPosition="top" [pTooltip]="'stressb.p1' | translate">
-                                <img src="../../../../assets/static/illustrations/Stress_module2.1.svg" alt=""
-                                    class="rounded" aria-label="Financial Problems">
+                                <img src="../../../../assets/static/illustrations/Stress_module2.1.svg" alt="" class="rounded" aria-label="Financial Problems">
                             </div>
 
                             <div class="col-sm-12 col-md-4 col-lg-4 " tooltipPosition="top" [pTooltip]="'stressb.p2' | translate">
-                                <img src="../../../../assets/static/illustrations/Stress_module2.2.svg" alt=""
-                                    style="max-width: 80%;" class="rounded" aria-label="Child's Marriage">
+                                <img src="../../../../assets/static/illustrations/Stress_module2.2.svg" alt="" style="max-width: 80%;" class="rounded" aria-label="Child's Marriage">
                             </div>
 
                             <div class="col-sm-12 col-md-4 col-lg-4 " tooltipPosition="top" [pTooltip]="'stressb.p3' | translate">
-                                <img src="../../../../assets/static/illustrations/Stress_module2.3.svg" alt=""
-                                    class="rounded" aria-label="Health Problems">
+                                <img src="../../../../assets/static/illustrations/Stress_module2.3.svg" alt="" class="rounded" aria-label="Health Problems">
                             </div>
                             <div class="col-sm-12 col-md-4 col-lg-4 ">
-                                <img src="../../../../assets/static/illustrations/Stress_module2.4.svg" alt=""
-                                    class="rounded" aria-label="Educational Problems" tooltipPosition="top" [pTooltip]="'stressb.p4' | translate">
+                                <img src="../../../../assets/static/illustrations/Stress_module2.4.svg" alt="" class="rounded" aria-label="Educational Problems" tooltipPosition="top" [pTooltip]="'stressb.p4' | translate">
                             </div>
                             <div class="col-sm-12 col-md-4 col-lg-4 ">
-                                <img src="../../../../assets/static/illustrations/Stress_module2.5.svg" alt=""
-                                    class="rounded" aria-label="Relationship Problems" tooltipPosition="top" [pTooltip]="'stressb.p5' | translate">
+                                <img src="../../../../assets/static/illustrations/Stress_module2.5.svg" alt="" class="rounded" aria-label="Relationship Problems" tooltipPosition="top" [pTooltip]="'stressb.p5' | translate">
                             </div>
                             <div class="col-sm-12 col-md-4 col-lg-4 ">
-                                <img src="../../../../assets/static/illustrations/Stress_module2.6.svg" alt=""
-                                    class="rounded" aria-label="Work Related Problems" tooltipPosition="top" [pTooltip]="'stressb.p6' | translate">
+                                <img src="../../../../assets/static/illustrations/Stress_module2.6.svg" alt="" class="rounded" aria-label="Work Related Problems" tooltipPosition="top" [pTooltip]="'stressb.p6' | translate">
                             </div>
 
 
                         </div>
                     </div>
-                    
-                    <ul class="pagination justify-content-end">
-                        <li class=" page-prev ">
-                            <a class="page-link" [routerLink]="'../intro'">
-                                <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
-                            </a>
-                        </li>
-                        <li class=" page-next">
-                            <a class="page-link" [routerLink]="'../symptoms'">
-                               
-                                <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
-                            </a>
-                        </li>
-                    </ul>
+                    <prev-next-button [next]="'../symptoms'" [prev]="'../'"></prev-next-button>
 
                 </div>
             </div>

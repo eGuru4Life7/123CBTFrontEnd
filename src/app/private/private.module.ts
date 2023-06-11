@@ -15,7 +15,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { MyhealthythoughtsComponent } from './myhealthythoughts/myhealthythoughts.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
-import { PrevNextButtonComponent } from './shared/prev-next-button/prev-next-button.component';
+import { ProgressComponent } from './progress/progress.component';
+
 
 
 
@@ -28,8 +29,9 @@ import { PrevNextButtonComponent } from './shared/prev-next-button/prev-next-but
     ProfileEditComponent,
     ChangePasswordModalComponent,
     EmailSuccesModalComponent,
-    MyhealthythoughtsComponent
-
+    MyhealthythoughtsComponent,
+    ProgressComponent
+    
     ],
   imports: [
     CommonModule,
@@ -38,7 +40,10 @@ import { PrevNextButtonComponent } from './shared/prev-next-button/prev-next-but
     PrivateRoutingModule,
     ToastModule,
     TranslateModule,
-    NgApexchartsModule
+    NgApexchartsModule,
+   
+  ],exports:[
+   
   ]
 })
 export class PrivateModule { }

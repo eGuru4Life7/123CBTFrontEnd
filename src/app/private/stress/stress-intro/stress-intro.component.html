@@ -35,13 +35,13 @@
                     <div class="card-body">
                         <div class="row align-items-center">
                             <div class="col-sm-12 col-md-6 col-lg-6 ">
-                                <img src="../../../../assets/static/illustrations/Stress_module1.svg" alt="Stressed" class="rounded " >
+                                <img src="../../../../assets/static/illustrations/Stress_module1.svg" alt="Stressed" class="rounded ">
                             </div>
                             <div class="col">
 
                                 <h1 style="font-size: 2.5rem;
                                     margin-bottom: 20px;">
-                                    
+
                                     {{ 'index.stress-heading' | translate }}</h1>
 
                                 <p>{{ 'index.stress-para' | translate }}</p>
@@ -51,25 +51,9 @@
 
                         </div>
                     </div>
-                        
-                                <ul class="pagination justify-content-end">
-                                    <!-- <li class=" page-prev ">
-                                        <a class="page-link" [routerLink]="''">
-                                            <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
-                                        </a>
-                                    </li> -->
-                                    <li class=" page-next">
-                                        <a class="page-link" [routerLink]="'./causes'">
-                                           
-                                            <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
-                                        </a>
-                                    </li>
-                                </ul>
+                    <prev-next-button [next]="'../stress/causes'"></prev-next-button>
+                </div>
 
-
-
-                    </div>
-                     
             </div>
             <br>
             <!-- <div class="row row-cards">

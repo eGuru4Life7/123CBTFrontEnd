@@ -12,6 +12,7 @@ import { StressScaleComponent } from './stress-scale/stress-scale.component';
 import { FormsModule } from '@angular/forms';
 import { TooltipModule } from 'primeng/tooltip';
 import { TranslateModule } from '@ngx-translate/core';
+import { SharedModule } from 'src/app/shared/shared.module';
 @NgModule({
   
   declarations: [
@@ -28,7 +29,8 @@ import { TranslateModule } from '@ngx-translate/core';
     FormsModule,
     TooltipModule,
     TranslateModule,
-    StressRoutingModule
+    StressRoutingModule,
+    SharedModule
   ]
 })
 export class StressModule { }
