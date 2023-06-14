@@ -31,7 +31,7 @@ const routes: Routes = [
   {
     path: 'score',
     component: ScoreComponent,
-    canActivate: [CountGuard],
+    //canActivate: [CountGuard],
     data: { code: 'B_A', completed: 30, nextCode: 'R' }
   },
   {

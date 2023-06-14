@@ -27,7 +27,7 @@ const routes: Routes = [
   {
     path: 'score',
     component: ScoreComponent,
-    canActivate: [CountGuard],
+    //canActivate: [CountGuard],
     data: { code: 'C_T', completed: 20, nextCode: 'B_T' }
   },
   {
