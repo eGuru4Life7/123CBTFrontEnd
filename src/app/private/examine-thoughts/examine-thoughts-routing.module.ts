@@ -18,14 +18,14 @@ const routes: Routes = [
   {
     path:'',
     component:DangerCenterScaleComponent,
-     canActivate:[CountGuard],
-    data:{ code:'E_T',completed:10,nextCode:'C_T'}
+    //canActivate:[CountGuard],
+    //data:{ code:'E_T',completed:10,nextCode:'C_T'}
   },
   {
     path:'danger-center-scale',
     component:DangerCenterScaleComponent,
-     canActivate:[CountGuard],
-    data:{ code:'E_T',completed:10,nextCode:'C_T'}
+     //canActivate:[CountGuard],
+    //data:{ code:'E_T',completed:10,nextCode:'C_T'}
   },
   {
     path:'danger-center-score',

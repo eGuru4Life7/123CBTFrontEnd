@@ -91,17 +91,17 @@ export class HomeComponent implements OnInit {
         this.moduleStatus1 = this.modulesStatus.filter((s:any)=>s.name == 'S')[0];
 
         this.moduleStatus2 = this.modulesStatus.filter((s:any)=>s.name == 'D_C')[0]; //;
-        this.moduleStatus2.status = (new Date(this.currentUser.first_mod) <= new Date(Date.now()) && this.moduleStatus2.status ? true:false); 
+        //this.moduleStatus2.status = (new Date(this.currentUser.first_mod) <= new Date(Date.now()) && this.moduleStatus2.status ? true:false); 
         this.moduleStatus3 = this.modulesStatus.filter((s:any)=>s.name == 'E_T')[0]; //&& (this.currentUser.second_mod <= new Date(Date.now()) ? true:false);
-        this.moduleStatus3.status = (new Date(this.currentUser.second_mod) <= new Date(Date.now()) && this.moduleStatus3.status ? true:false); 
+        //this.moduleStatus3.status = (new Date(this.currentUser.second_mod) <= new Date(Date.now()) && this.moduleStatus3.status ? true:false); 
         this.moduleStatus4 = this.modulesStatus.filter((s:any)=>s.name == 'C_T')[0]; //&& (this.currentUser.third_mod <= new Date(Date.now()) ? true:false);
-        this.moduleStatus4.status = (new Date(this.currentUser.third_mod) <= new Date(Date.now()) && this.moduleStatus4.status ? true:false); 
+        //this.moduleStatus4.status = (new Date(this.currentUser.third_mod) <= new Date(Date.now()) && this.moduleStatus4.status ? true:false); 
         this.moduleStatus5 = this.modulesStatus.filter((s:any)=>s.name == 'B_T')[0]; //&& (this.currentUser.fourth_mod <= new Date(Date.now()) ? true:false);
-        this.moduleStatus5.status = (new Date(this.currentUser.fourth_mod) <= new Date(Date.now()) && this.moduleStatus5.status ? true:false); 
+        //this.moduleStatus5.status = (new Date(this.currentUser.fourth_mod) <= new Date(Date.now()) && this.moduleStatus5.status ? true:false); 
         this.moduleStatus6 = this.modulesStatus.filter((s:any)=>s.name == 'P_S')[0]; //&& (this.currentUser.fifth_mod <= new Date(Date.now()) ? true:false);
-        this.moduleStatus6.status = (new Date(this.currentUser.fifth_mod) <= new Date(Date.now()) && this.moduleStatus6.status ? true:false); 
+        //this.moduleStatus6.status = (new Date(this.currentUser.fifth_mod) <= new Date(Date.now()) && this.moduleStatus6.status ? true:false); 
         this.moduleStatus7 = this.modulesStatus.filter((s:any)=>s.name == 'B_A')[0]; //&& (this.currentUser.sixth_mod <= new Date(Date.now()) ? true:false);
-        this.moduleStatus7.status = (new Date(this.currentUser.sixth_mod) <= new Date(Date.now()) && this.moduleStatus7.status ? true:false); 
+        //this.moduleStatus7.status = (new Date(this.currentUser.sixth_mod) <= new Date(Date.now()) && this.moduleStatus7.status ? true:false); 
         this.moduleStatus8 = this.modulesStatus.filter((s:any)=>s.name == 'R')[0];
         this.moduleStatus9 = this.modulesStatus.filter((s:any)=>s.name == 'S_W')[0];
       }

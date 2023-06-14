@@ -67,13 +67,12 @@ const routes: Routes = [
     path:'evidence',
     component:EvidenceComponent,
     canActivate: [CountGuard],
-    data: { code: 'B_T', completed: 80, nextCode: 'P_S' }
+    data: { code: 'B_T', completed: 85, nextCode: 'P_S' }
   },
   {
     path:'alternative',
-    component:AlternativeComponent,
-    canActivate: [CountGuard],
-    data: { code: 'B_T', completed: 90, nextCode: 'P_S' }
+    component:AlternativeComponent
+   
   },
   {
     path:'end',
