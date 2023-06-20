@@ -6,10 +6,10 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Problem Solving
+                        {{ 'index.problem-solving' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -40,24 +40,24 @@
                             <div class="col">
 
                                 <h1 style="font-size: 2.5rem;
-                                    margin-bottom: 20px;">
-                                    
-                                    Break down this solution into as many steps as possible</h1>
-                                    <p>
-                                        Now it is the time to execute the solution. To do this, it is vital that every part is considered carefully. Breaking down the solution in small, doable step can be helpful. Write down as many small steps as possible, even if they look ridiculous. You might realize that you need more information or even might have to go back and rethink another solution. You can also do “mind rehearsal”- i.e., going through the whole process in imagination.</p>                            </div>
+                                margin-bottom: 20px;">
+
+                                    {{ 'Problem_solving_4d.heading' | translate }}</h1>
+                                <p>{{ 'Problem_solving_4d.paragraph' | translate }}</p>
+                            </div>
 
                         </div>
 
                         <ul class="pagination justify-content-end">
                             <li class=" page-prev ">
                                 <a class="page-link" [routerLink]="'../compare'">
-                                    <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
+                                    <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>
                                 </a>
                             </li>
                             <li class=" page-next">
                                 <a class="page-link" [routerLink]="'../execute'">
-                                   
-                                    <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
+
+                                    <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>
                                 </a>
                             </li>
                         </ul>

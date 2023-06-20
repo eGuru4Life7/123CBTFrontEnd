@@ -57,7 +57,10 @@ export class MainComponent implements OnInit {
       localStorage.setItem("dir","ltr");
       this.dir= "ltr";
     }
-    
+    const currentUrl = this.route.url;
+    this.route.navigateByUrl('/', {skipLocationChange: true}).then(() => {
+        this.route.navigate([currentUrl]);
+    });
   }
 
   getAllModule() {

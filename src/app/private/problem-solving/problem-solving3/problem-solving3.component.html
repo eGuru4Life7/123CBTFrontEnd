@@ -6,10 +6,10 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Problem Solving
+                        {{ 'index.problem-solving' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -41,21 +41,22 @@
 
                                 <h1 style="font-size: 2.5rem;
                                     margin-bottom: 20px;">
-                                    
-                                    Think about possible solutions</h1>
-                                    <p>Now that you have chosen your first problem try to think as many solutions as possible. Even those that you think are ridiculous. This is called brainstorming. Try to imagine that it is not your personal problem and it will help you in finding as many solutions as possible. It is essential to bear in mind that the solution should be (a) realistic and something you can do with the rousurces available to you (b) helpful in making a positive change, and (c) specific.  </p>                            </div>
+
+                                    {{ 'Problem_solving_4b.heading' | translate }}</h1>
+                                <p>{{ 'Problem_solving_4b.paragraph' | translate }}</p>
+                            </div>
 
                         </div>
                         <ul class="pagination justify-content-end">
                             <li class=" page-prev ">
                                 <a class="page-link" [routerLink]="'../identifyproblems'">
-                                    <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
+                                    <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>
                                 </a>
                             </li>
                             <li class=" page-next">
                                 <a class="page-link" [routerLink]="'../compare'">
-                                   
-                                    <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
+
+                                    <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>
                                 </a>
                             </li>
                         </ul>

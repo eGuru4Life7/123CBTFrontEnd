@@ -1,23 +1,23 @@
 <div class="page-wrapper">
-  <!-- Page header -->
-  <div class="page-header d-print-none">
-    <div class="container-xl">
-      <div class="row g-2 align-items-center">
-        <div class="col">
-          <!-- Page pre-title -->
-          <h2 class="page-title">
-            Problem Solving
-          </h2>
-          <div class="page-pretitle">
-            Module
-          </div>
+    <!-- Page header -->
+    <div class="page-header d-print-none">
+        <div class="container-xl">
+            <div class="row g-2 align-items-center">
+                <div class="col">
+                    <!-- Page pre-title -->
+                    <h2 class="page-title">
+                        {{ 'index.problem-solving' | translate }}
+                    </h2>
+                    <div class="page-pretitle">
+                        {{ 'index.Module' | translate }}
+                    </div>
 
+                </div>
+                <!-- Page title actions -->
+
+            </div>
         </div>
-        <!-- Page title actions -->
-
-      </div>
     </div>
-  </div>
 
 
 
@@ -26,198 +26,192 @@
 
 
 
-  <!-- Page body -->
-  <div class="page-body">
-    <div class="container-xl">
+    <!-- Page body -->
+    <div class="page-body">
+        <div class="container-xl">
 
 
 
-      <div class="row row-cards">
-        <div class="col-12" *ngIf="problems">
-          <div class="card card1 fade-in" >
-            <div class="card-body p-0">
-              <p class="card-text" style="font-size: 2.5rem;">
-                Khushi Muhammad's eldest son Munir, who was studying in the city, was on holidays and was trying to help
-                his father with the program. He was stressed due to a lot of problems in his life. He found the
-                information on problem-solving useful to get help with his tuition fees.
-              </p>
+            <div class="row row-cards">
+                <div class="col-12" *ngIf="problems">
+                    <div class="card card1 fade-in">
+                        <div class="card-body p-0">
+                            <p class="card-text" style="font-size: 2.5rem;">
+                                {{ 'Problem_solving_5.paragraph1' | translate }}
+                            </p>
+                        </div>
+                        <br> <br>
+                        <div class="arrow" (click)="showProblem()">&#8595;</div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 col-lg-12" *ngIf="problemsList">
+                    <div class="card card1 fade-in">
+                        <div class="card-body p-0 ">
+                            <h1 class="card-title"> {{ 'Problem_solving_5.list-of-problems' | translate }}</h1>
+
+                            <ul class="list-group list-group-flush" style="font-size: 1.5rem;">
+                                <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.prob1' | translate }}</li>
+                                <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.prob2' | translate }}</li>
+                                <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.prob3' | translate }}</li>
+                                <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.prob4' | translate }}</li>
+                                <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.prob5' | translate }}</li>
+                                <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.prob6' | translate }}</li>
+                            </ul>
+                        </div><br> <br>
+                        <div class="arrow" (click)="showNext()">&#8595;</div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 col-lg-12" *ngIf="next">
+                    <div class="card card1 fade-in">
+                        <div class="card-body p-0">
+                            <p class="card-text card-text1" style="font-size: 2.5rem;">
+                                {{ 'Problem_solving_5.paragraph2' | translate }}
+                            </p>
+                        </div>
+                        <div class="arrow" (click)="showNext1()">&#8595;</div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-6" *ngIf="solutionList">
+                    <div class="card card1 fade-in">
+                        <div class="card-body p-0">
+                            <h2 class="card-title">{{ 'Problem_solving_5.list-of-solution' | translate }} </h2>
+
+                            <ul class="list-group list-group-flush " style="font-size: 1.5rem;">
+                                <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.sol1' | translate }}</li>
+                                <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.sol2' | translate }}
+                                </li>
+                                <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.sol3' | translate }}</li>
+                                <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.sol4' | translate }}</li>
+                                <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.sol5' | translate }}</li>
+                                <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.sol6' | translate }}</li>
+                            </ul>
+                        </div>
+                        <div class="arrow" (click)="showNext2()">&#8594;</div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-6" *ngIf="chooseSolution">
+                    <div class="card card1 fade-in">
+                        <div class="card-body p-0">
+                            <p class="card-text card-text1" style="font-size: 2.2rem;">
+                                {{ 'Problem_solving_5.paragraph3' | translate }}</p>
+                        </div>
+                        <div class="arrow" (click)="showNext3()">&#8595;</div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-12" *ngIf="advDisAdv">
+                    <div class="card card1 fade-in">
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-vcenter card-table " style="font-size: 1.5rem;">
+                                    <thead>
+                                        <tr>
+                                            <th>{{ 'Problem_solving_5.advantages' | translate }}</th>
+                                            <th>{{ 'Problem_solving_5.disadvantages' | translate }}</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>{{ 'Problem_solving_5.advant1' | translate }}</td>
+                                            <td class="text-muted">
+                                                {{ 'Problem_solving_5.dis1' | translate }}
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>{{ 'Problem_solving_5.advant2' | translate }}</td>
+                                            <td class="text-muted">
+                                                {{ 'Problem_solving_5.dis2' | translate }}
+                                            </td>
+
+
+
+                                        </tr>
+
+
+
+                                        <tr>
+                                            <td>{{ 'Problem_solving_5.advant3' | translate }}</td>
+                                            <td class="text-muted">
+                                                {{ 'Problem_solving_5.dis3' | translate }}
+                                            </td>
+
+
+
+                                        </tr>
+
+                                        <tr>
+                                            <td>{{ 'Problem_solving_5.advant4' | translate }}</td>
+                                            <td class="text-muted">
+                                                {{ 'Problem_solving_5.dis4' | translate }}
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>{{ 'Problem_solving_5.advant5' | translate }}</td>
+                                            <td class="text-muted">
+
+                                            </td>
+
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <br> <br><br> <br>
+                        <div class="arrow" (click)="showNext4()">&#8595;</div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm-12 col-lg-12" *ngIf="appSol">
+                    <div class="card card1 fade-in">
+                        <div class="card-body p-0">
+                            <h2 class="card-title">{{ 'Problem_solving_5.steps' | translate }}</h2>
+
+                            <ul class="list-group list-group-flush" style="font-size: 1.8rem;">
+                                <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.step1' | translate }}</li>
+                                <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.step2' | translate }}</li>
+                                <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.step3' | translate }}</li>
+                                <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.step4' | translate }}</li>
+                                <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.step5' | translate }}</li>
+                                <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.step6' | translate }}</li>
+                                <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.step7' | translate }}</li>
+                            </ul>
+                        </div>
+
+
+                        <ul class="pagination justify-content-end">
+                            <li class=" page-prev ">
+                                <a class="page-link" [routerLink]="'../execute'">
+                                    <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>
+                                </a>
+                            </li>
+                            <li class=" page-next">
+                                <a class="page-link" [routerLink]="'../end'">
+
+                                    <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
             </div>
-            <br> <br>
-            <div class="arrow" (click)="showProblem()">&#8595;</div>
-          </div>
-
-        </div>
-
-        <div class="col-sm-12 col-lg-12" *ngIf="problemsList">
-          <div class="card card1 fade-in">
-            <div class="card-body p-0 ">
-              <h1 class="card-title">List of problems:</h1>
-
-              <ul class="list-group list-group-flush" style="font-size: 1.5rem;">
-                <li class="list-group-item list-group-item-action">1- No job</li>
-                <li class="list-group-item list-group-item-action">2- Low self-esteem</li>
-                <li class="list-group-item list-group-item-action">3- No money for exam fee</li>
-                <li class="list-group-item list-group-item-action">4- Cannot speak in public</li>
-                <li class="list-group-item list-group-item-action">5- Problem with studies</li>
-                <li class="list-group-item list-group-item-action">6- Shyness</li>
-              </ul>
-            </div><br> <br>
-            <div class="arrow" (click)="showNext()">&#8595;</div>
-          </div>
-
-        </div>
-
-        <div class="col-sm-12 col-lg-12" *ngIf="next">
-          <div class="card card1 fade-in">
-            <div class="card-body p-0">
-              <p class="card-text card-text1" style="font-size: 2.5rem;">
-                He chose to solve the problem number 3, as it was doable, and was likely to have a significant impact on
-                his well-being
-              </p>
-            </div>
-            <div class="arrow" (click)="showNext1()">&#8595;</div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-6" *ngIf="solutionList">
-          <div class="card card1 fade-in">
-            <div class="card-body p-0">
-              <h2 class="card-title">List of solutions: </h2>
-
-              <ul class="list-group list-group-flush " style="font-size: 1.5rem;">
-                <li class="list-group-item list-group-item-action">Talk to the father.</li>
-                <li class="list-group-item list-group-item-action">Talk to local businesspeople or some organisation.
-                </li>
-                <li class="list-group-item list-group-item-action">Borrow money from someone</li>
-                <li class="list-group-item list-group-item-action">Talking to social welfare department to find out if
-                  there is a local NGO.</li>
-                <li class="list-group-item list-group-item-action">Talk to teacher for exemption in fee</li>
-                <li class="list-group-item list-group-item-action">Talk to friends</li>
-              </ul>
-            </div>
-            <div class="arrow" (click)="showNext2()">&#8594;</div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-6" *ngIf="chooseSolution">
-          <div class="card card1 fade-in">
-            <div class="card-body p-0">
-              <p class="card-text card-text1" style="font-size: 2.2rem;">
-                Choosing a solution: He examined all the solutions, one by one. Finally, he chose to speak to the
-                teacher, based on these advantages and disadvantages </p>
-            </div>
-            <div class="arrow" (click)="showNext3()">&#8595;</div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-lg-12" *ngIf="advDisAdv">
-          <div class="card card1 fade-in">
-            <div class="card-body p-0">
-              <div class="table-responsive">
-                <table class="table table-vcenter card-table " style="font-size: 1.5rem;">
-                  <thead>
-                    <tr>
-                      <th>Advantages</th>
-                      <th>Disadvantages</th>
-
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Don't have to pay back</td>
-                      <td class="text-muted">
-                        Will have to talk to the teacher
-                      </td>
-
-
-                    </tr>
-                    <tr>
-                      <td>I have nothing to lose, so there is no problem to talk</td>
-                      <td class="text-muted">
-                        He is known for being rough
-                      </td>
-
-
-
-                    </tr>
-
-
-
-                    <tr>
-                      <td>The government announced recently, fee concession for deserving students</td>
-                      <td class="text-muted">
-                        The teacher will insult
-                      </td>
-
-
-
-                    </tr>
-
-                    <tr>
-                      <td>I will be able to concentrate on studies</td>
-                      <td class="text-muted">
-                        People will make fun of me if they find out
-                      </td>
-
-
-
-                    </tr>
-                    <tr>
-                      <td>Don't have to worry about job till I finish exams</td>
-                      <td class="text-muted">
-
-                      </td>
-
-
-
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <br> <br><br> <br>
-            <div class="arrow" (click)="showNext4()">&#8595;</div>
-          </div>
-        </div>
-
-
-
-
-        <div class="col-sm-12 col-lg-12" *ngIf="appSol">
-          <div class="card card1 fade-in">
-            <div class="card-body p-0">
-              <h2 class="card-title">Steps in applying the solution: </h2>
-
-              <ul class="list-group list-group-flush" style="font-size: 1.8rem;">
-                <li class="list-group-item list-group-item-action">Getting ready for the meeting</li>
-                <li class="list-group-item list-group-item-action">Finding more about fee exemption</li>
-                <li class="list-group-item list-group-item-action">Writing down what I have to say in meetings</li>
-                <li class="list-group-item list-group-item-action">Role play and rehearsal as a practice of meeting</li>
-                <li class="list-group-item list-group-item-action">Talking to a friend who can accompany</li>
-                <li class="list-group-item list-group-item-action">Talking to the teacher for a meeting</li>
-                <li class="list-group-item list-group-item-action">Getting there in time</li>
-              </ul>
-            </div>
-
-
-            <ul class="pagination justify-content-end">
-              <li class=" page-prev ">
-                  <a class="page-link" [routerLink]="'../execute'">
-                      <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
-                  </a>
-              </li>
-              <li class=" page-next">
-                  <a class="page-link" [routerLink]="'../end'">
-                     
-                      <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
-                  </a>
-              </li>
-          </ul>
-
-          </div>
-        </div>
-      </div>
-      <!-- 
+            <!-- 
       <script>
         var arrows = document.querySelectorAll(".arrow");
         var hiddenCards = document.querySelectorAll(".card1.hidden");
@@ -238,8 +232,8 @@
 
 
 
-      <br>
-      <!-- <div class="row row-cards">
+            <br>
+            <!-- <div class="row row-cards">
 
         <div class="col-12">
           <div class="card">
@@ -263,5 +257,5 @@
         </div>
       </div>
     </div> -->
-  </div>
-</div>
+        </div>
+    </div>
