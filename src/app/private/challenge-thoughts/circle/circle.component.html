@@ -5,176 +5,170 @@
 </style>
 
 <div class="page-wrapper">
-  <!-- Page header -->
-  <div class="page-header d-print-none">
-    <div class="container-xl">
-      <div class="row g-2 align-items-center">
-        <div class="col">
-          <!-- Page pre-title -->
-          <h2 class="page-title">
-            Challenge Thoughts
-          </h2>
-          <div class="page-pretitle">
-            Module
-          </div>
-
-        </div>
-        <!-- Page title actions -->
-
-      </div>
-    </div>
-  </div> <!-- Page body -->
-  <div class="page-body">
-    <div class="container-xl">
-
-      <div class="col-lg-12">
-        <div class="card fade-in">
-          <div class="card-body">
-            <h1 class="text-center">Your circle of thoughts</h1>
-            <br><br>
-            
-            <div class="row d-flex justify-content-center align-items-center">
-
-
-              <div class="col-12 ">
-
-              
-
-
-                <div class="circle ">
-
-                  <div style="top: 50%">
-                  <div class="situation">
-                    <div class="flow-text">
-
-                      <span>Situation</span>
-
-                      <input disabled="" class="flow-text" required="" type="text" name="happening"
-                        value="previous page entry value" data-form-type="other" [(ngModel)]="dairy.happening">
-
+    <!-- Page header -->
+    <div class="page-header d-print-none">
+        <div class="container-xl">
+            <div class="row g-2 align-items-center">
+                <div class="col">
+                    <!-- Page pre-title -->
+                    <h2 class="page-title">
+                        {{ 'index.Challengethoughts' | translate }}
+                    </h2>
+                    <div class="page-pretitle">
+                        {{ 'index.Module' | translate }}
                     </div>
-                    <div class="flow-diagram">
-
-                      <i class="ti ti-arrow-narrow-down" style="font-size: 7vw; color: #007dff; position: relative;
-                      top: 25px;"></i>
-
-                    </div>
-
-                  </div>
-                  <div class="emotion">
-                    <div class="flow-text">
-
-                      <span>Emotions</span>
-
-                      <input disabled="" class="flow-text" type="text" required="" value="previous page entry value"
-                        name="feeling" data-form-type="other" [(ngModel)]="dairy.feeling">
-
-                    </div>
-
-                    <div class="flow-diagram">
-
-                      <i class="ti ti-arrows-move" style="font-size: 7vw; color: #007dff;"></i>
-
-
-                    </div>
-                  </div>
-                  <div class="physical-sensation">
-
-                    <div class="flow-diagram">
-                      
-                      <i class="ti ti-corner-right-down" style="font-size: 7vw; color: #007dff;"></i>
-
-
-                    </div>
-
-                    <div class="flow-text" data-dashlane-rid="186c34859f0260c6" data-form-type="other"
-                      [(ngModel)]="dairy.happening">
-
-                      <span>Physical Sensations</span>
-
-                      <input disabled="" class="flow-text" type="text" required="" name="physical_sensations"
-                        value="the previous page entry value" data-form-type="other"
-                        [(ngModel)]="dairy.physical_sensations">
-
-                    </div>
-
-                    <div class="flow-diagram">
-                      <i class="ti ti-corner-down-left" style="font-size: 7vw; color: #007dff;"></i>
-
-                       
-                    </div>
-                  </div>
-                  <div class="thoughts">
-
-                    <div class="flow-diagram">
-                      <i class="ti ti-corner-up-right" style="font-size: 7vw; color: #007dff;"></i>
-
-
-                    </div>
-
-                    <div class="flow-text" data-dashlane-rid="3d7d4ea553ccb07d" data-form-type="other">
-
-                      <span>Thoughts</span>
-
-                      <input disabled="" class="flow-text" required="" type="text" value="previous page entry value"
-                        name="thinking" data-dashlane-rid="" data-form-type="other" [(ngModel)]="dairy.thinking">
-
-                    </div>
-
-                    <div class="flow-diagram">
-                      <i class="ti ti-corner-left-up" style="font-size: 7vw; color: #007dff;"></i>
-
-
-                    </div>
-                  </div>
-                  <div class="behaviour">
-                    <div class="flow-text">
-
-                      <span>Behaviour</span>
-
-                      <input disabled="" class="flow-text" type="text" required="" name="do"
-                        value="the previous page entry value" data-form-type="other" [(ngModel)]="dairy.do">
-
-
-
-                    </div>
-                  </div>
-
-
-
-                  </div>
 
                 </div>
-              </div>
+                <!-- Page title actions -->
 
+            </div>
+        </div>
+    </div>
+    <!-- Page body -->
+    <div class="page-body">
+        <div class="container-xl">
+
+            <div class="col-lg-12">
+                <div class="card fade-in">
+                    <div class="card-body">
+                        <h1 class="text-center">{{ 'thought_7.heading'|translate}}</h1>
+                        <br><br>
+
+                        <div class="row d-flex justify-content-center align-items-center">
+
+
+                            <div class="col-12 ">
+
+
+
+
+                                <div class="circle ">
+
+                                    <div style="top: 50%">
+                                        <div class="situation">
+                                            <div class="flow-text">
+
+                                                <span>{{ 'thought_8.situation' | translate }}</span>
+
+                                                <input disabled="" class="flow-text" required="" type="text" name="happening" value="previous page entry value" data-form-type="other" [(ngModel)]="dairy.happening">
+
+                                            </div>
+                                            <div class="flow-diagram">
+
+                                                <i class="ti ti-arrow-narrow-down" style="font-size: 7vw; color: #007dff; position: relative;
+        top: 25px;"></i>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="emotion">
+                                            <div class="flow-text">
+
+                                                <span>{{ 'thought_8.emotions' | translate }}</span>
+
+                                                <input disabled="" class="flow-text" type="text" required="" value="previous page entry value" name="feeling" data-form-type="other" [(ngModel)]="dairy.feeling">
+
+                                            </div>
+
+                                            <div class="flow-diagram">
+
+                                                <i class="ti ti-arrows-move" style="font-size: 7vw; color: #007dff;"></i>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="physical-sensation">
+
+                                            <div class="flow-diagram">
+
+                                                <i class="ti ti-corner-right-down" style="font-size: 7vw; color: #007dff;"></i>
+
+
+                                            </div>
+
+                                            <div class="flow-text" data-dashlane-rid="186c34859f0260c6" data-form-type="other" [(ngModel)]="dairy.physical_sensations">
+
+                                                <span>{{ 'thought_8.physical-sensations' | translate }}</span>
+
+                                                <input disabled="" class="flow-text" type="text" required="" name="physical_sensations" value="the previous page entry value" data-form-type="other" [(ngModel)]="dairy.physical_sensations">
+
+                                            </div>
+
+                                            <div class="flow-diagram">
+                                                <i class="ti ti-corner-down-left" style="font-size: 7vw; color: #007dff;"></i>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="thoughts">
+
+                                            <div class="flow-diagram">
+                                                <i class="ti ti-corner-up-right" style="font-size: 7vw; color: #007dff;"></i>
+
+
+                                            </div>
+
+                                            <div class="flow-text" data-dashlane-rid="3d7d4ea553ccb07d" data-form-type="other">
+
+                                                <span>{{ 'thought_8.thoughts' | translate }}</span>
+
+                                                <input disabled="" class="flow-text" required="" type="text" value="previous page entry value" name="thinking" data-dashlane-rid="" data-form-type="other" [(ngModel)]="dairy.thinking">
+
+                                            </div>
+
+                                            <div class="flow-diagram">
+                                                <i class="ti ti-corner-left-up" style="font-size: 7vw; color: #007dff;"></i>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="behaviour">
+                                            <div class="flow-text">
+
+                                                <span>{{ 'thought_8.behaviour' | translate }}</span>
+
+                                                <input disabled="" class="flow-text" type="text" required="" name="do" value="the previous page entry value" data-form-type="other" [(ngModel)]="dairy.do">
+
+
+
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+
+                    <ul class="pagination justify-content-end">
+                        <li class=" page-prev ">
+                            <a class="page-link" [routerLink]="'../situation'">
+                                <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>
+                            </a>
+                        </li>
+                        <li class=" page-next">
+                            <a class="page-link" [routerLink]="'../evidence'">
+
+                                <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
 
 
+            <br>
 
-
-          </div>
-
-          <ul class="pagination justify-content-end">
-            <li class=" page-prev ">
-                <a class="page-link" [routerLink]="'../situation'">
-                    <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
-                </a>
-            </li>
-            <li class=" page-next">
-                <a class="page-link" [routerLink]="'../evidence'">
-                   
-                    <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
-                </a>
-            </li>
-        </ul>
-
-        </div>
-      </div>
-
-
-      <br>
-
-      <!-- <div class="row row-cards">
+            <!-- <div class="row row-cards">
 
         <div class="col-12">
           <div class="card">
@@ -200,5 +194,5 @@
 
 
 
+        </div>
     </div>
-  </div>

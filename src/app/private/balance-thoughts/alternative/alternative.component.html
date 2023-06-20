@@ -7,10 +7,10 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Balanced Thoughts
+                        {{ 'index.balanced-thoughts' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -37,19 +37,19 @@
 
                 <div class="card fade-in">
                     <div class="card-body">
-                        <h1 class="text-center mb-4">Alternative Thought</h1>
-                        <h2 class="text-center">Your thought: <span style="font-size:1.6rem; color:#007bff;"><strong>{{thoughts}}</strong></span></h2>
+                        <h1 class="text-center mb-4">{{'Balanced_thoughts_7c.alt_thoughts' | translate }}</h1>
+                        <h2 class="text-center">{{ 'Examining_your_thoughts6b.evidence-against-thoughts' | translate }}: <span style="font-size:1.6rem; color:#007bff;"><strong>{{thoughts}}</strong></span></h2>
                         <form>
                             <div class="row">
 
                                 <div class="mb-3">
 
-                                    <input type="text" placeholder="Enter your alternative or balanced thought here" name="alternative" required class="form-control" id="alternative" [(ngModel)]="alternative.healthy_thoughts">
+                                    <input type="text" placeholder="{{'Balanced_thoughts_7c.write-a-thought' | translate}}" name="alternative" required class="form-control" id="alternative" [(ngModel)]="alternative.healthy_thoughts">
                                 </div>
 
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary" (click)="updateAlternativeThought()">Save your thought</button>
+                                <button type="submit" class="btn btn-primary" (click)="updateAlternativeThought()">{{'Balanced_thoughts_7c.save_thougth' | translate}}</button>
 
                             </div>
                         </form>

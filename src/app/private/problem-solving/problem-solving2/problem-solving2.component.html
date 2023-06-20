@@ -6,10 +6,10 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Problem Solving
+                        {{ 'index.problem-solving' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -41,9 +41,9 @@
 
                                 <h1 style="font-size: 2.5rem;
                                     margin-bottom: 20px;">
-                                    
-                                    Identify & define the problems</h1>
-                                    <p>It is important to remember some basic principles here. For example, you cannot deal with all your problems at the same time and it helps if you try to deal with these problems one by one.The first step in problem-solving is to make a list of possible problems. There is no harm in writing all the problems that come to your mind during this step. This can help you in prioritising the problem. You can then decide which problem should be dealt with first. Choose the easiest problem to tackle to start with. Think about problems that are solvable. For example, hot weather or rain is not a problem that you can solve. It is always a good idea to go through the problem-solving steps with a friend or a family member at least to start with.  </p>
+
+                                    {{ 'Problem_solving_4.heading' | translate }}</h1>
+                                <p>{{ 'Problem_solving_4.paragraph' | translate }}</p>
                             </div>
 
                         </div>
@@ -51,13 +51,13 @@
                         <ul class="pagination justify-content-end">
                             <li class=" page-prev ">
                                 <a class="page-link" [routerLink]="'../intro'">
-                                    <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
+                                    <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>
                                 </a>
                             </li>
                             <li class=" page-next">
                                 <a class="page-link" [routerLink]="'../solutions'">
-                                   
-                                    <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
+
+                                    <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>
                                 </a>
                             </li>
                         </ul>

@@ -6,10 +6,10 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Problem Solving
+                        {{ 'index.problem-solving' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -41,21 +41,22 @@
 
                                 <h1 style="font-size: 2.5rem;
                                     margin-bottom: 20px;">
-                                    
-                                    Look at the cost and benefit of each solution</h1>
-                                    <p>Once a list of problems has been formulated it is necessary to go through them one by one, to look at the cost and benefits of each. To do this, draw a line on a paper and write down the advantages and disadvantages of a solution on each side. You can then decide which solutions is the best.  </p>                            </div>
+
+                                    {{ 'Problem_solving_4c.heading' | translate }}</h1>
+                                <p>{{ 'Problem_solving_4c.paragraph' | translate }}</p>
+                            </div>
 
                         </div>
                         <ul class="pagination justify-content-end">
                             <li class=" page-prev ">
                                 <a class="page-link" [routerLink]="'../solutions'">
-                                    <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
+                                    <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>
                                 </a>
                             </li>
                             <li class=" page-next">
                                 <a class="page-link" [routerLink]="'../breakdown'">
-                                   
-                                    <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
+
+                                    <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>
                                 </a>
                             </li>
                         </ul>
@@ -64,7 +65,7 @@
                 </div>
             </div>
             <br>
-           <!--  <div class="row row-cards">
+            <!--  <div class="row row-cards">
 
                 <div class="col-12">
                     <div class="card">
