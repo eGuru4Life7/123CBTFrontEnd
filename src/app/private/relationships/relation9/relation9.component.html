@@ -6,10 +6,10 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Relationships
+                        {{ 'index.relationship' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -40,22 +40,22 @@
                             <div class="col">
 
                                 <h1 style="font-size: 2rem;
-                                margin-bottom: 20px;">How to say no?</h1>
+                                margin-bottom: 20px;">{{ 'relation_3a.heading1' | translate }}</h1>
 
-                                <p>People often find it difficult to say no for a variety of reasons. Saying yes to others out of politeness can be a cause of stress in our cultures. Usually saying “No” politely but firmly is enough. </p>
-                                <h2>However, if it does not work do the followings:</h2>
+                                <p>{{ 'relation_3a.heading1-desc' | translate }}</p>
+                                <h2>{{ 'relation_3a.heading2' | translate }}</h2>
                                 <div class="list-group">
                                     <div class="list-group-item">
-                                        <p class="mb-0">1. Summarise other person's request, so they know you listened to them</p>
+                                        <p class="mb-0">{{ 'relation_3a.p1' | translate }}</p>
                                     </div>
                                     <div class="list-group-item">
-                                        <p class="mb-0">2. Explain the reason for saying “No.”</p>
+                                        <p class="mb-0">{{ 'relation_3a.p2' | translate }}</p>
                                     </div>
                                     <div class="list-group-item">
-                                        <p class="mb-0">3. If you find the above two steps difficult you can delay your response by saying “Let me check my schedule, and I'll get back to you”.</p>
+                                        <p class="mb-0">{{ 'relation_3a.p3' | translate }}</p>
                                     </div>
                                     <div class="list-group-item">
-                                        <p class="mb-0">4. You can always suggest an alternative, e.g., we can't meet tonight because I am busy, what about the next week?</p>
+                                        <p class="mb-0">{{ 'relation_3a.p4' | translate }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -63,8 +63,9 @@
                         </div>
                     </div>
 
+                    <prev-next-button  [prev]="'../howtobeassertive'" [next]="'../fog'" ></prev-next-button>
 
-                    <ul class="pagination justify-content-end">
+                    <!-- <ul class="pagination justify-content-end">
                         <li class=" page-prev ">
                             <a class="page-link" [routerLink]="'../howtobeassertive'">
                                 <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
@@ -76,7 +77,7 @@
                                 <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
 
                 </div>
 

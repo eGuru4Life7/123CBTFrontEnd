@@ -6,10 +6,11 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Balanced Activities
+                        
+                        {{ 'index.balanced-activities' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -49,28 +50,28 @@
                             <div class=" col-sm-12 col-md-6 col-lg-6">
 
                                 <div class="card-body">
-                                    <h2 class="card-title">Social & Spiritual Activities</h2>
+                                    <h2 class="card-title">{{ 'balanced_activities_8.heading' | translate }}</h2>
                                     <div class="row">
                                       <div class="col-md-6">
                                         <ul class="list-group list-group-flush" style="font-size: 0.9rem;">
-                                          <li class="list-group-item list-group-item-action">Meet friends & relatives</li>
-                                          <li class="list-group-item list-group-item-action">Give a phone call to a friend or write a letter</li>
-                                          <li class="list-group-item list-group-item-action">Spend time with children</li>
-                                          <li class="list-group-item list-group-item-action">Recite Quran or use tasbeeh</li>
-                                          <li class="list-group-item list-group-item-action">Clean your room</li>
-                                          <li class="list-group-item list-group-item-action">Visit a park with family</li>
+                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_8.activity1' | translate }}</li>
+                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_8.activity7' | translate }}</li>
+                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_8.activity3' | translate }}</li>
+                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_8.activity4' | translate }}</li>
+                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_8.activity5' | translate }}</li>
+                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_8.activity6' | translate }}</li>
                                         </ul>
                                       </div>
                                       <div class="col-md-6">
                                         <ul class="list-group list-group-flush" style="font-size: 0.9rem;">
-                                          <li class="list-group-item list-group-item-action">Go to mosque</li>  
+                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_8.activity2' | translate }}</li>
                                           
-                                          <li class="list-group-item list-group-item-action">Go for some religious ceremony</li>
-                                          <li class="list-group-item list-group-item-action">Do some social work</li>
+                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_8.activity8' | translate }}</li>
+                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_8.activity9' | translate }}</li>
                                           
-                                          <li class="list-group-item list-group-item-action">Give a few people around you compliment</li>
-                                          <li class="list-group-item list-group-item-action">Pluck & arrange flowers</li>
-                                          <li class="list-group-item list-group-item-action">Go for shopping or restaurant</li>
+                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_8.activity11' | translate }}</li>
+                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_8.activity10' | translate }}</li>
+                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_8.activity12' | translate }}</li>
                                         </ul>
                                       </div>
                                     </div>
@@ -82,19 +83,16 @@
 
                         </div>
 <br><br>
-                        <ul class="pagination justify-content-end">
-                            <!-- <li class="page-item page-prev">
-                              <a class="page-link" [routerLink]="'../2'" tabindex="-1" aria-disabled="true">
-                                    <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
-                                </a>
-                            </li> --> 
+<prev-next-button  [next]="'../activitylist'" ></prev-next-button>
+                       <!--  <ul class="pagination justify-content-end">
+                            
                             <li class=" page-next">
                                 <a class="page-link" [routerLink]="'../activitylist'">
                                    
                                     <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>                
                                 </a>
                             </li>
-                        </ul>
+                        </ul> -->
 
                     </div>
                 </div>

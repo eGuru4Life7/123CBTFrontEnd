@@ -6,10 +6,10 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Relationships
+                        {{ 'index.relationship' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -36,24 +36,25 @@
                         <div class="row align-items-center">
                             
                             <h1 style="font-size: 2.5rem;
-                            margin-bottom: 20px; text-align: center;">Helpful assertiveness techniques</h1>
+                            margin-bottom: 20px; text-align: center;"> {{ 'relation_3.heading1' | translate }}</h1>
 
                             <div class="col-sm-12 col-md-5 col-lg-5 ">
-                                <img src="../../../../assets/static/illustrations/relation7.svg" alt="thought,emotions" class="rounded fade-in">
+                                <img src="../../../../assets/static/illustrations/fog.jpeg" alt="Fog" class="rounded fade-in">
                             </div>
                             <div class="col">
 
                                 <h1 style="font-size: 2rem;
-                                margin-bottom: 20px;">Fogging</h1>
+                                margin-bottom: 20px;">{{ 'relation_3.heading2' | translate }}</h1>
 
-                                <p>You agree with some of the facts but stick to your decision. For example, your best friend is insisting that you should cut your hair short, but you don't want to do this. You agree with whatever she says, but don't agree to change your haircut.</p>
+                                <p>{{ 'relation_3.heading2-desc' | translate }}</p>
                             </div>
 
                         </div>
                     </div>
+                    <prev-next-button  [prev]="'../howtosayno'" [next]="'../cooldown'" ></prev-next-button>
 
 
-                    <ul class="pagination justify-content-end">
+                  <!--   <ul class="pagination justify-content-end">
                         <li class=" page-prev ">
                             <a class="page-link" [routerLink]="'../howtosayno'">
                                 <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
@@ -65,7 +66,7 @@
                                 <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
 
                 </div>
 

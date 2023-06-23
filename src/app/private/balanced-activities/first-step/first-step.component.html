@@ -6,10 +6,11 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Balanced Activities
+                        
+                        {{ 'index.balanced-activities' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -42,16 +43,19 @@
                                 <h1 style="font-size: 2.5rem;
                                     margin-bottom: 20px;">
                                     
-                                    The balanced activities</h1>
+                                    {{ 'balanced_activities_5.heading' | translate }}</h1>
                                     <p>
-                                        The first step towards treatment is to bring balance to the activities. You might find increasing pleasurable activities helpful as a first step. In others, however, reducing pleasurable activities such as watching TV or playing video games for many hours will be beneficial. Such activities can bring a remarkable change in your mood and reduce your stress. By tracking your activities you can discover how they affect your mood. Additionally, this diary can be used as a guide to see what changes in behavior might help you feel better.Write your activity diary every day. Gradually add activities. Look at the four types of activities we recommend on next page. Try to choose one activity from each of the four lists every week. </p>
+                                        {{ 'balanced_activities_5.paragraph' | translate }}
+                                    </p>
                             </div>
 
                         </div>
 
-                        <ul class="pagination justify-content-end">
+                        <prev-next-button [prev]="'../writeactivities'" [next]="'../activitylist'" ></prev-next-button>
+
+                        <!-- <ul class="pagination justify-content-end">
                             <li class=" page-prev ">
-                                <!-- <a class="page-link" [routerLink]="'../firststep2'"> When this page is cleared then we will link it here-->   
+                              
                                 <a class="page-link" [routerLink]="'../writeactivities'">
                                     <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
                                 </a>
@@ -62,7 +66,7 @@
                                     <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
                                 </a>
                             </li>
-                        </ul>
+                        </ul> -->
 
                     </div>
                 </div>

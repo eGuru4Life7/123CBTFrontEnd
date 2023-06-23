@@ -4,13 +4,30 @@ import { TranslateService } from '@ngx-translate/core';
 import { MessageService } from 'primeng/api';
 import { LocalCacheService } from 'src/app/services/local-cache.service';
 import { UserServiceService } from 'src/app/services/user-service.service';
+import { ViewChild, ElementRef } from '@angular/core';
+
 
 @Component({
   selector: 'app-auth',
   templateUrl: './auth.component.html',
   styleUrls: ['./auth.component.scss']
 })
+
 export class AuthComponent implements OnInit {
+
+  // Declare ViewChild and ElementRef
+  @ViewChild('passwordInput') passwordInput!: ElementRef<HTMLInputElement>;
+
+    // Boolean variable to track password visibility
+  hidePassword: boolean = true;
+
+// Method to toggle password visibility
+togglePasswordVisibility() {
+  const input = this.passwordInput.nativeElement;
+  input.type = this.hidePassword ? 'password' : 'text';
+  this.hidePassword = !this.hidePassword;
+}
+
   user:any= {};
   dir:any ="ltr";
   constructor(private userService:UserServiceService,private route:Router,private localService:LocalCacheService,

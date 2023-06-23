@@ -6,10 +6,10 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Relationships
+                        {{ 'index.relationship' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -36,24 +36,26 @@
                         <div class="row align-items-center">
                             
                             <h1 style="font-size: 2.5rem;
-                            margin-bottom: 20px; text-align: center;">Two golden rules</h1>
+                            margin-bottom: 20px; text-align: center;">{{ 'relation_5.heading1' | translate }}</h1>
                             <br><br><br>
                             <div class="col-sm-12 col-md-5 col-lg-5 ">
-                                <img src="../../../../assets/static/illustrations/relation11.svg" alt="thought,emotions" class="rounded fade-in">
+                                <img src="../../../../assets/static/illustrations/relation11.svg" class="rounded fade-in">
                             </div>
                             <div class="col">
 
                                 <h1 style="font-size: 1.5rem;
-                                margin-bottom: 20px;">1- Agree to disagree</h1>
+                                margin-bottom: 20px;">{{ 'relation_5.heading2' | translate }}</h1>
 
-                                <p>If after a lengthy discussion you and the other person don’t agree on something remind yourself that she also has the right to have her own opinion. If you feel that the other person’s view is not reasonable, you can always say “let us agree to disagree”.<br><br><h2>The Holy Quran advises us to say, “for you is your religion, and for me is mine”.</h2></p>
+                                <p>{{ 'relation_5.heading2-desc' | translate }} </p> 
+                                    <br><br> <h2>{{ 'relation_5.heading3' | translate }}</h2>
                             </div>
 
                         </div>
                     </div>
 
+                    <prev-next-button  [prev]="'../conflicts'" [next]="'../goldenrule2'" ></prev-next-button>
 
-                    <ul class="pagination justify-content-end">
+                   <!--  <ul class="pagination justify-content-end">
                         <li class=" page-prev ">
                             <a class="page-link" [routerLink]="'../conflicts'">
                                 <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
@@ -66,7 +68,7 @@
                             </a>
                         </li>
                     </ul>
-
+ -->
                 </div>
 
 

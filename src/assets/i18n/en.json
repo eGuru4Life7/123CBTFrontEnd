@@ -79,6 +79,7 @@
             "thoughts": "Thoughts",
             "journal-writing":"Journal Writing",
             "examine-thoughts": "Examine Thoughts",
+            "thought-mistakes": "Thoughts Mistakes",
             "balanced-thoughts": "Balanced Thoughts",
             "problem-solving": "Problem Solving",
             "balanced-activities": "Balanced Activities",
@@ -87,6 +88,7 @@
             "my-progress": "My Progress",
             "weekly-progress":"Your Weekly Progress",
             "my-healthy-thoughts": "My Healthy Thoughts",
+            "my-healthy-thoughts-no": "No",
             "stress-heading": " What is stress? ",
             "stress-para": "Stress is a normal human response to threatening events. Stress isn’t always bad. The stress response is the body’s way of protecting you. In small doses, it can help you perform under pressure and motivate you to do your best. However, if you face the stressful situation for an extended period, it can have a devastating effect on your emotional and physical health, relationships and quality of life. ",
             "stress-cause": " What are the causes of stress?",
@@ -94,7 +96,9 @@
             "next": "NEXT",
             "Danger-Centre":"Danger Centre",
             "Challengethoughts":"Challenge thoughts",
-            "Downloads":"Downloads",
+            "Downloads":"Download Resources",
+            "Downloads-heading":"Download PDFs for the following topics:",
+            "Downloads-heading2":"You can access a range of helpful PDF resources to support your mental health and wellbeing.",
             "Downloads1":"My Downloads",
             "Profile":"Profile",
             "Anger":"Anger",
@@ -114,7 +118,7 @@
             "click_here_for_download":"Click here to download",
             "RelaxationExcercises":"Relaxation Excercises",
             "r_para":"This page offers various audio tracks that can help you to relax and unwind. Each audio track is specially designed to help reduce stress, anxiety and improve your mental well-being. Take some time out of your day to listen to these audio tracks and focus on your breathing. With regular practice, you can develop the skill of relaxation and improve your overall well-being.",
-            "help":"help"
+            "help":"Help"
 
         },
         "evidence":{
@@ -716,13 +720,29 @@
             "07pm-09pm": "06pm To 08pm",
             "09pm-11pm": "08pm To 10pm",
             "11pm-12am": "10pm To 12am",
+
             "monday": "Monday",
+            "place_monday": "Enter your activities for Monday", 
+            
             "tuesday": "Tuesday",
+            "place_tuesday": "Enter your activities for Tuesday",
+            
             "wednesday": "Wednesday",
+            "place_wednesday": "Enter your activities for Wednesday",
+            
             "thursday": "Thursday",
+            "place_thursday": "Enter your activities for Thursday",
+            
             "friday": "Friday",
+            "place_friday": "Enter your activities for Friday",
+        
+            
             "saturday": "Saturday",
+            "place_saturday": "Enter your activities for Saturday",    
+            
             "sunday":"Sunday",
+            "place_sunday": "Enter your activities for Sunday",
+
             "print":"PRINT THIS PAGE",
             "next": "NEXT",
             "prev": "PREV"
@@ -872,6 +892,9 @@
         "relation_3a": {
             "heading1": "How to say no? ",
             "heading1-desc": "People often find it difficult to say no for a variety of reasons. Saying yes to others out of politeness can be a cause of stress in our cultures. Usually saying “No” politely but firmly is enough. However, if it does not work do the followings; ",
+            
+            "heading2": "However, if it does not work do the followings:",
+            
             "p1":"1. Summarise other person's request, so they know you listened to them",
             "p2":"2. Explain the reason for saying “No.”",
             "p3":"3. If you find the above two steps difficult you can delay your response by saying “Let me check my schedule, and I'll get back to you”.",
@@ -910,8 +933,9 @@
         },
         "relation_5": {
             "heading1": "Two golden rules ",
-            "heading2": "1) Agree to disagree: ",
-            "heading2-desc": " If after a lengthy discussion you and the other person don’t agree on something remind yourself that she also has the right to have her own opinion. If you feel that the other person’s view is not reasonable, you can always say “let us agree to disagree”. The Holy Quran advises us to say, “for you is your religion, and for me is mine”.  ",
+            "heading2": "1- Agree to disagree: ",
+            "heading2-desc": " If after a lengthy discussion you and the other person don’t agree on something remind yourself that she also has the right to have her own opinion. If you feel that the other person’s view is not reasonable, you can always say “let us agree to disagree”.",
+            "heading3": "The Holy Quran advises us to say, “for you is your religion, and for me is mine”.",
             "next": "NEXT",
             "prev": "PREV"
         },
@@ -1047,6 +1071,19 @@
             "p8":"<strong>Psychological problems</strong>:Sleep problems resolve once depression gets treated. Simple anxiety management techniques like breathing exercise etc. (mentioned earlier) can be very helpful.",
             "p9":"<strong>Tea, coffee and nicotine</strong>:Drinking tea or coffee before going to bed can make people feel alerted. Not drinking tea or coffee after 6 PM can help many people. Similarly, cutting down on cigarettes before going to bed can also be helpful.",
             "p10":"<strong>Day Naps</strong>:Day naps can lead to disturbed sleep. In fact, it has been suggested that sleeping in the morning hours might be linked to depression."
+        }, 
+        "help":{
+
+            "faq":"FAQ's",
+            "documentation": "Documentation"
+            
+        }, 
+        "footer":{
+
+            "copyright": " Copyrights 2017 � 123CBT. All rights reserved "
+            
         }
+        
 
     }
+    

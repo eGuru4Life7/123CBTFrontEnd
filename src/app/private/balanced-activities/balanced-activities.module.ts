@@ -18,7 +18,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { ToastModule } from 'primeng/toast';
-
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -43,7 +43,8 @@ import { ToastModule } from 'primeng/toast';
     ReactiveFormsModule,
     ToastModule,
     TranslateModule,
-    BalancedActivitiesRoutingModule
+    BalancedActivitiesRoutingModule,
+    SharedModule
   ]
 })
 export class BalancedActivitiesModule { }

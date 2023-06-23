@@ -3,16 +3,17 @@
     <div class="page-header d-print-none">
         <div class="container-xl">
             <div class="row g-2 align-items-center">
-                <div class="col">
-                    <!-- Page pre-title -->
-                    <h2 class="page-title">
-                        Balanced Activities
-                    </h2>
-                    <div class="page-pretitle">
-                        Module
-                    </div>
-
+              <div class="col">
+                <!-- Page pre-title -->
+                <h2 class="page-title">
+                    
+                    {{ 'index.balanced-activities' | translate }}
+                </h2>
+                <div class="page-pretitle">
+                    {{ 'index.Module' | translate }}
                 </div>
+
+            </div>
                 <!-- Page title actions -->
 
             </div>
@@ -43,7 +44,7 @@
                     <div class="card-body">
                         
                            
-                            <h1 class="text-center" style="font-size: 2.5rem; margin-bottom: 20px;">Write Down Your Daily Activities</h1>
+                            <h1 class="text-center" style="font-size: 2.5rem; margin-bottom: 20px;">{{ 'balanced_activities_4.heading' | translate }}</h1>
                             <br>
                            
                             <div class="card-header">
@@ -53,26 +54,26 @@
                                   
                                     
                                   <li class="nav-item" role="presentation">
-                                    <a href="#mon" class="nav-link active" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">MONDAY</a>
+                                    <a href="#mon" class="nav-link active" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">{{ 'balanced_activities_4.monday' | translate }}</a>
                                   </li>
                                   <li class="nav-item" role="presentation">
-                                    <a href="#tue" class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">TUESDAY</a>
+                                    <a href="#tue" class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">{{ 'balanced_activities_4.tuesday' | translate }}</a>
                                   </li>
                                   <li class="nav-item" role="presentation">
-                                    <a href="#wed" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">WEDNESDAY</a>
+                                    <a href="#wed" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.wednesday' | translate }}</a>
                                   </li>
 
                                   <li class="nav-item" role="presentation">
-                                    <a href="#thu" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">THURSDAY</a>
+                                    <a href="#thu" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.thursday' | translate }}</a>
                                   </li>
                                   <li class="nav-item" role="presentation">
-                                    <a href="#fri" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">FRIDAY</a>
+                                    <a href="#fri" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.friday' | translate }}</a>
                                   </li>
                                   <li class="nav-item" role="presentation">
-                                    <a href="#sat" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">SATURDAY</a>
+                                    <a href="#sat" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.saturday' | translate }}</a>
                                   </li>
                                   <li class="nav-item" role="presentation">
-                                    <a href="#sun" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">SUNDAY</a>
+                                    <a href="#sun" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.sunday' | translate }}</a>
                                   </li>
 
                                   <li class="nav-item ms-auto" role="presentation">
@@ -88,32 +89,32 @@
                                   <div class="tab-pane fade active show" id="mon" role="tabpanel">
                                     
                                     <div>
-                                        <textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)"  formControlName="mondayText" [placeholder]="isSmallScreen ? 'Write your activities for Monday' : 'Enter your activities for Monday'"></textarea>
+                                        <textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)"  formControlName="mondayText" placeholder="{{ 'balanced_activities_4.place_monday' | translate }}"></textarea>
                                     </div>
                                   </div>
                                   <div class="tab-pane fade" id="tue" role="tabpanel">
                                     
-                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="tuesdayText" [placeholder]="isSmallScreen ? 'Write your activities for Tuesday' : 'Enter your activities for Tuesday'"></textarea></div>
+                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="tuesdayText" placeholder="{{ 'balanced_activities_4.place_tuesday' | translate }}"></textarea></div>
                                   </div>
                                   <div class="tab-pane fade " id="wed" role="tabpanel">
                                    
-                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="wednesdayText" [placeholder]="isSmallScreen ? 'Write your activities for Wednesday' : 'Enter your activities for Wednesday'"></textarea></div>
+                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="wednesdayText" placeholder="{{ 'balanced_activities_4.place_wednesday' | translate }}"></textarea></div>
                                   </div>
                                   <div class="tab-pane fade " id="thu" role="tabpanel">
                                   
-                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="thursdayText" [placeholder]="isSmallScreen ? 'Write your activities for Thursday' : 'Enter your activities for Thursday'"></textarea></div>
+                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="thursdayText" placeholder="{{ 'balanced_activities_4.place_thursday' | translate }}"></textarea></div>
                                   </div>
                                   <div class="tab-pane fade " id="fri" role="tabpanel">
                                   
-                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="fridayText" [placeholder]="isSmallScreen ? 'Write your activities for Friday' : 'Enter your activities for Friday'"></textarea></div>
+                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="fridayText" placeholder="{{ 'balanced_activities_4.place_friday' | translate }}"></textarea></div>
                                   </div>
                                   <div class="tab-pane fade " id="sat" role="tabpanel">
                                  
-                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" [placeholder]="isSmallScreen ? 'Write your activities for Saturday' : 'Enter your activities for Saturday'"></textarea></div>
+                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" placeholder="{{ 'balanced_activities_4.place_saturday' | translate }}"></textarea></div>
                                   </div>
                                   <div class="tab-pane fade " id="sun" role="tabpanel">
                                     
-                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" [placeholder]="isSmallScreen ? 'Write your activities for Sunday' : 'Enter your activities for Sunday'"></textarea></div>
+                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" placeholder="{{ 'balanced_activities_4.place_sunday' | translate }}"></textarea></div>
                                   </div>
                                   
                                 </div>
@@ -136,27 +137,27 @@
                                       
                                         
                                       <li class="nav-item" role="presentation">
-                                        <a href="#mon2" class="nav-link active" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">MONDAY</a>
+                                        <a href="#mon2" class="nav-link active" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">{{ 'balanced_activities_4.monday' | translate }}</a>
                                       </li>
                                       <li class="nav-item" role="presentation">
-                                        <a href="#tue2" class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">TUESDAY</a>
+                                        <a href="#tue2" class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">{{ 'balanced_activities_4.tuesday' | translate }}</a>
                                       </li>
                                       <li class="nav-item" role="presentation">
-                                        <a href="#wed2" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">WEDNESDAY</a>
-                                      </li>
-    
-                                      <li class="nav-item" role="presentation">
-                                        <a href="#thu2" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">THURSDAY</a>
+                                        <a href="#wed2" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.wednesday' | translate }}</a>
                                       </li>
                                       <li class="nav-item" role="presentation">
-                                        <a href="#fri2" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">FRIDAY</a>
+                                        <a href="#thu2" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.thursday' | translate }}</a>
                                       </li>
                                       <li class="nav-item" role="presentation">
-                                        <a href="#sat2" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">SATURDAY</a>
+                                        <a href="#fri2" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.friday' | translate }}</a>
                                       </li>
                                       <li class="nav-item" role="presentation">
-                                        <a href="#sun2" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">SUNDAY</a>
+                                        <a href="#sat2" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.saturday' | translate }}</a>
                                       </li>
+                                      <li class="nav-item" role="presentation">
+                                        <a href="#sun2" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.sunday' | translate }}</a>
+                                      </li>
+                                      
     
                                       <li class="nav-item ms-auto" role="presentation">
                                         <a class="nav-link" title="Time"><!-- Download SVG icon from http://tabler-icons.io/i/settings -->
@@ -171,32 +172,32 @@
                                       <div class="tab-pane fade active show" id="mon2" role="tabpanel">
                                         
                                         <div>
-                                            <textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)"  formControlName="mondayText" [placeholder]="isSmallScreen ? 'Write your activities for Monday' : 'Enter your activities for Monday'"></textarea>
+                                            <textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)"  formControlName="mondayText" placeholder="{{ 'balanced_activities_4.place_monday' | translate }}"></textarea>
                                         </div>
                                       </div>
                                       <div class="tab-pane fade" id="tue2" role="tabpanel">
                                         
-                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="tuesdayText" [placeholder]="isSmallScreen ? 'Write your activities for Tuesday' : 'Enter your activities for Tuesday'"></textarea></div>
+                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="tuesdayText" placeholder="{{ 'balanced_activities_4.place_tuesday' | translate }}"></textarea></div>
                                       </div>
                                       <div class="tab-pane fade " id="wed2" role="tabpanel">
                                        
-                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="wednesdayText" [placeholder]="isSmallScreen ? 'Write your activities for Wednesday' : 'Enter your activities for Wednesday'"></textarea></div>
+                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="wednesdayText" placeholder="{{ 'balanced_activities_4.place_wednesday' | translate }}"></textarea></div>
                                       </div>
                                       <div class="tab-pane fade " id="thu2" role="tabpanel">
                                       
-                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="thursdayText" [placeholder]="isSmallScreen ? 'Write your activities for Thursday' : 'Enter your activities for Thursday'"></textarea></div>
+                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="thursdayText" placeholder="{{ 'balanced_activities_4.place_thursday' | translate }}"></textarea></div>
                                       </div>
                                       <div class="tab-pane fade " id="fri2" role="tabpanel">
                                       
-                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="fridayText" [placeholder]="isSmallScreen ? 'Write your activities for Friday' : 'Enter your activities for Friday'"></textarea></div>
+                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="fridayText" placeholder="{{ 'balanced_activities_4.place_friday' | translate }}"></textarea></div>
                                       </div>
                                       <div class="tab-pane fade " id="sat2" role="tabpanel">
                                      
-                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" [placeholder]="isSmallScreen ? 'Write your activities for Saturday' : 'Enter your activities for Saturday'"></textarea></div>
+                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" placeholder="{{ 'balanced_activities_4.place_saturday' | translate }}"></textarea></div>
                                       </div>
                                       <div class="tab-pane fade " id="sun2" role="tabpanel">
                                         
-                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" [placeholder]="isSmallScreen ? 'Write your activities for Sunday' : 'Enter your activities for Sunday'"></textarea></div>
+                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" placeholder="{{ 'balanced_activities_4.place_sunday' | translate }}"></textarea></div>
                                       </div>
                                       
                                     </div>
@@ -218,26 +219,25 @@
                                           
                                             
                                           <li class="nav-item" role="presentation">
-                                            <a href="#mon3" class="nav-link active" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">MONDAY</a>
+                                            <a href="#mon3" class="nav-link active" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">{{ 'balanced_activities_4.monday' | translate }}</a>
                                           </li>
                                           <li class="nav-item" role="presentation">
-                                            <a href="#tue3" class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">TUESDAY</a>
+                                            <a href="#tue3" class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">{{ 'balanced_activities_4.tuesday' | translate }}</a>
                                           </li>
                                           <li class="nav-item" role="presentation">
-                                            <a href="#wed3" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">WEDNESDAY</a>
-                                          </li>
-        
-                                          <li class="nav-item" role="presentation">
-                                            <a href="#thu3" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">THURSDAY</a>
+                                            <a href="#wed3" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.wednesday' | translate }}</a>
                                           </li>
                                           <li class="nav-item" role="presentation">
-                                            <a href="#fri3" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">FRIDAY</a>
+                                            <a href="#thu3" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.thursday' | translate }}</a>
                                           </li>
                                           <li class="nav-item" role="presentation">
-                                            <a href="#sat3" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">SATURDAY</a>
+                                            <a href="#fri3" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.friday' | translate }}</a>
                                           </li>
                                           <li class="nav-item" role="presentation">
-                                            <a href="#sun3" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">SUNDAY</a>
+                                            <a href="#sat3" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.saturday' | translate }}</a>
+                                          </li>
+                                          <li class="nav-item" role="presentation">
+                                            <a href="#sun3" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.sunday' | translate }}</a>
                                           </li>
         
                                           <li class="nav-item ms-auto" role="presentation">
@@ -253,32 +253,32 @@
                                           <div class="tab-pane fade active show" id="mon3" role="tabpanel">
                                             
                                             <div>
-                                                <textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)"  formControlName="mondayText" [placeholder]="isSmallScreen ? 'Write your activities for Monday' : 'Enter your activities for Monday'"></textarea>
+                                                <textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)"  formControlName="mondayText" placeholder="{{ 'balanced_activities_4.place_monday' | translate }}"></textarea>
                                             </div>
                                           </div>
                                           <div class="tab-pane fade" id="tue3" role="tabpanel">
                                             
-                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="tuesdayText" [placeholder]="isSmallScreen ? 'Write your activities for Tuesday' : 'Enter your activities for Tuesday'"></textarea></div>
+                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="tuesdayText" placeholder="{{ 'balanced_activities_4.place_tuesday' | translate }}"></textarea></div>
                                           </div>
                                           <div class="tab-pane fade " id="wed3" role="tabpanel">
                                            
-                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="wednesdayText" [placeholder]="isSmallScreen ? 'Write your activities for Wednesday' : 'Enter your activities for Wednesday'"></textarea></div>
+                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="wednesdayText" placeholder="{{ 'balanced_activities_4.place_wednesday' | translate }}"></textarea></div>
                                           </div>
                                           <div class="tab-pane fade " id="thu3" role="tabpanel">
                                           
-                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="thursdayText" [placeholder]="isSmallScreen ? 'Write your activities for Thursday' : 'Enter your activities for Thursday'"></textarea></div>
+                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="thursdayText" placeholder="{{ 'balanced_activities_4.place_thursday' | translate }}"></textarea></div>
                                           </div>
                                           <div class="tab-pane fade " id="fri3" role="tabpanel">
                                           
-                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="fridayText" [placeholder]="isSmallScreen ? 'Write your activities for Friday' : 'Enter your activities for Friday'"></textarea></div>
+                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="fridayText" placeholder="{{ 'balanced_activities_4.place_friday' | translate }}"></textarea></div>
                                           </div>
                                           <div class="tab-pane fade " id="sat3" role="tabpanel">
                                          
-                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" [placeholder]="isSmallScreen ? 'Write your activities for Saturday' : 'Enter your activities for Saturday'"></textarea></div>
+                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" placeholder="{{ 'balanced_activities_4.place_saturday' | translate }}"></textarea></div>
                                           </div>
                                           <div class="tab-pane fade " id="sun3" role="tabpanel">
                                             
-                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" [placeholder]="isSmallScreen ? 'Write your activities for Sunday' : 'Enter your activities for Sunday'"></textarea></div>
+                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" placeholder="{{ 'balanced_activities_4.place_sunday' | translate }}"></textarea></div>
                                           </div>
                                           
                                         </div>
@@ -298,28 +298,26 @@
                                         
                                             <ul class="nav nav-tabs card-header-tabs" data-bs-toggle="tabs" role="tablist">
                                               
-                                                
                                               <li class="nav-item" role="presentation">
-                                                <a href="#mon4" class="nav-link active" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">MONDAY</a>
+                                                <a href="#mon4" class="nav-link active" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">{{ 'balanced_activities_4.monday' | translate }}</a>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <a href="#tue4" class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">TUESDAY</a>
+                                                <a href="#tue4" class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">{{ 'balanced_activities_4.tuesday' | translate }}</a>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <a href="#wed4" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">WEDNESDAY</a>
-                                              </li>
-            
-                                              <li class="nav-item" role="presentation">
-                                                <a href="#thu4" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">THURSDAY</a>
+                                                <a href="#wed4" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.wednesday' | translate }}</a>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <a href="#fri4" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">FRIDAY</a>
+                                                <a href="#thu4" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.thursday' | translate }}</a>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <a href="#sat4" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">SATURDAY</a>
+                                                <a href="#fri4" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.friday' | translate }}</a>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <a href="#sun4" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">SUNDAY</a>
+                                                <a href="#sat4" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.saturday' | translate }}</a>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                <a href="#sun4" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.sunday' | translate }}</a>
                                               </li>
             
                                               <li class="nav-item ms-auto" role="presentation">
@@ -335,32 +333,32 @@
                                               <div class="tab-pane fade active show" id="mon4" role="tabpanel">
                                                 
                                                 <div>
-                                                    <textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)"  formControlName="mondayText" [placeholder]="isSmallScreen ? 'Write your activities for Monday' : 'Enter your activities for Monday'"></textarea>
+                                                    <textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)"  formControlName="mondayText" placeholder="{{ 'balanced_activities_4.place_monday' | translate }}"></textarea>
                                                 </div>
                                               </div>
                                               <div class="tab-pane fade" id="tue4" role="tabpanel">
                                                 
-                                                <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="tuesdayText" [placeholder]="isSmallScreen ? 'Write your activities for Tuesday' : 'Enter your activities for Tuesday'"></textarea></div>
+                                                <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="tuesdayText" placeholder="{{ 'balanced_activities_4.place_tuesday' | translate }}"></textarea></div>
                                               </div>
                                               <div class="tab-pane fade " id="wed4" role="tabpanel">
                                                
-                                                <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="wednesdayText" [placeholder]="isSmallScreen ? 'Write your activities for Wednesday' : 'Enter your activities for Wednesday'"></textarea></div>
+                                                <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="wednesdayText" placeholder="{{ 'balanced_activities_4.place_wednesday' | translate }}"></textarea></div>
                                               </div>
                                               <div class="tab-pane fade " id="thu4" role="tabpanel">
                                               
-                                                <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="thursdayText" [placeholder]="isSmallScreen ? 'Write your activities for Thursday' : 'Enter your activities for Thursday'"></textarea></div>
+                                                <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="thursdayText" placeholder="{{ 'balanced_activities_4.place_thursday' | translate }}"></textarea></div>
                                               </div>
                                               <div class="tab-pane fade " id="fri4" role="tabpanel">
                                               
-                                                <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="fridayText" [placeholder]="isSmallScreen ? 'Write your activities for Friday' : 'Enter your activities for Friday'"></textarea></div>
+                                                <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="fridayText" placeholder="{{ 'balanced_activities_4.place_friday' | translate }}"></textarea></div>
                                               </div>
                                               <div class="tab-pane fade " id="sat4" role="tabpanel">
                                              
-                                                <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" [placeholder]="isSmallScreen ? 'Write your activities for Saturday' : 'Enter your activities for Saturday'"></textarea></div>
+                                                <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" placeholder="{{ 'balanced_activities_4.place_saturday' | translate }}"></textarea></div>
                                               </div>
                                               <div class="tab-pane fade " id="sun4" role="tabpanel">
                                                 
-                                                <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" [placeholder]="isSmallScreen ? 'Write your activities for Sunday' : 'Enter your activities for Sunday'"></textarea></div>
+                                                <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" placeholder="{{ 'balanced_activities_4.place_sunday' | translate }}"></textarea></div>
                                               </div>
                                               
                                             </div>
@@ -384,28 +382,26 @@
                                             
                                                 <ul class="nav nav-tabs card-header-tabs" data-bs-toggle="tabs" role="tablist">
                                                   
-                                                    
                                                   <li class="nav-item" role="presentation">
-                                                    <a href="#mon5" class="nav-link active" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">MONDAY</a>
+                                                    <a href="#mon5" class="nav-link active" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">{{ 'balanced_activities_4.monday' | translate }}</a>
                                                   </li>
                                                   <li class="nav-item" role="presentation">
-                                                    <a href="#tue5" class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">TUESDAY</a>
+                                                    <a href="#tue5" class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">{{ 'balanced_activities_4.tuesday' | translate }}</a>
                                                   </li>
                                                   <li class="nav-item" role="presentation">
-                                                    <a href="#wed5" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">WEDNESDAY</a>
-                                                  </li>
-                
-                                                  <li class="nav-item" role="presentation">
-                                                    <a href="#thu5" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">THURSDAY</a>
+                                                    <a href="#wed5" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.wednesday' | translate }}</a>
                                                   </li>
                                                   <li class="nav-item" role="presentation">
-                                                    <a href="#fri5" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">FRIDAY</a>
+                                                    <a href="#thu5" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.thursday' | translate }}</a>
                                                   </li>
                                                   <li class="nav-item" role="presentation">
-                                                    <a href="#sat5" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">SATURDAY</a>
+                                                    <a href="#fri5" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.friday' | translate }}</a>
                                                   </li>
                                                   <li class="nav-item" role="presentation">
-                                                    <a href="#sun5" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">SUNDAY</a>
+                                                    <a href="#sat5" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.saturday' | translate }}</a>
+                                                  </li>
+                                                  <li class="nav-item" role="presentation">
+                                                    <a href="#sun5" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.sunday' | translate }}</a>
                                                   </li>
                 
                                                   <li class="nav-item ms-auto" role="presentation">
@@ -421,32 +417,32 @@
                                                   <div class="tab-pane fade active show" id="mon5" role="tabpanel">
                                                     
                                                     <div>
-                                                        <textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)"  formControlName="mondayText" [placeholder]="isSmallScreen ? 'Write your activities for Monday' : 'Enter your activities for Monday'"></textarea>
+                                                        <textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)"  formControlName="mondayText" placeholder="{{ 'balanced_activities_4.place_monday' | translate }}"></textarea>
                                                     </div>
                                                   </div>
                                                   <div class="tab-pane fade" id="tue5" role="tabpanel">
                                                     
-                                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="tuesdayText" [placeholder]="isSmallScreen ? 'Write your activities for Tuesday' : 'Enter your activities for Tuesday'"></textarea></div>
+                                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="tuesdayText" placeholder="{{ 'balanced_activities_4.place_tuesday' | translate }}"></textarea></div>
                                                   </div>
                                                   <div class="tab-pane fade " id="wed5" role="tabpanel">
                                                    
-                                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="wednesdayText" [placeholder]="isSmallScreen ? 'Write your activities for Wednesday' : 'Enter your activities for Wednesday'"></textarea></div>
+                                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="wednesdayText" placeholder="{{ 'balanced_activities_4.place_wednesday' | translate }}"></textarea></div>
                                                   </div>
                                                   <div class="tab-pane fade " id="thu5" role="tabpanel">
                                                   
-                                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="thursdayText" [placeholder]="isSmallScreen ? 'Write your activities for Thursday' : 'Enter your activities for Thursday'"></textarea></div>
+                                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="thursdayText" placeholder="{{ 'balanced_activities_4.place_thursday' | translate }}"></textarea></div>
                                                   </div>
                                                   <div class="tab-pane fade " id="fri5" role="tabpanel">
                                                   
-                                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="fridayText" [placeholder]="isSmallScreen ? 'Write your activities for Friday' : 'Enter your activities for Friday'"></textarea></div>
+                                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="fridayText" placeholder="{{ 'balanced_activities_4.place_friday' | translate }}"></textarea></div>
                                                   </div>
                                                   <div class="tab-pane fade " id="sat5" role="tabpanel">
                                                  
-                                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" [placeholder]="isSmallScreen ? 'Write your activities for Saturday' : 'Enter your activities for Saturday'"></textarea></div>
+                                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" placeholder="{{ 'balanced_activities_4.place_saturday' | translate }}"></textarea></div>
                                                   </div>
                                                   <div class="tab-pane fade " id="sun5" role="tabpanel">
                                                     
-                                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" [placeholder]="isSmallScreen ? 'Write your activities for Sunday' : 'Enter your activities for Sunday'"></textarea></div>
+                                                    <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" placeholder="{{ 'balanced_activities_4.place_sunday' | translate }}"></textarea></div>
                                                   </div>
                                                   
                                                 </div>
@@ -471,36 +467,32 @@
                                                 
                                                     <ul class="nav nav-tabs card-header-tabs" data-bs-toggle="tabs" role="tablist">
                                                       
-                                                        
                                                       <li class="nav-item" role="presentation">
-                                                        <a href="#mon6" class="nav-link active" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">MONDAY</a>
+                                                        <a href="#mon6" class="nav-link active" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">{{ 'balanced_activities_4.monday' | translate }}</a>
                                                       </li>
                                                       <li class="nav-item" role="presentation">
-                                                        <a href="#tue6" class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">TUESDAY</a>
+                                                        <a href="#tue6" class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">{{ 'balanced_activities_4.tuesday' | translate }}</a>
                                                       </li>
                                                       <li class="nav-item" role="presentation">
-                                                        <a href="#wed6" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">WEDNESDAY</a>
-                                                      </li>
-                    
-                                                      <li class="nav-item" role="presentation">
-                                                        <a href="#thu6" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">THURSDAY</a>
+                                                        <a href="#wed6" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.wednesday' | translate }}</a>
                                                       </li>
                                                       <li class="nav-item" role="presentation">
-                                                        <a href="#fri6" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">FRIDAY</a>
+                                                        <a href="#thu6" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.thursday' | translate }}</a>
                                                       </li>
                                                       <li class="nav-item" role="presentation">
-                                                        <a href="#sat6" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">SATURDAY</a>
+                                                        <a href="#fri6" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.friday' | translate }}</a>
                                                       </li>
                                                       <li class="nav-item" role="presentation">
-                                                        <a href="#sun6" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">SUNDAY</a>
+                                                        <a href="#sat6" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.saturday' | translate }}</a>
                                                       </li>
-                    
+                                                      <li class="nav-item" role="presentation">
+                                                        <a href="#sun6" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.sunday' | translate }}</a>
+                                                      </li>
                                                       <li class="nav-item ms-auto" role="presentation">
                                                         <a class="nav-link" title="Time"><!-- Download SVG icon from http://tabler-icons.io/i/settings -->
-                                                             <strong> 06pm To 08pm </strong>  &nbsp;<i class="ti ti-clock" style="font: size 0.7rem;"></i>
+                                                             <strong> 6pm To 8pm </strong>  &nbsp;<i class="ti ti-clock" style="font: size 0.7rem;"></i>
                                                         </a>
                                                       </li>
-                    
                                                     </ul>
                                                   </div>
                                                   <div class="card-body">
@@ -508,32 +500,32 @@
                                                       <div class="tab-pane fade active show" id="mon6" role="tabpanel">
                                                         
                                                         <div>
-                                                            <textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)"  formControlName="mondayText" [placeholder]="isSmallScreen ? 'Write your activities for Monday' : 'Enter your activities for Monday'"></textarea>
+                                                            <textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)"  formControlName="mondayText" placeholder="{{ 'balanced_activities_4.place_monday' | translate }}"></textarea>
                                                         </div>
                                                       </div>
                                                       <div class="tab-pane fade" id="tue6" role="tabpanel">
                                                         
-                                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="tuesdayText" [placeholder]="isSmallScreen ? 'Write your activities for Tuesday' : 'Enter your activities for Tuesday'"></textarea></div>
+                                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="tuesdayText" placeholder="{{ 'balanced_activities_4.place_tuesday' | translate }}"></textarea></div>
                                                       </div>
                                                       <div class="tab-pane fade " id="wed6" role="tabpanel">
                                                        
-                                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="wednesdayText" [placeholder]="isSmallScreen ? 'Write your activities for Wednesday' : 'Enter your activities for Wednesday'"></textarea></div>
+                                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="wednesdayText" placeholder="{{ 'balanced_activities_4.place_wednesday' | translate }}"></textarea></div>
                                                       </div>
                                                       <div class="tab-pane fade " id="thu6" role="tabpanel">
                                                       
-                                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="thursdayText" [placeholder]="isSmallScreen ? 'Write your activities for Thursday' : 'Enter your activities for Thursday'"></textarea></div>
+                                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="thursdayText" placeholder="{{ 'balanced_activities_4.place_thursday' | translate }}"></textarea></div>
                                                       </div>
                                                       <div class="tab-pane fade " id="fri6" role="tabpanel">
                                                       
-                                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="fridayText" [placeholder]="isSmallScreen ? 'Write your activities for Friday' : 'Enter your activities for Friday'"></textarea></div>
+                                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="fridayText" placeholder="{{ 'balanced_activities_4.place_friday' | translate }}"></textarea></div>
                                                       </div>
                                                       <div class="tab-pane fade " id="sat6" role="tabpanel">
                                                      
-                                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" [placeholder]="isSmallScreen ? 'Write your activities for Saturday' : 'Enter your activities for Saturday'"></textarea></div>
+                                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" placeholder="{{ 'balanced_activities_4.place_saturday' | translate }}"></textarea></div>
                                                       </div>
                                                       <div class="tab-pane fade " id="sun6" role="tabpanel">
                                                         
-                                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" [placeholder]="isSmallScreen ? 'Write your activities for Sunday' : 'Enter your activities for Sunday'"></textarea></div>
+                                                        <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" placeholder="{{ 'balanced_activities_4.place_sunday' | translate }}"></textarea></div>
                                                       </div>
                                                       
                                                     </div>
@@ -558,28 +550,26 @@
                                                     
                                                         <ul class="nav nav-tabs card-header-tabs" data-bs-toggle="tabs" role="tablist">
                                                           
-                                                            
                                                           <li class="nav-item" role="presentation">
-                                                            <a href="#mon7" class="nav-link active" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">MONDAY</a>
+                                                            <a href="#mon7" class="nav-link active" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">{{ 'balanced_activities_4.monday' | translate }}</a>
                                                           </li>
                                                           <li class="nav-item" role="presentation">
-                                                            <a href="#tue7" class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">TUESDAY</a>
+                                                            <a href="#tue7" class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">{{ 'balanced_activities_4.tuesday' | translate }}</a>
                                                           </li>
                                                           <li class="nav-item" role="presentation">
-                                                            <a href="#wed7" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">WEDNESDAY</a>
-                                                          </li>
-                        
-                                                          <li class="nav-item" role="presentation">
-                                                            <a href="#thu7" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">THURSDAY</a>
+                                                            <a href="#wed7" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.wednesday' | translate }}</a>
                                                           </li>
                                                           <li class="nav-item" role="presentation">
-                                                            <a href="#fri7" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">FRIDAY</a>
+                                                            <a href="#thu7" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.thursday' | translate }}</a>
                                                           </li>
                                                           <li class="nav-item" role="presentation">
-                                                            <a href="#sat7" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">SATURDAY</a>
+                                                            <a href="#fri7" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.friday' | translate }}</a>
                                                           </li>
                                                           <li class="nav-item" role="presentation">
-                                                            <a href="#sun7" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">SUNDAY</a>
+                                                            <a href="#sat7" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.saturday' | translate }}</a>
+                                                          </li>
+                                                          <li class="nav-item" role="presentation">
+                                                            <a href="#sun7" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.sunday' | translate }}</a>
                                                           </li>
                         
                                                           <li class="nav-item ms-auto" role="presentation">
@@ -595,32 +585,32 @@
                                                           <div class="tab-pane fade active show" id="mon7" role="tabpanel">
                                                             
                                                             <div>
-                                                                <textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)"  formControlName="mondayText" [placeholder]="isSmallScreen ? 'Write your activities for Monday' : 'Enter your activities for Monday'"></textarea>
+                                                                <textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)"  formControlName="mondayText" placeholder="{{ 'balanced_activities_4.place_monday' | translate }}"></textarea>
                                                             </div>
                                                           </div>
                                                           <div class="tab-pane fade" id="tue7" role="tabpanel">
                                                             
-                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="tuesdayText" [placeholder]="isSmallScreen ? 'Write your activities for Tuesday' : 'Enter your activities for Tuesday'"></textarea></div>
+                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="tuesdayText" placeholder="{{ 'balanced_activities_4.place_tuesday' | translate }}"></textarea></div>
                                                           </div>
                                                           <div class="tab-pane fade " id="wed7" role="tabpanel">
                                                            
-                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="wednesdayText" [placeholder]="isSmallScreen ? 'Write your activities for Wednesday' : 'Enter your activities for Wednesday'"></textarea></div>
+                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="wednesdayText" placeholder="{{ 'balanced_activities_4.place_wednesday' | translate }}"></textarea></div>
                                                           </div>
                                                           <div class="tab-pane fade " id="thu7" role="tabpanel">
                                                           
-                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="thursdayText" [placeholder]="isSmallScreen ? 'Write your activities for Thursday' : 'Enter your activities for Thursday'"></textarea></div>
+                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="thursdayText" placeholder="{{ 'balanced_activities_4.place_thursday' | translate }}"></textarea></div>
                                                           </div>
                                                           <div class="tab-pane fade " id="fri7" role="tabpanel">
                                                           
-                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="fridayText" [placeholder]="isSmallScreen ? 'Write your activities for Friday' : 'Enter your activities for Friday'"></textarea></div>
+                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="fridayText" placeholder="{{ 'balanced_activities_4.place_friday' | translate }}"></textarea></div>
                                                           </div>
                                                           <div class="tab-pane fade " id="sat7" role="tabpanel">
                                                          
-                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" [placeholder]="isSmallScreen ? 'Write your activities for Saturday' : 'Enter your activities for Saturday'"></textarea></div>
+                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" placeholder="{{ 'balanced_activities_4.place_saturday' | translate }}"></textarea></div>
                                                           </div>
                                                           <div class="tab-pane fade " id="sun7" role="tabpanel">
                                                             
-                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" [placeholder]="isSmallScreen ? 'Write your activities for Sunday' : 'Enter your activities for Sunday'"></textarea></div>
+                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" placeholder="{{ 'balanced_activities_4.place_sunday' | translate }}"></textarea></div>
                                                           </div>
                                                           
                                                         </div>
@@ -647,26 +637,25 @@
                                                           
                                                             
                                                           <li class="nav-item" role="presentation">
-                                                            <a href="#mon8" class="nav-link active" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">MONDAY</a>
+                                                            <a href="#mon8" class="nav-link active" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">{{ 'balanced_activities_4.monday' | translate }}</a>
                                                           </li>
                                                           <li class="nav-item" role="presentation">
-                                                            <a href="#tue8" class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">TUESDAY</a>
+                                                            <a href="#tue8" class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">{{ 'balanced_activities_4.tuesday' | translate }}</a>
                                                           </li>
                                                           <li class="nav-item" role="presentation">
-                                                            <a href="#wed8" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">WEDNESDAY</a>
-                                                          </li>
-                        
-                                                          <li class="nav-item" role="presentation">
-                                                            <a href="#thu8" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">THURSDAY</a>
+                                                            <a href="#wed8" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.wednesday' | translate }}</a>
                                                           </li>
                                                           <li class="nav-item" role="presentation">
-                                                            <a href="#fri8" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">FRIDAY</a>
+                                                            <a href="#thu8" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.thursday' | translate }}</a>
                                                           </li>
                                                           <li class="nav-item" role="presentation">
-                                                            <a href="#sat8" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">SATURDAY</a>
+                                                            <a href="#fri8" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.friday' | translate }}</a>
                                                           </li>
                                                           <li class="nav-item" role="presentation">
-                                                            <a href="#sun8" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">SUNDAY</a>
+                                                            <a href="#sat8" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.saturday' | translate }}</a>
+                                                          </li>
+                                                          <li class="nav-item" role="presentation">
+                                                            <a href="#sun8" class="nav-link " data-bs-toggle="tab" aria-selected="true" role="tab">{{ 'balanced_activities_4.sunday' | translate }}</a>
                                                           </li>
                         
                                                           <li class="nav-item ms-auto" role="presentation">
@@ -682,42 +671,46 @@
                                                           <div class="tab-pane fade active show" id="mon8" role="tabpanel">
                                                             
                                                             <div>
-                                                                <textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)"  formControlName="mondayText" [placeholder]="isSmallScreen ? 'Write your activities for Monday' : 'Enter your activities for Monday'"></textarea>
+                                                                <textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)"  formControlName="mondayText" placeholder="{{ 'balanced_activities_4.place_monday' | translate }}"></textarea>
                                                             </div>
                                                           </div>
                                                           <div class="tab-pane fade" id="tue8" role="tabpanel">
                                                             
-                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="tuesdayText" [placeholder]="isSmallScreen ? 'Write your activities for Tuesday' : 'Enter your activities for Tuesday'"></textarea></div>
+                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="tuesdayText" placeholder="{{ 'balanced_activities_4.place_tuesday' | translate }}"></textarea></div>
                                                           </div>
                                                           <div class="tab-pane fade " id="wed8" role="tabpanel">
                                                            
-                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="wednesdayText" [placeholder]="isSmallScreen ? 'Write your activities for Wednesday' : 'Enter your activities for Wednesday'"></textarea></div>
+                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="wednesdayText" placeholder="{{ 'balanced_activities_4.place_wednesday' | translate }}"></textarea></div>
                                                           </div>
                                                           <div class="tab-pane fade " id="thu8" role="tabpanel">
                                                           
-                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="thursdayText" [placeholder]="isSmallScreen ? 'Write your activities for Thursday' : 'Enter your activities for Thursday'"></textarea></div>
+                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="thursdayText" placeholder="{{ 'balanced_activities_4.place_thursday' | translate }}"></textarea></div>
                                                           </div>
                                                           <div class="tab-pane fade " id="fri8" role="tabpanel">
                                                           
-                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="fridayText" [placeholder]="isSmallScreen ? 'Write your activities for Friday' : 'Enter your activities for Friday'"></textarea></div>
+                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="fridayText" placeholder="{{ 'balanced_activities_4.place_friday' | translate }}"></textarea></div>
                                                           </div>
                                                           <div class="tab-pane fade " id="sat8" role="tabpanel">
                                                          
-                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" [placeholder]="isSmallScreen ? 'Write your activities for Saturday' : 'Enter your activities for Saturday'"></textarea></div>
+                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" placeholder="{{ 'balanced_activities_4.place_saturday' | translate }}"></textarea></div>
                                                           </div>
                                                           <div class="tab-pane fade " id="sun8" role="tabpanel">
                                                             
-                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" [placeholder]="isSmallScreen ? 'Write your activities for Sunday' : 'Enter your activitiess for Sunday'"></textarea></div>
+                                                            <div><textarea class="notes form-control" rows="5" cols="8" (input)="limitLines($event, 5)" formControlName="saturdayText" placeholder="{{ 'balanced_activities_4.place_sunday' | translate }}"></textarea></div>
                                                           </div>
                                                           
                                                         </div>
                                                       </div>
-                        
-                        
+                                                     
+                                                    
                         
                                                       
                                                     </div>
-
+                                                    <div class="d-print-none">
+                                                      <a href="#" class="page-link"onclick="javascript:window.print();">
+                                                        <i class="ti ti-printer" style="font-size: 5em; color: #5190B7;"></i>       
+                                                     </a>
+                                                    </div>
                             
                      
                               
@@ -760,12 +753,11 @@
                             </div> -->
                               
                               
+                            
+                            <prev-next-button [prev]="'../start'" [next]="'../firststep'" ></prev-next-button>
 
-                              
-                              
-
-                        <ul class="pagination justify-content-end">
-                          <li class="  ">
+                        <!-- <ul class="pagination justify-content-end">
+                          <li class="">
                             <a class="page-link"onclick="javascript:window.print();">
                                 <i class="ti ti-printer" style="font-size: 5em; color: #5190B7;"></i>       
                             </a>
@@ -782,7 +774,7 @@
                                 </a>
                             </li>
                         </ul>
-
+ -->
                     </div>
                 </div>
             </div>

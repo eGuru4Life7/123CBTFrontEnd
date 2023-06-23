@@ -6,10 +6,11 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Balanced Activities
+                        
+                        {{ 'index.balanced-activities' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -50,38 +51,36 @@
 
                                 <div class="card-body ">
                                     <h2 class="card-title">
-                                        Creative Activities </h2>
+                                        {{ 'balanced_activities_7.heading' | translate }}</h2>
                       
                                     <ul class="list-group list-group-flush" style="font-size: 1.rem;">
-                                      <li class="list-group-item list-group-item-action">Draw a picture</li>
-                                      <li class="list-group-item list-group-item-action">Clean your car or bike</li>
-                                      <li class="list-group-item list-group-item-action">Decorate your room</li>
-                                      <li class="list-group-item list-group-item-action">Play some musical Instrument</li>
-                                      <li class="list-group-item list-group-item-action">Sewing & Stitching</li>
-                                      <li class="list-group-item list-group-item-action">Diary writing</li>
-                                      <li class="list-group-item list-group-item-action">Sing a song</li>
-                                      <li class="list-group-item list-group-item-action">Pluck & arrange flowers</li>
-                                      <li class="list-group-item list-group-item-action">Dancing</li>
-                                      <li class="list-group-item list-group-item-action">Arrange/change setting of furniture</li>
+                                      <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity1' | translate }}</li>
+                                      <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity2' | translate }}</li>
+                                      <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity3' | translate }}</li>
+                                      <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity4' | translate }}</li>
+                                      <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity5' | translate }}</li>
+                                      <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity6' | translate }}</li>
+                                      <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity7' | translate }}</li>
+                                      <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity8' | translate }}</li>
+                                      <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity9' | translate }}</li>
+                                      <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity10' | translate }}</li>
                                     </ul>
                                   </div>
                             </div>
 
                         </div>
 <br><br>
-                        <ul class="pagination justify-content-end">
-                            <!-- <li class="page-item page-prev">
-                              <a class="page-link" [routerLink]="'../2'" tabindex="-1" aria-disabled="true">
-                                    <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
-                                </a>
-                            </li> --> 
+<prev-next-button  [next]="'../activitylist'" ></prev-next-button>
+
+                       <!--  <ul class="pagination justify-content-end">
+                          
                             <li class=" page-next">
                                 <a class="page-link" [routerLink]="'../activitylist'">
                                    
                                     <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>                
                                 </a>
                             </li>
-                        </ul>
+                        </ul> -->
 
                     </div>
                 </div>
