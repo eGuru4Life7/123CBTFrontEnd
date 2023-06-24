@@ -10,21 +10,27 @@ const routes: Routes = [
   {
     path:'',
     component:Staywell1Component,
-   
+    canActivate:[CountGuard],
+    data: { code: 'S_W', completed: 25, nextCode: '' }
   },
   {
     path:'staywell2',
     component:Staywell2Component,
-    
+    canActivate:[CountGuard],
+    data: { code: 'S_W', completed: 25, nextCode: '' }
   },
   {
     path:'staywell3',
     component:Staywell3Component,
+    canActivate:[CountGuard],
+    data: { code: 'S_W', completed: 25, nextCode: '' }
     
   },
   {
     path:'staywell4',
     component:Staywell4Component,
+    canActivate:[CountGuard],
+    data: { code: 'S_W', completed: 25, nextCode: '' }
     
   }
 ];

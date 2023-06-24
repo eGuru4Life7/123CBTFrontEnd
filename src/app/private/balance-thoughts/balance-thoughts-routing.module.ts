@@ -48,7 +48,7 @@ const routes: Routes = [
   {
     path:'diary-week3',
     component:DiaryWeek3Component,
-    canActivate: [CountGuard],
+   // canActivate: [CountGuard],
     data: { code: 'B_T', completed: 50, nextCode: 'P_S' }
   },
   {
