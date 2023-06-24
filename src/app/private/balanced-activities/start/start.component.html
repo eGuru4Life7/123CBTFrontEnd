@@ -6,10 +6,11 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Balanced Activities
+                        
+                        {{ 'index.balanced-activities' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -41,15 +42,16 @@
 
                                 <h1 style="font-size: 2.5rem;
                                     margin-bottom: 20px;">
-                                    
-                                    Activities and emotional wellbeing</h1>
+                                    {{ 'balanced_activities_3.heading' | translate }}</h1>
                                     <p>
-                                        There is a strong link between our activities & emotions. Sometimes people under stress reduce their activities. Similarly, low levels of activities can lead to emotional health problems. A reduction in activities leads to a variety of emotional problems, which causes further reduction in activity. This leads to a vicious cycle of low activities and negative emotions. Increased activities lead to release of happy hormones in brain. Increased activities also distract us from our cognitive errors. It is important that the vicious cycle of reduced activities is broken. Therefore, one way of dealing with stress is by increasing your activities. However, we need to be mindful of the balance between work related activities and activities that give us please. If you are active but still feel stressed, anxious or unhappy you might need to bring balance into your activities. </p>
+                                        {{ 'balanced_activities_3.paragraph' | translate }}
+                                    </p>
                             </div>
 
                         </div>
 
-                        <ul class="pagination justify-content-end">
+                        <prev-next-button [prev]="'../score'" [next]="'../writeactivities'" ></prev-next-button>
+                       <!--  <ul class="pagination justify-content-end">
                             <li class=" page-prev ">
                                 <a class="page-link" [routerLink]="'../score'">
                                     <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
@@ -61,7 +63,7 @@
                                     <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
                                 </a>
                             </li>
-                        </ul>
+                        </ul> -->
 
                     </div>
                 </div>

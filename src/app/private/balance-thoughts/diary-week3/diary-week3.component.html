@@ -143,24 +143,55 @@
 
                         </div>
 
-                        <ul class="pagination justify-content-end">
-                            <li class=" page-prev ">
-                                <a class="page-link" [routerLink]="'../tips'">
-                                    <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>
-                                </a>
-                            </li>
-                            <li class=" page-next">
-                                <a class="page-link" [routerLink]="'../situation'">
+                        <prev-next-button [prev]="'../tips'" [next]="'../situation'" ></prev-next-button>
 
-                                    <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>
-                                </a>
-                            </li>
-                        </ul>
+                    <!-- <ul class="pagination justify-content-end">
+                        <li class=" page-prev ">
+                            <a class="page-link" [routerLink]="'../tips'">
+                                <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
+                            </a>
+                        </li>
+                        <li class=" page-next">
+                            <a class="page-link" [routerLink]="'../situation'">
+                               
+                                <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
+                            </a>
+                        </li>
+                    </ul> -->
 
-                    </div>
                 </div>
 
-                <br>
 
+                
             </div>
+
+
+
+
+
+                
+            <br>
+            <!-- <div class="row row-cards">
+
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="pagination ">
+                                <li class="page-item page-prev ">
+                                    <a class="page-link" [routerLink]="'../tips'" tabindex="-1" >
+                                        <div class="page-item-subtitle">previous </div>
+                                        <div class="page-item-title">Tips</div>
+                                    </a>
+                                </li>
+                                <li class="page-item page-next">
+                                    <a class="page-link" [routerLink]="'../situation'">
+                                        <div class="page-item-subtitle">next</div>
+                                        <div class="page-item-title">Situation</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>

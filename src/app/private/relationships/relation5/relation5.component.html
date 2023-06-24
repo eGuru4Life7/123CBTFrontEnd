@@ -6,10 +6,10 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Relationships
+                        {{ 'index.relationship' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -36,7 +36,7 @@
                         <div class="row align-items-center">
                             
                             <h1 style="font-size: 2.5rem;
-                            margin-bottom: 20px; text-align: center;">Unhealthy patterns of communication</h1>
+                            margin-bottom: 20px; text-align: center;">{{ 'relation_1.heading_main' | translate }}</h1>
 
                             <div class="col-sm-12 col-md-5 col-lg-5 ">
                                 <img src="../../../../assets/static/illustrations/relation5.svg" alt="thought,emotions" class="rounded fade-in">
@@ -44,16 +44,19 @@
                             <div class="col">
 
                                 <h1 style="font-size: 2rem;
-                                margin-bottom: 20px;">Assertive people</h1>
+                                margin-bottom: 20px;">{{ 'relation_1c.heading' | translate }}</h1>
 
-                                <p>Assertive people honestly tell others what they want & what they don't not. Being assertive is also being balanced in your communication style. It is the art of expressing yourself without being manipulative, passive or aggressive. You are aware of your rights but at the same time respect others rights too. Assertive people are seen as fair and respectful and in turn, receive the same from others. Assertive people are also seen as the better negotiators as they believe in “give and take”. Their relationships are healthy and meaningful, and they are better able to manage their emotions. They can express themselves without being angry. Assertive people are less likely to suffer from emotional health problems such as stress, anxiety, depression or hopelessness. They are also physically healthier, with low risk of developing pains, ulcer & high blood pressure.</p>
+                                <p>
+                                    {{ 'relation_1c.paragraph' | translate }}
+                                </p>
                             </div>
 
                         </div>
                     </div>
 
+                    <prev-next-button  [prev]="'../manipulative'" [next]="'../howtobeassertive'" ></prev-next-button>
 
-                    <ul class="pagination justify-content-end">
+                   <!--  <ul class="pagination justify-content-end">
                         <li class=" page-prev ">
                             <a class="page-link" [routerLink]="'../manipulative'">
                                 <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
@@ -65,7 +68,7 @@
                                 <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
 
                 </div>
 

@@ -16,6 +16,7 @@ import { NgApexchartsModule } from 'ng-apexcharts';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastModule } from 'primeng/toast';
 import { TranslateModule } from '@ngx-translate/core';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { TranslateModule } from '@ngx-translate/core';
     ReactiveFormsModule,
     ToastModule,
     BalanceThoughtsRoutingModule,
-    TranslateModule
+    TranslateModule,
+    SharedModule
   ]
 })
 export class BalanceThoughtsModule { }

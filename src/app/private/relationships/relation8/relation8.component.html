@@ -6,10 +6,10 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Relationships
+                        {{ 'index.relationship' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -36,7 +36,7 @@
                         <div class="row align-items-center">
                             
                             <h1 style="font-size: 2.5rem;
-                            margin-bottom: 20px; text-align: center;">Helpful assertiveness techniques</h1>
+                            margin-bottom: 20px; text-align: center;">{{ 'relation_3.heading1' | translate }}</h1>
 
                             <div class="col-sm-12 col-md-5 col-lg-5 ">
                                 <img src="../../../../assets/static/illustrations/relation7.svg" alt="thought,emotions" class="rounded fade-in">
@@ -44,16 +44,19 @@
                             <div class="col">
 
                                 <h1 style="font-size: 2rem;
-                                margin-bottom: 20px;">Cooling Down</h1>
+                                margin-bottom: 20px;">{{ 'relation_3b.heading1' | translate }}</h1>
 
-                                <p>If someone gets angry during the conversation, you say “You are angry now, I can understand your reaction. However, it is better to talk some other time when both of us are relaxed”.</p>
+                                <p>
+                                    {{ 'relation_3b.heading1-desc' | translate }}
+                                </p>
                             </div>
 
                         </div>
                     </div>
 
+                    <prev-next-button  [prev]="'../fog'" [next]="'../brokentape'" ></prev-next-button>
 
-                    <ul class="pagination justify-content-end">
+                    <!-- <ul class="pagination justify-content-end">
                         <li class=" page-prev ">
                             <a class="page-link" [routerLink]="'../fog'">
                                 <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
@@ -66,7 +69,7 @@
                             </a>
                         </li>
                     </ul>
-
+ -->
                 </div>
 
 

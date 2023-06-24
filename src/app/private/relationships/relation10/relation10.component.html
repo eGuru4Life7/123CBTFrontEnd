@@ -6,10 +6,10 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Relationships
+                        {{ 'index.relationship' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -36,7 +36,7 @@
                         <div class="row align-items-center">
                             
                             <h1 style="font-size: 2.5rem;
-                            margin-bottom: 20px; text-align: center;">Helpful assertiveness techniques</h1>
+                            margin-bottom: 20px; text-align: center;">{{ 'relation_3.heading1' | translate }}</h1>
 
                             <div class="col-sm-12 col-md-5 col-lg-5 ">
                                 <img src="../../../../assets/static/illustrations/relation9.svg" alt="thought,emotions" class="rounded fade-in">
@@ -44,16 +44,19 @@
                             <div class="col">
 
                                 <h1 style="font-size: 2rem;
-                                margin-bottom: 20px;">Broken Tape</h1>
+                                margin-bottom: 20px;">{{ 'relation_3c.heading1' | translate }}</h1>
 
-                                <p>Repeat your point of view gently. Don't start an argument. For example, if you want to return an item to the shop, say “I have decided that I don't want it, so I want my money back”. After that, whatever the shopkeeper says, you just repeatedly ask for your money back without getting into a debate.</p>
+                                <p>
+                                    {{ 'relation_3c.heading1-desc' | translate }}
+                                </p>
                             </div>
 
                         </div>
                     </div>
+                    <prev-next-button  [prev]="'../cooldown'" [next]="'../conflicts'" ></prev-next-button>
 
 
-                    <ul class="pagination justify-content-end">
+                   <!--  <ul class="pagination justify-content-end">
                         <li class=" page-prev ">
                             <a class="page-link" [routerLink]="'../cooldown'">
                                 <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
@@ -65,7 +68,7 @@
                                 <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
 
                 </div>
 
