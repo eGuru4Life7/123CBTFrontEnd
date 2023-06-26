@@ -43,4 +43,7 @@ export class ModuleService {
   public getAllModuleById(id:any): Observable<any> {
     return this.http.get(environment.BASE_URL + 'module/getAllModuleById/'+id);
   }
+  public sendStayingWellEmail(data: any): Observable<any> {
+    return this.http.post(environment.BASE_URL + 'module/sendStayingWellEmail', data);
+  }
 }

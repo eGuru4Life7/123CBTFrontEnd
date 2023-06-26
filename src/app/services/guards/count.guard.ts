@@ -18,8 +18,13 @@ export class CountGuard implements CanActivate {
        let status:any= {};
        status.uid = this.localCache.getCurrentUser().id;
        let result = Object.assign(status, data);
-       this.moduleService.updateModuleStatus(result).subscribe();
-    return true;
+      this.moduleService.updateModuleStatus(result).subscribe((d:any)=>{
+        if(d){
+          return true;
+        }
+        return true;
+       });
+       return true;
   }
   
 }

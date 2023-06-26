@@ -26,7 +26,7 @@ const routes: Routes = [
     path: '',
     component: ScaleComponent,
    // canActivate: [CountGuard],
-    data: { code: 'B_A', completed: 20, nextCode: 'R' }
+   // data: { code: 'B_A', completed: 20, nextCode: 'R' }
   },
   {
     path: 'score',

@@ -8,6 +8,8 @@ import { Staywell3Component } from './staywell3/staywell3.component';
 import { Staywell4Component } from './staywell4/staywell4.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ToastModule } from 'primeng/toast';
 
 
 
@@ -22,7 +24,10 @@ import { SharedModule } from 'src/app/shared/shared.module';
     CommonModule,
     StayingWellRoutingModule,
     TranslateModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    ToastModule,
+    ReactiveFormsModule
   ]
 })
 export class StayingWellModule { }

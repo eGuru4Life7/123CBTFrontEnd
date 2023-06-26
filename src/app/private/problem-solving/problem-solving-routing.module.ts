@@ -17,8 +17,8 @@ const routes: Routes = [
   {
     path: '',
     component: ScaleComponent,
-    canActivate: [CountGuard],
-    data: { code: 'P_S', completed: 10, nextCode: 'B_A' }
+   // canActivate: [CountGuard],
+   // data: { code: 'P_S', completed: 10, nextCode: 'B_A' }
   },
   {
     path: 'scale',
@@ -29,8 +29,8 @@ const routes: Routes = [
   {
     path: 'score',
     component: ScoreComponent,
-    canActivate: [CountGuard],
-    data: { code: 'P_S', completed: 20, nextCode: 'B_A' }
+  //  canActivate: [CountGuard],
+  //  data: { code: 'P_S', completed: 20, nextCode: 'B_A' }
   },
   {
     path: 'intro',
