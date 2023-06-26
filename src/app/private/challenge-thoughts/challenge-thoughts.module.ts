@@ -14,6 +14,8 @@ import { EndComponent } from './end/end.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { TranslateModule } from '@ngx-translate/core';
+import { SharedModule } from 'src/app/shared/shared.module';
+
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { TranslateModule } from '@ngx-translate/core';
     NgApexchartsModule,
     ChallengeThoughtsRoutingModule,
     ReactiveFormsModule,
-    TranslateModule
+    TranslateModule,
+    SharedModule
+
   ]
 })
 export class ChallengeThoughtsModule { }

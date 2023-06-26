@@ -14,6 +14,8 @@ import { ProblemSolving8Component } from './problem-solving8/problem-solving8.co
 import { FormsModule } from '@angular/forms';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { TranslateModule } from '@ngx-translate/core';
+import { SharedModule } from 'src/app/shared/shared.module';
+
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import { TranslateModule } from '@ngx-translate/core';
     FormsModule,
     NgApexchartsModule,
     ProblemSolvingRoutingModule,
-    TranslateModule
+    TranslateModule,
+    SharedModule
   ]
 })
 export class ProblemSolvingModule { }

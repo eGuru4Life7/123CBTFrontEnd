@@ -6,10 +6,10 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Relationships
+                        {{ 'index.relationship' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -36,22 +36,22 @@
                         <div class="row align-items-center">
                             
                             <h1 style="font-size: 2.5rem;
-                            margin-bottom: 20px; text-align: center;">Dealing with conflicts</h1>
+                            margin-bottom: 20px; text-align: center;">{{ 'relation_4.heading' | translate }}</h1>
                             <br><br><br>
                             <div class="col-sm-12 col-md-5 col-lg-5 ">
-                                <img src="../../../../assets/static/illustrations/relation1.svg" alt="thought,emotions" class="rounded fade-in">
+                                <img src="../../../../assets/static/illustrations/relation1.svg"  class="rounded fade-in">
                             </div>
                             <div class="col">
 
                                 <h1 style="font-size: 1.5rem;
-                                margin-bottom: 20px;">Communication styles that cause conflicts</h1>
+                                margin-bottom: 20px;">{{ 'relation_4.paragraph' | translate }}</h1>
 
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 fade-in-3s">
-                                    <p class="think-text"><strong>Extreme statements:</strong> "It just must be done according to my will," "He always misbehaves with me," "He never agrees with me," and "You are all the same."</p>
-                                    <p class="think-text"><strong>Fortune teller's mistake:</strong> "Whatever I do, he will never listen to me" and "She will not agree with me because she doesn't like me."</p>
-                                    <p class="think-text"><strong>Emotional arguments:</strong> "I know he will do this," "You have a point, but I am not going to change my decision."</p>
-                                    <p class="think-text"><strong>Mixing positive with negative:</strong> You combine the positive with negative, e.g., saying to your wife "You are beautiful, but you don't know how to dress."</p>
-                                    <p class="think-text"><strong>Personal rules/principles:</strong> "Everyone should agree with me," "They should respect me & obey my rules."</p>
+                                    <p class="think-text"><strong>{{ 'relation_4.heading1' | translate }}</strong> {{ 'relation_4.heading1-desc' | translate }}</p>
+                                    <p class="think-text"><strong>{{ 'relation_4.heading2' | translate }}</strong> {{ 'relation_4.heading2-desc' | translate }}</p>
+                                    <p class="think-text"><strong>{{ 'relation_4.heading3' | translate }}</strong> {{ 'relation_4.heading3-desc' | translate }}</p>
+                                    <p class="think-text"><strong>{{ 'relation_4.heading4' | translate }}</strong> {{ 'relation_4.heading4-desc' | translate }}</p>
+                                    <p class="think-text"><strong>{{ 'relation_4.heading5' | translate }}</strong> {{ 'relation_4.heading5-desc' | translate }}</p>
                                 </div>
 
                             </div>
@@ -59,8 +59,9 @@
                         </div>
                     </div>
 
+                    <prev-next-button  [prev]="'../brokentape'" [next]="'../goldenrule1'" ></prev-next-button>
 
-                    <ul class="pagination justify-content-end">
+                   <!--  <ul class="pagination justify-content-end">
                         <li class=" page-prev ">
                             <a class="page-link" [routerLink]="'../brokentape'">
                                 <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
@@ -72,7 +73,7 @@
                                 <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
 
                 </div>
 

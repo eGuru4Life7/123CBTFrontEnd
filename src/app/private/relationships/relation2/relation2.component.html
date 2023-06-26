@@ -6,10 +6,10 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Relationships
+                        {{ 'index.relationship' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -36,7 +36,7 @@
                         <div class="row align-items-center">
                             
                             <h1 style="font-size: 2.5rem;
-                            margin-bottom: 20px; text-align: center;">Unhealthy patterns of communication</h1>
+                            margin-bottom: 20px; text-align: center;">{{ 'relation_1.heading_main' | translate }}</h1>
 
                             <div class="col-sm-12 col-md-5 col-lg-5 ">
                                 <img src="../../../../assets/static/illustrations/relation2.svg" alt="thought,emotions" class="rounded fade-in">
@@ -44,16 +44,18 @@
                             <div class="col">
 
                                 <h1 style="font-size: 2rem;
-                                margin-bottom: 20px;">Aggressive people</h1>
+                                margin-bottom: 20px;">{{ 'relation_1.heading' | translate }}</h1>
 
-                                <p>Aggressive people are loud, abusive and demanding. They usually don't care about the rights & needs of others. They attack, criticise & degrade others. They are unhappy and make others miserable too. They are loud and rude. Some people are a combination of passive & aggressive, i.e., they can be passive or aggressive depending on what benefits them. Aggressive people do not listen to others, frequently interrupt others and come across as intimidating. The impact of a pattern of aggressive communication is that these individuals become alienated from others. They alienate others, generate fear and hatred in others and always blame others instead of owning their issues, and thus are unable to mature. They are often loney and unhappy.</p>
+                                <p>
+                                    {{ 'relation_1.paragraph' | translate }}
+                                </p>
                             </div>
 
                         </div>
                     </div>
+                    <prev-next-button  [prev]="'../'" [next]="'../passive'" ></prev-next-button>
 
-
-                    <ul class="pagination justify-content-end">
+                   <!--  <ul class="pagination justify-content-end">
                         <li class=" page-prev ">
                             <a class="page-link" [routerLink]="'../improve'">
                                 <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
@@ -65,7 +67,7 @@
                                 <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
 
                 </div>
 

@@ -6,10 +6,10 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        Relationships
+                        {{ 'index.relationship' | translate }}
                     </h2>
                     <div class="page-pretitle">
-                        Module
+                        {{ 'index.Module' | translate }}
                     </div>
 
                 </div>
@@ -42,22 +42,26 @@
                             <div class="col">
 
                                 <h1 style="font-size: 2rem;
-                                margin-bottom: 20px;">How to be assertive</h1>
+                                margin-bottom: 20px;">{{ 'relation_2.heading1' | translate }}</h1>
 
-                                <p>Try to appear calm and relaxed and maintain eye contact. Adopt a comfortable posture. Don't cross your arms over chest.</p> 
-                                    <h2>Practical advice:</h2>
-                                    <p>Don't tell long stories. Be straight and to the point. Complete your sentences. Listen to other person's point of view. Don't interrupt others. Don't complete another person sentence, e.g., “I understand you want to stop working?” When you don't understand something, ask the other person to explain it. </p>   
-                                    <p>Make a list of situations in which you need to be assertive. Start your practice with low-risk situations. Think about the consequences. Choose the right time & place. Write down your statement on paper. Practice it with your friend or in front of the mirror.</p>
-                                    <h2>When you have to say something negative:</h2>
-                                    <p>Use the words “I” and “You”. Instead of saying “people are saying that some people are not doing their job properly”, say, “I think you are not taking an interest in your work”. Then tell them what exactly is wrong.</p> 
-                                    <p>Being assertive does not mean being rude. Listen to others point of view. Don't ignore them. Do not interrupt them in the middle. Do not look around when someone talks to you. Do not complete their sentences. Do not say in the middle, “Oh, I got you, you completed your work and want to go home”. Do not read their minds. Summarize what other person is saying to make sure you understood what he is saying. Ask them more questions to understand their point of view.</p>
+
+                                <p>{{ 'relation_2.heading1-desc' | translate }}</p> 
+                                    <h2>{{ 'relation_2.heading2' | translate }}</h2>
+                                    <p>{{ 'relation_2.heading2-desc' | translate }}</p>
+                                    <h2>{{ 'relation_2.heading3' | translate }}</h2>
+                                    <p>{{ 'relation_2.heading3-desc' | translate }}</p> 
+
+                                    <h2>{{ 'relation_2.heading4' | translate }}</h2>
+                                    <p>{{ 'relation_2.heading4-desc' | translate }}
+                                    </p>
                             </div>
 
                         </div>
                     </div>
 
+                    <prev-next-button  [prev]="'../assertive'" [next]="'../howtosayno'" ></prev-next-button>
 
-                    <ul class="pagination justify-content-end">
+                  <!--   <ul class="pagination justify-content-end">
                         <li class=" page-prev ">
                             <a class="page-link" [routerLink]="'../assertive'">
                                 <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
@@ -69,7 +73,7 @@
                                 <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>                
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
 
                 </div>
 

@@ -16,6 +16,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { MyhealthythoughtsComponent } from './myhealthythoughts/myhealthythoughts.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { ProgressComponent } from './progress/progress.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
@@ -41,6 +42,7 @@ import { ProgressComponent } from './progress/progress.component';
     ToastModule,
     TranslateModule,
     NgApexchartsModule,
+    SharedModule
    
   ],exports:[
    

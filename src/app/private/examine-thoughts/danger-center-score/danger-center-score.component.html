@@ -51,30 +51,25 @@
                                     <span class="text-green ">
                     {{"index.examine-thoughts" | translate}} [{{moduleScore.score}}/100]<!-- changeable -->
                   </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="chart" *ngIf="isShowChart">
-                            <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [xaxis]="chartOptions.xaxis" [stroke]="chartOptions.stroke" [tooltip]="chartOptions.tooltip" [dataLabels]="chartOptions.dataLabels"></apx-chart>
-                        </div>
-
-                        <ul class="pagination justify-content-end">
-                            <!-- <li class=" page-prev ">
-                  <a class="page-link" [routerLink]="''">
-                      <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
-                  </a>
-              </li> -->
-                            <li class=" page-next">
-                                <a class="page-link" [routerLink]="'../examine1'">
-
-                                    <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
                 </div>
+              </div>
             </div>
+            <div id="chart" *ngIf="isShowChart">
+              <apx-chart
+                [series]="chartOptions.series"
+                [chart]="chartOptions.chart"
+                [xaxis]="chartOptions.xaxis"
+                [stroke]="chartOptions.stroke"
+                [tooltip]="chartOptions.tooltip"
+                [dataLabels]="chartOptions.dataLabels"
+              ></apx-chart>
+            </div>
+            <prev-next-button [next]="'../examine1'"></prev-next-button>
+           
+
+          </div>
+        </div>
+      </div>
 
 
 

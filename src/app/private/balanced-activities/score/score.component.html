@@ -49,7 +49,7 @@
 
                                 <div class="h2 mb-0 me-2">
                                     <span class="text-green ">
-                                      Balanced Activities [{{moduleScore.score}}/100]<!-- changeable -->
+                                      {{"index.balanced-activities" | translate}} [{{moduleScore.score}}/100]<!-- changeable -->
                   </span>
                                 </div>
                             </div>
@@ -58,20 +58,16 @@
                             <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [xaxis]="chartOptions.xaxis" [stroke]="chartOptions.stroke" [tooltip]="chartOptions.tooltip" [dataLabels]="chartOptions.dataLabels"></apx-chart>
                         </div>
 
-
-                        <ul class="pagination justify-content-end">
-                            <!-- <li class=" page-prev ">
-                  <a class="page-link" [routerLink]="''">
-                      <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
-                  </a>
-              </li> -->
+                        <prev-next-button  [next]="'../start'" ></prev-next-button>
+                        <!-- <ul class="pagination justify-content-end">
+                           
                             <li class=" page-next">
                                 <a class="page-link" [routerLink]="'../start'">
 
                                     <i class="ti ti-circle-arrow-right-filled" style="font-size: 5em; color: #5190B7;"></i>
                                 </a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </div>

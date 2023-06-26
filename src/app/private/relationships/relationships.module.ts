@@ -15,6 +15,8 @@ import { Relation10Component } from './relation10/relation10.component';
 import { Relation11Component } from './relation11/relation11.component';
 import { Relation12Component } from './relation12/relation12.component';
 import { Relation13Component } from './relation13/relation13.component';
+import { TranslateModule } from '@ngx-translate/core';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { Relation13Component } from './relation13/relation13.component';
   ],
   imports: [
     CommonModule,
-    RelationshipsRoutingModule
+    RelationshipsRoutingModule,
+    TranslateModule,
+    SharedModule
   ]
 })
 export class RelationshipsModule { }

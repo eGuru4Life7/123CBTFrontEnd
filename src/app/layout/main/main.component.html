@@ -370,10 +370,10 @@
                         </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" [routerLink]="'/help/faqs'">
-                FAQ's
+                {{ 'help.faq' | translate }}
               </a>
                             <a class="dropdown-item" [routerLink]="''">
-                Documentation
+                {{ 'help.documentation' | translate }}
               </a>
 
 
@@ -644,8 +644,8 @@
                 <div class="row text-center align-items-center flex-row-reverse">
                     <div class="col-lg-auto ms-lg-auto">
                         <ul class="list-inline list-inline-dots mb-0">
-                            <li class="list-inline-item"><a [routerLink]="''" class="link-secondary">Documentation</a></li>
-                            <li class="list-inline-item"><a [routerLink]="''" class="link-secondary">FAQ's</a></li>
+                            <li class="list-inline-item"><a [routerLink]="''" class="link-secondary">{{ 'help.documentation' | translate }}</a></li>
+                            <li class="list-inline-item"><a [routerLink]="''" class="link-secondary">{{ 'help.faq' | translate }}</a></li>
 
                         </ul>
                     </div>
@@ -653,13 +653,9 @@
                         <ul class="list-inline list-inline-dots mb-0">
                             <li class="list-inline-item">
                                 Copyright &copy; 2023
-                                <a href="." class="link-secondary">123CBT</a>. All rights reserved.
+                                <a href="." class="link-secondary">123CBT</a>All rights reserved
                             </li>
-                            <li class="list-inline-item">
-                                <a [routerLink]="''" class="link-secondary" rel="noopener">
-                  v1.0.0-beta
-                </a>
-                            </li>
+                           
                         </ul>
                     </div>
                 </div>
