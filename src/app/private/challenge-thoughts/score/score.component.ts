@@ -11,6 +11,7 @@ import {
   ApexTooltip,
   ApexStroke
 } from "ng-apexcharts";
+import { Router } from '@angular/router';
 export type ChartOptions = {
   series: ApexAxisChartSeries;
   chart: ApexChart;
@@ -31,9 +32,9 @@ export class ScoreComponent implements OnInit {
   chart!: ChartComponent;
   public chartOptions!: Partial<ChartOptions>;
   isShownChart: boolean = false;
-  constructor(private moduleService: ModuleService, private localService: LocalCacheService) {
-
-  }
+  constructor(private moduleService: ModuleService, private localService:LocalCacheService,private router:Router) { 
+    this.localService.updateModuleStatus({ code: 'C_T', completed: 20, nextCode: 'B_T' });
+   }
 
   ngOnInit(): void {
     this.currentUser = this.localService.getCurrentUser();

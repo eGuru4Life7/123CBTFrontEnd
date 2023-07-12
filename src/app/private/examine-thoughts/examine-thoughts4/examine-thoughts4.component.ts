@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
+import { LocalCacheService } from 'src/app/services/local-cache.service';
 @Component({
   selector: 'app-examine-thoughts4',
   templateUrl: './examine-thoughts4.component.html',
@@ -15,7 +16,9 @@ export class ExamineThoughts4Component implements OnInit {
     'Surprise',
     'Anxiety',
     'Stress'];
-  constructor() { }
+   constructor(private localService:LocalCacheService,private router:Router) { 
+    this.localService.updateModuleStatus({code:'E_T',completed:40,nextCode:'C_T' });
+   }
 
   ngOnInit(): void {
   }

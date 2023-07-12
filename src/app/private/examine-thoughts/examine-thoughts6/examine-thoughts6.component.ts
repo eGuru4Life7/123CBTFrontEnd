@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
 import { Route, Router } from '@angular/router';
+import { LocalCacheService } from 'src/app/services/local-cache.service';
 
 @Component({
   selector: 'app-examine-thoughts6',
@@ -10,7 +11,9 @@ export class ExamineThoughts6Component implements OnInit {
 
   fadeIns: any;
 
-  constructor(private el: ElementRef,private router:Router) { }
+  constructor(private el: ElementRef,private localService:LocalCacheService,private router:Router) { 
+    this.localService.updateModuleStatus({code:'E_T',completed:60,nextCode:'C_T' });
+   }
 
   ngOnInit(): void {
     this.fadeIns = this.el.nativeElement.querySelectorAll('.fade-in-l');

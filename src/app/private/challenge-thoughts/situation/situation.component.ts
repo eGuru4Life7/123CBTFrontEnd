@@ -13,7 +13,8 @@ export class SituationComponent implements  OnInit {
 
   diary:any ={};
   currentUser: any;
-  constructor(private moduleService: ModuleService, private localService: LocalCacheService,private router:Router) {
+  constructor(private moduleService: ModuleService, private localService:LocalCacheService,private router:Router) { 
+    this.localService.updateModuleStatus({ code: 'C_T', completed: 60, nextCode: 'B_T' });
     this.createForm();
   }
   user: any = {};
@@ -40,7 +41,6 @@ export class SituationComponent implements  OnInit {
   addThoughtDairy() {
     this.diaryForm.get('uid')?.setValue(this.currentUser.id);
     this.moduleService.addThoughtDairy(this.diaryForm.value).subscribe((res: any) => {
-      debugger
       if (res.success) {
         this.router.navigate(['../challengethoughts/circle']);
       }

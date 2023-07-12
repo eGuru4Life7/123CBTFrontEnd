@@ -12,7 +12,9 @@ import { ModuleService } from 'src/app/services/module.service';
 export class Staywell3Component implements OnInit {
   user: any= {};
   mail :any = "";
-  constructor(private localService:LocalCacheService,private moduleService:ModuleService,private messageService:MessageService) { }
+  constructor(private localService:LocalCacheService,private moduleService:ModuleService,private messageService:MessageService) {
+    this.localService.updateModuleStatus({ code: 'S_W', completed: 75, nextCode: '' });
+   }
  
   ngOnInit(): void {
   }

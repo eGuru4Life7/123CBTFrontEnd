@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { LocalCacheService } from 'src/app/services/local-cache.service';
 
 @Component({
   selector: 'app-evidence',
@@ -12,7 +13,9 @@ export class EvidenceComponent implements OnInit {
   for: any = [];
   against: any = [];
   thoughts: any;
-  constructor(private route:ActivatedRoute) { }
+  constructor(private route:ActivatedRoute,private localService:LocalCacheService) {
+    this.localService.updateModuleStatus({ code: 'B_T', completed: 85, nextCode: 'P_S' });
+   }
 
   ngOnInit(): void {
     this.thoughts = localStorage.getItem('t_E');

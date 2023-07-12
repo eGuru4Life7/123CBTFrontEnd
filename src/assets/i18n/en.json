@@ -1,8 +1,29 @@
 {
     "home": "Home",
-    "submit": "Submit",
     "yourScore": "Your Score",
+    "submit": "Submit",
     "printScore": "Print Score",
+    "edit": "Edit",
+    "years": "years",
+    "basicInfo": "Basic info",
+    "education": "Education",
+    "employeed": "Employeed",
+    "from": "From",
+    "religion": "Religion",
+    "birthdate": "Birth date",
+    "diagnosis": "Diagnosis",
+    "editProfile": "Edit Profile",
+    "location": "Location",
+    "change": "Change",
+    "basicInfo1": "Basic Information",
+    "desc1": "This contact will be shown to others publicly, so choose it carefully.",
+    "desc2": "You can set a permanent password if you don't want to use temporary login codes.",
+    "snewPass": "Set new passowrd",
+    "myAccount": "My Account",
+    "profDetail": "Profile Details",
+    "changeAvatar": "Change avatar",
+    "deleteAvatar": "Delete avatar",
+    "cancel": "Cancel",
     "login": {
         "signin": "Sign In",
         "title": "Login to your account",
@@ -1069,6 +1090,10 @@
         "faq": "FAQ's",
         "documentation": "Documentation"
 
+    },
+    "evidence": {
+        "heading": "What Is The Evidence That This Program Works",
+        "paragraph": "Various CBT based self-help materials have been assessed and shown to be effective in the West. Cuijpers,P.,1997. Bibliotherapyinunipolardepression:ameta-analysis.J.Behav. Ther.Exp.Psychiatry28,139–147. Gould, R.A.,Clum,G.A.,1993.A meta-analysis of self-help treatment approaches. Clin. Psychol.Rev.13,169–186. There is also evidence that online therapy works.Calear, A. L., Christensen, H., Mackinnon, A., Griffiths, K. M. & O'Kearney, R. (2009). The YouthMood Project: a cluster randomized controlled trial of an online cognitive behavioral program with adolescents. Journal of Consulting and Clinical Psychology, 77(6), 1021-1032. Christensen, H., Griffiths, K. M., & Korten, A. (2002). Web-based cognitive behavior therapy: analysis of site usage and changes in depression and anxiety scores. Journal of Medical Internet Research, 4(1), e3. Christensen, H., Griffiths, K. M., Korten, A. E., Brittliffe, K., & Groves, C. (2004). A comparison of changes in anxiety and depression symptoms of spontaneous users and trial participants of a cognitive behaviour therapy website. Journal of Medical Internet Research, 6(4), e46. Christensen, H., Griffiths, K., Groves, C., & Korten, A. (2006). Free range users and one hit wonders: Community users of an Internet-based cognitive behaviour therapy program. Australian and New Zealand Journal of Psychiatry, 40, 59-62. Christensen, H., Griffiths, K. M., Mackinnon, A. J., & Brittliffe, K. (2006). Online randomized controlled trial of brief and full cognitive behaviour therapy for depression. Psychological Medicine, 36, 1737-1746. Ellis, L., Campbell, A.J., Sethi, S., O'Dea, B.M. (2011) Comparative Randomized Trial of an online cognitive-behavioural therapy program and an online support group for depression and anxiety. Journal of Cyber Therapy & Rehabilitation, 4(4): 461-467. Sethi, S., Campbell, A. J., Ellis, L. A. (2010). The use of computerized self-help packages to treat adolescent depression and anxiety. Journal of Technology in Human Services, 28(3), 144-160.Finally, this program is based on a self-help manual that was found to be effective in treating depression and anxiety. F Naeem, Ishaque Sarhandi, Mirrat Gul, Mehwish Khalid, Muhammad Aslam, Aqila Anbrin, Sofiya Saeed, Madeeha Noor, Ghulam Fatima, Fareed Minhas, Nusat Hussain, Muhammad Ayub (2014) A multicentre randomised controlled trial of a Carer supervised Culturally adapted CBT (CaCBT) based Self Help for depression in Pakistan. Journal of Affective Disorders, 156, 224-227"
     },
     "footer": {
 

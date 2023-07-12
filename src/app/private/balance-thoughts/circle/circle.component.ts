@@ -12,7 +12,7 @@ export class CircleComponent implements OnInit {
   currentUser: any;
   dairy:any ={};
   constructor(private moduleService: ModuleService, private localService: LocalCacheService,private router:Router) {
-
+   this.localService.updateModuleStatus({ code: 'B_T', completed: 70, nextCode: 'P_S' });
   }
   ngOnInit(): void {
     this.currentUser = this.localService.getCurrentUser();

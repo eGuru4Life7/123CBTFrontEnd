@@ -93,7 +93,6 @@ export class SignUpComponent implements OnInit {
     }
   }
   addDays(days: any, date: any) {
-    debugger
     date.setDate(date.getDate() + days);
     return date;
   }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { LocalCacheService } from 'src/app/services/local-cache.service';
 
 @Component({
   selector: 'app-stress-symptoms',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StressSymptomsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private localService:LocalCacheService,private router:Router) { 
+    this.localService.updateModuleStatus({ code:'S',completed:52,nextCode:'D_C'});
+   }
 
   ngOnInit(): void {
   }

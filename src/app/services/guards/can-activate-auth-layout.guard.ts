@@ -7,14 +7,14 @@ import { Constants } from '../constants';
 @Injectable()
 export class CanActivateAuthLayoutGuard implements CanActivate {
 
-  constructor(private localCache: LocalCacheService,private route:Router) {
+  constructor(private localService: LocalCacheService,private route:Router) {
 
   }
 
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-    if (this.localCache.isUserLoggedIn()) {
+    if (this.localService.isUserLoggedIn()) {
       return true;
     }
     this.route.navigate(['/auth']);
