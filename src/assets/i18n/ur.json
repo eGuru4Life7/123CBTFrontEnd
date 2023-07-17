@@ -54,12 +54,14 @@
             "agree":"متفق",
             "disagree":"غیر متفق"
         },
-        "evidence": {
-            "title": " What Is The Evidence That This Program Works",
-            "first-paragraph": "Various CBT based self-help materials have been assessed and shown to be effective in the West. Cuijpers,P.,1997.Bibliotherapyinunipolardepression:ameta-analysis.J.Behav. Ther.Exp.Psychiatry28,139�147. Gould, R.A.,Clum,G.A.,1993.A meta-analysis of self-help treatment approaches. Clin. Psychol.Rev.13,169�186. ",
-            "second-paragra[h": "There is also evidence that online therapy works. Calear, A. L., Christensen, H., Mackinnon, A., Griffiths, K. M. & O'Kearney, R. (2009). The YouthMood Project: a cluster randomized controlled trial of an online cognitive behavioral program with adolescents. Journal of Consulting and Clinical Psychology, 77(6), 1021-1032. Christensen, H., Griffiths, K. M., & Korten, A. (2002). Web-based cognitive behavior therapy: analysis of site usage and changes in depression and anxiety scores. Journal of Medical Internet Research, 4(1), e3. Christensen, H., Griffiths, K. M., Korten, A. E., Brittliffe, K., & Groves, C. (2004). A comparison of changes in anxiety and depression symptoms of spontaneous users and trial participants of a cognitive behaviour therapy website. Journal of Medical Internet Research, 6(4), e46. Christensen, H., Griffiths, K., Groves, C., & Korten, A. (2006). Free range users and one hit wonders: Community users of an Internet-based cognitive behaviour therapy program. Australian and New Zealand Journal of Psychiatry, 40, 59-62. Christensen, H., Griffiths, K. M., Mackinnon, A. J., & Brittliffe, K. (2006). Online randomized controlled trial of brief and full cognitive behaviour therapy for depression. Psychological Medicine, 36, 1737-1746. Ellis, L., Campbell, A.J., Sethi, S., O'Dea, B.M. (2011) Comparative Randomized Trial of an online cognitive-behavioural therapy program and an online support group for depression and anxiety. Journal of Cyber Therapy & Rehabilitation, 4(4): 461-467. Sethi, S., Campbell, A. J., Ellis, L. A. (2010). The use of computerized self-help packages to treat adolescent depression and anxiety. Journal of Technology in Human Services, 28(3), 144-160. ",
-            "third-paragraph": "Finally, this program is based on a self-help manual that was found to be effective in treating depression and anxiety. F Naeem, Ishaque Sarhandi, Mirrat Gul, Mehwish Khalid, Muhammad Aslam, Aqila Anbrin, Sofiya Saeed, Madeeha Noor, Ghulam Fatima, Fareed Minhas, Nusat Hussain, Muhammad Ayub (2014) A multicentre randomised controlled trial of a Carer supervised Culturally adapted CBT (CaCBT) based Self Help for depression in Pakistan. Journal of Affective Disorders, 156, 224-227 "
+        "evidence":{
+            "heading":":آن لاٗن سی بی ٹی پر کی گٗی تحقیقات",
+            "paragraph":":دنیا میں سی بی ٹی کی بنیاد پر مختلف اپنی مدد آپ کے تحت کام کرنے کے مواد کے موثر ہونے کا تخمینہ لگایا گیا ہے۔ سائنسی شائع شدہ کاموں کے لیے، براہ کرم مندرجہ ذیل لنک سے رجوع کریں:",
+            "link": "حوالہ جات کے لیے یہاں کلک کریں"   
+
+
         },
+        
         "index": {
             "gm":"سلام",
             "gmmsg":"ہماری خواہش ہے کہ آپ کا دن اچھا گزرے۔",
@@ -1069,10 +1071,7 @@
             "p9":"چائے، کافی اور سگریٹ: سونے سے پہلے چائے یا کافی پینے سے دماغ چوکنّا ہو جاتا ہے۔ شام کو 6 بجے کے بعد چائے یا کافی نہ پینے سے نیند بہتر ہو جاتی ہے۔ اسی طرح سونے سے پہلے سگریٹ پینے میں کمی سے بھی مدد ملتی ہے۔",
             "p10":"دن میں قیلولہ: دن میں کسی وقت سونے سے بھی رات کی نیند میں خلل ہو جاتا ہے۔ تحقیق کہتی  ہے کہ صبح کے وقت دیر تک سونے کا اداسی سے گہرا تعلق ہے۔"
         }, 
-        "evidence":{
-            "heading":"اس کا کیا ثبوت ہے کہ یہ پروگرام کام کرتا ہے /فائدہ مند ہے",
-            "paragraph":"مغرب میں سی بی ٹی کی بنیاد پر مختلف اپنی مدد آپ کے تحت کام کرنے کے مواد کے موثر ہونے کا تخمینہ لگایا گیا ہے۔ کوجپئر  پی،1997 ، ایک قطبی ڈپریشن میں ایک پیٹا تجزیہ  جے ، تجرباتی دماغی نفسیات گولڈ آر اے، کلم جی اے 1993، اپنی مدد آپ کا میٹا تجزیہ علاج کا نقطہ نظر۔ آن لائن مواصلاتی تھراپی کی افادیت  کا بھی ثبوت موجود ہے۔ کیلیئر اے، ایل ، کرسٹنسن ایچ، میکینن اے، گرفتس کے ایم اور او کیئرنے آر 2009۔ نوجوانوں کے مزاج کا منصوبہ۔ ایک گروہ کا بے ترتیب ، بااختیار  آزمائش ایک آن لائن ذہنی اور طرز عمل کے  پروگرام کی نوجوانوں کے ساتھ  ۔ کاونسلنگ / مشاورت اور کلینیکل نفسیات کا جرنل –2002۔ ویب کی بنیاد پر ذہنی اور برتاو کی تھراپی ، جگہ کے استعمال کا تجزیہ اور افسردگی اور گھبراہٹ میں تبدیلیوں کی گنتی۔ میڈیکل انٹرنیٹ ریسرچ کے جرنل ، کرسٹنسن ایچ ، گرفتنس کے، گروز سی، کورتن کے، 2004۔ سی بی ٹی کی ویب سائٹ میں شریک کنندہ کے  اداسی اور گھبراہٹ کی بیماری کی علامات میں تبدیلی کا موازنہ،     میڈیکل انٹرنیٹ ریسرچ کے جرنل ، کرسٹنسن ایچ ، گرفتنس کے، گروز سی، کورتن کے، 2006۔ آزاد صارفین اور آوارہ :  انٹرنیٹ سی بی ٹی  کی بنیاد پر  گروہی صارفین ،  اور نیوزی لینڈ نفسیاتی جرنل    کیلیئر اے، ایل ، کرسٹنسن ایچ، میکینن اے، گرفتس کے ایم اور او کیئرنے آر 2006۔ اداسی کی بیماری کے لیے مکمل اور چھوٹی سی بی ٹی کے لیے آن لائن تجرباتی کوشش۔ نفسیاتی میڈیسن 36۔ اور آخر میں یہ پروگرام اپنی مدد آپ کے تحت مینول کی بنیاد پر ہے جو کہ اداسی اور گھبراہٹ کی بیماری کے لیے موثر ثابت ہوئی۔ فاروق نعیم، مرات گل، مہوش خالد، محمد اسلم، عقیلہ امبرین، صوفیہ سعید، مدیحہ نور، غلام فاطمہ ، فرید منہاس، نصرت، محمد ایوب"
-        },
+        
         "elephant":{
             "heading":"ہاتھی اور چھ  نابینا آدمی ,                                                                                                                     ",
             "paragraph":"ایک دفعہ کا ذکر ہے کہ  چھ  نابینا آدمی  ہاتھی دیکھنے نکلے۔ کہانی کے مطابق ، پہلے آدمی  نے ہاتھی کے پیٹ کو چھوا  اور کہا یہ تو دیوار کی طرح ہے۔ دوسرے آدمی نے اس کے دانتوں کو چھوا اور کہا کہ یہ نیزے کی طرح ہے۔ تیسرے نے اس کی سونڈ کو چھوا اور کہا کہ یہ تو سانپ کی طرح ہے۔ چوتھے نے جانور کی ٹانگ کو چھوا اور کہا یہ تو درخت کی طرح ہے۔ پانچویں نے کان کو چھوا اور کہا یہ تو پنکھا ہے اور جب چھٹے آدمی نے ہاتھی کی دم کو چھوا تو کہا او ہو یہ تو رسی کی طرح ہے۔ اس کے بعد وہ کافی عرصے تک اسی بحث میں لگے رہے  کہ ہاتھی دکھتا کیسا ہے۔ وہ سب ہاتھی کو ایک مخصوص زاویے سے دیکھ رہے تھے۔ ہم  اپنی زندگی میں اکثر ایسا ہی کرتے ہیں کہ ہم چیزوں کی مکمل تصویر کو نظر انداز کرتے ہوئے اس چیز کے  صرف ایک ہی پہلو کو دیکھتے ہیں اور یہ جاننے کی کوشش نہیں کرتے  کہ ہم ایک ہی چیز کو مختلف  زاویوں سے دیکھ سکتے ہیں۔ "
