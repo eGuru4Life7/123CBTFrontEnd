@@ -5,6 +5,8 @@ import { Staywell2Component } from './staywell2/staywell2.component';
 import { CountGuard } from 'src/app/services/guards/count.guard';
 import { Staywell3Component } from './staywell3/staywell3.component';
 import { Staywell4Component } from './staywell4/staywell4.component';
+import { CompleteComponent } from './complete/complete.component';
+import { CertificateComponent } from './certificate/certificate.component';
 
 const routes: Routes = [
   {
@@ -31,6 +33,18 @@ const routes: Routes = [
     component:Staywell4Component,
     canActivate:[CountGuard],
     data: { code: 'S_W', completed: 25, nextCode: '' }
+    
+  },
+  {
+    path:'complete',
+    component:CompleteComponent
+    
+    
+  },
+  {
+    path:'certificate',
+    component:CertificateComponent
+    
     
   }
 ];

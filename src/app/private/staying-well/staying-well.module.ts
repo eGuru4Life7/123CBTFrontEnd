@@ -8,6 +8,8 @@ import { Staywell3Component } from './staywell3/staywell3.component';
 import { Staywell4Component } from './staywell4/staywell4.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { CompleteComponent } from './complete/complete.component';
+import { CertificateComponent } from './certificate/certificate.component';
 
 
 
@@ -16,7 +18,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
     Staywell1Component,
     Staywell2Component,
     Staywell3Component,
-    Staywell4Component
+    Staywell4Component,
+    CompleteComponent,
+    CertificateComponent
   ],
   imports: [
     CommonModule,
