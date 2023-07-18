@@ -51,6 +51,11 @@ togglePasswordVisibility() {
       localStorage.setItem("lang","pun");
       this.dir= "rtl";
     }
+    else if(lang == "gm"){
+      localStorage.setItem("dir","rtl");  
+      localStorage.setItem("lang","gm");
+      this.dir= "rtl";
+    }
     else{
       localStorage.setItem("dir","ltr");
       localStorage.setItem("lang","en");
