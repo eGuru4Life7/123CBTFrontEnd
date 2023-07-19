@@ -45,7 +45,7 @@
 
                                     <textarea name="stay" id="stayingtext" required="" class=" form-control" [(ngModel)]="mail" rows="9" spellcheck="false"></textarea>
                                 </div>
-
+                                <div *ngIf="mail ==''" style="color: red;">Please fill the required field.</div>
 
 
 
