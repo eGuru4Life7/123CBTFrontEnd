@@ -40,7 +40,15 @@
           <div class="card-body">
             <h3 class="card-title">{{ 'evidence.heading' | translate }}</h3>
             <p class="text-muted">{{ 'evidence.paragraph' | translate }}</p>
+            <p><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-scrollable">
+              {{ 'evidence.link' | translate }}
+            </a></p>
           </div>
+
+
+
+          
+
           <div class="card-footer">
             <div class="row align-items-center">
              
@@ -57,6 +65,12 @@
               </div>
             </div>
           </div> 
+
+
+
+
+
+          
         </div>
 
         
@@ -68,7 +82,45 @@
           
       
       </div>
-      
+      <div class="modal modal-blur fade" id="modal-scrollable" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">References</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Cuijpers, P. (1997). <em>Bibliotherapy in unipolar depression: A meta-analysis.</em> Journal of Behavioral Therapy and Experimental Psychiatry, 28, 139–147.</p>
+<p>Gould, R. A., &amp; Clum, G. A. (1993). <em>A meta-analysis of self-help treatment approaches.</em> Clinical Psychology Review, 13, 169–186.</p>
+
+                <br>
+              <p><b>There is also evidence that online therapy works.</b>
+                <p>Calear, A. L., Christensen, H., Mackinnon, A., Griffiths, K. M., &amp; O'Kearney, R. (2009). <em>The YouthMood Project: A cluster randomized controlled trial of an online cognitive-behavioural program with adolescents.</em> Journal of Consulting and Clinical Psychology, 77(6), 1021-1032.</p>
+                <p>Christensen, H., Griffiths, K. M., &amp; Korten, A. (2002). <em>Web-based cognitive behaviour therapy: Analysis of site usage and changes in depression and anxiety scores.</em> Journal of Medical Internet Research, 4(1), e3.</p>
+                <p>Christensen, H., Griffiths, K. M., Korten, A. E., Brittliffe, K., &amp; Groves, C. (2004). <em>A comparison of changes in anxiety and depression symptoms of spontaneous users and trial participants of a cognitive behaviour therapy website.</em> Journal of Medical Internet Research, 6(4), e46.</p>
+                <p>Christensen, H., Griffiths, K., Groves, C., &amp; Korten, A. (2006). <em>Free range users and one-hit wonders: Community users of an Internet-based cognitive behaviour therapy program.</em> Australian and New Zealand Journal of Psychiatry, 40, 59-62.</p>
+                <p>Christensen, H., Griffiths, K. M., Mackinnon, A. J., &amp; Brittliffe, K. (2006). <em>Online randomized controlled trial of brief and full cognitive behaviour therapy for depression.</em> Psychological Medicine, 36, 1737-1746.</p>
+                <p>Ellis, L., Campbell, A. J., Sethi, S., &amp; O'Dea, B. M. (2011). <em>Comparative randomized trial of an online cognitive-behavioural therapy program and an online support group for depression and anxiety.</em> Journal of Cyber Therapy &amp; Rehabilitation, 4(4), 461-467.</p>
+                <p>Sethi, S., Campbell, A. J., &amp; Ellis, L. A. (2010). <em>The use of computerized self-help packages to treat adolescent depression and anxiety.</em> Journal of Technology in Human Services, 28(3), 144-160.</p>
+              <br>
+              <p><b>Finally, this program is based on a self-help manual that was found to be effective in treating depression and anxiety.</b> 
+             <br>
+            
+             <p>
+              F. Naeem, I. Sarhandi, M. Gul, M. Khalid, M. Aslam, A. Anbrin, S. Saeed, M. Noor, G. Fatima, F. Minhas, N. Hussain, & M. Ayub (2014). A multicentre randomised controlled trial of a Carer supervised Culturally adapted CBT (CaCBT) based Self Help for depression in Pakistan. <em>Journal of Affective Disorders, 156</em>, 224-227.
+              </p>
+              
+
+            
+             
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn me-auto" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    
   </body>
 </html>

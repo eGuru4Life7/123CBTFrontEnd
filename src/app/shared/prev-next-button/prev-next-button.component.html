@@ -4,7 +4,7 @@
             <i [ngClass]="dir == 'rtl' ?'ti ti-circle-arrow-right-filled':'ti ti-circle-arrow-left-filled'" style="font-size: 5em; color: #5190B7;"></i>
         </a>
     </li>
-    <li class=" page-next">
+    <li class=" page-next" *ngIf="next!=null">
         <a class="page-link" [routerLink]="next">
 
             <i [ngClass]="dir == 'rtl' ?'ti ti-circle-arrow-left-filled':'ti ti-circle-arrow-right-filled'" style="font-size: 5em; color: #5190B7;"></i>

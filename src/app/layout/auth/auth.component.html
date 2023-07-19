@@ -47,6 +47,8 @@
 
                                         <div class="nav-item dropdown d-none d-md-flex me-3">
                                             <a [routerLink]="''" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1" aria-label="Language" aria-expanded="false">
+
+                                                <strong>Language</strong> &nbsp;
                                                 <span [ngClass]="dir=='rtl'?'flag flag-country-pk':'flag flag-country-us'"></span>
                                                 <!-- Download SVG icon from http://tabler-icons.io/i/bell -->
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -87,6 +89,16 @@
                                                         </div>
                                                         <div class="list-group-item">
                                                             <div class="row align-items-center">
+                                                                <span class="flag flag-country-in"></span>
+                                                                <div class="col text-truncate">
+                                                                    <a href='javascript:void(0)' (click)="changeLanguage('gm')" class="text-body d-block">Gurmukhi</a>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item">
+                                                            <div class="row align-items-center">
                                                                 <span class="flag flag-country-pk"></span>
                                                                 <div class="col text-truncate">
                                                                     <a href='javascript:void(0)' (click)="changeLanguage('pun')" class="text-body d-block">Punjabi</a>
@@ -104,6 +116,13 @@
                                 </div>
                             </div>
                             <div class="card-body">
+
+
+
+
+
+
+
                                 <h2 class="h2 text-center mb-4">{{ 'login.title' | translate }}</h2>
                                 <div class="mb-3">
                                     <label class="form-label">{{ 'login.email' | translate }}</label>
@@ -150,12 +169,23 @@
                         </div>
                     </div>
                 </div>
+
+
+
+
+
                 <div class="col-lg d-none d-lg-block">
                     <img src="../../../assets/static/illustrations/main page.svg" height="300" class="d-block mx-auto" alt="">
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
+
+
 
 </body>
 
