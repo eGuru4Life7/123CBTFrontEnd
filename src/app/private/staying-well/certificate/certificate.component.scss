@@ -1,0 +1,17 @@
+@media print {
+    /* Hide headers and footers */
+    @page {
+        size: A4 landscape; /* or 'A4 portrait', or specific dimensions like '8.5in 11in' */
+        margin: 0;
+      
+    }
+    @page :left {
+      margin-left: 0;
+    }
+    @page :right {
+      margin-right: 0;
+    }
+    body {
+      margin: 1.6cm;
+    }
+  }

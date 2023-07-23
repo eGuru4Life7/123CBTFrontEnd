@@ -10,6 +10,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastModule } from 'primeng/toast';
+import { CompleteComponent } from './complete/complete.component';
+import { CertificateComponent } from './certificate/certificate.component';
 
 
 
@@ -18,7 +20,9 @@ import { ToastModule } from 'primeng/toast';
     Staywell1Component,
     Staywell2Component,
     Staywell3Component,
-    Staywell4Component
+    Staywell4Component,
+    CompleteComponent,
+    CertificateComponent
   ],
   imports: [
     CommonModule,

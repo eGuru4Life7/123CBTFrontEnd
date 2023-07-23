@@ -5,6 +5,8 @@ import { Staywell2Component } from './staywell2/staywell2.component';
 
 import { Staywell3Component } from './staywell3/staywell3.component';
 import { Staywell4Component } from './staywell4/staywell4.component';
+import { CompleteComponent } from './complete/complete.component';
+import { CertificateComponent } from './certificate/certificate.component';
 
 const routes: Routes = [
   {
@@ -23,6 +25,18 @@ const routes: Routes = [
   {
     path:'staywell4',
     component:Staywell4Component,
+    
+  },
+  {
+    path:'complete',
+    component:CompleteComponent
+    
+    
+  },
+  {
+    path:'certificate',
+    component:CertificateComponent
+    
     
   }
 ];
