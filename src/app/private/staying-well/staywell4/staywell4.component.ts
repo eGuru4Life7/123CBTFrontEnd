@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
 import { LocalCacheService } from 'src/app/services/local-cache.service';
 import { ModuleService } from 'src/app/services/module.service';
@@ -12,7 +13,7 @@ import { ModuleService } from 'src/app/services/module.service';
 export class Staywell4Component implements OnInit {
   user: any= {};
   mail :any = "";
-  constructor(private localService:LocalCacheService,private moduleService:ModuleService,private messageService:MessageService) {
+  constructor(private localService:LocalCacheService,private moduleService:ModuleService,private route:Router,private messageService:MessageService) {
     this.localService.updateModuleStatus({ code: 'S_W', completed: 100, nextCode: '' });
    }
  
@@ -26,6 +27,9 @@ export class Staywell4Component implements OnInit {
     this.moduleService.sendStayingWellEmail(this.user).subscribe((res:any)=>{
       if(res){
         this.messageService.add({severity:'success', summary:'Success', detail:res.message});
+        setTimeout(() => {
+          this.route.navigate(['./stayingwell/complete']);       
+        }, 1000);
       }
     });
   }

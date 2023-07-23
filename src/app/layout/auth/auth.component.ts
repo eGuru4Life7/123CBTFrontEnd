@@ -20,6 +20,7 @@ export class AuthComponent implements OnInit {
 
     // Boolean variable to track password visibility
   hidePassword: boolean = true;
+  isShow: boolean= false;
 
 // Method to toggle password visibility
 togglePasswordVisibility() {
@@ -30,6 +31,7 @@ togglePasswordVisibility() {
 
   user:any= {};
   dir:any ="ltr";
+  lang=['en','ur','pun','gm','spa']
   constructor(private userService:UserServiceService,private route:Router,private localService:LocalCacheService,
     private messageService:MessageService,private translate:TranslateService) { }
 
@@ -39,6 +41,9 @@ togglePasswordVisibility() {
     localStorage.setItem("dir","ltr");
     localStorage.setItem("lang","en");
     this.dir= "ltr";
+    setTimeout(() => {
+      this.isShow = true;
+    }, 2000);
   }
 
   changeLanguage(lang:any){
@@ -56,6 +61,11 @@ togglePasswordVisibility() {
       localStorage.setItem("lang","gm");
       this.dir= "rtl";
     }
+    else if(lang == "spa"){
+      localStorage.setItem("dir","ltr");  
+      localStorage.setItem("lang","spa");
+      this.dir= "ltr";
+    }
     else{
       localStorage.setItem("dir","ltr");
       localStorage.setItem("lang","en");
@@ -69,7 +79,7 @@ togglePasswordVisibility() {
 
 
   loginUser() {
-    this.userService.login(this.user).toPromise().then((resp: any) => {
+    this.userService.login(this.user).subscribe((resp: any) => {
       if (resp.success) {
         this.messageService.add({severity:'success', summary:'Success', detail:'Succesfully Login'});
         this.localService.setLoginData(resp.data);
@@ -79,12 +89,11 @@ togglePasswordVisibility() {
        
       } else {
         this.messageService.add({severity:'error', summary:'warning', detail:resp.message});
-        
-       // this.clear();
+       
       }
     });
   }
-  clear() {
-    //this.messageService.clear();
+  closeModal(){
+    this.isShow =false;
   }
 }

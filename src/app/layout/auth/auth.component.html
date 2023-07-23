@@ -116,6 +116,16 @@
 
                                                             </div>
                                                         </div>
+                                                        <div class="list-group-item">
+                                                            <div class="row align-items-center">
+                                                                <span class="flag flag-country-sn"></span>
+                                                                <div class="col text-truncate">
+                                                                    <a href='javascript:void(0)' (click)="changeLanguage('spa')" class="text-body d-block">Spanish</a>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -195,19 +205,19 @@
 
 
 
-    <div class="modal modal-blur fade show" id="modal-large" tabindex="-1" style="display: block;" aria-modal="true" role="dialog">
+    <div class="modal modal-blur" [ngClass]="{'show':isShow == true,'fade':isShow == false }" id="modal-large" tabindex="-1" style="display: block;" aria-modal="true" role="dialog" [style.display]="isShow?'block':'none'">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Disclaimer</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="closeModal()"></button>
                 </div>
                 <div class="modal-body">This is a self-help program and therefore does not replace a therapist. <strong>This program does not in any way replace a real-life therapist.</strong> Information and opinions expressed on this website are those of the therapists who
                     developed this program, based on their education and experience. <strong>In Case of severe mental illness or suicidal thoughts contact your local health providers.</strong> Every necessary step has been taken to ensure your data is
                     safe. However, in the highly unlikely event of security failure, <strong>we do not assume responsibility for the events that and not under our control.</strong> While your personal data will be never closed to a third party, <strong>the statistics from this program can be used for research purposes in order to improve the program.</strong></div>
                 <div class="modal-footer">
-                    <button type="button" class="btn me-auto" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">I Understand</button>
+                    <button type="button" class="btn me-auto" data-bs-dismiss="modal" (click)="closeModal()">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="closeModal()">I Understand</button>
                 </div>
             </div>
         </div>

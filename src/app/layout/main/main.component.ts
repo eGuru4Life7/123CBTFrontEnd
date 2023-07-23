@@ -61,6 +61,10 @@ export class MainComponent implements OnInit {
       localStorage.setItem("dir","rtl");  
       this.dir= "rtl";
     }
+    else if(lang == "spa"){
+      localStorage.setItem("dir","ltr");  
+      this.dir= "ltr";
+    }
     else{
       localStorage.setItem("dir","ltr");
       this.dir= "ltr";
