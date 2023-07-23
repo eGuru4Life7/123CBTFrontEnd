@@ -1,0 +1,984 @@
+{
+    "home": "Inicios",
+    "yourScore": "Su puntuación",
+    "submit": "Entregar",
+    "printScore": "Imprimir puntuación",
+    "edit": "Edit",
+    "years": "años",
+    "basicInfo": "Información básica",
+    "education": "Educación",
+    "employeed": "empleado",
+    "from": "De",
+    "religion": "Religión",
+    "birthdate": "Fecha de nacimiento",
+    "diagnosis": "Diagnóstico",
+    "editProfile": "Editar perfil",
+    "location": "Ubicación",
+    "change": "Cambiar",
+    "basicInfo1": "Información básica",
+    "desc1": "Este contacto se mostrará a los demás públicamente, así que elíjalo con cuidado.",
+    "desc2": "Puede establecer una contraseña permanente si no desea utilizar códigos de inicio de sesión temporales.",
+    "snewPass": "Establecer nueva contraseña",
+    "myAccount": "Mi cuenta",
+    "profDetail": "detalles del perfil",
+    "changeAvatar": "Cambiar avatar",
+    "deleteAvatar": "Eliminar avatar",
+    "cancel": "Cancelar",
+    "login": {
+        "signin": "Iniciar sesión",
+        "title": "Ingrese a su cuenta",
+        "email": "Dirección de correo electrónico",
+        "password": "Contraseña",
+        "clicklogin": "Haga clic aquí para ingresar",
+        "reset": "Olvidé la contraseña",
+        "signup": "¡Aún no tienes una cuenta!",
+        "signup1": "Inscribirse",
+        "copyrights": "Copyrights 2017 � illuminator.ca",
+        "remember": "Recordarme en este dispositivo"
+    },
+    "reset": {
+        "title": "Has olvidado tu contraseña",
+        "emailText": "Ingrese su dirección de correo electrónico y su contraseña se restablecerá y se le enviará por correo electrónico.",
+        "sendMeNewPassword": "enviarme nueva contraseña",
+        "text1": "Olvídalo,",
+        "text2": "enviámelo de vuelta",
+        "text13": "a la pantalla de inicio de sesión."
+
+    },
+    "reset-redirect": {
+        "code": "Introduzca el código",
+        "enter": "Ingresar",
+        "title": "Ingrese el código para restablecer su contraseña"
+    },
+    "about": {
+        "heading1": "Descargo de responsabilidad",
+        "heading1-desc": "This program does not in any way replace a real life therapist.This is self help program and therefore does not involve support by external therapist. Information and opinions expressed on this website are those of the therapist who develepved this program, based on their educvation and experince. In Case of servere mental illness or suicidal thoughts contact yout local health providers. Every necessary step has been taken to make sure that your data is safe.However in the highly unlikely event of security failure we do not assume responsibility of the events that and not under our control. While you personal data will be never closed to a third party ,the statistics from this program can be used for reserch purpose in order to improve the program",
+        "heading2": "Acerca de",
+        "heading2-desc": "This program will help you in dealing with stress, sadness & anxiety. In this book, we have described stories of Khushi & Khatoon. This is a 6-week long program, but you can work through it at your pace. This program will teach you a variety of ways to deal with the stress & related problems. Each week starts with an introduction and suggests exercises for the week. Please read the instructions as many times as possible during that week and practice the techniques that you have learned. Ideally, you should follow this program along with a family member or a friend. You can also go through this program along with a therapist. If, you are a carer, and you are helping out a friend or family member who cannot read or write, read the chapter for them as many times as possible. Please remind them daily to practice the exercises suggested for the week. Please remember it takes time to learn new ways of learning and thinking. The more you practice these exercises, the faster will be an improvement in your well being",
+        "agree": "Aceptar",
+        "disagree": "Discrepar"
+    },
+    "changepass": {
+        "title": "Ingrese nueva clave",
+        "email": "Ingrese nueva clave",
+        "click-reset": "Cambia tu contraseña"
+    },
+    "register": {
+        "title": "Por favor regístrese",
+        "fname": "Nombre de pila",
+        "lname": "Apellido",
+        "email": "Dirección de correo electrónico",
+        "password": "Contraseña",
+        "age": "Fecha de nacimiento",
+        "country": "País",
+        "gender": "Género",
+        "diagnose": "Diagnosticar si hay",
+        "status": "Estado civil",
+        "religion": "Religión",
+        "education": "Educación en años",
+        "employed": "Empleado",
+        "register": "Registro",
+        "account": "Crear una nueva cuenta",
+        "alreadyAcc": "¿Ya tienes una cuenta?",
+        "fill-field": "Por favor rellene este campo"
+    },
+    "evidence": {
+        "title": " What Is The Evidence That This Program Works",
+        "first-paragraph": "various CBT based self-help materials have been assessed and shown to be effective in the West. Cuijpers, P.,1997.Bibliotherapyinunipolardepression:a meta-analysis.J.Behav. Ther.Exp.Psychiatry28,139�147. Gould, R.A., Clum, G.A.,1993.A meta-analysis of self-help treatment approaches. Clin. Psychol.Rev.13,169�186. ",
+        "second-paragraph": "There is also evidence that online therapy works. Calear, A. L., Christensen, H., Mackinnon, A., Griffiths, K. M. & O'Kearney, R. (2009). The YouthMood Project: a cluster randomized controlled trial of an online cognitive behavioral program with adolescents. Journal of Consulting and Clinical Psychology, 77(6), 1021-1032. Christensen, H., Griffiths, K. M., & Korten, A. (2002). Web-based cognitive behavior therapy: analysis of site usage and changes in depression and anxiety scores. Journal of Medical Internet Research, 4(1), e3. Christensen, H., Griffiths, K. M., Korten, A. E., Brittliffe, K., & Groves, C. (2004). A comparison of changes in anxiety and depression symptoms of spontaneous users and trial participants of a cognitive behavior therapy website. Journal of Medical Internet Research, 6(4), e46. Christensen, H., Griffiths, K., Groves, C., & Korten, A. (2006). Free range users and one hit wonders: Community users of an Internet-based cognitive behavior therapy program. Australian and New Zealand Journal of Psychiatry, 40, 59-62. Christensen, H., Griffiths, K. M., Mackinnon, A. J., & Brittliffe, K. (2006). An online randomized controlled trial of brief and full cognitive behavior therapy for depression. Psychological Medicine, 36, 1737-1746. Ellis, L., Campbell, A.J., Sethi, S., O'Dea, B.M. (2011) Comparative Randomized Trial of an online cognitive-behavioral therapy program and an online support group for depression and anxiety. Journal of CyberTherapy & Rehabilitation, 4(4): 461-467. Sethi, S., Campbell, A. J., Ellis, L. A. (2010). The use of computerized self-help packages to treat adolescent depression and anxiety. Journal of Technology in Human Services, 28(3), 144-160. ",
+        "third-paragraph": "Finally, this program is based on a self-help manual that was found to be effective in treating depression and anxiety. F Naeem, Ishaque Sarhandi, Mirrat Gul, Mehwish Khalid, Muhammad Aslam, Aqila Anbrin, Sofiya Saeed, Madeeha Noor, Ghulam Fatima, Fareed Minhas, Nusat Hussain, Muhammad Ayub (2014) A multicentre randomised controlled trial of a Carer supervised Culturally adapted CBT (CaCBT) based Self Help for depression in Pakistan. Journal of Affective Disorders, 156, 224-227 "
+    },
+    "index": {
+        "Anger": "Anger",
+        "Anxiety": "Anxiety",
+        "balanced-activities": "Actividades equilibradas",
+        "balanced-thoughts": "Pensamientos equilibrados",
+        "Challengethoughts": "Desafiar pensamientos",
+        "click_here_for_download": "Haga click aquí para descargar",
+        "communication": "Communication problem",
+        "Danger-Centre": "Centro de peligro",
+        "depression": "Depression",
+        "description": "Un manual de autoayuda basado en TCC para el estrés",
+        "Disgust": "Disgust",
+        "Downloads": "Descargar Recursos",
+        "Downloads-heading": "Descargue archivos PDF para los siguientes temas:",
+        "Downloads-heading2": "Puede acceder a una variedad de útiles recursos en PDF para apoyar su salud y bienestar mental.",
+        "Downloads1": "Descargas",
+        "examine-thoughts": "Examinar los pensamientos",
+        "Fear": "Fear",
+        "fearandphobia": "Fear & Phobia",
+        "fight": "Fight And Flight",
+        "gm": "Hola",
+        "gmmsg": "Nosotros/Nosotras deseamos que tengas un buen día",
+        "Happiness": "Happiness",
+        "help": "Ayuda",
+        "home": "Inicios",
+        "journal-writing": "Journal Writing",
+        "logout": "Cierre de sesión ",
+        "Module": "Módulo",
+        "my-healthy-thoughts": "Mis pensamientos saludables",
+        "my-healthy-thoughts-no": "No",
+        "my-progress": "Mis progresos",
+        "next": "NEXT",
+        "parenting": "Parenting Problem",
+        "problem-solving": "Resolución de problemas",
+        "Profile": "Perfil",
+        "r_para": "Esta página ofrece varias pistas de audio que pueden ayudarlo a relajarse y descansar. Cada pista de audio está especialmente diseñada para ayudar a reducir el estrés, la ansiedad y mejorar su bienestar mental. Tómese un tiempo de su día para escuchar estas pistas de audio y concéntrese en su respiración. Con la práctica regular, puede desarrollar la habilidad de la relajación y mejorar su bienestar general.",
+        "relation": "Problema de relación",
+        "relationship": "Relaciones",
+        "RelaxationExcercises": "Ejercicios de relajación",
+        "Sadness": "Tristeza",
+        "staying-well": "Mantenerse sano",
+        "stress": "Tensión",
+        "stress-cause": "¿Cuáles son las causas del estrés?",
+        "stress-cause-para": "Acontecimientos vitales o pérdidas, por ejemplo, cambios en el trabajo, problemas de vivienda, fallecimiento de un familiar, problemas de pareja o con los hijos, etc. A veces, incluso los ascensos en el trabajo pueden causar estrés. Piensa ahora en las causas de estrés en tu vida.        ",
+        "stress-heading": "¿Qué es el estrés? ",
+        "stress-para": "El estrés es una respuesta humana normal ante acontecimientos amenazadores. El estrés no siempre es malo. La respuesta al estrés es la forma que tiene el cuerpo de protegerte. En pequeñas dosis, puede ayudarte a rendir bajo presión y motivarte para dar lo mejor de ti. Sin embargo, si te enfrentas a una situación estresante durante un periodo prolongado, puede tener un efecto devastador en tu salud emocional y física, tus relaciones y tu calidad de vida.",
+        "Surprise": "Sorpresa",
+        "thought-mistakes": "Errores de pensamientos",
+        "thoughts": "Pensamientos",
+        "title": "Khushi Aur Khatoon",
+        "trauma": "Trauma",
+        "weekly-progress": "Tu Progreso Semanal"
+    },
+
+    "elephant": {
+        "heading": "El elefante y los seis ciegos",
+        "paragraph": "Érase una vez seis ciegos que fueron a ver un elefante. Según el cuento, el primer hombre tocó el vientre del animal y dijo, esto es como una pared. El segundo hombre tocó los dientes y dijo que esto es como una lanza, el tercero que tocó la trompa dijo que esto es como una serpiente, el cuarto tocó la pata de un animal y dijo que esto es como un árbol, el quinto tocó la oreja y dijo que esto es un abanico, y cuando el sexto hombre tocó la cola del elefante, gritó '¡Ah! Es como una cuerda’. Discutieron entre ellos durante mucho tiempo sobre el aspecto de un elefante. Todos miraban al elefante usando un 'ángulo de visión' particular. Hacemos esto a menudo en nuestras vidas. Miramos solo un aspecto de un objeto, ignorando el panorama general y sin reconocer que podemos mirar lo mismo usando diferentes ángulos de visión."
+    },
+    "stressb": {
+
+        "heading": "Mueva el cursor sobre una imagen para conocer las causas del estrés",
+        "p1": "Problemas financieros",
+        "p2": "Matrimonio de niños",
+        "p3": "Problemas de salud",
+        "p4": "Problemas educativos",
+        "p5": "Problemas de relación",
+        "p6": "Problemas relacionados con el trabajo"
+    },
+    "organ": {
+        "heading": "Haga clic en los órganos para conocer los síntomas del estrés ",
+        "pic1": " Racing thoughts, light headedness, headache",
+        "pic2": "Blurred Vision",
+        "pic3": "Pain in neck and shoulder",
+        "pic4": "Nausea, lack of appetite, vomiting, diarrhoea",
+        "pic5": "Tremors, sweat, pins and needles",
+        "pic6": "Low mood, anxiety, fatigue, sleep disturbance",
+        "pic7": "Heart racing",
+        "pic8": "Breathlessness",
+        "pic9": "Tension in muscles",
+        "pic10": "Jelly legs"
+    },
+    "story_begin": {
+        "heading": " Khushi Muhammad",
+        "story-para": "Khushi Muhammad era un agricultor de Khushhaal Nagar. Desde hacía dos años tenía problemas económicos. Empezó a sentirse estresado e infeliz. En las últimas semanas, se sentía cansado y deprimido todo el tiempo. Con el tiempo, la desesperanza y la tristeza aumentaron. El hakim del pueblo le dijo que su hígado no funcionaba bien. Sin embargo, este tratamiento no sirvió de nada. Fue a ver a un gastroenterólogo para averiguar qué le pasaba al hígado. El gastroenterólogo le dijo que tenía síntomas de depresión debido a un estrés prolongado. Le remitió al Dr. Samajh Daar. El Dr. Samajh Daar le dio un libro, Khushi aur Khatoon. Khushi apenas sabía leer y escribir. Su hijo le ayudó."
+    },
+    "story_begin2": {
+        "story-para": "Khatoon Bibi era profesora de secundaria en Waseela Poor. Su marido era un próspero hombre de negocios. Siempre se preocupaba por la educación de sus hijos. Era una preocupona nata. En los últimos seis meses, sufría palpitaciones, sudoración en las palmas de las manos y hormigueo en manos y pies. También le dolía la cabeza y se había vuelto irritable por cosas sin importancia. Tenía gases en el estómago. Creía que tenía un problema de corazón. Fue al cardiólogo junto con su vecina Nasreen. El cardiólogo le dijo que tenía síntomas de ansiedad y que sufría estrés. La remitió al Dr. Samajh Daar, que le dio la dirección de este sitio web.",
+        "end": "MODULE END",
+        "heading": "Khatoon Bibi",
+        "story-para2": "Khatoon Bibi was a high school teacher in Waseela Poor. Her husband was a successful businessman. She always worried about her children’s education. She was a born worrier. For the last 6 months, she was experiencing palpitations, sweating of palms and pins and needles in her hands and feet. She also suffered from a headache and had become irritable over small things. She experienced gas in her stomach. She believed that she is suffering from a heart problem. She went to see a cardiologist along with her neighbour Nasreen. The cardiologist said she has symptoms of anxiety and is experiencing stress. She was referred to Dr Samajh Daar, who gave her the address of this website."
+
+    },
+    "story_begin3": {
+
+        "heading": "Empecemos... ",
+        "story-para2": "Ahora puede empezar con el primer módulo 'el centro de peligro '. Este programa tiene una duración de 6 semanas. Cada módulo durará una semana. Sin embargo, se puede acceder al módulo 'relaciones ' en cualquier momento. Rellene el cuestionario sobre el estrés al principio de cada módulo. Esto le ayudará a controlar su progreso. Al final de cada módulo, se le aconsejará que ponga en práctica lo aprendido. Recibirá recordatorios diarios por correo electrónico. Intente seguir este programa junto con un familiar o un amigo. Recuerde que lleva tiempo aprender nuevas formas de pensar y crear nuevos hábitos. Cuanto más practique, más rápido verá el cambio."
+    },
+    "end": {
+        "heading": " The Elephant And Six Blind Men",
+        "story-para": "Once upon a time six blind men went to see an elephant. According to the tale, the first man touched the belly of the animal and said, this is like a wall. The second man touched the teeth and said this is like a spear, the third who touched the trunk said this is like a snake, the fourth touched animal's leg and said this is like a tree, the fifth touched the ear and said this is a fan, and when the sixth man touched the elephant's tail, he shouted ‘Ah! It is like a rope’. They argued with each other for a long time as to what an elephant looks like. They were all looking at the elephant using a particular “angle of view”. We do this often in our lives. We look at only one aspect of an object, ignoring the bigger picture and not recognising that we can look at the same thing using different angles of views."
+    },
+    "stress_questions": {
+        "heading1": "Durante la última semana ¿tuvo",
+        "heading2": "0=Mínimo problema 10=Máximo problema",
+        "q1": "1. Dificultad para conciliar el sueño debido al estrés",
+        "q2": "2. Experimentar síntomas físicos de estrés",
+        "q3": "3. Sentir que no hay esperanza, y, que no hay futuro",
+        "q4": "4. Sentir que estaba perdiendo el control de las cosas en su vida",
+        "q5": "5. Siente que ya no puede hacer frente a las cosas",
+        "q6": "6. Piensa que no puede manejar sus problemas personales",
+        "q7": "7. Sentir que se te va de las manos",
+        "q8": "8. A menudo se siente agitado, inquieto o de mal humor.",
+        "q9": "9. Sentirse incapaz de controlar la irritabilidad o la ira por cosas sin importancia.",
+        "q10": "10. Se frustra fácilmente con las cosas",
+        "submit": "Entregar"
+    },
+    "fight_score": {
+        "heading1": "Su puntuación",
+        "heading2": "Estrés:"
+    },
+    "get_stressed": {
+        "heading1": "El Centro de Peligro",
+        "paragraph": "Imagina que te enfrentas a un león mientras caminas por la jungla. Puedes luchar o huir. En cualquiera de los dos casos, el 'centro de peligro ' de su cerebro se activa. El 'centro de peligro ' envía inmediatamente una llamada de emergencia al cuerpo. En cuanto recibe el mensaje, el corazón late más deprisa, los músculos se tensan, la sangre se desplaza a los músculos y la respiración se acelera. Los sentidos (por ejemplo, la vista, el oído y el olfato) se agudizan. Estos cambios físicos te hacen más fuerte y alerta y te preparan para afrontar la situación de peligro. Tu sistema nervioso no distingue muy bien entre amenazas emocionales y físicas. Los factores de estrés actuales también son percibidos por el centro de peligro como amenazas. Usted experimenta estas reacciones como estrés. Los ejercicios de respiración y relajación pueden desactivar tu centro de peligro."
+    },
+    "amb": {
+        "heading1": "De ahora en adelante comience a usar el ejercicio de respiración diariamente. Haga clic en los iconos de abajo. Su próximo módulo comienza desde ",
+        "paragraph": "No podemos controlar la mayoría de las reacciones de las que se habla en la respuesta de huida o lucha. Sin embargo, hay algo que sí podemos controlar: nuestra respiración. También puedes utilizar ejercicios de relajación muscular.",
+        "food": "consejos alimentarios",
+        "sleep": "consejos para dormir",
+        "tips": "consejos útiles",
+        "end": "Module End",
+        "heading2": "No podemos controlar la mayoría de las reacciones de las que se habla en la respuesta de huida o lucha. Sin embargo, hay algo que sí podemos controlar: nuestra respiración. También puedes utilizar ejercicios de relajación muscular.",
+        "paragraph2": "Descárgate los ejercicios de respiración y utilízalos a diario. Intenta utilizarlos con la mayor frecuencia posible. Tu próximo módulo comenzará el",
+        "Breathing": "Ejercicios de relajación"
+    },
+    "thought_1": {
+        "heading1": "Durante la última semana ¿tuvo 0=Mínimo problema ",
+        "heading2": "0=Minimum Problem 10=Maximum Problem",
+        "q1": "1. Dificultad para conciliar el sueño debido al estrés",
+        "q2": "2. Experimentar síntomas físicos de estrés",
+        "q3": "3. Sentir que no hay esperanza, y, que no hay futuro",
+        "q4": "4. Sentir que estaba perdiendo el control de las cosas en su vida",
+        "q5": "5. Siente que ya no puede hacer frente a las cosas",
+        "q6": "6. Piensa que no puede manejar sus problemas personales",
+        "q7": "7. Sentir que se te va de las manos",
+        "q8": "8. A menudo se siente agitado, inquieto o de mal humor.",
+        "q9": "9. Sentirse incapaz de controlar la irritabilidad o la ira por cosas sin importancia.",
+        "q10": "10. Se frustra fácilmente con las cosas",
+        "submit": "Entregar"
+    },
+    "thought_2": {
+        "heading1": "Su puntuación",
+        "heading2": "Thoughts:"
+    },
+    "thought_3": {
+        "paragraph": "Tus pensamientos están conectados con tus acciones, sentimientos y síntomas físicos. A veces nos sentimos estresados, preocupados o infelices no por la situación, sino por lo que pensamos de ella. Sin embargo, a menudo no somos conscientes de nuestros pensamientos. Por ejemplo, el pensamiento 'tengo hambre' a menudo nos hace ir a la cocina a buscar algo de comer. Del mismo modo, el pensamiento 'voy a suspender el examen' puede provocar ansiedad o estrés. La terapia cognitivo-conductual le ayuda a cambiar los pensamientos que le causan estrés. Sin embargo, el primer paso es ayudarle a reconocer los vínculos entre las situaciones y sus pensamientos, emociones y comportamientos.",
+        "heading1": "Pensamientos, emociones y comportamientos "
+    },
+    "thought_3b": {
+        "heading1": "¿Qué son los pensamientos",
+        "paragraph": "Los pensamientos son las opiniones, ideas, imágenes mentales, palabras o recuerdos que vienen a la mente en respuesta a lo que ocurre a nuestro alrededor. A menudo adoptan la forma de autoconversaciones o voces internas. Los pensamientos desempeñan un papel esencial en nuestras vidas. Los pensamientos determinan si una situación nos hará felices o infelices. También conducen a determinados comportamientos. También pueden provocar sensaciones físicas. Por ejemplo, el pensamiento 'me van a despedir del trabajo' puede provocar palpitaciones, sudoración en las palmas de las manos y dolor de cabeza. Tus pensamientos pueden hacerlo activando tu centro de peligro. En otras palabras, si tu mente percibe un acontecimiento como una amenaza, activará el centro de peligro y provocará una reacción de estrés. Los pensamientos malsanos sobre el mundo, uno mismo y el futuro suelen causar malestar emocional."
+    },
+    "thought_4": {
+        "heading1": "Qué son las emociones?",
+        "paragraph1": "Las emociones son los sentimientos que se producen a raíz de un acontecimiento. Suelen estar relacionadas con los pensamientos. Las emociones también se denominan 'estado de ánimo'. Las emociones pueden ser tanto positivas como negativas. Siempre que ocurre algo, pensamos en ello, y a menudo esos pensamientos nos llevan a ciertas emociones. A menudo vinculamos nuestras emociones con sensaciones corporales, por ejemplo, mi cabeza se calentó de rabia, mi corazón está triste, su vesícula biliar se convirtió en agua debido al miedo.",
+        "sub-heading": "¿Cómo te sentirías si te encontraras en una de las siguientes situaciones?",
+        "para2-line1": "La muerte de un familiar o un ser querido",
+        "para2-line2": "Alguien te regaña",
+        "para2-line3": "Has perdido tu trabajo",
+        "para2-line4": "Te pillan mientras robas algo en una tienda"
+    },
+    "thought_4b": {
+        "heading1": "Puede reconocer las emociones?",
+        "paragraph": "Tristeza, Ansiedad, Ira, Irritability, Restlessness, Shyness, Excitement, Miedo, Happy, Annoy, Guilt, Joy, Asco, Enmity, Indignation, Envy, love, Pity, Wonder, Felicidad, Calmness, Satisfied, Confused.",
+        "subheading": "Intenta relacionar estas emociones con las imágenes",
+        "para2": "Por favor, mencione algunas otras emociones que usted o las personas de su entorno encuentren habitualmente."
+    },
+    "thought_5": {
+        "heading": "Tus pensamientos te controlan",
+        "paragraph": "Supongamos que estás en la cama intentando conciliar el sueño. Oye un ruido. Puedes pensar en muchas posibilidades. Si piensa que hay un ladrón en casa, puede sentir miedo o estrés. Es posible que notes sudoración o palpitaciones y que llames a la policía. Si crees que hay un fantasma en la habitación, te asustarás y leerás algunos versículos sagrados. Si, por el contrario, crees que hay un gato en la habitación, puede que no te preocupes y te vayas a dormir. Como ves, una misma situación puede provocar distintas emociones, sensaciones físicas y acciones, dependiendo de tus pensamientos. Por lo tanto, no es la situación, sino lo que piensas de ella lo que determina cómo te vas a sentir al respecto o incluso cómo vas a responder a ella. Empezarás examinando tus pensamientos."
+    },
+    "thought_5b": {
+        "next": "NEXT",
+        "prev": "PREV"
+    },
+    "thought_6": {
+        "paragraph": "Khatoon started using a dairy to record her thoughts emotions and physical sensations whenever somthing upset her.",
+        "heading": "Khatoon's Diary: Week 1 ",
+        "situation": "Situación",
+        "situation-desc": "I called my husband when he was at work. He said he is busy and will call me back after two hours.",
+        "emotions": "Emociones",
+        "emotions-desc1": "Sad",
+        "emotions-desc2": "Tense",
+        "emotions-desc3": "Angry",
+        "emotions-desc4": "Feeling hurt",
+        "thoughts": "Pensamientos",
+        "thought-desc1": "“He does not love me anymore.”",
+        "thought-desc2": "“I do not deserve to be with him.”",
+        "thought-desc3": "“He might be with someone else.”",
+        "thought-desc4": "“He always ignores me.”",
+        "physical": "Sensaciones Físicas",
+        "physical-desc1": "Headache",
+        "physical-desc2": "Chest pain",
+        "physical-desc3": "Dizziness"
+    },
+    "thought_7": {
+        "heading": "Ahora piensa en una situación que te haya disgustado recientemente y escribe en las casillas",
+        "what-was-happening": "¿Qué ha pasado?",
+        "what-was-happening-desc": "",
+        "how-was-i-feeling": "Tu sentimiento",
+        "how-was-i-feeling-desc": "",
+        "what-was-i-thinking": "Su opinión",
+        "what-was-i-thinking-desc": "",
+        "experienced": "Sensaciones físicas",
+        "experienced-desc": "",
+        "what-did-i-do": "Su acción",
+        "what-did-i-do-desc": ""
+    },
+    "thought_8": {
+        "heading": "Your circle of thoughts",
+        "situation": "Situación",
+        "situation-desc": "",
+        "emotions": "Emociones",
+        "emotions-desc": "",
+        "behaviour": "Behaviour",
+        "behaviour-desc": "",
+        "physical-sensations": "Sensaciones Físicas",
+        "physical-sensations-desc": "",
+        "thoughts": "Pensamientos",
+        "thoughts-desc": ""
+    },
+    "thought_9": {
+        "heading": "¿Cuáles son los errores de pensamiento?",
+        "para1": "Sacar conclusiones precipitadas:",
+        "para1-desc": "La persona hace una suposición sin pruebas o con muy pocas pruebas que la respalden, por ejemplo, ve a su marido hablando con alguien por teléfono y cree que tiene una aventura.",
+        "para2": "Abstracción selectiva:",
+        "para2-desc": "La persona se centra en un detalle sacado de contexto, ignorando el panorama general; por ejemplo, pensar que eres un inútil cuando el jefe te dice que mejores tus conocimientos informáticos.",
+        "para3": "Sobregeneralización:",
+        "para3-desc": "Si es cierto para una cosa, debería ser cierto para todas las cosas, por ejemplo, porque fallaste en un examen eres un fracaso total. ",
+        "para4": "Magnificación o minimización:",
+        "para4-desc": "Reducción de la importancia de la información positiva, o ampliación de la información negativa (¡hacer montañas de un grano de arena o toperas de la montaña!).",
+        "para5": "Personalización:",
+        "para5-desc": "Asumes la responsabilidad de todo lo que va mal incluso cuando no hay pruebas para ello, por ejemplo, te culpas a ti mismo porque tu colega renunció a su trabajo. ",
+        "para6": "Pensamiento de todo o nada:",
+        "para6-desc": "Todo se ve como en un extremo, bueno o malo, blanco o negro sin matices de gris, por ejemplo, si no apruebas todos los exámenes con el 100% de nota eres un fracasado."
+    },
+    "thought_10": {
+        "paragraph": "Siempre que estés molesto inicia sesión y escribe tu diario de pensamientos. También recibirás recordatorios diarios para completar el diario de pensamientos. Tu próximo módulo comienza a partir del ",
+        "end": "MODULE END"
+    },
+    "Examining_your_thoughts1": {
+        "heading1": "Durante la última semana ¿tuvo 0=Mínimo problema ",
+        "heading2": "0=Minimum Problem 10=Maximum Problem",
+        "q1": "1. Dificultad para conciliar el sueño debido al estrés",
+        "q2": "2. Experimentar síntomas físicos de estrés",
+        "q3": "3. Sentir que no hay esperanza, y, que no hay futuro",
+        "q4": "4. Sentir que estaba perdiendo el control de las cosas en su vida",
+        "q5": "5. Siente que ya no puede hacer frente a las cosas",
+        "q6": "6. Piensa que no puede manejar sus problemas personales",
+        "q7": "7. Sentir que se te va de las manos",
+        "q8": "8. A menudo se siente agitado, inquieto o de mal humor.",
+        "q9": "9. Sentirse incapaz de controlar la irritabilidad o la ira por cosas sin importancia.",
+        "q10": "10. Se frustra fácilmente con las cosas",
+        "submit": "Entregar"
+    },
+    "Examining_your_thoughts2": {
+        "heading1": "Su puntuación",
+        "heading2": "Examing Your Thoughts:"
+    },
+    "Examining_your_thoughts3": {
+        "heading": "Es hora de desafiar tus pensamientos malsanos",
+        "paragraph": "Ahora que ha aprendido a reconocer sus errores de pensamiento, es el momento de cuestionar su validez. Durante la próxima semana, tu tarea consistirá en poner a prueba la realidad de tus pensamientos. Puede empezar escribiendo las pruebas a favor y en contra del pensamiento. Imagina que eres un abogado que presenta pruebas contra pensamientos problemáticos ante un tribunal. Escribe las pruebas que apoyan el pensamiento. Pero recuerda que deben ser pruebas o hechos, no tus sentimientos u opiniones. Afirmaciones como 'Creo', 'Mi corazón me lo dice' o 'Estoy convencido' no pueden utilizarse como pruebas. Este ejercicio te ayudará a decidir hasta qué punto son realistas tus pensamientos. Puedes pedirle a un amigo, a un familiar o a un vecino que te ayude al principio a cuestionar tus pensamientos malsanos. Al principio puede resultar un poco complicado, pero con algo de práctica dominarás la técnica"
+    },
+    "Examining_your_thoughts4": {
+        "heading-main": "Consejos para cuestionar los errores de pensamiento",
+        "paragraph": "A algunas personas les resulta difícil poner en evidencia sus pensamientos. Así que intenta utilizar el segundo lácteo con un amigo o familiar. Después de practicar un poco, empezarás a pensar en contra de tus pensamientos. A partir de ahora, cada vez que experimentes una emoción negativa, pregúntate si se trata de un error de pensamiento y piensa en las pruebas que hay a favor o en contra.",
+        "heading": "Las siguientes preguntas pueden ayudarle a cuestionar sus pensamientos.",
+        "q1": "¿En qué estoy pensando? ¿Es un error de pensamiento?",
+        "q2": "¿Existen pruebas de este pensamiento?",
+        "q3": "¿Cuáles son las pruebas de este pensamiento?",
+        "q4": "¿Qué pruebas hay en contra de este pensamiento?",
+        "q5": "¿Qué pruebas hay en contra de este pensamiento?",
+        "q6": "¿Qué diría otra persona sobre este pensamiento?"
+    },
+    "Examining_your_thoughts5": {
+        "heading": "Khatoon's Diary: Week 2 ",
+        "situation": "Situación",
+        "situation-desc": "I called my husband when he was at work. He said he is busy and will call me back after two hours.",
+        "emotions": "Emociones",
+        "emotions-desc1": "Sad",
+        "emotions-desc2": "Tense",
+        "emotions-desc3": "Angry",
+        "emotions-desc4": "Feeling hurt",
+        "thoughts": "Pensamientos",
+        "thought-desc1": "“He does not love me anymore.”",
+        "thought-desc2": "“I do not deserve to be with him.”",
+        "thought-desc3": "“He might be with someone else.”",
+        "thought-desc4": "“He always ignores me.”",
+        "physical": "Sensaciones Físicas",
+        "physical-desc1": "Headache",
+        "physical-desc2": "Chest pain",
+        "physical-desc3": "Dizziness",
+        "evidence-for-thoughts": "Evidence For Thoughts",
+        "evidence-for-thoughts-desc": "This Happend twice this month.",
+        "evidence-against-thoughts": "Evidence Against Thoughts",
+        "evidence-against-thoughts-desc1": "Overall there is no change in his behaviour.",
+        "evidence-against-thoughts-desc2": "He must be busy in his office.",
+        "evidence-against-thoughts-desc3": "He bought two new dresses for me this month.",
+        "evidence-against-thoughts-desc4": "He regularly answers my phone."
+    },
+    "Examining_your_thoughts6": {
+        "heading": "Now think of the situation that upset you recently and type in the boxes",
+        "what-was-happening": "What happened? ",
+        "what-was-happening-desc": "",
+        "how-was-i-feeling": "Your feelings",
+        "how-was-i-feeling-desc": "",
+        "what-was-i-thinking": "Your thoughts",
+        "what-was-i-thinking-desc": "",
+        "experienced": "Sensaciones Físicas",
+        "experienced-desc": "",
+        "what-did-i-do": "Your action ",
+        "what-did-i-do-desc": ""
+    },
+    "Examining_your_thoughts6a": {
+        "heading": "Your circle of thoughts",
+        "situation": "Situación",
+        "situation-desc": "",
+        "emotions": "Emociones",
+        "emotions-desc": "",
+        "behaviour": "Behaviour",
+        "behaviour-desc": "",
+        "physical-sensations": "Sensaciones Físicas",
+        "physical-sensations-desc": "",
+        "thoughts": "Pensamientos",
+        "thoughts-desc": ""
+    },
+    "Examining_your_thoughts6b": {
+        "dynamic-data1": "",
+        "evidence-for-thoughts": "Evidence for & Evidence Against",
+        "evidence-against-thoughts": "Your Thoughts",
+        "dynamic-data2": "",
+        "for": "Evidence For",
+        "against": "Evidence Against"
+    },
+    "Examining_your_thoughts7": {
+        "paragraph": "Siempre que estés molesto inicia sesión y escribe tu diario de pensamientos. También recibirás recordatorios diarios para completar el diario de pensamientos. Tu próximo módulo comienza a partir de ",
+        "end": "MODULE END"
+    },
+    "Balanced_thoughts_1": {
+        "heading1": "Durante la última semana ¿tuvo 0=Mínimo problema ",
+        "heading2": "0=Minimum Problem 10=Maximum Problem",
+        "q1": "1. Dificultad para conciliar el sueño debido al estrés",
+        "q2": "2. Experimentar síntomas físicos de estrés",
+        "q3": "3. Sentir que no hay esperanza, y, que no hay futuro",
+        "q4": "4. Sentir que estaba perdiendo el control de las cosas en su vida",
+        "q5": "5. Siente que ya no puede hacer frente a las cosas",
+        "q6": "6. Piensa que no puede manejar sus problemas personales",
+        "q7": "7. Sentir que se te va de las manos",
+        "q8": "8. A menudo se siente agitado, inquieto o de mal humor.",
+        "q9": "9. Sentirse incapaz de controlar la irritabilidad o la ira por cosas sin importancia.",
+        "q10": "10. Se frustra fácilmente con las cosas",
+        "submit": "Entregar"
+    },
+    "Balanced_thoughts_2": {
+        "heading1": "Su puntuación",
+        "heading2": "Balanced Thoughts :"
+    },
+    "Balanced_thoughts_3": {
+
+        "heading": "Crear pensamientos equilibrados",
+        "paragraph1": "Controlar tus pensamientos es difícil. Sin embargo, con un poco de esfuerzo puedes sustituir un pensamiento por otro. Ahora le enseñaremos a crear un pensamiento alternativo. Normalmente, un pensamiento alternativo es también un pensamiento equilibrado. Una vez que empiezas a examinar las pruebas a favor y en contra del pensamiento debilitas el error cognitivo. Si encuentras aunque sea una sola evidencia en contra de tu pensamiento, significa que el pensamiento probablemente no está basado en la realidad.. ",
+        "paragraph2": "¿Recuerdas la historia del elefante y los seis ciegos? Hay muchas maneras diferentes de ver una situación. Se trata de ser capaz de ver el cuadro completo.   "
+    },
+    "Balanced_thoughts_4": {
+        "heading-main": "Consejos para crear un pensamiento equilibrado",
+        "paragraph1": "A diferencia de los errores cognitivos que primero te vienen a la mente, es más probable que el pensamiento alternativo sea realista y equilibrado. A veces ayuda pedir ayuda a un amigo, un familiar o un vecino, al menos al principio. ",
+        "heading": "Estas preguntas pueden ayudarte a pensar en ideas alternativas",
+        "q1": "¿Qué pensaría un familiar o un amigo en una situación similar?",
+        "q2": "¿Qué habría pensado si esto hubiera ocurrido en el pasado, o cuando no estaba tan estresada?",
+        "q3": "¿Qué pensaría si esto me ocurriera en el futuro cuando no esté tan estresado?",
+        "q4": "Si mi amigo estaba pensando como este lo que tendría, le dije?"
+    },
+    "Balanced_thoughts_5": {
+        "heading": "Khatoon's Diary: 3rd Week",
+        "situation": "When did it happen?",
+        "situation-desc": "I called my husband when he was at work. He said he is busy and will call me back after two hours.",
+        "emotions": "Emociones",
+        "emotions-desc1": "Sad",
+        "emotions-desc2": "Tense",
+        "emotions-desc3": "Angry",
+        "emotions-desc4": "Feeling hurt",
+        "thoughts": "Pensamientos",
+        "thought-desc1": "“He does not love me anymore.”",
+        "thought-desc2": "“I do not deserve to be with him.”",
+        "thought-desc3": "“He might be with someone else.”",
+        "thought-desc4": "“He always ignores me.”",
+        "physical": "Sensaciones Físicas",
+        "physical-desc1": "Headache",
+        "physical-desc2": "Chest pain",
+        "physical-desc3": "Dizziness",
+        "evidence-for-thoughts": "Evidence For Thoughts",
+        "evidence-for-thoughts-desc": "This happened twice this month.",
+        "evidence-against-thoughts": "Evidence Against Thoughts",
+        "evidence-against-thoughts-desc": "Overall there is no change in his behaviour He must be busy in his office He bought two new dresses for me this month He regularly answers my phone.",
+        "alternative": "Alternative/Balanced Thoughts",
+        "alternative-desc1": "I was jumping to conclusions.",
+        "alternative-desc2": "He does not ignore me.",
+        "alternative-desc3": "He loves me a lot"
+    },
+    "Balanced_thoughts_6": {
+        "heading": "Now think of the situation that upset you recently and type in the boxes",
+        "what-was-happening": "What happened? ",
+        "what-was-happening-desc": "",
+        "how-was-i-feeling": "Your feelings",
+        "how-was-i-feeling-desc": "",
+        "what-was-i-thinking": "Your thoughts",
+        "what-was-i-thinking-desc": "",
+        "experienced": "Physical sensations ",
+        "experienced-desc": "",
+        "what-did-i-do": "Tu acción  ",
+        "what-did-i-do-desc": ""
+    },
+    "Balanced_thoughts_7": {
+        "heading": "Your circle of thoughts",
+        "situation": "Situación",
+        "situation-desc": "",
+        "emotions": "Emociones",
+        "emotions-desc": "",
+        "behaviour": "Comportamiento",
+        "behaviour-desc": "",
+        "physical-sensations": "Sensaciones Físicas",
+        "physical-sensations-desc": "",
+        "thoughts": "Pensamientos",
+        "thoughts-desc": ""
+    },
+    "Balanced_thoughts_7b": {
+        "evidence-for-thoughts": "Evidencia de pensamientos",
+        "evidence-against-thoughts": "Evidencia contra los pensamientos",
+        "for": "Para",
+        "against": "Contra"
+    },
+    "Balanced_thoughts_7c": {
+        "write-a-thought": "Escriba aquí un pensamiento alternativo o equilibrado",
+        "save-your-balanced-thought": "Guarde aquí su pensamiento equilibrado",
+        "alt_thoughts": "Pensamiento Alternativo",
+        "save_thougth": "Guarda tu pensamiento"
+    },
+    "Balanced_thoughts_8": {
+        "paragraph": "Ahora practica lo que has aprendido.Siempre que estés molesto inicia sesión y escribe tu diario de pensamientos. También recibirás recordatorios diarios para completar el diario de pensamientos. Tu próximo módulo comienza a partir de ",
+        "end": "MODULE END"
+    },
+    "Problem_solving_1": {
+        "heading1": "Durante la última semana ¿tuvo 0=Mínimo problema ",
+        "heading2": "0=Minimum Problem 10=Maximum Problem",
+        "q1": "1. Dificultad para conciliar el sueño debido al estrés",
+        "q2": "2. Experimentar síntomas físicos de estrés",
+        "q3": "3. Sentir que no hay esperanza, y, que no hay futuro",
+        "q4": "4. Sentir que estaba perdiendo el control de las cosas en su vida",
+        "q5": "5. Siente que ya no puede hacer frente a las cosas",
+        "q6": "6. Piensa que no puede manejar sus problemas personales",
+        "q7": "7. Sentir que se te va de las manos",
+        "q8": "8. A menudo se siente agitado, inquieto o de mal humor.",
+        "q9": "9. Sentirse incapaz de controlar la irritabilidad o la ira por cosas sin importancia.",
+        "q10": "10. Se frustra fácilmente con las cosas",
+        "submit": "Entregar"
+    },
+    "Problem_solving_2": {
+        "heading1": "Su puntuación",
+        "heading2": "Resolución de problemas: "
+    },
+    "Problem_solving_3": {
+        "heading-main": "Resolución de problemas",
+        "heading": "Todo el mundo se enfrenta a problemas de vez en cuando. A menudo la gente puede resolver los problemas rápidamente o con la ayuda de amigos. Sin embargo, a veces los problemas pueden ser abrumadores y a la gente le resulta difícil afrontarlos. La relación entre estrés y problemas no es directa. A veces las personas pueden estresarse porque han tenido demasiados problemas. Pero a una persona estresada puede resultarle difícil hacer frente incluso a problemas corrientes.",
+        "p1": "La gente suele tener problemas en estas zonas.;",
+        "p2": "Vida familiar (relaciones, vivienda, hijos, deudas, etc.)",
+        "p3": "Vida social",
+        "p4": "Trabajo (problemas en el trabajo, relación con los compañeros, estrés en el trabajo o incluso pérdida del trabajo).",
+        "p5": "El Dr. Samajhdar explicó a Khatoon los pasos de la resolución de problemas."
+    },
+    "Problem_solving_4": {
+        "heading": "Identificar y definir los problemas",
+        "paragraph": "Es importante recordar algunos principios básicos. Por ejemplo, no se pueden resolver todos los problemas al mismo tiempo, por lo que resulta útil tratarlos uno por uno. El primer paso en la resolución de problemas es hacer una lista de posibles problemas. No hay nada malo en escribir todos los problemas que te vengan a la mente durante este paso. Esto puede ayudarle a priorizar el problema. Así podrá decidir qué problema debe tratarse primero. Elija el problema más fácil de abordar para empezar. Piensa en problemas que tengan solución. Por ejemplo, el calor o la lluvia no son problemas que se puedan resolver. Siempre es una buena idea seguir los pasos de la resolución de problemas con un amigo o un familiar, al menos para empezar.  "
+    },
+    "Problem_solving_4b": {
+        "heading": "Piense en posibles soluciones",
+        "paragraph": "Ahora que has elegido tu primer problema, intenta pensar en el mayor número posible de soluciones. Incluso las que te parezcan ridículas. Esto se llama lluvia de ideas. Intenta imaginar que no es tu problema personal y te ayudará a encontrar el mayor número de soluciones posibles. Es fundamental tener en cuenta que la solución debe ser (a) realista y algo que pueda hacer con los recursos de que dispone (b) útil para lograr positivo, y (c) específica."
+    },
+    "Problem_solving_4c": {
+        "heading": "Look at the cost and benefit of each solution",
+        "paragraph": "Once a list of problems has been formulated it is necessary to go through them one by one, to look at the cost and benefits of each. To do this, draw a line on a paper and write down the advantages and disadvantages of a solution on each side. You can then decide which solutions is the best. "
+    },
+    "Problem_solving_4d": {
+        "heading": "Analizar el coste y el beneficio de cada solución",
+        "paragraph": "Una vez formulada una lista de problemas, es necesario examinarlos uno por uno, para ver el coste y los beneficios de cada uno. Para ello, traza una línea en un papel y anota a cada lado las ventajas e inconvenientes de una solución. Así podrás decidir qué solución es la mejor "
+    },
+    "Problem_solving_4e": {
+        "heading": "Ejecutar el plan y revisar los resultados",
+        "paragraph": "Por último, es el momento de poner en práctica el plan, siguiendo los pasos que se han trazado. Una vez puesto en marcha el plan, es buena idea pensar en los errores u obstáculos a los que te has enfrentado y en lo que has aprendido de este proceso "
+    },
+    "Problem_solving_5": {
+        "paragraph1": "Munir, el hijo mayor de Khushi Muhammad, que estudiaba en la ciudad, estaba de vacaciones e intentaba ayudar a su padre con el programa. Estaba estresado debido a muchos problemas en su vida. La información sobre resolución de problemas le resultó útil para conseguir ayuda para pagar la matrícula",
+        "list-of-problems": "Lista de problemas:",
+        "prob1": "Sin trabajo",
+        "prob2": "Baja autoestima ",
+        "prob3": "No hay dinero para tasas de examen ",
+        "prob4": "No puede hablar en público. ",
+        "prob5": "Problema con los estudios ",
+        "prob6": "Timidez",
+        "paragraph2": "Eligió resolver el problema número 3, ya que era factible, y era probable que tuviera un impacto significativo en su bienestar",
+        "list-of-solution": "Lista de soluciones",
+        "sol1": "Habla con el padre.",
+        "sol2": "Habla con empresarios locales o con alguna organización.",
+        "sol3": "Pedir dinero prestado a alguien",
+        "sol4": "Hablar con el departamento de bienestar social para averiguar si hay alguna ONG local.",
+        "sol5": "Hablar con el profesor para la exención de tasas",
+        "sol6": "Hablar con los amigos",
+        "paragraph3": "Examinó todas las soluciones, una por una. Finalmente, optó por hablar con el profesor, basándose en estas ventajas e inconvenientes",
+        "disadvantages": "Disadvantages",
+        "dis1": "Will have to talk to the teacher who is ",
+        "dis2": "He is known for being rough ",
+        "dis3": "The teacher will insult ",
+        "dis4": "People will make fun of me if they find out",
+        "advantages": "Ventajas",
+        "advant1": "No tiene que devolver el dinero",
+        "advant2": "No tengo nada que perder, así que no hay problema para hablar",
+        "advant3": "El Gobierno ha anunciado recientemente una reducción de tasas para los estudiantes que lo merezcan.",
+        "advant4": "Podré concentrarme en los estudios",
+        "advant5": "No tengo que preocuparme por el trabajo hasta que termine los exámenes",
+        "steps": "Pasos para aplicar la solución:",
+        "step1": "Preparación de la reunión",
+        "step2": "Más información sobre la exención de tasas",
+        "step3": "Escribir lo que tengo que decir en las reuniones",
+        "step4": "Juegos de rol y ensayos como práctica de encuentro",
+        "step5": "Hablar con un amigo que pueda acompañar",
+        "step6": "Hablar con el profesor para una reunión",
+        "step7": "Llegar a tiempo"
+    },
+    "Problem_solving_6": {
+        "paragraph": "Ahora Practica lo que has aprendido. Recibirás recordatorios diarios. Intenta practicar los métodos de resolución de problemas con un amigo o familiar. Tu próximo módulo comienza a partir de ",
+        "end": "MODULE END"
+    },
+    "balanced_activities_1": {
+        "heading1": "Durante la última semana ¿tuvo 0=Mínimo problema ",
+        "heading2": "0=Minimum Problem 10=Maximum Problem",
+        "q1": "1. Dificultad para conciliar el sueño debido al estrés",
+        "q2": "2. Experimentar síntomas físicos de estrés",
+        "q3": "3. Sentir que no hay esperanza, y, que no hay futuro",
+        "q4": "4. Sentir que estaba perdiendo el control de las cosas en su vida",
+        "q5": "5. Siente que ya no puede hacer frente a las cosas",
+        "q6": "6. Piensa que no puede manejar sus problemas personales",
+        "q7": "7. Sentir que se te va de las manos",
+        "q8": "8. A menudo se siente agitado, inquieto o de mal humor.",
+        "q9": "9. Sentirse incapaz de controlar la irritabilidad o la ira por cosas sin importancia.",
+        "q10": "10. Se frustra fácilmente con las cosas",
+        "submit": "Entregar"
+    },
+    "balanced_activities_2": {
+        "heading1": "Su puntuación",
+        "heading2": "Actividades Equilibradas:"
+    },
+    "balanced_activities_3": {
+        "heading": "Actividades y bienestar emocional",
+        "paragraph": "Existe un fuerte vínculo entre nuestras actividades y emociones. A veces, las personas estresadas reducen sus actividades. Del mismo modo, un bajo nivel de actividades puede provocar problemas de salud emocional. Una reducción de las actividades conduce a una serie de problemas emocionales, que provocan una mayor reducción de la actividad. Esto conduce a un círculo vicioso de bajas actividades y emociones negativas. El aumento de las actividades provoca la liberación de hormonas de la felicidad en el cerebro. El aumento de las actividades también nos distrae de nuestros errores cognitivos. Es importante romper el círculo vicioso de la reducción de actividades. Por lo tanto, una forma de afrontar el estrés es aumentar las actividades. Sin embargo, tenemos que ser conscientes del equilibrio entre las actividades relacionadas con el trabajo y las actividades que nos dan placer. Si eres activo pero sigues sintiéndote  "
+    },
+    "balanced_activities_4": {
+        "01pm-03pm": "12pm To 02pm",
+        "03pm-05pm": "02pm To 04pm",
+        "05pm-07pm": "04pm To 06pm",
+        "07am-09am": "06am To 08am",
+        "07pm-09pm": "06pm To 08pm",
+        "09am-11am": "08am To 10am",
+        "09pm-11pm": "08pm To 10pm",
+        "11am-01pm": "10am To 12pm",
+        "11pm-12am": "10pm To 12am",
+        "friday": "Friday",
+        "heading": "Write Down Your Daily Activities",
+        "monday": "Monday",
+        "next": "NEXT",
+        "place_friday": "Enter your activities for Friday",
+        "place_monday": "Enter your activities for Monday",
+        "place_saturday": "Enter your activities for Saturday",
+        "place_sunday": "Enter your activities for Sunday",
+        "place_thursday": "Enter your activities for Thursday",
+        "place_tuesday": "Enter your activities for Tuesday",
+        "place_wednesday": "Enter your activities for Wednesday",
+        "prev": "PREV",
+        "print": "PRINT THIS PAGE",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "thursday": "Thursday",
+        "time": "Tiempo",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday"
+    },
+    "balanced_activities_5": {
+        "heading": "Las actividades equilibradas",
+        "paragraph": "El primer paso hacia el tratamiento consiste en equilibrar las actividades. Puede que, como primer paso, le resulte útil aumentar las actividades placenteras. En otros, sin embargo, será beneficioso reducir las actividades placenteras, como ver la televisión o jugar a videojuegos durante muchas horas. Estas actividades pueden provocar un cambio notable en su estado de ánimo y reducir su estrés. Haciendo un seguimiento de sus actividades podrá descubrir cómo afectan a su estado de ánimo. Además, este diario puede servirle de guía para ver qué cambios de comportamiento podrían ayudarle a sentirse mejor. Escriba su diario de actividades todos los días. Añada actividades gradualmente. Fíjese en los cuatro tipos de actividades que recomendamos en la página siguiente. Intente elegir una actividad de cada una de las cuatro listas cada semana. "
+    },
+    "balanced_activities_5b": {
+        "heading": "Aumentar las actividades en pequeños pasos",
+        "paragraph": "Aumente sus actividades gradualmente. Siempre es buena idea empezar con actividades sencillas. Cuando se planifican actividades complejas, puede ser útil dividirlas en pequeños pasos. Hay que empezar con pasos pequeños y sencillos. Recuerda que incluso cosas tan pequeñas como preparar una taza de té es una actividad. Aumentar las actividades en pequeños pasos se denomina 'técnica de la escalera'. Esto significa simplemente que haces las cosas por pasos. Dedique algún tiempo a hablar con un amigo o un familiar sobre las actividades que puede añadir a su programa diario. Las actividades pueden ser, (1) las que dan dominio y control (2)pueden ser placenteras o (3) nuevas actividades que crees que van a ser útiles. "
+    },
+    "balanced_activities_6": {
+        "heading": " Añade una actividad por semana de cada grupo a tu diario de actividades",
+        "creative-activities": "Actividades creativas",
+        "recreational-activities": "Actividades recreativas",
+        "work-related-activities": "Actividades relacionadas con el trabajo",
+        "social-spritual-activities": "Actividades sociales y espirituales"
+    },
+    "balanced_activities_7": {
+        "heading": "Actividades creativas",
+        "activity1": "Haz un dibujo",
+        "activity2": "Limpia tu coche o moto",
+        "activity3": "Decore su habitación",
+        "activity4": "Tocar algún instrumento musical",
+        "activity5": "Costura y costura",
+        "activity6": "Escribir un diario",
+        "activity7": "Canta una canción",
+        "activity8": "Arrancar y arreglar flores",
+        "activity9": "Bailando",
+        "activity10": "Arreglar/cambiar el mobiliario"
+    },
+    "balanced_activities_8": {
+        "heading": "Actividades sociales y espirituales",
+        "activity1": "Reunirse con amigos y familiares ",
+        "activity2": "Ir a la mezquita",
+        "activity3": "Pasar tiempo con los niños",
+        "activity4": "Recitar el Corán o utilizar el tasbeeh",
+        "activity5": "Limpia tu habitación",
+        "activity6": "Visitar un parque en familia",
+        "activity7": "Llamar por teléfono a un amigo o escribirle una carta",
+        "activity8": "Acude a alguna ceremonia religiosa",
+        "activity9": "Hacer trabajo social",
+        "activity10": "Arrancar y arreglar flores",
+        "activity11": "Elogie a algunas personas de su entorno",
+        "activity12": "Ir de compras o a un restaurante"
+    },
+    "balanced_activities_9": {
+        "heading": "Actividades relacionadas con el trabajo",
+        "activity1": "Lavavajillas",
+        "activity2": "Limpiar la casa",
+        "activity3": "Trabajo en el campo",
+        "activity4": "Cuidar mascotas",
+        "activity5": "Ir a la conferencia",
+        "activity6": "Comprar un libro",
+        "activity7": " Pasar tiempo en su tienda",
+        "activity8": "Planchar la ropa",
+        "activity9": "Cuidar a los niños",
+        "activity10": "Ir al trabajo",
+        "activity11": "Hacer algún curso educativo",
+        "activity12": "Identificar objetivos y planificarlos",
+        "activity13": "Ordeñe su vaca",
+        "activity14": "Maquillaje (¿como profesión?) si no, por favor, pasa a actividades creativas"
+    },
+    "balanced_activities_10": {
+        "heading": "Actividades recreativas",
+        "activity1": "Mantener mascotas",
+        "activity2": "Escuchar música",
+        "activity3": "Ir al cine",
+        "activity4": "Natación",
+        "activity5": "Pesca",
+        "activity6": "Visitar una estación de montaña",
+        "activity7": "Visitar un zoo, un circo o una feria ",
+        "activity8": "Leer una novela o una revista",
+        "activity9": "Jardinería",
+        "activity10": "Juegue o vea su juego favorito",
+        "activity11": "Visitar su lugar favorito",
+        "activity12": "Planificar las vacaciones"
+    },
+    "balanced_activities_11": {
+        "paragraph": "Ahora Practica lo que has aprendido. Recibirás recordatorios diarios. Añada actividades a su diario. Tu próximo módulo comienza a partir de",
+        "end": "MODULE END"
+    },
+    "relation_1": {
+        "heading_main": "Patrones de comunicación poco saludables",
+        "heading": "Personas agresivas",
+        "paragraph": "Las personas agresivas son ruidosas, abusivas y exigentes. No suelen preocuparse por los derechos y necesidades de los demás. Atacan, critican y degradan a los demás. Son infelices y hacen infelices a los demás. Son ruidosos y maleducados. Algunas personas son una combinación de pasivas y agresivas, es decir, pueden ser pasivas o agresivas en función de lo que les beneficie. Las personas agresivas no escuchan a los demás, interrumpen con frecuencia a los demás y dan la impresión de intimidar. El impacto de un patrón de comunicación agresiva es que estas personas se distancian de los demás. Se distancian de los demás, generan miedo y odio en los demás y siempre culpan a los demás en lugar de asumir sus propios problemas, por lo que son incapaces de madurar. A menudo se sienten solos e infelices. "
+    },
+    "relation_1a": {
+        "heading": "Mejorar las relaciones",
+        "paragraph": "Los problemas en sus relaciones pueden ser estresantes. Estos problemas pueden deberse a patrones de comunicación poco saludables o a dificultades para gestionar los conflictos. Hay tres patrones de comunicación poco saludables que debemos conocer: agresivo, pasivo y manipulador. Una persona sana es asertiva en su conversación. Es posible que las personas entren en conflicto de vez en cuando cuando conviven o trabajan juntas. Ser capaz de resolver los conflictos de forma sana y constructiva es una oportunidad para el autodesarrollo y para mejorar las relaciones. Una relación no puede crecer sin resolver los conflictos interpersonales. Para mantener y fomentar tus relaciones, tienes que ser capaz de afrontar y gestionar los conflictos. Los patrones de comunicación poco saludables y la incapacidad para resolver conflictos pueden estropear las relaciones y causar estrés, ira, ansiedad y problemas emocionales."
+
+    },
+    "relation_1b": {
+        "heading": "Personas pasivas",
+        "paragraph": "La pasividad, también conocida como sumisión, es opuesta a la agresividad. Las personas pasivas no suelen expresar sus sentimientos. No dicen a los demás lo que quieren. Son incapaces de expresar su ira y reprimen sus sentimientos. Aunque la pasividad es diferente a ser tímido o callado, los individuos tímidos o callados suelen ser pasivos. Los individuos pasivos evitan el conflicto permaneciendo callados, ya que evitan expresar su punto de vista. La incapacidad de expresar su punto de vista se produce fuera del conflicto: es frecuente en conversaciones e interacciones sociales. Cuando se les pregunta qué les gustaría, adónde quieren ir o qué quieren hacer, responden pasivamente: 'Soy feliz con lo que tú quieras'. De hecho, nunca están contentos "
+    },
+    "relation_1c": {
+        "heading": "Personas asertivas",
+        "paragraph": "Las personas asertivas dicen honestamente a los demás lo que quieren y lo que no. Ser asertivo es también ser equilibrado en tu estilo de comunicación. Es el arte de expresarse sin ser manipulador, pasivo o agresivo. Eres consciente de tus derechos, pero también respetas los de los demás. Las personas asertivas son consideradas justas y respetuosas y, a su vez, reciben lo mismo de los demás.Las personas asertivas también son consideradas los mejores negociadores, ya que creen en el 'toma y daca'. Sus relaciones son sanas y significativas, y son más capaces de gestionar sus emociones. Pueden expresarse sin enfadarse. Las personas asertivas tienen menos probabilidades de sufrir problemas de salud emocional como estrés, ansiedad, depresión o desesperanza. También son físicamente más sanas, con bajo riesgo de desarrollar dolores, úlcera e hipertensión"
+    },
+    "relation_1d": {
+        "heading": " Personas manipuladoras ",
+        "paragraph": "Estas personas saben cómo explotar las debilidades de los demás y conseguir lo que quieren haciendo que los demás se sientan culpables. Juegan la carta de la víctima para abusar de los demás. Las personas manipuladoras evitan asumir la responsabilidad de sus actos. Siempre culpan a los demás. Se aprovechan de la sensibilidad emocional y de la conciencia de sus víctimas. Detectan muy bien los puntos débiles. Una vez que encuentran una debilidad, la utilizan en su contra. Muy a menudo siguen utilizándote hasta que les detienes. También saben dividir a los demás. Dirán cualquier cosa o harán cualquier cosa para conseguir lo que quieren. A menudo te dirán cosas bonitas y cosas desagradables sobre los demás cuando están contigo. Sin embargo, cuando están con otra persona, pueden alabar a esa persona y decir cosas desagradables sobre ti. "
+    },
+    "relation_2": {
+        "heading1": "Cómo ser asertivo",
+        "heading1-desc": "Intente parecer tranquilo y relajado y mantenga el contacto visual. Adopte una postura cómoda. No cruces los brazos sobre el pecho. No cuentes historias largas. Sea directo y vaya al grano. Complete sus frases. Escucha el punto de vista de los demás. No interrumpas a los demás. No completes la frase de otra persona, por ejemplo: '¿Entiendo que quieres dejar de trabajar?''. Cuando no entiendas algo, pide a la otra persona que te lo explique. ",
+        "heading2": "Practical Advice:",
+        "heading2-desc": "Haz una lista de situaciones en las que necesitas ser asertivo. Empieza a practicar con situaciones de bajo riesgo. Piensa en las consecuencias. Elige el momento y el lugar adecuados. Escribe tu declaración en un papel. Practícala con un amigo o frente al espejo.  ",
+        "heading3": "When you have to say something negative:",
+        "heading3-desc": ". Cuando tengas que decir algo negativo utiliza las palabras 'yo' y 'tú'. En lugar de decir 'la gente dice que algunas personas no hacen bien su trabajo', di 'creo que no te interesas por tu trabajo'. Luego diles qué es exactamente lo que está mal. ",
+        "heading4": "Think of other rights too:",
+        "heading4-desc": "Ser asertivo no significa ser grosero. Escuche el punto de vista de los demás. No los ignores. No los interrumpa en el medio. No mires a tu alrededor cuando alguien te habla. No completes sus frases. No digas en el medio: 'Oh, te tengo, completaste tu trabajo y quieres irte a casa'. No leas sus mentes. Resume lo que dice la otra persona para asegurarte de que entendiste lo que dice. Hágales más preguntas para entender su punto de vista."
+    },
+    "relation_3": {
+        "heading1": "Técnicas útiles de asertividad ",
+        "heading2": "Niebla:",
+        "heading2-desc": "Estás de acuerdo con algunos de los hechos, pero te mantienes firme en tu decisión. Por ejemplo, tu mejor amiga insiste en que te cortes el pelo, pero tú no quieres hacerlo. Estás de acuerdo con lo que ella dice, pero no aceptas cambiar tu corte de pelo"
+    },
+    "relation_3a": {
+        "heading1": "¿Cómo decir que no? ",
+        "heading1-desc": "A la gente le suele costar decir que no por diversas razones. Decir que sí a los demás por cortesía puede ser causa de estrés en nuestras culturas. Por lo general, basta con decir 'no' con educación pero con firmeza. ",
+        "heading2": "Sin embargo, si no funciona, haga lo siguiente:",
+        "next": "NEXT",
+        "p1": "1. Resume la petición de otra persona, para que sepa que la has escuchado",
+        "p2": "2. Explique la razón para decir 'No'.",
+        "p3": "3. Si los dos pasos anteriores te resultan difíciles, puedes retrasar tu respuesta diciendo 'Déjame comprobar mi agenda y te llamo'.",
+        "p4": "4. Siempre puedes sugerir una alternativa, por ejemplo, no podemos vernos esta noche porque estoy ocupado, ¿qué tal la semana que viene?",
+        "prev": "PREV"
+    },
+    "relation_3b": {
+        "heading1": "Enfriando:",
+        "heading1-desc": "Si alguien se enfada durante la Sin embargo, es mejor hablar en otro momento cuando ambos estemos relajados."
+    },
+    "relation_3c": {
+        "heading1": "Cinta rota:",
+        "heading1-desc": "Repite tu punto de vista con suavidad. No empieces a discutir. Por ejemplo, si quieres devolver un artículo a la tienda, di 'He decidido que no lo quiero, así que quiero que me devuelvan el dinero'. Después, diga lo que diga el tendero, pídele repetidamente que te devuelva el dinero sin entrar en discusiones"
+    },
+    "relation_4": {
+        "heading": "Gestión de conflictos",
+        "paragraph": "Estilos de comunicación que provocan conflictos",
+        "heading1": "Afirmaciones extremas:",
+        "heading1-desc": "'Sólo hay que hacerlo según mi voluntad', 'Siempre se porta mal conmigo', 'Nunca está de acuerdo conmigo', & 'Todos sois iguales'.",
+        "heading2-desc": " 'Haga lo que haga, nunca me hará caso' & 'No estará de acuerdo conmigo porque no le caigo bien'.",
+        "heading3": "Argumentos emocionales:",
+        "heading3-desc": " 'Sé que lo hará', 'Tienes razón, pero no voy a cambiar mi decisión'.",
+        "heading4": "Reglas personales/principales",
+        "heading4-desc": " 'Todos deben estar de acuerdo conmigo', 'Deben respetarme y obedecer mis reglas'.",
+        "my-healthy-thoughts": "My Healthy Thoughts",
+        "heading5": "Mezclar lo positivo con lo negativo: ",
+        "heading5-desc": "Combinas lo positivo con lo negativo, por ejemplo, diciéndole a tu mujer 'Eres guapa, pero no sabes vestirte'."
+    },
+    "relation_5": {
+        "heading1": "Dos reglas de oro ",
+        "heading2": "1- Acepta el desacuerdo: ",
+        "heading2-desc": " Si tras una larga discusión tú y la otra persona no estáis de acuerdo en algo, recuerda que ella también tiene derecho a tener su propia opinión. Si crees que el punto de vista de la otra persona no es razonable, siempre puedes decir 'acordemos no estar de acuerdo'.",
+        "heading3": "'para ti es tu Holy Quran, y para mí es la mía'."
+    },
+    "relation_5b": {
+        "heading1": "2) Dar y tomar: ",
+        "heading1-desc": " Los conflictos pueden resolverse a menudo 'dando y recibiendo'. Seguro que has oído la historia de dos cabras que llegaron a un puente y empezaron a discutir sobre quién lo cruzaría primero. Empezaron a pelearse y ambas cayeron al día siguiente, dos cabras sabias llegaron al puente y se dieron cuenta de que era muy estrecho y sólo podía cruzarlo una cabra a la vez. Así que una de ellas se sentó y la otra saltó sobre ella para cruzar el puente sin peligro.",
+        "end": "MODULE END"
+    },
+    "staying_well_1": {
+        "para1": "Seis meses después Khushi empezó a sentirse mejor. Empezó a interesarse por la familia y el trabajo. Se sentía más fuerte ahora que el episodio de depresión había terminado. ",
+        "para2": "  Khatoon también empezó a disfrutar de su trabajo y a pasar tiempo con su familia. ",
+        "para3": "Han aprendido que una vida equilibrada es importante para tener una vida agradable. También aprendieron que es importante cuidar los pensamientos para ser feliz. ",
+        "next": "NEXT"
+    },
+    "staying_well_2": {
+        "heading1": "Sé consciente de tus limitaciones:",
+        "heading1-desc": " Aprende a decir: 'No sé, o no puedo hacerlo'. ",
+        "heading2": "Sea consciente de sus puntos fuertes y débiles:",
+        "heading2-desc": " Intenta averiguar qué es lo que te estresa. ",
+        "heading3": "Comparte tus problemas con tu familia y amigos:",
+        "heading3-desc": " Comparte tus problemas con los demás. No intentes afrontar todos los problemas tú solo. ",
+        "heading4": "Mejore sus hábitos de sueño:",
+        "heading4-desc": " El sueño afecta al estado de ánimo porque es crucial para recuperarse de la fatiga. La falta de sueño afecta a la salud. ",
+        "heading5": "Cuida tu alimentación:",
+        "heading5-desc": " Una dieta equilibrada también mantendrá sana tu mente. Cuida tu alimentación. Intenta reducir la comida grasienta y picante. ",
+        "heading6": "Ejercicio regular:",
+        "heading6-desc": " El ejercicio regular mejora la confianza en uno mismo y la autoestima y reduce el nivel de estrés, tensión, ansiedad y depresión. ",
+        "heading7": "Actividades equilibradas:",
+        "heading7-desc": " Dedique un tiempo cada semana a realizar actividades que le proporcionen placer y disfrute. Puede ser cualquier cosa, como leer un libro o una revista, dar un paseo o pasar tiempo con buenos amigos.",
+        "heading8": "Keep in touch with others",
+        "heading8-desc": " Pasa tiempo con personas positivas, de confianza y cariñosas. Esto reducirá el nivel de estrés, mejorará el estado de ánimo y, en general, te ayudará a sentirte mejor. Las relaciones son un factor único que te ayuda a lo largo de tu vida. ",
+        "heading9": "Mantén tus pensamientos positivos:",
+        "heading9-desc": " Nuestros pensamientos nos hacen, y la gente está teniendo pensamientos positivos pasan una vida feliz. "
+    },
+    "staying_well_3": {
+        "heading1": "¿Qué aprendió de estas historias?",
+        "next": "NEXT",
+        "save": "SAVE/PRINT",
+        "mail": "MAIL IT"
+    },
+    "staying_well_4": {
+        "heading1": "¿Qué vas a hacer para estar bien?",
+        "end": "MODULE END",
+        "save": "SAVE/PRINT",
+        "mail": "MAIL IT"
+    },
+    "progress": {
+        "heading": "Su progreso semanal ",
+        "prev": "PREV",
+        "next": "NEXT"
+    },
+    "healthy": {
+        "heading": "Mis pensamientos saludables ",
+        "no": "No",
+        "thoughts": "Pensamientos",
+        "print": "PRINT THIS PAGE"
+    },
+    "act": {
+        "heading": "Escriba sus actividades diarias",
+        "time": "Tiempo",
+        "7am-9am": "7am To 9am",
+        "9am-11am": "9am To 11am",
+        "11am-01pm": "11am To 01pm",
+        "01pm-03pm": "01pm To 03pm",
+        "03pm-05pm": "03pm To 05pm",
+        "05pm-07pm": "05pm To 07pm",
+        "07pm-09pm": "07pm To 09pm",
+        "09pm-11pm": "09pm To 11pm",
+        "11pm-12am": "11pm To 12am",
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "print": "PRINT THIS PAGE"
+    },
+    "foodadvice": {
+        "heading": " Los hábitos alimentarios saludables pueden ayudar a combatir el estrés",
+        "eating-habits": "Hábitos poco saludable",
+        "habit1": "comer rapido",
+        "habit2": "no masticar",
+        "habit3": "Comiendo demasiado",
+        "habit4": "beber y fumar",
+        "habit5": "Hambriento",
+        "habit6": "Alimentos procesados",
+        "habit7": "",
+        "habit8": "ETé y café excesivos",
+        "diet-which-can-help-anxiety": "Dieta poco saludable",
+        "diet1": "Comida picante y aceitosa",
+        "diet2": "Alimentos procesados",
+        "diet3": "Drogas estimulantes",
+        "diet4": "Dieta alta en sal",
+        "diet5": "Dieta grasosa",
+        "diet6": "carne roja",
+        "diet7": "",
+        "diet8": "carbohidratos",
+        "diet-which-cause-stress-and-anxiety": "Dieta saludable ",
+        "diets1": "Comer vegetales",
+        "diets2": "comer frutas",
+        "diets3": "Ensaladas y vegetales crudos",
+        "diets4": "Comer frijoles y nueces",
+        "diets5": "carne blanca",
+        "diets6": "Porciones más pequeñas",
+        "diets7": "",
+        "diets8": "Beber mucha agua",
+        "prev": "PREV"
+    },
+    "usefulltips": {
+        "heading": "Some tips for dealing with stress",
+        "paragraph1": "<strong>Spiritual & religious practices</strong>: Spiritual and religious practices can help with your stress levels.",
+        "paragraph2": "<strong>Imagery</strong>: You can also reduce stress with the help of imagining beautiful places and pleasant events and things.",
+        "paragraph3": "<strong>Massage</strong>: It is common in our culture for people to get a head and neck massage. It can help with stress and anxiety .",
+        "paragraph4": "<strong>Distraction</strong>: Talking to someone, religious activities (for example, saying your prayers, reciting Quran or using beads), reading, watching TV, listening to the radio and physical activities.",
+        "paragraph5": "<strong>Change in lifestyle</strong>: a healthy lifestyle and regular exercise help. Being very competitive, pessimistic, controlling, perfectionism, narcissism can all lead to stress, anxiety & depression. "
+    },
+    "sleepadvice": {
+
+        "heading": "Healthy sleep environment consists of the following:",
+        "p1": "Comfortable bed",
+        "p2": "Temperature of the room (neither too hot nor too cold)",
+        "p3": "Noise free environment",
+        "p4": "A room without excessive light",
+        "heading1": "Tips for improving sleep",
+        "p5": "<strong>Cooling down time</strong>: Your brain needs some time to switch off. Some people find reading in bed helpful others might see that reading keep them awake. Try to find out what helps you. ",
+        "p6": "<strong>Physical problems</strong>:Physical problems can cause sleeplessness. Physical discomfort or pain can cause sleep disturbance.",
+        "p7": "<strong>Sleep routine</strong>:Keeping a sleep routine is crucial. Going to bed and leaving it at regular times can be helpful for many people.",
+        "p8": "<strong>Psychological problems</strong>:Sleep problems resolve once depression gets treated. Simple anxiety management techniques like breathing exercise etc. (mentioned earlier) can be very helpful.",
+        "p9": "<strong>Tea, coffee and nicotine</strong>:Drinking tea or coffee before going to bed can make people feel alerted. Not drinking tea or coffee after 6 PM can help many people. Similarly, cutting down on cigarettes before going to bed can also be helpful.",
+        "p10": "<strong>Day Naps</strong>:Day naps can lead to disturbed sleep. In fact, it has been suggested that sleeping in the morning hours might be linked to depression."
+    },
+    "help": {
+
+        "faq": "Preguntas frecuentes",
+        "documentation": "Documentación"
+
+    },
+    "evidence": {
+        "heading": "¿Cuál es la evidencia de que este programa funciona?",
+        "paragraph": "Varios materiales de autoayuda basados ​​en CBT han sido evaluados y han demostrado ser efectivos en Occidente. Cuijpers, P., 1997. Biblioterapiaenladepresiónunipolar:ametaanálisis.J.Behav. Ther.Exp.Psychiatry28,139–147. Gould, R.A.,Clum,G.A.,1993. Un metanálisis de enfoques de tratamiento de autoayuda. clin. Psychol.Rev.13,169–186. También hay evidencia de que la terapia en línea funciona. Calear, A. L., Christensen, H., Mackinnon, A., Griffiths, K. M. & O'Kearney, R. (2009). The YouthMood Project: un ensayo controlado aleatorio por grupos de un programa cognitivo conductual en línea con adolescentes. Revista de Consultoría y Psicología Clínica, 77(6), 1021-1032. Christensen, H., Griffiths, K. M. y Korten, A. (2002). Terapia cognitiva conductual basada en la web: análisis del uso del sitio y cambios en las puntuaciones de depresión y ansiedad. Revista de Investigación Médica en Internet, 4(1), e3. Christensen, H., Griffiths, K. M., Korten, A. E., Brittliffe, K. y Groves, C. (2004). Una comparación de los cambios en los síntomas de ansiedad y depresión de usuarios espontáneos y participantes de un ensayo de un sitio web de terapia cognitiva conductual. Revista de Investigación Médica en Internet, 6(4), e46. Christensen, H., Griffiths, K., Groves, C. y Korten, A. (2006). Usuarios de rango libre y maravillas de un solo éxito: Usuarios comunitarios de un programa de terapia cognitiva conductual basado en Internet. Revista de Psiquiatría de Australia y Nueva Zelanda, 40, 59-62. Christensen, H., Griffiths, K. M., Mackinnon, A. J. y Brittliffe, K. (2006). Ensayo controlado aleatorizado en línea de terapia cognitiva conductual breve y completa para la depresión. Medicina Psicológica, 36, 1737-1746. Ellis, L., Campbell, AJ, Sethi, S., O'Dea, B.M. (2011) Ensayo aleatorizado comparativo de un programa de terapia cognitivo-conductual en línea y un grupo de apoyo en línea para la depresión y la ansiedad. Revista de Ciberterapia y Rehabilitación, 4(4): 461-467. Sethi, S., Campbell, A. J., Ellis, L. A. (2010). El uso de paquetes de autoayuda computarizados para tratar la depresión y la ansiedad de los adolescentes. Journal of Technology in Human Services, 28(3), 144-160. Finalmente, este programa se basa en un manual de autoayuda que resultó ser efectivo para tratar la depresión y la ansiedad. F Naeem, Ishaque Sarhandi, Mirrat Gul, Mehwish Khalid, Muhammad Aslam, Aqila Anbrin, Sofiya Saeed, Madeeha Noor, Ghulam Fatima, Fareed Minhas, Nusat Hussain, Muhammad Ayub (2014) Un ensayo controlado aleatorio multicéntrico de una TCC adaptada culturalmente y supervisada por un cuidador (CaCBT) basada en la autoayuda para la depresión en Pakistán. Revista de trastornos afectivos, 156, 224-227"
+    },
+    "footer": {
+
+        "copyright": "Derechos de autor 2017   123CBT. Reservados todos los derechos "
+
+    }
+}

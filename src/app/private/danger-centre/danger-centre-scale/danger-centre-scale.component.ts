@@ -23,8 +23,9 @@ export class DangerCentreScaleComponent implements OnInit {
    q_9:0,
    q_10:0
   };
- constructor(private moduleService:ModuleService,private localService:LocalCacheService,private router:Router) { }
-
+ constructor(private moduleService:ModuleService,private localService:LocalCacheService,private router:Router) { 
+  this.localService.updateModuleStatus({  code: 'D_C', completed: 10, nextCode: 'E_T'  });
+ }
  ngOnInit(): void {
    this.currentUser = this.localService.getCurrentUser();
  }

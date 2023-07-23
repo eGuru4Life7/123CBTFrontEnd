@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApexAxisChartSeries, ApexChart, ApexDataLabels, ApexStroke, ApexTooltip, ApexXAxis, ChartComponent } from 'ng-apexcharts';
 import { LocalCacheService } from 'src/app/services/local-cache.service';
 import { ModuleService } from 'src/app/services/module.service';
@@ -22,8 +23,8 @@ export class ScoreComponent implements OnInit {
   @ViewChild("chart")
   chart!: ChartComponent;
   public chartOptions!: Partial<ChartOptions>;
-  constructor(private moduleService: ModuleService, private localService: LocalCacheService) {
-
+  constructor(private moduleService: ModuleService, private localService:LocalCacheService,private router:Router) { 
+    this.localService.updateModuleStatus({ code: 'P_S', completed: 15, nextCode: 'B_A'  });
   }
 
   ngOnInit(): void {

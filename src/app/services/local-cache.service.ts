@@ -1,65 +1,66 @@
 import { Injectable } from '@angular/core';
 import { Constants } from './constants';
+import { ModuleService } from './module.service';
 
 @Injectable()
 export class LocalCacheService {
 
-  constructor() { }
+  constructor(private moduleService: ModuleService) { }
 
-  private setItem(key:any, value:any) {
+  private setItem(key: any, value: any) {
     window.localStorage.setItem(key, value);
   }
 
-  private getItem(key:any) {
+  private getItem(key: any) {
     return window.localStorage.getItem(key);
   }
 
-  private clearItem(key:any) {
+  private clearItem(key: any) {
     window.localStorage.removeItem(key);
   }
 
-  public setLoginData(data:any) {
-    
-     //data.roleId = data.roleId;
-   // this.setItem(Constants.STORAGE_ITEM.TOKEN, data.user.token);
-   // this.setItem(Constants.STORAGE_ITEM.LOGIN_DATA, JSON.stringify(data.user));
-  this.setItem(Constants.STORAGE_ITEM.TOKEN, data.token);
-    this.setItem(Constants.STORAGE_ITEM.LOGIN_DATA, JSON.stringify(data));
- 
- }
+  public setLoginData(data: any) {
 
-  setGmtTimeZone(timeZone:any) {
+    //data.roleId = data.roleId;
+    // this.setItem(Constants.STORAGE_ITEM.TOKEN, data.user.token);
+    // this.setItem(Constants.STORAGE_ITEM.LOGIN_DATA, JSON.stringify(data.user));
+    this.setItem(Constants.STORAGE_ITEM.TOKEN, data.token);
+    this.setItem(Constants.STORAGE_ITEM.LOGIN_DATA, JSON.stringify(data));
+
+  }
+
+  setGmtTimeZone(timeZone: any) {
     this.setItem(Constants.STORAGE_ITEM.GMT, timeZone);
   }
   public getGmtTimeZone() {
     return this.getItem(Constants.STORAGE_ITEM.GMT);
   }
 
-  public setEditId(id:any){
-    this.setItem('Id',id);
+  public setEditId(id: any) {
+    this.setItem('Id', id);
   }
-  public getEditId(){
+  public getEditId() {
 
-   return  this.getItem('Id');
+    return this.getItem('Id');
   }
-  public setReportPara(fileno:any,id:any){
-    this.setItem('fileno',fileno);
-    this.setItem('id',id);
+  public setReportPara(fileno: any, id: any) {
+    this.setItem('fileno', fileno);
+    this.setItem('id', id);
   }
-  public getReportfileno(){
+  public getReportfileno() {
     return this.getItem('fileno');
   }
-  public getreportid(){
+  public getreportid() {
     return this.getItem('id');
   }
-  public ClearEditId(){
+  public ClearEditId() {
     this.clearItem('fileno');
     this.clearItem('id');
     this.clearItem('Id');
 
   }
 
-  public setGateway(gateway:any) {
+  public setGateway(gateway: any) {
     this.setItem('GATEWAY', gateway);
   }
 
@@ -67,9 +68,9 @@ export class LocalCacheService {
     return this.getItem('GATEWAY');
   }
   public getLoginData() {
-    let data=this.getItem(Constants.STORAGE_ITEM.LOGIN_DATA);
+    let data = this.getItem(Constants.STORAGE_ITEM.LOGIN_DATA);
 
-    return !data ? null :JSON.parse(data);
+    return !data ? null : JSON.parse(data);
   }
 
   public getToken() {
@@ -89,8 +90,18 @@ export class LocalCacheService {
     this.clearItem(Constants.STORAGE_ITEM.TOKEN);
     this.clearItem(Constants.STORAGE_ITEM.GMT);
   }
-  public destroy(){
+  public destroy() {
     window.localStorage.clear();
   }
 
+  public updateModuleStatus(obj: any) {
+    obj.uid = this.getCurrentUser().id;
+    this.moduleService.updateModuleStatus(obj).toPromise().then((d: any) => {
+      if (d) {
+        return true;
+      }
+      return true;
+    });
+    return true;
+  }
 }

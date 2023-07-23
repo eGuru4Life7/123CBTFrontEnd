@@ -1,4 +1,6 @@
 import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
+import { LocalCacheService } from 'src/app/services/local-cache.service';
 
 @Component({
   selector: 'app-diary-week2',
@@ -9,7 +11,9 @@ export class DiaryWeek2Component implements OnInit {
 
   fadeIns: any;
 
-  constructor(private el: ElementRef) { }
+  constructor(private el: ElementRef,private localService:LocalCacheService,private router:Router) { 
+  this.localService.updateModuleStatus({ code: 'C_T', completed: 50, nextCode: 'B_T' });
+ }
 
   ngOnInit(): void {
     this.fadeIns = this.el.nativeElement.querySelectorAll('.fade-in-l');

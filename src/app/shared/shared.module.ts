@@ -4,11 +4,12 @@ import { PrevNextButtonComponent } from './prev-next-button/prev-next-button.com
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import { ImgDirectiveComponent } from './img-directive/img-directive.component';
 
 
 
 @NgModule({
-  declarations: [PrevNextButtonComponent],
+  declarations: [PrevNextButtonComponent, ImgDirectiveComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -16,7 +17,8 @@ import { TranslateModule } from '@ngx-translate/core';
     RouterModule
   ],
   exports: [
-    PrevNextButtonComponent
+    PrevNextButtonComponent,
+    ImgDirectiveComponent
   ]
 
 })

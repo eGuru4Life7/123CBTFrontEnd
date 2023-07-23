@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { LocalCacheService } from 'src/app/services/local-cache.service';
 
 @Component({
   selector: 'app-khatoon-bibi',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KhatoonBibiComponent implements OnInit {
 
-  constructor() { }
+  
+  constructor(private localService:LocalCacheService,private router:Router) { 
+    this.localService.updateModuleStatus({ code:'S',completed:84,nextCode:'D_C'});
+   }
+
 
   ngOnInit(): void {
   }

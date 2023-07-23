@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+import { LocalCacheService } from 'src/app/services/local-cache.service';
 
 
 @Component({
@@ -16,7 +18,8 @@ export class WriteActivitiesComponent implements OnInit {
   activitiesForm!: FormGroup;
   isSmallScreen: boolean=false; 
   
-  constructor(private fb: FormBuilder) { 
+  constructor(private fb: FormBuilder,private localService:LocalCacheService,private router:Router) { 
+    this.localService.updateModuleStatus( { code: 'B_A', completed: 50, nextCode: 'R' });
     this.activitiesForm = this.fb.group({
       mondayText: '',
       tuesdayText: '',

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
+import { LocalCacheService } from 'src/app/services/local-cache.service';
 @Component({
   selector: 'app-problem-solving7',
   templateUrl: './problem-solving7.component.html',
@@ -13,7 +14,9 @@ export class ProblemSolving7Component implements OnInit {
   advDisAdv:any = false;
   next:any = false;
   appSol: boolean= false;
-  constructor() { }
+   constructor(private localService:LocalCacheService,private router:Router) { 
+    this.localService.updateModuleStatus({ code: 'P_S', completed: 90, nextCode: 'B_A' });
+   }
 
   ngOnInit(): void {
   }

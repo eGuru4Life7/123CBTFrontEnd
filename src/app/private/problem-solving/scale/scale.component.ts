@@ -31,8 +31,9 @@ export class ScaleComponent implements OnInit {
    q_9:0,
    q_10:0
   };
- constructor(private moduleService:ModuleService,private localService:LocalCacheService,private router:Router) { }
-
+ constructor(private moduleService:ModuleService,private localService:LocalCacheService,private router:Router) { 
+  this.localService.updateModuleStatus({ code: 'P_S', completed: 15, nextCode: 'B_A'  });
+}
  ngOnInit(): void {
    this.currentUser = this.localService.getCurrentUser();
  }

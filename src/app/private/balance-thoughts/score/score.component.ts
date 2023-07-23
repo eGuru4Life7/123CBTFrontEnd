@@ -30,9 +30,9 @@ moduleScore: any = 0;
 @ViewChild("chart")
 chart!: ChartComponent;
 public chartOptions!: Partial<ChartOptions>;
-constructor(private moduleService: ModuleService, private localService: LocalCacheService) {
-
-}
+constructor(private moduleService: ModuleService, private localService:LocalCacheService) { 
+  this.localService.updateModuleStatus({ code: 'B_T', completed: 20, nextCode: 'P_S' });
+ }
 
 ngOnInit(): void {
   this.currentUser = this.localService.getCurrentUser();

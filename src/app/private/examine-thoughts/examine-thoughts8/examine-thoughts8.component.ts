@@ -11,9 +11,9 @@ import { ModuleService } from 'src/app/services/module.service';
 export class ExamineThoughts8Component implements OnInit {
   currentUser: any;
   dairy:any ={};
-  constructor(private moduleService: ModuleService, private localService: LocalCacheService,private router:Router) {
-
-  }
+  constructor(private moduleService: ModuleService,private localService:LocalCacheService,private router:Router) { 
+    this.localService.updateModuleStatus({code:'E_T',completed:80,nextCode:'C_T' });
+   }
   ngOnInit(): void {
     this.currentUser = this.localService.getCurrentUser();
     this.getThoughtDiaryById();

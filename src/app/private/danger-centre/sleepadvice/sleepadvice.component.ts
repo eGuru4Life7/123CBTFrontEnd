@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
+import { LocalCacheService } from 'src/app/services/local-cache.service';
 
 @Component({
   selector: 'app-sleepadvice',
@@ -9,7 +10,9 @@ export class SleepadviceComponent implements OnInit {
 
   fadeIns: any;
 
-  constructor(private el: ElementRef) { }
+  constructor(private el: ElementRef,private localService:LocalCacheService) { 
+    this.localService.updateModuleStatus({  code: 'D_C', completed: 80, nextCode: 'E_T'  });
+   }
 
   ngOnInit(): void {
     this.fadeIns = this.el.nativeElement.querySelectorAll('.fade-in-l');

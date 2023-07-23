@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { LocalCacheService } from 'src/app/services/local-cache.service';
 
 @Component({
   selector: 'app-intro-to-danger-center',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroToDangerCenterComponent implements OnInit {
 
-  constructor() { }
+  
+  constructor(private localService:LocalCacheService,private router:Router) { 
+    this.localService.updateModuleStatus({ code:'S',completed:100,nextCode:'D_C'});
+   }
+
 
   ngOnInit(): void {
   }
