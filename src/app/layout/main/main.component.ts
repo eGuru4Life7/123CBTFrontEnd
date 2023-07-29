@@ -23,9 +23,19 @@ export class MainComponent implements OnInit {
   moduleStatus9: any = {};
   isShow: any = false;
   dir:any ="ltr";
+  imageClass :any ="";
+  lang:any = [
+    {code:'en',class:'flag flag-country-us'},
+    {code:'ur',class:'flag flag-country-pk'},
+    {code:'pun',class:'flag flag-country-pk'},
+    {code:'gm',class:'flag flag-country-in'},
+    {code:'spa',class:'flag flag-country-sn'},
+    {code:'ch',class:'flag flag-country-cn'}
+  ]
   constructor(private localService: LocalCacheService, private moduleService: ModuleService, private route: Router,private translate: TranslateService) {
     var lang :any = localStorage.getItem("lang");
     this.dir= localStorage.getItem("dir");
+    this.imageClass = this.lang.filter((d:any)=>d.code==lang)[0].class;
     this.translate.setDefaultLang(lang);
     this.translate.use(lang);
     
@@ -50,25 +60,39 @@ export class MainComponent implements OnInit {
     this.translate.setDefaultLang(lang);
     this.translate.use(lang);
     localStorage.setItem("lang",lang)
-    if(lang == "ur"){
-      localStorage.setItem("dir","rtl");  
+    if(lang == "ur" || lang == "pun" || lang == "gm"){
+      localStorage.setItem("dir","rtl");
+      this.imageClass = this.lang.filter((d:any)=>d.code==lang)[0].class;
       this.dir= "rtl";
-    }else if(lang == "pun"){
-      localStorage.setItem("dir","rtl");  
-      this.dir= "rtl";
-    }
-    else if(lang == "gm"){
-      localStorage.setItem("dir","rtl");  
-      this.dir= "rtl";
-    }
-    else if(lang == "spa"){
-      localStorage.setItem("dir","ltr");  
-      this.dir= "ltr";
     }
     else{
       localStorage.setItem("dir","ltr");
+      this.imageClass = this.lang.filter((d:any)=>d.code==lang)[0].class;
       this.dir= "ltr";
     }
+    
+
+
+
+    // if(lang == "ur"){
+    //   localStorage.setItem("dir","rtl");  
+    //   this.dir= "rtl";
+    // }else if(lang == "pun"){
+    //   localStorage.setItem("dir","rtl");  
+    //   this.dir= "rtl";
+    // }
+    // else if(lang == "gm"){
+    //   localStorage.setItem("dir","rtl");  
+    //   this.dir= "rtl";
+    // }
+    // else if(lang == "spa"){
+    //   localStorage.setItem("dir","ltr");  
+    //   this.dir= "ltr";
+    // }
+    // else{
+    //   localStorage.setItem("dir","ltr");
+    //   this.dir= "ltr";
+    // }
     const currentUrl = this.route.url;
     this.route.navigateByUrl('/', {skipLocationChange: true}).then(() => {
         this.route.navigate([currentUrl]);
