@@ -53,7 +53,19 @@ export class MainComponent implements OnInit {
     if(lang == "ur"){
       localStorage.setItem("dir","rtl");  
       this.dir= "rtl";
-    }else{
+    }else if(lang == "pun"){
+      localStorage.setItem("dir","rtl");  
+      this.dir= "rtl";
+    }
+    else if(lang == "gm"){
+      localStorage.setItem("dir","rtl");  
+      this.dir= "rtl";
+    }
+    else if(lang == "spa"){
+      localStorage.setItem("dir","ltr");  
+      this.dir= "ltr";
+    }
+    else{
       localStorage.setItem("dir","ltr");
       this.dir= "ltr";
     }

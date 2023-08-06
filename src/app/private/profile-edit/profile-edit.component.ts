@@ -16,11 +16,11 @@ export class ProfileEditComponent implements OnInit {
   email:any;
   password: any= {};
   isShowConfirmationPasswordModal: boolean = false;
-  constructor(private localCache: LocalCacheService, private userService: UserServiceService,
+  constructor(private localService: LocalCacheService, private userService: UserServiceService,
      private messageService: MessageService,private route:Router) { }
 
   ngOnInit(): void {
-    this.currentUser = this.localCache.getCurrentUser();
+    this.currentUser =this.localService.getCurrentUser();
     this.user = this.currentUser;
     this.email = this.currentUser.email;
   }
@@ -28,7 +28,7 @@ export class ProfileEditComponent implements OnInit {
   updateUser() {
     this.userService.updateUser(this.user).subscribe((res: any) => {
       if (res.success) {
-        this.localCache.setLoginData(res.data);
+       this.localService.setLoginData(res.data);
         this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Succesfully Updated' });
         setTimeout(() => {
           this.route.navigate(['../profile']);  
@@ -45,7 +45,7 @@ export class ProfileEditComponent implements OnInit {
     this.userService.updateEmail(data).subscribe((res: any) => {
       if (res.success) {
         this.showConfirmationModal();
-        this.localCache.setLoginData(res.data);
+       this.localService.setLoginData(res.data);
         
       }else{
         this.messageService.add({ severity: 'warn', summary: 'Email', detail: res.message });
@@ -71,7 +71,7 @@ export class ProfileEditComponent implements OnInit {
     this.userService.updatePassword(this.password).subscribe((res: any) => {
       if (res.success) {
         this.isShowConfirmationPasswordModal = false;
-       // this.localCache.setLoginData(res.data);
+       //this.localService.setLoginData(res.data);
        this.messageService.add({ severity: 'success', summary: 'Success', detail: 'password succesfully updated' });
       }else{
         this.messageService.add({ severity: 'warn', summary: 'Email', detail: res.message });

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { LocalCacheService } from 'src/app/services/local-cache.service';
 
 @Component({
@@ -10,9 +11,11 @@ export class EndComponent implements OnInit {
 
 
   usersixthMod:any;
-  constructor(private localCache:LocalCacheService) { }
+  constructor(private localService:LocalCacheService,private router:Router) { 
+    this.localService.updateModuleStatus( { code: 'B_A', completed: 100, nextCode: 'R' });
+   }
 
   ngOnInit(): void {
-    this.usersixthMod = this.localCache.getCurrentUser().sixth_mod;
+    this.usersixthMod = this.localService.getCurrentUser().sixth_mod;
   }
 }

@@ -28,7 +28,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
     SituationComponent,
     CircleComponent,
     EvidenceComponent,
-    EndComponent,
+    EndComponent
     
   ],
   imports: [

@@ -9,9 +9,11 @@ import { LocalCacheService } from 'src/app/services/local-cache.service';
 export class EndComponent implements OnInit {
 
   userfifthMod:any;
-  constructor(private localCache:LocalCacheService) { }
+  constructor(private localService:LocalCacheService) { 
+   this.localService.updateModuleStatus({ code: 'B_T', completed: 100, nextCode: 'P_S' });
+  }
 
   ngOnInit(): void {
-    this.userfifthMod = this.localCache.getCurrentUser().fifth_mod;
+    this.userfifthMod =this.localService.getCurrentUser().fifth_mod;
   }
 }

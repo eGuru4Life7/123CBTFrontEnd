@@ -1,3 +1,4 @@
+<p-toast position="top-right"></p-toast>
 <div class="page-wrapper">
     <!-- Page header -->
     <div class="page-header d-print-none">
@@ -35,18 +36,18 @@
                     <div class="card-body">
 
                         <h1 class="text-center" style="font-size: 2.5rem; margin-bottom: 20px;">{{ 'staying_well_4.heading1' | translate }}</h1>
-                            <br>
+                        <br>
                         <div class="row align-items-center">
                             <form class="" style="padding-top:3%;">
                                 <div class="mb-3">
-                                    
-                                    
-                                
-                                    <textarea name="stay" id="stayingtext" required="" class=" form-control" formControlName="stayingtext" rows="9" spellcheck="false" ></textarea>
+
+
+
+                                    <textarea name="stay" id="stayingtext" required="" class=" form-control" [(ngModel)]="mail" rows="9" spellcheck="false"></textarea>
                                 </div>
-                                  
-                                 
-                                  
+                                <div *ngIf="mail ==''" style="color: red;">Please fill the required field.</div>
+
+
 
                                 <!-- <div class="text-end mt-3">
                                     <button type="button"  class="btn btn-primary">Submit</button>
@@ -59,21 +60,21 @@
                                             </a>
                                         </li>
                                         <li class="">
-                                            <a class="page-link" href="#" onclick="">
+                                            <a class="page-link" href="javascript:void" (click)="sendMail()">
                                                 <i class="ti ti-mail-forward" style="font-size: 4em; color: #5190B7;"></i>
                                             </a>
                                         </li>
                                     </ul>
-                                    
-    
+
+
                                 </div>
-                                
-                              </form>
+
+                            </form>
                         </div>
                     </div>
 
-                    <prev-next-button [prev]="'../staywell3'" [next]="'../complete'" ></prev-next-button>
-                   
+                    <prev-next-button [prev]="'../staywell3'"></prev-next-button>
+
 
                 </div>
 

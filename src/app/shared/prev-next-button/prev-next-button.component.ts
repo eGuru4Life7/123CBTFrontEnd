@@ -14,7 +14,6 @@ export class PrevNextButtonComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    debugger
     this.dir= localStorage.getItem('dir');
   }
 

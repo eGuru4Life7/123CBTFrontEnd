@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { LocalCacheService } from 'src/app/services/local-cache.service';
 
 @Component({
@@ -9,10 +10,12 @@ import { LocalCacheService } from 'src/app/services/local-cache.service';
 export class ProblemSolving8Component implements OnInit {
 
   userfifthMod:any;
-  constructor(private localCache:LocalCacheService) { }
+  constructor(private localService:LocalCacheService,private router:Router) { 
+    this.localService.updateModuleStatus({ code: 'P_S', completed: 100, nextCode: 'B_A'  });
+  }
 
   ngOnInit(): void {
-    this.userfifthMod = this.localCache.getCurrentUser().fifth_mod;
+    this.userfifthMod = this.localService.getCurrentUser().fifth_mod;
   }
 
 

@@ -12,7 +12,6 @@ export class LockedModalComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    debugger;
     console.log(this.isShow);
   }
 

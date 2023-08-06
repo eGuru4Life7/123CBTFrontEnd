@@ -8,7 +8,7 @@ import { ModuleService } from '../module.service';
   providedIn: 'root'
 })
 export class CountGuard implements CanActivate {
-  constructor(private localCache: LocalCacheService,private route:Router,private moduleService:ModuleService) {
+  constructor(private localService: LocalCacheService,private route:Router,private moduleService:ModuleService) {
 
   }
   canActivate(
@@ -16,7 +16,7 @@ export class CountGuard implements CanActivate {
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
        let data:any = route.data as any;
        let status:any= {};
-       status.uid = this.localCache.getCurrentUser().id;
+       status.uid =this.localService.getCurrentUser().id;
        let result = Object.assign(status, data);
        this.moduleService.updateModuleStatus(result).subscribe();
     return true;

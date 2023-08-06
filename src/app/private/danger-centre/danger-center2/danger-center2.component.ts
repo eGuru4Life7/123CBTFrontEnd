@@ -8,10 +8,12 @@ import { LocalCacheService } from 'src/app/services/local-cache.service';
 })
 export class DangerCenter2Component implements OnInit {
   userSecondMod:any;
-  constructor(private localCache:LocalCacheService) { }
+  constructor(private localService:LocalCacheService) { 
+    this.localService.updateModuleStatus({  code: 'D_C', completed: 100, nextCode: 'E_T'  });
+   }
 
   ngOnInit(): void {
-    this.userSecondMod = this.localCache.getCurrentUser().second_mod;
+    this.userSecondMod =this.localService.getCurrentUser().second_mod;
   }
 
 }

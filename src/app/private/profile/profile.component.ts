@@ -9,10 +9,10 @@ import { LocalCacheService } from 'src/app/services/local-cache.service';
 export class ProfileComponent implements OnInit {
   currentUser: any;
 
-  constructor(private localCache:LocalCacheService) { }
+  constructor(private localService:LocalCacheService) { }
 
   ngOnInit(): void {
-    this.currentUser = this.localCache.getCurrentUser();
+    this.currentUser =this.localService.getCurrentUser();
   }
 
 }
