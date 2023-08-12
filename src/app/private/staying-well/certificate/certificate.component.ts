@@ -22,10 +22,11 @@ export class CertificateComponent {
   //   const documentDefinition = { content: html };
   //   pdfMake.createPdf(documentDefinition).open(); 
      makePdf(){
-      let pdf= new jsPDF('p','pt','a4')
+      let pdf= new jsPDF('p','pt','a4');
+      console.log(this.pdfTable.nativeElement);
       pdf.html(this.pdfTable.nativeElement,{
         callback:(pdf)=>{
-          pdf.save("sample.pdf")
+          pdf.save("certificate.pdf")
         }
       })
      }
