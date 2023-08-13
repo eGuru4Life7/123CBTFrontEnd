@@ -37,7 +37,8 @@ togglePasswordVisibility() {
     {code:'pun',class:'flag flag-country-pk'},
     {code:'gm',class:'flag flag-country-in'},
     {code:'spa',class:'flag flag-country-sn'},
-    {code:'ch',class:'flag flag-country-cn'}
+    {code:'ch',class:'flag flag-country-cn'},
+    {code:'hindi',class:'flag flag-country-in'}
   ]
   constructor(private userService:UserServiceService,private route:Router,private localService:LocalCacheService,
     private messageService:MessageService,private translate:TranslateService) { }

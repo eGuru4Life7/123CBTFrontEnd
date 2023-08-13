@@ -30,7 +30,8 @@ export class MainComponent implements OnInit {
     {code:'pun',class:'flag flag-country-pk'},
     {code:'gm',class:'flag flag-country-in'},
     {code:'spa',class:'flag flag-country-sn'},
-    {code:'ch',class:'flag flag-country-cn'}
+    {code:'ch',class:'flag flag-country-cn'},
+    {code:'hindi',class:'flag flag-country-in'}
   ]
   constructor(private localService: LocalCacheService, private moduleService: ModuleService, private route: Router,private translate: TranslateService) {
     var lang :any = localStorage.getItem("lang");
@@ -60,7 +61,7 @@ export class MainComponent implements OnInit {
     this.translate.setDefaultLang(lang);
     this.translate.use(lang);
     localStorage.setItem("lang",lang)
-    if(lang == "ur" || lang == "pun" || lang == "gm"){
+    if(lang == "ur" || lang == "pun" || lang == "gm" || lang == "hindi"){
       localStorage.setItem("dir","rtl");
       this.imageClass = this.lang.filter((d:any)=>d.code==lang)[0].class;
       this.dir= "rtl";

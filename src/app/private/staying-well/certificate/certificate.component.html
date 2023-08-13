@@ -1,180 +1,228 @@
 <div class="page-wrapper">
     <!-- Page header -->
+    <div class="page-header d-print-none">
+        <div class="container-xl ">
+            <div class="row g-2 align-items-center">
+                <div class="col">
+                    <!-- Page pre-title -->
 
+
+
+                </div>
+                <!-- Page title actions -->
+
+
+            </div>
+        </div>
+    </div>
 
     <!-- Page body -->
     <div class="page-body">
-        <!-- <div id="pdfTable" #pdfTable>
-            <div class="certificate col-12">
-                <div class="row">
-                    <span class="text-center" style="width: 100%;">
-                    <img style="margin: 0 auto;" src="../../../assets/static/certificate/badge.png" height="100px" width="100px" alt="">
-                    </span>
-                    <h1 class="header ">Certificate of Completion</h1>
+        <div class="container-xl">
 
 
-                    <div class="text-center">
-                        <p style="font-size:20px;">This is to certify that</p>
-                        <br>
-                        <h1><u style="text-underline-offset: 10px;">&nbsp;&nbsp; First.name Last.name &nbsp;&nbsp;</u></h1>
+            <div class="col-lg-12" id="pdfTable" #pdfTable>
+                <div class="card fade-in">
 
-                        <p style="font-size: 15px;">has completed the self-help program</p>
-                        <p class="course"><b>Stress Management</b></p>
+                    <style>
+                        .page-body {
+                            width: 960px;
+                            margin: 0 auto;
+                            padding: 20px;
+                            border: 1px solid #ccc;
+                            background-color: #f5f5f5;
+                            border-radius: 10px;
+                        }
+                        
+                        .container-xl {
+                            width: 100%;
+                            max-width: 1200px;
+                            padding: 0 20px;
+                        }
+                        
+                        .col-lg-12 {
+                            width: 100%;
+                        }
+                        
+                        .card {
+                            margin-bottom: 20px;
+                        }
+                        
+                        .card-body {
+                            padding: 20px;
+                            border: 2px solid #333;
+                            background-image: url(https://www.transparenttextures.com/patterns/light-paper-fibers.png);
+                            background-repeat: repeat;
+                        }
+                        
+                        .certificate {
+                            width: 100%;
+                            text-shadow: 1px 1px 2px #ccc;
+                        }
+                        
+                        .header {
+                            text-align: center;
+                            font-size: 34px;
+                            font-weight: bold;
+                            color: #333;
+                            margin-bottom: 50px;
+                        }
+                        
+                        .name {
+                            color: #333;
+                            margin-bottom: 10px;
+                        }
+                        
+                        .course {
+                            color: #333;
+                            font-size: 20px;
+                        }
+                        
+                        .date {
+                            font-size: 14px;
+                            color: #333;
+                        }
+                        
+                        .signature {
+                            text-align: center;
+                        }
+                        
+                        img {
+                            margin-top: 20px;
+                        }
+                        
+                        .certificate>p {
+                            margin-bottom: 10px;
+                        }
+                        
+                        .certificate>p:last-child {
+                            margin-bottom: 0;
+                        }
+                        
+                        .header,
+                        .name,
+                        .course,
+                        .date {
+                            color: #333;
+                        }
+                        
+                        .header {
+                            color: #000;
+                        }
+                        
+                        .signature {
+                            color: #666;
+                        }
+                    </style>
 
-                        <p style="font-size: 15px;">for self-help and psychoeducation purposes only.</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <div>
-            <!-- <div>
 
 
-                <div class="col-lg-12">
-                    <div class="card fade-in" > -->
+                    <div class="card-body">
+                        <div class="row">
+                            <span class="text-center" style="width: 100%;">
+                          <img style="margin: 0 auto;" src="../../../assets/static/certificate/badge.png" height="100px" width="100px" alt="">
+                         </span>
 
-            <!-- <table id="pdfTable" #pdfTable>
-                <tbody>
-                    <tr>
-
-                        <td style="text-align: center;"> <span> 
-                            <img style="margin: 0 auto;" src="../../../assets/static/certificate/badge.png" height="100px" width="100px" alt="">
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;">
-                            <h1 class="header ">Certificate of Completion</h1>
+                            <div class="certificate col-12">
+                                <h1 class="header ">Certificate of Completion</h1>
 
 
-                            <div class="text-center">
-                                <p style="font-size:20px;">This is to certify that</p>
-                                <br>
-                                <h1><u style="text-underline-offset: 10px;">&nbsp;&nbsp; First.name Last.name &nbsp;&nbsp;</u></h1>
+                                <div class="text-center">
+                                    <p style="font-size:20px;">This is to certify that</p>
+                                    <br>
+                                    <h1><u style="text-underline-offset: 10px;">&nbsp;&nbsp; {{this.firstName+' '+this.lastName }} &nbsp;&nbsp;</u></h1>
 
-                                <p style="font-size: 15px;">has completed the self-help program</p>
-                                <p class="course"><b>Stress Management</b></p>
+                                    <p style="font-size: 15px;">has completed the self-help program</p>
+                                    <p class="course"><b>Stress Management</b></p>
 
-                                <p style="font-size: 15px;">for self-help and psychoeducation purposes only.</p>
+                                    <p style="font-size: 15px;">for self-help and psychoeducation purposes only.</p>
+                                </div>
                             </div>
-                        </td>
-                    </tr>
-                </tbody>
-
-            </table> -->
-
-
-            <div class="card-body" id="pdfTable" #pdfTable>
-                <div class="row">
-                    <span class="text-center" style="width: 100%;">
-                                <img style="margin: 0 auto;" src="../../../assets/static/certificate/badge.png" height="100px" width="100px" alt="">
-                                </span>
-
-                    <div class="certificate col-12">
-                        <h1 class="header ">Certificate of Completion</h1>
-
-
-                        <div class="text-center">
-                            <p style="font-size:20px;">This is to certify that</p>
                             <br>
-                            <h1><u style="text-underline-offset: 10px;">&nbsp;&nbsp; First.name Last.name &nbsp;&nbsp;</u></h1>
+                            <br>
 
-                            <p style="font-size: 15px;">has completed the self-help program</p>
-                            <p class="course"><b>Stress Management</b></p>
+                            <br>
 
-                            <p style="font-size: 15px;">for self-help and psychoeducation purposes only.</p>
-                        </div>
-                    </div>
-                    <br>
-                    <br>
+                            <br>
+                            <br>
 
-                    <br>
+                            <br>
+                            <br>
+                            <br>
 
-                    <br>
-                    <br>
+                            <br>
+                            <br>
+                            <br>
 
-                    <br>
-                    <br>
-                    <br>
+                            <br>
 
-                    <br>
-                    <br>
-                    <br>
+                            <br>
+                            <br>
 
-                    <br>
-
-                    <br>
-                    <br>
-
-                    <br>
+                            <br>
 
 
 
-                    <div class="col-4 text-center">
-                        <p></p>
-                        <p class="h3 date">Date </p>
-                        <address>
-                               (fill it automatically)
+                            <div class="col-4 text-center">
+                                <p></p>
+                                <p class="h3 date">Date </p>
+                                <address>
+                                {{ date }}
 
                               </address>
-                    </div>
+                            </div>
 
-                    <div class="col-4 text-center">
+                            <div class="col-4 text-center">
 
-                        <p></p>
-                        <img src="../../../assets/static/logo1.svg" height="42" alt="">
+                                <p></p>
+                                <img src="../../../assets/static/logo1.svg" height="42" alt="">
 
-                    </div>
+                            </div>
 
 
-                    <div class="col-4 text-center text-end">
-                        <img src="../../../assets/static/certificate/esign_drfarooq.png" height="30" alt="">
+                            <div class="col-4 text-center text-end">
+                                <img src="../../../assets/static/certificate/esign_drfarooq.png" height="30" alt="">
 
-                        <p class="h3 signature" style="text-decoration:overline">&nbsp;&nbsp; Signature &nbsp;&nbsp;</p>
-                        <address style="font-size: 10px;">
+                                <p class="h3 signature" style="text-decoration:overline">&nbsp;&nbsp; Signature &nbsp;&nbsp;</p>
+                                <address style="font-size: 10px;">
                                 Prof. Dr. Farooq Naeem <br>
                                 FRCPsych, MSc Research Methods, PhD<br>
                                  Department of Psychiatry, 
                                  <br>
                                  University of Toronto
                               </address>
+                            </div>
+
+
+
+
+
+
+                        </div>
+
+
                     </div>
 
 
-
-
-
-
                 </div>
+            </div>
+            <div class=" ms-auto d-print-none">
+                <button type="button" class="btn btn-primary" (click)="makePdf()"> 
+        
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-download" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
+                <path d="M7 11l5 5l5 -5"></path>
+                <path d="M12 4l0 12"></path>
+                </svg>
 
-
+                Download Certificate
+                </button>
             </div>
 
 
+
+            <prev-next-button [next]="''" class="d-print-none"></prev-next-button>
         </div>
-        <div class=" ms-auto d-print-none">
-            <button type="button" class="btn btn-primary" (click)="makePdf()">
-            
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-download" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
-                            <path d="M7 11l5 5l5 -5"></path>
-                            <path d="M12 4l0 12"></path>
-                        </svg>
-
-                            Download Certificate
-                        </button>
-        </div>
-
-
-
-        <prev-next-button [next]="''" class="d-print-none"></prev-next-button>
-
-
-
-
     </div>
-    <!-- </div>
-        </div>
-    </div> -->
 </div>
