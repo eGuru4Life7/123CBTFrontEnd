@@ -6,7 +6,7 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        
+
                         {{ 'index.balanced-activities' | translate }}
                     </h2>
                     <div class="page-pretitle">
@@ -36,22 +36,22 @@
                     <div class="card-body">
                         <div class="row align-items-center">
                             <div class="col-sm-12 col-md-6 col-lg-6 ">
-                                <img src="../../../../assets/static/illustrations/balanced2.svg" alt="" class="rounded">
+                                <img-d [src]="'/balanced2.svg'" [alt]="''" [class]="'rounded'"></img-d>
                             </div>
                             <div class="col">
 
                                 <h1 style="font-size: 2.5rem;
                                     margin-bottom: 20px;">
-                                    
+
                                     {{ 'balanced_activities_5.heading' | translate }}</h1>
-                                    <p>
-                                        {{ 'balanced_activities_5.paragraph' | translate }}
-                                    </p>
+                                <p>
+                                    {{ 'balanced_activities_5.paragraph' | translate }}
+                                </p>
                             </div>
 
                         </div>
 
-                        <prev-next-button [prev]="'../writeactivities'" [next]="'../activitylist'" ></prev-next-button>
+                        <prev-next-button [prev]="'../writeactivities'" [next]="'../activitylist'"></prev-next-button>
 
                         <!-- <ul class="pagination justify-content-end">
                             <li class=" page-prev ">

@@ -34,12 +34,12 @@
                 <div class="card fade-in">
                     <div class="card-body">
                         <div class="row align-items-center">
-                            
+
                             <h1 style="font-size: 2.5rem;
                             margin-bottom: 20px; text-align: center;">{{ 'relation_1.heading_main' | translate }}</h1>
 
                             <div class="col-sm-12 col-md-5 col-lg-5 ">
-                                <img src="../../../../assets/static/illustrations/relation4.svg" alt="thought,emotions" class="rounded fade-in">
+                                <img-d [src]="'/relation4.svg'" [alt]="'thought,emotions'" [class]="'rounded fade-in'"></img-d>
                             </div>
                             <div class="col">
 
@@ -54,8 +54,8 @@
                         </div>
                     </div>
 
-                    <prev-next-button  [prev]="'../passive'" [next]="'../assertive'" ></prev-next-button>
-                   <!--  <ul class="pagination justify-content-end">
+                    <prev-next-button [prev]="'../passive'" [next]="'../assertive'"></prev-next-button>
+                    <!--  <ul class="pagination justify-content-end">
                         <li class=" page-prev ">
                             <a class="page-link" [routerLink]="'../passive'">
                                 <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
@@ -72,12 +72,12 @@
                 </div>
 
 
-                
+
             </div>
             <br>
 
 
-          <!--   <div class="row row-cards">
+            <!--   <div class="row row-cards">
 
                 <div class="col-12">
                     <div class="card ">

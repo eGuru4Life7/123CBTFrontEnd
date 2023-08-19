@@ -35,21 +35,19 @@
                     <div class="card-body">
                         <div class="row align-items-center">
                             <div class="col-sm-12 col-md-6 col-lg-6">
-                                <img src="../../../../assets/static/illustrations/examine4.svg" alt=""
-                                    class="rounded img-fluid fade-in">
+                                <img-d [src]="'/examine4.svg'" [alt]="''" [class]="'rounded img-fluid fade-in'"></img-d>
                             </div>
                             <div class="col fade-in-3s">
                                 <h1>{{ 'thought_4b.heading1' | translate }}</h1>
                                 <p>{{ 'thought_4b.subheading' | translate }}</p>
                                 <div class="list-group">
                                     <div class="list-group-item" *ngFor="let item of emotions">{{item}}</div>
-                                    
+
                                 </div>
                                 <p>{{ 'thought_4b.para2' | translate }}
                                 </p>
                                 <div class="form-floating mb-3">
-                                    <textarea class="form-control" placeholder="Enter emotions here"
-                                        id="other-emotions" [(ngModel)]="emotion"></textarea>
+                                    <textarea class="form-control" placeholder="Enter emotions here" id="other-emotions" [(ngModel)]="emotion"></textarea>
                                     <label for="other-emotions">Other Emotions</label>
                                 </div>
                                 <button class="btn btn-primary" id="add-emotion-btn" (click)="addEmotion()">Add emotion</button>
@@ -58,9 +56,9 @@
                     </div>
 
 
-                    <prev-next-button [prev]="'../examine3'" [next]="'../examine5'" ></prev-next-button>
+                    <prev-next-button [prev]="'../examine3'" [next]="'../examine5'"></prev-next-button>
 
-                        
+
 
 
                 </div>

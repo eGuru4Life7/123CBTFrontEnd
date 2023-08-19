@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { LocalCacheService } from 'src/app/services/local-cache.service';
-import { ModuleService } from 'src/app/services/module.service';
+import { LocalCacheService } from '../../../app/services/local-cache.service';
+import { ModuleService } from '../../../app/services/module.service';
 import { TranslateService } from "@ngx-translate/core";
 @Component({
   selector: 'app-main',
@@ -31,7 +31,8 @@ export class MainComponent implements OnInit {
     {code:'gm',class:'flag flag-country-in'},
     {code:'spa',class:'flag flag-country-sn'},
     {code:'ch',class:'flag flag-country-cn'},
-    {code:'hindi',class:'flag flag-country-in'}
+    {code:'hindi',class:'flag flag-country-in'},
+    {code:'ar',class:'flag flag-country-sa'}
   ]
   constructor(private localService: LocalCacheService, private moduleService: ModuleService, private route: Router,private translate: TranslateService) {
     var lang :any = localStorage.getItem("lang");
@@ -61,7 +62,7 @@ export class MainComponent implements OnInit {
     this.translate.setDefaultLang(lang);
     this.translate.use(lang);
     localStorage.setItem("lang",lang)
-    if(lang == "ur" || lang == "pun" || lang == "gm" || lang == "hindi"){
+    if(lang == "ur" || lang == "pun" || lang == "gm" || lang == "hindi" || lang == "ar"){
       localStorage.setItem("dir","rtl");
       this.imageClass = this.lang.filter((d:any)=>d.code==lang)[0].class;
       this.dir= "rtl";

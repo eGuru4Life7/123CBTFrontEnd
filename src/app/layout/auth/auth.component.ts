@@ -38,7 +38,8 @@ togglePasswordVisibility() {
     {code:'gm',class:'flag flag-country-in'},
     {code:'spa',class:'flag flag-country-sn'},
     {code:'ch',class:'flag flag-country-cn'},
-    {code:'hindi',class:'flag flag-country-in'}
+    {code:'hindi',class:'flag flag-country-in'},
+    {code:'ar',class:'flag flag-country-sa'}
   ]
   constructor(private userService:UserServiceService,private route:Router,private localService:LocalCacheService,
     private messageService:MessageService,private translate:TranslateService) { }
@@ -56,7 +57,7 @@ togglePasswordVisibility() {
   }
 
   changeLanguage(lang:any){
-    if(lang == "ur" || lang == "pun" || lang == "gm"){
+    if(lang == "ur" || lang == "pun" || lang == "gm" || lang == "hindi" || lang == "ar"){
       localStorage.setItem("dir","rtl");
       localStorage.setItem("lang",lang);
       this.imageClass = this.lang.filter((d:any)=>d.code==lang)[0].class;

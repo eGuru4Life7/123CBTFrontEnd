@@ -34,28 +34,29 @@
                 <div class="card fade-in">
                     <div class="card-body">
                         <div class="row align-items-center">
-                            
+
                             <h1 style="font-size: 2.5rem;
                             margin-bottom: 20px; text-align: center;">{{ 'relation_5.heading1' | translate }}</h1>
                             <br><br><br>
                             <div class="col-sm-12 col-md-5 col-lg-5 ">
-                                <img src="../../../../assets/static/illustrations/relation11.svg" class="rounded fade-in">
+                                <img-d [src]="'/relation11.svg'" [class]="'rounded fade-in'"></img-d>
                             </div>
                             <div class="col">
 
                                 <h1 style="font-size: 1.5rem;
                                 margin-bottom: 20px;">{{ 'relation_5.heading2' | translate }}</h1>
 
-                                <p>{{ 'relation_5.heading2-desc' | translate }} </p> 
-                                    <br><br> <h2>{{ 'relation_5.heading3' | translate }}</h2>
+                                <p>{{ 'relation_5.heading2-desc' | translate }} </p>
+                                <br><br>
+                                <h2>{{ 'relation_5.heading3' | translate }}</h2>
                             </div>
 
                         </div>
                     </div>
 
-                    <prev-next-button  [prev]="'../conflicts'" [next]="'../goldenrule2'" ></prev-next-button>
+                    <prev-next-button [prev]="'../conflicts'" [next]="'../goldenrule2'"></prev-next-button>
 
-                   <!--  <ul class="pagination justify-content-end">
+                    <!--  <ul class="pagination justify-content-end">
                         <li class=" page-prev ">
                             <a class="page-link" [routerLink]="'../conflicts'">
                                 <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
@@ -72,12 +73,12 @@
                 </div>
 
 
-                
+
             </div>
             <br>
 
 
-          <!--   <div class="row row-cards">
+            <!--   <div class="row row-cards">
 
                 <div class="col-12">
                     <div class="card ">
