@@ -25,7 +25,7 @@
     "deleteAvatar": "حذف الصورة الرمزية",
     "cancel": "يلغي",
     "login": {
-        "signin": "Sign In",
+        "signin": "تسجيل الدخول",
         "title": "تسجيل الدخول إلى حسابك",
         "email": "عنوان البريد الإلكتروني",
         "password": "كلمة المرور",
@@ -37,7 +37,7 @@
         "remember": "تذكرني على هذا الجهاز"
     },
     "reset": {
-        "title": "Forgot Password",
+        "title": "هل نسيت كلمة السر",
         "emailText": "أدخل عنوان بريدك الإلكتروني وسيتم إعادة تعيين كلمة المرور الخاصة بك وإرسالها إليك عبر البريد الإلكتروني.",
         "sendMeNewPassword": "أرسل لي كلمة مرور جديدة",
         "text1": "انسى ذلك، ",
@@ -576,7 +576,7 @@
         "thoughts-desc": "",
         "next": "NEXT",
         "prev": "PREV"
-    }, 
+    },
     "Balanced_thoughts_7b": {
         "evidence-for-thoughts": "دليل على الأفكار",
         "evidence-against-thoughts": "دليل ضد الأفكار",

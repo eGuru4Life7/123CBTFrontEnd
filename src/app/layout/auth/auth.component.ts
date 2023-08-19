@@ -57,7 +57,7 @@ togglePasswordVisibility() {
   }
 
   changeLanguage(lang:any){
-    if(lang == "ur" || lang == "pun" || lang == "gm"){
+    if(lang == "ur" || lang == "pun" || lang == "gm" || lang == "hindi" || lang == "ar"){
       localStorage.setItem("dir","rtl");
       localStorage.setItem("lang",lang);
       this.imageClass = this.lang.filter((d:any)=>d.code==lang)[0].class;

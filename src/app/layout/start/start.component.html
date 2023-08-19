@@ -16,11 +16,10 @@
     <title>Sign-up</title>
     <style>
         @import url('https://rsms.me/inter/inter.css');
-
-        :root {
+         :root {
             --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
         }
-
+        
         body {
             font-feature-settings: "cv03", "cv04", "cv11";
         }
@@ -40,7 +39,7 @@
 
                         <div class="col-sm-12 col-md-6 col-lg-6 ">
 
-                            <img src="../../../assets/static/illustrations/elephant.svg" alt="Elephant" class="rounded">
+                            <img-d [src]="'illustrations/elephant.svg'" [alt]="'Elephant'" [class]="'rounded'"></img-d>
                         </div>
                         <div class="col">
 
@@ -57,9 +56,7 @@
 
                         <a [routerLink]="'/disclaimer'" class="btn btn-primary ms-auto ">
                             <!-- Download SVG icon from http://tabler-icons.io/i/mail -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right"
-                                width="36" height="36" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="36" height="36" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                 <path d="M5 12l14 0"></path>
                                 <path d="M13 18l6 -6"></path>

@@ -2,23 +2,21 @@
     .card {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-
+    
     .card-body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1.6;
     }
-
+    
     .card-body h1 {
         font-size: 2.5rem;
-    
         margin-bottom: 20px;
     }
-
-
+    
     .rounded {
         border-radius: 10px;
     }
-
+    
     .list-group-item {
         background-color: #f8f9fa;
         border: 1px solid #dee2e6;
@@ -66,7 +64,7 @@
                     <div class="card-body">
                         <div class="row align-items-center">
                             <div class="col-sm-12 col-md-6 col-lg-6">
-                                <img src="../../../../assets/static/illustrations/examine3.svg" alt="Emotion Icon" class="rounded img-fluid fade-in">
+                                <img-d [src]="'/examine3.svg'" [alt]="'Emotion Icon'" [class]="'rounded img-fluid fade-in'"></img-d>
                             </div>
                             <div class="col fade-in-3s">
                                 <h1 style="font-size: 2.5rem;
@@ -91,17 +89,17 @@
                         </div>
                     </div>
 
-                    <prev-next-button [prev]="'../examin2'" [next]="'../examine4'" ></prev-next-button>
+                    <prev-next-button [prev]="'../examin2'" [next]="'../examine4'"></prev-next-button>
 
-                        
+
                 </div>
-                
 
 
-                
+
+
             </div>
             <br>
-           <!--  <div class="row row-cards">
+            <!--  <div class="row row-cards">
 
                 <div class="col-12">
                     <div class="card">
