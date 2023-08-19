@@ -31,7 +31,8 @@ export class MainComponent implements OnInit {
     {code:'gm',class:'flag flag-country-in'},
     {code:'spa',class:'flag flag-country-sn'},
     {code:'ch',class:'flag flag-country-cn'},
-    {code:'hindi',class:'flag flag-country-in'}
+    {code:'hindi',class:'flag flag-country-in'},
+    {code:'ar',class:'flag flag-country-sa'}
   ]
   constructor(private localService: LocalCacheService, private moduleService: ModuleService, private route: Router,private translate: TranslateService) {
     var lang :any = localStorage.getItem("lang");
