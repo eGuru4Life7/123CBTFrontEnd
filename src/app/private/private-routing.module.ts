@@ -22,6 +22,11 @@ import { ProgressComponent } from './progress/progress.component';
 
 
 const routes: Routes = [
+  
+  {
+    path:'home/:lang',
+    component:HomeComponent
+  },
   {
     path:'',
     component:HomeComponent

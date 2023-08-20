@@ -5,11 +5,12 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { ImgDirectiveComponent } from './img-directive/img-directive.component';
+import { SvgDashboardComponent } from './svg-dashboard/svg-dashboard.component';
 
 
 
 @NgModule({
-  declarations: [PrevNextButtonComponent, ImgDirectiveComponent],
+  declarations: [PrevNextButtonComponent, ImgDirectiveComponent, SvgDashboardComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -18,7 +19,8 @@ import { ImgDirectiveComponent } from './img-directive/img-directive.component';
   ],
   exports: [
     PrevNextButtonComponent,
-    ImgDirectiveComponent
+    ImgDirectiveComponent,
+    SvgDashboardComponent
   ]
 
 })

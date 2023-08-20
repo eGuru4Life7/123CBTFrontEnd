@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'prev-next-button',
@@ -9,12 +10,17 @@ export class PrevNextButtonComponent implements OnInit {
   @Input() next:any =null;
   @Input() prev:any =null;
   dir:any;
-  constructor(){
+  constructor(private translate:TranslateService){
    
   }
 
   ngOnInit(): void {
     this.dir= localStorage.getItem('dir');
+    if(this.next == ''){
+      if(this.translate.currentLang == 'ch'){
+        this.next = '/home/'+this.translate.currentLang;
+      }
+    }
   }
 
 
