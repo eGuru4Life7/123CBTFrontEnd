@@ -6,7 +6,7 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        
+
                         {{ 'index.balanced-activities' | translate }}
                     </h2>
                     <div class="page-pretitle">
@@ -37,56 +37,64 @@
                         <div class="row">
                             <div class="col-sm-12 col-md-6 col-lg-6 ">
                                 <div class="row">
-                                    <div class="col-sm-6 col-md-6 col-lg-6"><img src="../../../../assets/static/illustrations/balanced-work1.svg" alt="" class="img-fluid"></div>
-                                    <div class="col-sm-6 col-md-6 col-lg-6"><img src="../../../../assets/static/illustrations/balanced-work2.svg" alt="" class="img-fluid"></div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <img-d [src]="'/balanced-work1.svg'" [alt]="''" [class]="'img-fluid'"></img-d>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <img-d [src]="'/balanced-work2.svg'" [alt]="''" [class]="'img-fluid'"></img-d>
+                                    </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-sm-6 col-md-6 col-lg-6"><img src="../../../../assets/static/illustrations/balanced-work3.svg" alt="" class="img-fluid"></div>
-                                    <div class="col-sm-6 col-md-6 col-lg-6"><img src="../../../../assets/static/illustrations/balanced-work4.svg" alt="" class="img-fluid"></div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <img-d [src]="'/balanced-work3.svg'" [alt]="''" [class]="'img-fluid'"></img-d>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <img-d [src]="'/balanced-work4.svg'" [alt]="''" [class]="'img-fluid'"></img-d>
+                                    </div>
                                 </div>
-                                
+
                             </div>
-                            
+
                             <div class=" col-sm-12 col-md-6 col-lg-6">
 
                                 <div class="card-body">
                                     <h2 class="card-title">{{ 'balanced_activities_9.heading' | translate }}</h2>
                                     <div class="row">
-                                      <div class="col-md-6">
-                                        <ul class="list-group list-group-flush" style="font-size: 0.9rem;">
-                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity1' | translate }}</li>
-                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity2' | translate }}</li>
-                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity3' | translate }}</li>
-                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity4' | translate }}</li>
-                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity11' | translate }}</li>
-                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity6' | translate }}</li>
-                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity7' | translate }}</li>
-                                        </ul>
-                                      </div>
-                                      <div class="col-md-6">
-                                        <ul class="list-group list-group-flush" style="font-size: 0.9rem;">
-                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity8' | translate }}</li>
-                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity9' | translate }}</li>
-                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity10' | translate }}</li>
-                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity5' | translate }}</li>
-                                         
-                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity12' | translate }}</li>
-                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity13' | translate }}</li>
-                                          <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity14' | translate }}</li>
-                                        </ul>
-                                      </div>
+                                        <div class="col-md-6">
+                                            <ul class="list-group list-group-flush" style="font-size: 0.9rem;">
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity1' | translate }}</li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity2' | translate }}</li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity3' | translate }}</li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity4' | translate }}</li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity11' | translate }}</li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity6' | translate }}</li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity7' | translate }}</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="list-group list-group-flush" style="font-size: 0.9rem;">
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity8' | translate }}</li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity9' | translate }}</li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity10' | translate }}</li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity5' | translate }}</li>
+
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity12' | translate }}</li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity13' | translate }}</li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity14' | translate }}</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                  </div>
-                                  
-                                  
-                                  
+                                </div>
+
+
+
                             </div>
 
                         </div>
-        <br><br>
+                        <br><br>
 
-            <prev-next-button  [next]="'../activitylist'" ></prev-next-button>
-                       <!--  <ul class="pagination justify-content-end">
+                        <prev-next-button [next]="'../activitylist'"></prev-next-button>
+                        <!--  <ul class="pagination justify-content-end">
                            
                             <li class=" page-next">
                                 <a class="page-link" [routerLink]="'../activitylist'">

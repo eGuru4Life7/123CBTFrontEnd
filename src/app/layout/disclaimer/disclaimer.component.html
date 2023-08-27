@@ -10,82 +10,82 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Sign in</title>
-  <!-- CSS files -->
-  <style>
-    @import url('https://rsms.me/inter/inter.css');
-
-    :root {
-      --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
-    }
-
-    body {
-      font-feature-settings: "cv03", "cv04", "cv11";
-    }
-  </style>
-</head>
-<body  class="layout-boxed">
-    <div class="page page-center">
-      <div class="container container-narrow py-4">
-        <div class="text-center mb-4">
-          <a href="." class="navbar-brand navbar-brand-autodark"><img src="../../../assets/static/logo1.svg" height="36" alt=""></a>
-        </div>
-
-
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign in</title>
+    <!-- CSS files -->
+    <style>
+        @import url('https://rsms.me/inter/inter.css');
+         :root {
+            --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+        }
         
-          <div class="card fade-in">
-            <form class="card card-md" action="./sign-up-evidence.html" method="get" autocomplete="off" novalidate>
-            <div class="card-header">
-              
+        body {
+            font-feature-settings: "cv03", "cv04", "cv11";
+        }
+    </style>
+</head>
 
-              <ul class="nav nav-tabs card-header-tabs" data-bs-toggle="tabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <a href="#tabs-disclaimer-7" class="nav-link active" data-bs-toggle="tab" aria-selected="true" role="tab"> {{ 'about.heading1' | translate }}</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a href="#tabs-about-7" class="nav-link" data-bs-toggle="tab" aria-selected="false" tabindex="-1" role="tab"> {{ 'about.heading2' | translate }}</a>
-                </li>
-                
-              </ul>
-            </div>
-            <div class="card-body">
-              <div class="tab-content">
-                <div class="tab-pane active show" id="tabs-disclaimer-7" role="tabpanel">
-                  <h4>{{ 'about.heading1' | translate }}</h4>
-                  <div>
-                    <p>
-                      {{ 'about.heading1-desc' | translate }}
-                    </p>
-
-                  </div>
-                  
-            
-
-          
-
-                  
-                </div>
-                <div class="tab-pane" id="tabs-about-7" role="tabpanel">
-                  <h4> {{ 'about.heading2' | translate }}</h4>
-                  <div>{{ 'about.heading2-desc' | translate }}</div>
-                </div>
-                
-              </div>
+<body class="layout-boxed">
+    <div class="page page-center">
+        <div class="container container-narrow py-4">
+            <div class="text-center mb-4">
+                <a href="." [class]="'navbar-brand navbar-brand-autodark'"><img src="../../../assets/static/logo1.svg" height="36" alt=""></a>
             </div>
 
-            <div class="card-footer">
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <label class="form-check form-switch m-0"> {{ 'about.agree' | translate }}
+
+
+
+            <div class="card fade-in">
+                <form class="card card-md" action="./sign-up-evidence.html" method="get" autocomplete="off" novalidate>
+                    <div class="card-header">
+
+
+                        <ul class="nav nav-tabs card-header-tabs" data-bs-toggle="tabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a href="#tabs-disclaimer-7" class="nav-link active" data-bs-toggle="tab" aria-selected="true" role="tab"> {{ 'about.heading1' | translate }}</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a href="#tabs-about-7" class="nav-link" data-bs-toggle="tab" aria-selected="false" tabindex="-1" role="tab"> {{ 'about.heading2' | translate }}</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content">
+                            <div class="tab-pane active show" id="tabs-disclaimer-7" role="tabpanel">
+                                <h4>{{ 'about.heading1' | translate }}</h4>
+                                <div>
+                                    <p>
+                                        {{ 'about.heading1-desc' | translate }}
+                                    </p>
+
+                                </div>
+
+
+
+
+
+
+                            </div>
+                            <div class="tab-pane" id="tabs-about-7" role="tabpanel">
+                                <h4> {{ 'about.heading2' | translate }}</h4>
+                                <div>{{ 'about.heading2-desc' | translate }}</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <label class="form-check form-switch m-0"> {{ 'about.agree' | translate }}
                     <input id="agree-checkbox" class="form-check-input position-static" type="checkbox" [(ngModel)]="isAgree" (click)="onChangeAgree()" required>
                   </label>
-                </div>
-                <div class="col-auto ms-auto">
-                  <button id="next-button" type="button" class="btn btn-primary ms-auto" [disabled]="isDisabled" disabled (click)="navigate()">
+                            </div>
+                            <div class="col-auto ms-auto">
+                                <button id="next-button" type="button" class="btn btn-primary ms-auto" [disabled]="isDisabled" disabled (click)="navigate()">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="36" height="36" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <path d="M5 12l14 0"></path>
@@ -93,20 +93,20 @@
                       <path d="M13 6l6 6"></path>
                     </svg> Next &nbsp;&nbsp;&nbsp;
                   </button>
-                </div>
-              </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-            </form>
-          </div>
-          
 
 
 
-          
-      
-      </div>
-      
+
+
+
+        </div>
+
     </div>
-  </body>
+</body>
 
 </html>

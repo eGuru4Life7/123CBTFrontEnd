@@ -6,11 +6,11 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                      {{ 'index.Danger-Centre' | translate }}
-                  </h2>
-                  <div class="page-pretitle">
-                      {{ 'index.Module' | translate }}
-                  </div>
+                        {{ 'index.Danger-Centre' | translate }}
+                    </h2>
+                    <div class="page-pretitle">
+                        {{ 'index.Module' | translate }}
+                    </div>
 
                 </div>
                 <!-- Page title actions -->
@@ -26,98 +26,104 @@
 
 
 
-     <!-- Page body -->
- <div class="page-body">
-    <div class="container-xl">
+    <!-- Page body -->
+    <div class="page-body">
+        <div class="container-xl">
 
-        <div class="col-lg-12">
-        <div class="card fade-in">
-          <div class="card-body">
-            <div class="row align-items-center">
-              <div class="col-sm-12 col-md-6 col-lg-6 ">
-                <img src="../../../../assets/static/illustrations/food-advice.svg" alt="Danger1" class="rounded fade-in">
-                
-              </div>
-              <div class="col">
-                
-                      <h2 style="font-size: 1.5rem;
+            <div class="col-lg-12">
+                <div class="card fade-in">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-sm-12 col-md-6 col-lg-6 ">
+                                <img-d [src]="'/food-advice.svg'" [alt]="'Danger1'" [class]="'rounded fade-in'"></img-d>
+
+                            </div>
+                            <div class="col">
+
+                                <h2 style="font-size: 1.5rem;
                       margin-bottom: 20px;">{{ 'foodadvice.heading' | translate }}</h2>
-               
-                  <table class="table table-hover fade-in-3s">
-                    <thead>
-                      <tr>
-                        <th><p class="sub-heading">{{ 'foodadvice.eating-habits' | translate }}</p></th>
-                        <th><p class="sub-heading">{{ 'foodadvice.diet-which-can-help-anxiety' | translate }}</p></th>
-                        <th><p class="sub-heading">{{ 'foodadvice.diet-which-cause-stress-and-anxiety' | translate }}</p></th>
-                      </tr>
-                    </thead>
-                  <tbody>
-                    <tr>
-                    <td>
-                      <p>{{ 'foodadvice.habit1' | translate }}</p>
-                      <p>{{ 'foodadvice.habit2' | translate }}</p>
-                      <p>{{ 'foodadvice.habit3' | translate }}</p>
-                      <p>{{ 'foodadvice.habit4' | translate }}</p>
-                      <p>{{ 'foodadvice.habit5' | translate }}</p>
-                      <p>{{ 'foodadvice.habit6' | translate }}</p>
-                      <p>{{ 'foodadvice.habit7' | translate }}</p>
-                      <p>{{ 'foodadvice.habit8' | translate }}</p>
-                    </td>
-                    
-                    <td>
-                      <p>{{ 'foodadvice.diet1' | translate }}</p>
-                      <p>{{ 'foodadvice.diet2' | translate }}</p>
-                      <p>{{ 'foodadvice.diet3' | translate }}</p>
-                      <p>{{ 'foodadvice.diet4' | translate }}</p>
-                      <p>{{ 'foodadvice.diet5' | translate }}</p>
-                      <p>{{ 'foodadvice.diet6' | translate }}</p>
-                      <p>{{ 'foodadvice.diet7' | translate }}</p>
-                      <p>{{ 'foodadvice.diet8' | translate }}</p>
-                    </td>
-                    
-                    <td>
-                      <p>{{ 'foodadvice.diets1' | translate }}</p>
-                      <p>{{ 'foodadvice.diets2' | translate }}</p>
-                      <p>{{ 'foodadvice.diets3' | translate }}</p>
-                      <p>{{ 'foodadvice.diets4' | translate }}</p>
-                      <p>{{ 'foodadvice.diets5' | translate }}</p>
-                      <p>{{ 'foodadvice.diets6' | translate }}</p>
-                      <p>{{ 'foodadvice.diets7' | translate }}</p>
-                      <p>{{ 'foodadvice.diets8' | translate }}</p>
-                    </td>
-                     
-                    </tr>
-                  </tbody>
-                </table>                
-                </div>
-              
-            </div>
-          </div>
 
-          <ul class="pagination justify-content-end">
-            <!-- <li class="page-item page-prev">
+                                <table class="table table-hover fade-in-3s">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <p class="sub-heading">{{ 'foodadvice.eating-habits' | translate }}</p>
+                                            </th>
+                                            <th>
+                                                <p class="sub-heading">{{ 'foodadvice.diet-which-can-help-anxiety' | translate }}</p>
+                                            </th>
+                                            <th>
+                                                <p class="sub-heading">{{ 'foodadvice.diet-which-cause-stress-and-anxiety' | translate }}</p>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{{ 'foodadvice.habit1' | translate }}</p>
+                                                <p>{{ 'foodadvice.habit2' | translate }}</p>
+                                                <p>{{ 'foodadvice.habit3' | translate }}</p>
+                                                <p>{{ 'foodadvice.habit4' | translate }}</p>
+                                                <p>{{ 'foodadvice.habit5' | translate }}</p>
+                                                <p>{{ 'foodadvice.habit6' | translate }}</p>
+                                                <p>{{ 'foodadvice.habit7' | translate }}</p>
+                                                <p>{{ 'foodadvice.habit8' | translate }}</p>
+                                            </td>
+
+                                            <td>
+                                                <p>{{ 'foodadvice.diet1' | translate }}</p>
+                                                <p>{{ 'foodadvice.diet2' | translate }}</p>
+                                                <p>{{ 'foodadvice.diet3' | translate }}</p>
+                                                <p>{{ 'foodadvice.diet4' | translate }}</p>
+                                                <p>{{ 'foodadvice.diet5' | translate }}</p>
+                                                <p>{{ 'foodadvice.diet6' | translate }}</p>
+                                                <p>{{ 'foodadvice.diet7' | translate }}</p>
+                                                <p>{{ 'foodadvice.diet8' | translate }}</p>
+                                            </td>
+
+                                            <td>
+                                                <p>{{ 'foodadvice.diets1' | translate }}</p>
+                                                <p>{{ 'foodadvice.diets2' | translate }}</p>
+                                                <p>{{ 'foodadvice.diets3' | translate }}</p>
+                                                <p>{{ 'foodadvice.diets4' | translate }}</p>
+                                                <p>{{ 'foodadvice.diets5' | translate }}</p>
+                                                <p>{{ 'foodadvice.diets6' | translate }}</p>
+                                                <p>{{ 'foodadvice.diets7' | translate }}</p>
+                                                <p>{{ 'foodadvice.diets8' | translate }}</p>
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <ul class="pagination justify-content-end">
+                        <!-- <li class="page-item page-prev">
               <a class="page-link" [routerLink]="'../2'" tabindex="-1" aria-disabled="true">
                     <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
                 </a>
-            </li> --> 
-            <li class=" page-next">
-                <a class="page-link" [routerLink]="'../2'">
-                   
-                    <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>                
-                </a>
-            </li>
-        </ul>
+            </li> -->
+                        <li class=" page-next">
+                            <a class="page-link" [routerLink]="'../2'">
+
+                                <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>
+                            </a>
+                        </li>
+                    </ul>
 
 
-        </div>
-      </div>
-    
+                </div>
+            </div>
 
 
 
-<br>
 
-    <!-- <div class="row row-cards">
+            <br>
+
+            <!-- <div class="row row-cards">
         
         <div class="col-12">
           <div class="card">
@@ -142,5 +148,5 @@
       </div> -->
 
 
-  </div>
-</div>
+        </div>
+    </div>

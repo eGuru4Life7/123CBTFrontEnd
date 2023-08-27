@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
-import { LocalCacheService } from 'src/app/services/local-cache.service';
-import { ModuleService } from 'src/app/services/module.service';
+import { LocalCacheService } from '../../../app/services/local-cache.service';
+import { ModuleService } from '../../../app/services/module.service';
 import { TranslateService } from "@ngx-translate/core";
+import { HomeComponent } from 'src/app/private/home/home.component';
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -22,13 +23,25 @@ export class MainComponent implements OnInit {
   moduleStatus8: any = {};
   moduleStatus9: any = {};
   isShow: any = false;
-  dir:any ="ltr";
-  constructor(private localService: LocalCacheService, private moduleService: ModuleService, private route: Router,private translate: TranslateService) {
-    var lang :any = localStorage.getItem("lang");
-    this.dir= localStorage.getItem("dir");
+  dir: any = "ltr";
+  imageClass: any = "";
+  lang: any = [
+    { code: 'en', class: 'flag flag-country-us' },
+    { code: 'ur', class: 'flag flag-country-pk' },
+    { code: 'pun', class: 'flag flag-country-pk' },
+    { code: 'gm', class: 'flag flag-country-in' },
+    { code: 'spa', class: 'flag flag-country-sn' },
+    { code: 'ch', class: 'flag flag-country-cn' },
+    { code: 'hindi', class: 'flag flag-country-in' },
+    { code: 'ar', class: 'flag flag-country-sa' }
+  ]
+  constructor(private localService: LocalCacheService, private moduleService: ModuleService, private route: Router, private translate: TranslateService) {
+    var lang: any = localStorage.getItem("lang");
+    this.dir = localStorage.getItem("dir");
+    this.imageClass = this.lang.filter((d: any) => d.code == lang)[0].class;
     this.translate.setDefaultLang(lang);
     this.translate.use(lang);
-    
+
   }
   module1: any = {};
   module2: any = {};
@@ -39,40 +52,39 @@ export class MainComponent implements OnInit {
   module7: any = {};
   module8: any = {};
   module9: any = {};
-
+  @ViewChild(HomeComponent) home!: HomeComponent;
+  url:any;
   ngOnInit(): void {
+
     this.currentUser = this.localService.getCurrentUser();
     this.getAllModule();
     this.getAllModuleStatusById();
   }
 
-  changeLanguage(lang:any){
+  changeLanguage(lang: any) {
     this.translate.setDefaultLang(lang);
     this.translate.use(lang);
-    localStorage.setItem("lang",lang)
-    if(lang == "ur"){
-      localStorage.setItem("dir","rtl");  
-      this.dir= "rtl";
-    }else if(lang == "pun"){
-      localStorage.setItem("dir","rtl");  
-      this.dir= "rtl";
+    localStorage.setItem("lang", lang)
+    if (lang == "ur" || lang == "pun" || lang == "gm" || lang == "hindi" || lang == "ar") {
+      localStorage.setItem("dir", "rtl");
+      this.imageClass = this.lang.filter((d: any) => d.code == lang)[0].class;
+      this.dir = "rtl";
     }
-    else if(lang == "gm"){
-      localStorage.setItem("dir","rtl");  
-      this.dir= "rtl";
+    else {
+      localStorage.setItem("dir", "ltr");
+      this.imageClass = this.lang.filter((d: any) => d.code == lang)[0].class;
+      this.dir = "ltr";
     }
-    else if(lang == "spa"){
-      localStorage.setItem("dir","ltr");  
-      this.dir= "ltr";
-    }
-    else{
-      localStorage.setItem("dir","ltr");
-      this.dir= "ltr";
-    }
+
     const currentUrl = this.route.url;
-    this.route.navigateByUrl('/', {skipLocationChange: true}).then(() => {
-        this.route.navigate([currentUrl]);
-    });
+    console.log(currentUrl);
+    if (lang == 'ch') {
+      this.route.navigate(['/home/',lang]);
+      this.url ='/home/'+lang;
+    } else {
+      this.route.navigate(['/']);
+      this.url ='';
+    }
   }
 
   getAllModule() {

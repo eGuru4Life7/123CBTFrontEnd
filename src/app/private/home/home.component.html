@@ -24,15 +24,19 @@
         <div class="container-xl">
             <div class="row row-cards">
 
-
-
                 <div class="col-6 col-sm-6 col-md-6 col-lg-4">
                     <a [routerLink]="'/stress'" class="card card-link card-link-pop">
-                        <div class="card-body " style="background-color: #808AFF;  border-radius: 4px 4px 0 0;">
+                        <div class="card-body " style="background-color: #808AFF;  border-radius: 4px 4px 0 0;" *ngIf="lang == 'ch'">
                             <!-- <img src="../../../assets/static/illustrations/dashboard/stress_c.svg" height="210px" width="100%" alt=""> -->
                             <svg height="13rem" width="100%">
-                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite1.svg#stress_c"></use>
-              </svg>
+                                <use xlink:href="../../../assets/static/illustrations/Ch/dashboard/sprite1.svg#stress_c"></use>
+                            </svg>
+                        </div>
+                        <div class="card-body " style="background-color: #808AFF;  border-radius: 4px 4px 0 0;" *ngIf="lang != 'ch'">
+                            <!-- <img src="../../../assets/static/illustrations/dashboard/stress_c.svg" height="210px" width="100%" alt=""> -->
+                            <svg height="13rem" width="100%">
+                                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite1.svg#stress_c"></use>
+                            </svg>
                         </div>
                         <div class="card-body">
                             <div class="card-title mb-1">{{ 'index.stress' | translate }} </div>
@@ -62,7 +66,8 @@
                             <!-- <img src="../../../assets/static/illustrations//dashboard/danger-center-main_c.svg" height="210px" width="100%" alt=""> -->
 
                             <svg height="13rem" width="100%">
-                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite2.svg#danger-center-main"></use>
+                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite2.svg#danger-center-main" *ngIf="lang !='ch'"></use>
+                 <use xlink:href="../../../assets/static/illustrations/Ch/dashboard/sprite3.svg#danger-center-main" *ngIf="lang =='ch'"></use>
               </svg>
 
 
@@ -108,7 +113,8 @@
                             <!-- <img src="../../../assets/static/illustrations/dashboard/examine-thoughts-main_c.svg" height="210px" width="100%" alt=""> -->
 
                             <svg height="13rem" width="100%">
-                  <use xlink:href="../../../assets/static/illustrations/dashboard/sprite3.svg#examine-thoughts-main"></use>
+                  <use xlink:href="../../../assets/static/illustrations/dashboard/sprite3.svg#examine-thoughts-main" *ngIf="lang !='ch'"></use>
+                   <use xlink:href="../../../assets/static/illustrations/Ch/dashboard/sprite3.svg#examine-thoughts-main" *ngIf="lang =='ch'"></use>
                 </svg>
 
                         </div>
@@ -150,7 +156,8 @@
                         <div class="card-body text-center" style="background-color: #D9A5B5; border-radius: 4px 4px 0 0;">
                             <!-- <img src="../../../assets/static/illustrations/dashboard/challenge-thoughts-main.svg" height="210px" width="100%" alt=""> -->
                             <svg height="13rem" width="100%">
-                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite3.svg#challenge-thoughts-main"></use>
+                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite3.svg#challenge-thoughts-main" *ngIf="lang !='ch'"></use>
+                 <use xlink:href="../../../assets/static/illustrations/Ch/dashboard/sprite3.svg#challenge-thoughts-main" *ngIf="lang =='ch'"></use>
               </svg>
 
 
@@ -189,11 +196,11 @@
                 <!-- Locked Module has "card-cover-blurred" class -->
                 <div class="col-6 col-sm-6 col-md-6 col-lg-4">
                     <a [routerLink]="module5 || moduleStatus5?.status? '/balancethought':''" (click)="openModal(moduleStatus5?.status)" class="card card-link card-link-pop">
-                    
-                        <div class="card-body text-center" style="background-color: #7583CA; border-radius: 4px 4px 0 0;">
+                        <div class="card-body text-center" [style]="lang == 'ch' ? 'background-color: #c57378; border-radius: 4px 4px 0 0;' :'background-color: #7583CA; border-radius: 4px 4px 0 0;'">
                             <!-- <img src="../../../assets/static/illustrations/dashboard/balanced_thoughts_c.svg" height="210px" width="100%" alt=""> -->
                             <svg height="13rem" width="100%">
-                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite1.svg#balanced_thoughts_c"></use>
+                <use xlink:href="../../../assets/static/illustrations/Ch/dashboard/sprite1.svg#balanced_thoughts_c" *ngIf="lang =='ch'"></use>
+                 <use xlink:href="../../../assets/static/illustrations/dashboard/sprite1.svg#balanced_thoughts_c" *ngIf="lang !='ch'"></use>
               </svg>
                         </div>
                         
@@ -238,7 +245,8 @@
                         <div class="card-body text-center" style="background-color: #D9A5B5; border-radius: 4px 4px 0 0;">
                             <!-- <img src="../../../assets/static/illustrations/dashboard/problem_solving_c.svg" height="210px" width="100%" alt=""> -->
                             <svg height="13rem" width="100%">
-                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite1.svg#problem_solving_c"></use>
+                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite1.svg#problem_solving_c" *ngIf="lang !='ch'"></use>
+                 <use xlink:href="../../../assets/static/illustrations/Ch/dashboard/sprite1.svg#problem_solving_c" *ngIf="lang =='ch'"></use>
               </svg>
 
                         </div>
@@ -281,7 +289,8 @@
                             <!-- <img src="../../../assets/static/illustrations/dashboard/balanced_activities_c.svg" height="210px" width="100%" alt=""> -->
 
                             <svg height="13rem" width="100%">
-                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite2.svg#balanced_activities_c"></use>
+                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite2.svg#balanced_activities_c" *ngIf="lang !='ch'"></use>
+                 <use xlink:href="../../../assets/static/illustrations/Ch/dashboard/sprite2.svg#balanced_activities_c" *ngIf="lang =='ch'"></use>
               </svg>
 
                         </div>
@@ -323,7 +332,8 @@
                         <div class="card-body text-center" style="background-color: #FFCF86; border-radius: 4px 4px 0 0;">
                             <!-- <img src="../../../assets/static/illustrations/dashboard/relationships_c.svg" height="210px" width="100%" alt=""> -->
                             <svg height="13rem" width="100%">
-                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite2.svg#relationships_c"></use>
+                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite2.svg#relationships_c" *ngIf="lang !='ch'"></use>
+                 <use xlink:href="../../../assets/static/illustrations/Ch/dashboard/sprite2.svg#relationships_c" *ngIf="lang =='ch'"></use>
               </svg>
 
                         </div>

@@ -1,13 +1,17 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'img-directive',
+  selector: 'img-d',
   templateUrl: './img-directive.component.html',
   styleUrls: ['./img-directive.component.scss']
 })
 export class ImgDirectiveComponent implements OnInit {
   @Input() src:any =null;
   @Input() alt:any =null;
+  @Input() class:any =null;
+  @Input() style:any =null;
+  @Input() height:any =null;
+  @Input() aria_label:any =null;
   lang:any;
   path:any = "../../../../assets/static/illustrations/";
   constructor(){

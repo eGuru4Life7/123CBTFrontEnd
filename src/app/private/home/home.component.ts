@@ -14,6 +14,7 @@ import {
   ApexStroke
 } from "ng-apexcharts";
 import { DatePipe } from '@angular/common';
+import { ActivatedRoute, Route, Router } from '@angular/router';
 export type ChartOptions = {
   series: ApexAxisChartSeries;
   chart: ApexChart;
@@ -47,7 +48,7 @@ export class HomeComponent implements OnInit {
   moduleStatus9: any = {};
   isShow: any = false;
   currentDate: any;
-  constructor(private localService: LocalCacheService, private moduleService: ModuleService, private translate: TranslateService, private datePipe: DatePipe) {
+  constructor(private localService: LocalCacheService, private moduleService: ModuleService, private translate: TranslateService, private datePipe: DatePipe,private router :ActivatedRoute) {
 
   }
   module1: any = {};
@@ -59,8 +60,14 @@ export class HomeComponent implements OnInit {
   module7: any = {};
   module8: any = {};
   module9: any = {};
-
+  lang:any = '';
   ngOnInit(): void {
+    this.router.params.subscribe((para:any)=>{
+      if(para.lang == 'ch'){
+        this.lang = para.lang;
+      }
+    })
+    
     this.currentUser = this.localService.getCurrentUser();
     this.currentDate = this.datePipe.transform(new Date(Date.now()), 'yyyy-MM-dd');
     this.getAllModule();

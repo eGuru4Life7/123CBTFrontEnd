@@ -1,1 +1,2 @@
-<img [src]="path" [alt]="alt" class=" rounded">
+<img [src]="path" [alt]="alt" [class]="class" [style]="style" [height]="height" [ariaLabel]="aria_label" *ngIf="height!=null">
+<img [src]="path" [alt]="alt" [class]="class" [style]="style" [ariaLabel]="aria_label" *ngIf="height==null || height==''">

@@ -35,7 +35,9 @@
                     <div class="card-body">
                         <div class="row align-items-center">
                             <div class="col-sm-12 col-md-6 col-lg-6 ">
-                                <img src="../../../../assets/static/illustrations/problemsolving3.svg" alt="" class="rounded">
+
+                                <!-- <img src="../../../../assets/static/illustrations/problemsolving3.svg" alt="" class="rounded"> -->
+                                <img-d [src]="'/problemsolving3.svg'" [alt]="''" [class]="'rounded'"></img-d>
                             </div>
                             <div class="col">
 
@@ -49,9 +51,9 @@
                         </div>
 
 
-                        <prev-next-button [prev]="'../identifyproblems'" [next]="'../compare'" ></prev-next-button>
+                        <prev-next-button [prev]="'../identifyproblems'" [next]="'../compare'"></prev-next-button>
 
-<!--                         <ul class="pagination justify-content-end">
+                        <!--                         <ul class="pagination justify-content-end">
                             <li class=" page-prev ">
                                 <a class="page-link" [routerLink]="'../identifyproblems'">
                                     <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>

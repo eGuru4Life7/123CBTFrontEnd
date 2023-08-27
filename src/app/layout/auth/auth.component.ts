@@ -21,7 +21,7 @@ export class AuthComponent implements OnInit {
     // Boolean variable to track password visibility
   hidePassword: boolean = true;
   isShow: boolean= false;
-
+  imageClass :any ="";
 // Method to toggle password visibility
 togglePasswordVisibility() {
   const input = this.passwordInput.nativeElement;
@@ -31,7 +31,16 @@ togglePasswordVisibility() {
 
   user:any= {};
   dir:any ="ltr";
-  lang=['en','ur','pun','gm','spa']
+  lang:any = [
+    {code:'en',class:'flag flag-country-us'},
+    {code:'ur',class:'flag flag-country-pk'},
+    {code:'pun',class:'flag flag-country-pk'},
+    {code:'gm',class:'flag flag-country-in'},
+    {code:'spa',class:'flag flag-country-sn'},
+    {code:'ch',class:'flag flag-country-cn'},
+    {code:'hindi',class:'flag flag-country-in'},
+    {code:'ar',class:'flag flag-country-sa'}
+  ]
   constructor(private userService:UserServiceService,private route:Router,private localService:LocalCacheService,
     private messageService:MessageService,private translate:TranslateService) { }
 
@@ -40,6 +49,7 @@ togglePasswordVisibility() {
     this.translate.use('en');
     localStorage.setItem("dir","ltr");
     localStorage.setItem("lang","en");
+    this.imageClass = this.lang.filter((d:any)=>d.code=="en")[0].class;
     this.dir= "ltr";
     setTimeout(() => {
       this.isShow = true;
@@ -47,28 +57,16 @@ togglePasswordVisibility() {
   }
 
   changeLanguage(lang:any){
-    if(lang == "ur"){
+    if(lang == "ur" || lang == "pun" || lang == "gm" || lang == "hindi" || lang == "ar"){
       localStorage.setItem("dir","rtl");
-      localStorage.setItem("lang","ur");
+      localStorage.setItem("lang",lang);
+      this.imageClass = this.lang.filter((d:any)=>d.code==lang)[0].class;
       this.dir= "rtl";
-    }else if(lang == "pun"){
-      localStorage.setItem("dir","rtl");
-      localStorage.setItem("lang","pun");
-      this.dir= "rtl";
-    }
-    else if(lang == "gm"){
-      localStorage.setItem("dir","rtl");  
-      localStorage.setItem("lang","gm");
-      this.dir= "rtl";
-    }
-    else if(lang == "spa"){
-      localStorage.setItem("dir","ltr");  
-      localStorage.setItem("lang","spa");
-      this.dir= "ltr";
     }
     else{
       localStorage.setItem("dir","ltr");
-      localStorage.setItem("lang","en");
+      localStorage.setItem("lang",lang);
+      this.imageClass = this.lang.filter((d:any)=>d.code==lang)[0].class;
       this.dir= "ltr";
     }
     

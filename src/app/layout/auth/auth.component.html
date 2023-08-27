@@ -44,30 +44,20 @@
 
                                 <div class="card-actions">
                                     <div class="navbar-nav flex-row order-md-last">
-
-
-                                        <!-- <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-large">
-                                            Disclaimer
-                           </a>
-                          -->
-
-
-
-
                                         <div class="nav-item dropdown d-none d-md-flex me-3">
                                             <a [routerLink]="''" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1" aria-label="Language" aria-expanded="false">
 
                                                 <strong>Language</strong> &nbsp;
-                                                <span [ngClass]="dir=='rtl'?'flag flag-country-pk':'flag flag-country-us'"></span>
+                                                <span [ngClass]="imageClass"></span>
                                                 <!-- Download SVG icon from http://tabler-icons.io/i/bell -->
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M4 5h7"></path>
-                          <path d="M9 3v2c0 4.418 -2.239 8 -5 8"></path>
-                          <path d="M5 9c0 2.144 2.952 3.908 6.7 4"></path>
-                          <path d="M12 20l4 -9l4 9"></path>
-                          <path d="M19.1 18h-6.2"></path>
-                        </svg>
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M4 5h7"></path>
+                                                    <path d="M9 3v2c0 4.418 -2.239 8 -5 8"></path>
+                                                    <path d="M5 9c0 2.144 2.952 3.908 6.7 4"></path>
+                                                    <path d="M12 20l4 -9l4 9"></path>
+                                                    <path d="M19.1 18h-6.2"></path>
+                                                </svg>
 
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-end dropdown-menu-card">
@@ -126,6 +116,36 @@
 
                                                             </div>
                                                         </div>
+                                                        <div class="list-group-item">
+                                                            <div class="row align-items-center">
+                                                                <span class="flag flag-country-cn"></span>
+                                                                <div class="col text-truncate">
+                                                                    <a href='javascript:void(0)' (click)="changeLanguage('ch')" class="text-body d-block">Chinese</a>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item">
+                                                            <div class="row align-items-center">
+                                                                <span class="flag flag-country-in"></span>
+                                                                <div class="col text-truncate">
+                                                                    <a href='javascript:void(0)' (click)="changeLanguage('hindi')" class="text-body d-block">Hindi</a>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item">
+                                                            <div class="row align-items-center">
+                                                                <span class="flag flag-country-sa"></span>
+                                                                <div class="col text-truncate">
+                                                                    <a href='javascript:void(0)' (click)="changeLanguage('ar')" class="text-body d-block">Arabic</a>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -149,11 +169,11 @@
                                 </div>
                                 <div class="mb-2">
                                     <label class="form-label">
-                    {{ 'login.password' | translate }}
-                    <span class="form-label-description">
-                      <a  [routerLink]="'/forgotpassword'">{{ 'login.reset' | translate }}</a>
-                    </span>
-                  </label>
+                                        {{ 'login.password' | translate }}
+                                        <span class="form-label-description">
+                                        <a  [routerLink]="'/forgotpassword'">{{ 'login.reset' | translate }}</a>
+                                        </span>
+                                    </label>
 
                                     <div class="input-group input-group-flat">
                                         <input #passwordInput type="{{ hidePassword ? 'password' : 'text' }}" [(ngModel)]="user.password" class="form-control" placeholder="Your password" autocomplete="off">
