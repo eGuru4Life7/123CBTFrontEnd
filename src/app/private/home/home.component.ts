@@ -63,9 +63,7 @@ export class HomeComponent implements OnInit {
   lang:any = '';
   ngOnInit(): void {
     this.router.params.subscribe((para:any)=>{
-      if(para.lang == 'ch'){
         this.lang = para.lang;
-      }
     })
     
     this.currentUser = this.localService.getCurrentUser();

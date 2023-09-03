@@ -35,6 +35,7 @@ export class MainComponent implements OnInit {
     { code: 'hindi', class: 'flag flag-country-in' },
     { code: 'ar', class: 'flag flag-country-sa' }
   ]
+  url: any = '';
   constructor(private localService: LocalCacheService, private moduleService: ModuleService, private route: Router, private translate: TranslateService) {
     var lang: any = localStorage.getItem("lang");
     this.dir = localStorage.getItem("dir");
@@ -52,13 +53,12 @@ export class MainComponent implements OnInit {
   module7: any = {};
   module8: any = {};
   module9: any = {};
-  @ViewChild(HomeComponent) home!: HomeComponent;
-  url:any;
-  ngOnInit(): void {
 
+  ngOnInit(): void {
     this.currentUser = this.localService.getCurrentUser();
     this.getAllModule();
     this.getAllModuleStatusById();
+    this.url = '/home/'+this.translate.currentLang;
   }
 
   changeLanguage(lang: any) {
@@ -77,13 +77,14 @@ export class MainComponent implements OnInit {
     }
 
     const currentUrl = this.route.url;
-    console.log(currentUrl);
-    if (lang == 'ch') {
-      this.route.navigate(['/home/',lang]);
-      this.url ='/home/'+lang;
+    if (currentUrl.includes('home')) {
+      this.route.navigate(['/home/', lang]);
+      this.url= '/home/' + lang;
     } else {
-      this.route.navigate(['/']);
-      this.url ='';
+      this.route.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+        this.url= '/home/' + lang;
+        this.route.navigate([currentUrl]);
+      });
     }
   }
 

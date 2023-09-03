@@ -9,15 +9,11 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class LoaderComponent implements OnInit {
 
-  constructor(private route:Router,private translate:TranslateService) { }
+  constructor(private route: Router, private translate: TranslateService) { }
 
   ngOnInit(): void {
     setTimeout(() => {
-      if(this.translate.currentLang == 'ch'){
-        this.route.navigate(['/home/ch']);
-      }else{
-        this.route.navigate(['']);
-      }     
+      this.route.navigate(['/home/', this.translate.currentLang]);
     }, 2000);
   }
 
