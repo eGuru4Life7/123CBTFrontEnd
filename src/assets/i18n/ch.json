@@ -1092,16 +1092,23 @@
         "documentation": "文档"
 
     },
-  
+
     "evidence": {
         "heading": "对在线CBT进行的研究",
-        "paragraph": "该计划的准备是基于在该领域进行的研究结果。各种基于CBT的自助材料已经过评估，并证明在世界范围内有效。", 
-        "paragraph1":"有关科学发表的著作，请参阅以下链接：",
-        "Link":"引用"
+        "paragraph": "该计划的准备是基于在该领域进行的研究结果。各种基于CBT的自助材料已经过评估，并证明在世界范围内有效。",
+        "paragraph1": "有关科学发表的著作，请参阅以下链接：",
+        "Link": "引用"
     },
     "footer": {
 
         "copyright": " Copyrights 2017 � 123CBT. All rights reserved "
 
+    },
+    "complete": {
+        "heading": "恭喜你!",
+        "Para1": "成功完成此<strong>“压力管理”</strong>仅用于自助和心理教育目的。该计划旨在为个人提供有效管理压力和提高整体福祉的工具和技术。",
+        "Para2": "单击下面的按钮即可接收您的个性化证书，该证书可以证明您在成功完成<strong>“压力管理”</strong>计划方面所取得的成就。",
+        "Para3": "请注意，此自助计划<strong>不能替代专业治疗或医疗建议。</strong>它旨在<strong>补充现有的自我保健实践</strong>并促进自我意识。",
+        "btn": "获取您的证书"
     }
 }
