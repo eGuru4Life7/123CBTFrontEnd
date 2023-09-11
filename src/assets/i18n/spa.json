@@ -974,13 +974,20 @@
     },
     "evidence": {
         "heading": "Investigación realizada sobre la TCC en línea",
-        "paragraph": "La preparación de este programa se basa en los resultados de la investigación realizada en este campo. Se han evaluado varios materiales de autoayuda basados en la TCC y se ha demostrado que son efectivos en todo el mundo.", 
-        "paragraph1":"Para trabajos científicos publicados, consulte el siguiente enlace:",
-        "Link":"Referencias"
+        "paragraph": "La preparación de este programa se basa en los resultados de la investigación realizada en este campo. Se han evaluado varios materiales de autoayuda basados en la TCC y se ha demostrado que son efectivos en todo el mundo.",
+        "paragraph1": "Para trabajos científicos publicados, consulte el siguiente enlace:",
+        "Link": "Referencias"
     },
     "footer": {
 
         "copyright": "Derechos de autor 2017   123CBT. Reservados todos los derechos "
 
+    },
+    "complete": {
+        "heading": "Felicidades!",
+        "Para1": "Al completar con éxito este <strong>'Manejo del estrés'</strong> únicamente con fines de autoayuda y psicoeducación. Este programa tiene como objetivo proporcionar a las personas herramientas y técnicas para gestionar eficazmente el estrés y mejorar su bienestar general.",
+        "Para2": "Haga clic en el botón a continuación para recibir su certificado personalizado, que sirve como testimonio de sus logros al completar con éxito el programa <strong>'Manejo del estrés'</strong>.",
+        "Para3": "Tenga en cuenta que este programa de autoayuda <strong>no sustituye la terapia profesional ni el asesoramiento médico.</strong> Está diseñado para <strong>complementar las prácticas de autocuidado existentes</strong> y promover la autoconciencia.",
+        "btn": "Obtenga su certificado"
     }
 }

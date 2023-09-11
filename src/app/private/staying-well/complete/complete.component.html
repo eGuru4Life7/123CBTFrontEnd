@@ -40,86 +40,53 @@
 
                         </div>
 
-                        <h1 class="text-center" style="font-size: 2.5rem;   margin-top: 10px;">Congratulations!</h1>
-                            
+                        <h1 class="text-center" style="font-size: 2.5rem;   margin-top: 10px;"> {{ 'complete.heading' | translate }}</h1>
+
                         <div class="row align-items-center">
-                        
-                                <div class="mb-3">
-                                    
-                                    
-                                    <div class="py-4 col-lg-12 col-md-12 col-sm-12 col-xs-12 fade-in-3s" style="font-size: 1rem;">
-                                    
-                                            <p >On successfully completing this <strong>"Stress Management"</strong> for self-help and psychoeducation purposes only. This program aims to provide individuals with tools and techniques to effectively manage stress and enhance their overall well-being.                                            </p>
-                                  
 
-                                     
+                            <div class="mb-3">
 
 
-<p>
-    Click the button below to receive your personalized certificate, which serves as a testament to your achievements in successfully completing the <strong>"Stress Management"</strong> program.
+                                <div class="py-4 col-lg-12 col-md-12 col-sm-12 col-xs-12 fade-in-3s" style="font-size: 1rem;">
 
-</p>
-<div class="w-100">
-    <div class="row">
-      <div class="col-2">
+                                    <p innerHTML="{{ 'complete.Para1' | translate }}"></p>
+                                    <p innerHTML="{{ 'complete.Para2' | translate }}"></p>
+                                    <div class="w-100">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <a [routerLink]="'../certificate'" class="btn btn-success w-100" innerHTML="{{ 'complete.btn' | translate }}"></a>
 
-        <a [routerLink]="'../certificate'" class="btn btn-success w-100">
+                                            </div>
+                                        </div>
+                                    </div>
 
-            Get Your Certificate
-          </a>
+                                    <br>
 
-      </div>
-    </div>
-  </div>
+                                    <p>
+                                        <small innerHTML="{{ 'complete.Para3' | translate }}">
+                                               
+                                        </small>
+                                    </p>
 
-<br>
+                                </div>
 
-<p >
-    <small>
-        Please note that this self-help program is <strong>not a substitute for professional therapy or medical advice.</strong> It is designed to <strong>supplement existing self-care practices</strong> and promote self-awareness.
-</small>
-</p>
-    
-</div>
-                                  
-                                 
-                                  
 
-                               
-                        
+
+
+
+
+                            </div>
                         </div>
+
+                        <prev-next-button [prev]="'../staywell4'"></prev-next-button>
+
+
                     </div>
 
-                    <prev-next-button [prev]="'../staywell4'" ></prev-next-button>
-                   
+
 
                 </div>
-
-
+                <br>
 
             </div>
-            <br>
-
-
-            <!--   <div class="row row-cards">
-
-                <div class="col-12">
-                    <div class="card ">
-                        <div class="card-body">
-                            <ul class="pagination ">
-                                
-                                <li class="page-item page-next">
-                                    <a class="page-link" [routerLink]="'../examine2'">
-                                        <div class="page-item-subtitle">next</div>
-                                        <div class="page-item-title">Thoughts</div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
- -->
-
         </div>
-    </div>

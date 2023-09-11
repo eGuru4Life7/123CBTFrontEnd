@@ -15,10 +15,13 @@ export class ImgDirectiveComponent implements OnInit {
   lang:any;
   path:any = "../../../../assets/static/illustrations/";
   constructor(){
-   
+   console.log(this.height);
+   console.log(this.src);
   }
 
   ngOnInit(): void {
+    console.log(this.height);
+    console.log(this.src);
     this.lang= localStorage.getItem('lang');
     if(this.lang == 'ch'){
       this.path= this.path +'/Ch/'+ this.src;
