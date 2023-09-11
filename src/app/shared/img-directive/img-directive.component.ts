@@ -25,7 +25,12 @@ export class ImgDirectiveComponent implements OnInit {
     this.lang= localStorage.getItem('lang');
     if(this.lang == 'ch'){
       this.path= this.path +'/Ch/'+ this.src;
-    }else{
+    }else if(this.lang == 'ar'){
+      this.path= this.path +'/AR/'+ this.src;
+    }else if(this.lang == 'spa'){
+      this.path= this.path +'/ESP/'+ this.src;
+    }
+    else{
       this.path= this.path + this.src;
     }
   }

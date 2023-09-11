@@ -39,6 +39,7 @@ export class MainComponent implements OnInit {
   constructor(private localService: LocalCacheService, private moduleService: ModuleService, private route: Router, private translate: TranslateService) {
     var lang: any = localStorage.getItem("lang");
     this.dir = localStorage.getItem("dir");
+    this.url = "/home/"+this.dir;
     this.imageClass = this.lang.filter((d: any) => d.code == lang)[0].class;
     this.translate.setDefaultLang(lang);
     this.translate.use(lang);

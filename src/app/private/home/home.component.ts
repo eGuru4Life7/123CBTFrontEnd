@@ -48,6 +48,7 @@ export class HomeComponent implements OnInit {
   moduleStatus9: any = {};
   isShow: any = false;
   currentDate: any;
+  dir: any;
   constructor(private localService: LocalCacheService, private moduleService: ModuleService, private translate: TranslateService, private datePipe: DatePipe,private router :ActivatedRoute) {
 
   }
@@ -62,8 +63,10 @@ export class HomeComponent implements OnInit {
   module9: any = {};
   lang:any = '';
   ngOnInit(): void {
+   
     this.router.params.subscribe((para:any)=>{
         this.lang = para.lang;
+        this.dir = localStorage.getItem("dir");
     })
     
     this.currentUser = this.localService.getCurrentUser();
