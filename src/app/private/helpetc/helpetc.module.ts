@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { HelpetcRoutingModule } from './helpetc-routing.module';
 import { FaqsComponent } from './faqs/faqs.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { FaqsComponent } from './faqs/faqs.component';
   ],
   imports: [
     CommonModule,
-    HelpetcRoutingModule
+    HelpetcRoutingModule,
+    SharedModule
   ]
 })
 export class HelpetcModule { }
