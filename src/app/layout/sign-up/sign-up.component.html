@@ -80,13 +80,15 @@
                             <div class="col-sm-6 col-md-6">
                                 <div class="mb-3">
                                     <label class="form-label required">{{ 'register.password' | translate }}</label>
+                                    
+                                    
                                     <div class="input-group input-group-flat">
                                         <input type="password" class="form-control" placeholder="Password"
                                             name="password" autocomplete="off" formControlName="password">
 
                                         <span class="input-group-text">
                                             <a [routerLink]="''" class="link-secondary" title="Show password"
-                                                data-bs-toggle="tooltip"><!-- Download SVG icon from http://tabler-icons.io/i/eye -->
+                                                data-bs-toggle="tooltip">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
                                                     stroke="currentColor" fill="none" stroke-linecap="round"
@@ -101,6 +103,9 @@
                                         <div *ngIf="userForm.controls['password'].invalid && userForm.controls['password'].touched"
                                             style="color: red;"> password is required.</div>
                                     </div>
+
+
+
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-6">
