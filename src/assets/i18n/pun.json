@@ -925,7 +925,8 @@
         "Para1": "On successfully completing this <strong>'Stress Management'</strong> for self-help and psychoeducation purposes only. This program aims to provide individuals with tools and techniques to effectively manage stress and enhance their overall well-being.",
         "Para2": "Click the button below to receive your personalized certificate, which serves as a testament to your achievements in successfully completing the <strong>'Stress Management'</strong> program.",
         "Para3": " Please note that this self-help program is <strong>not a substitute for professional therapy or medical advice.</strong> It is designed to <strong>supplement existing self-care practices</strong> and promote self-awareness.",
-        "btn": "Get Your Certificate"
+        "btn": "Get Your Certificate",
+        "download_certificate":""
     }
 
 }

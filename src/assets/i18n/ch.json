@@ -103,6 +103,8 @@
         "Downloads": "下载资源",
         "Downloads-heading": "下载以下主题的 PDF：",
         "Downloads-heading2": "您可以访问一系列有用的 PDF 资源来支持您的心理健康和福祉。",
+        "Downloads-heading3": "我们致力于扩大我们的语言和资源范围，以增强您的体验。",
+    
         "Downloads1": "我的下载",
         "examine-thoughts": "检查想法",
         "Fear": "恐惧",
@@ -1109,6 +1111,7 @@
         "Para1": "成功完成此<strong>“压力管理”</strong>仅用于自助和心理教育目的。该计划旨在为个人提供有效管理压力和提高整体福祉的工具和技术。",
         "Para2": "单击下面的按钮即可接收您的个性化证书，该证书可以证明您在成功完成<strong>“压力管理”</strong>计划方面所取得的成就。",
         "Para3": "请注意，此自助计划<strong>不能替代专业治疗或医疗建议。</strong>它旨在<strong>补充现有的自我保健实践</strong>并促进自我意识。",
-        "btn": "获取您的证书"
+        "btn": "获取您的证书",
+        "download_certificate":"下载证书"
     }
 }

@@ -34,7 +34,7 @@
 
                                 <use xlink:href="../../../assets/static/illustrations/AR/dashboard/sprite1.svg#stress_c" *ngIf="lang =='ar'"></use>
                                 <use xlink:href="../../../assets/static/illustrations/ESP/dashboard/sprite1.svg#stress_c" *ngIf="lang =='spa'"></use>
-                                <use xlink:href="../../../assets/static/illustrations/HI/dashboard/sprite1.svg#stress_c" *ngIf="lang =='hindi'"></use>
+                                <use xlink:href="../../../assets/static/illustrations/HI/dashboard/sprite1.svg#stress" *ngIf="lang =='hindi'"></use>
 
                             </svg>
                         </div>
@@ -66,6 +66,12 @@
                         <div class="card-body" style="background-color: #FA6E5A; border-radius: 4px 4px 0 0;">
                             <!-- <img src="../../../assets/static/illustrations//dashboard/danger-center-main_c.svg" height="210px" width="100%" alt=""> -->
 
+                            <ng-container *ngIf="lang === 'hindi'">
+                                <img src="../../../assets/static/illustrations/HI/dashboard/danger-center-main_c.svg" alt="" style="height: 13rem; width: auto;">
+                            </ng-container>
+
+
+                            <ng-container *ngIf="lang !== 'hindi'">
                             <svg height="13rem" width="100%">
                                 <use xlink:href="../../../assets/static/illustrations/dashboard/sprite2.svg#danger-center-main" *ngIf="lang !='ch' && lang !='ar' && lang !='spa' && lang !='hindi' "></use>
                                 <use xlink:href="../../../assets/static/illustrations/Ch/dashboard/sprite3.svg#danger-center-main" *ngIf="lang =='ch'"></use>
@@ -74,6 +80,7 @@
                                 <use xlink:href="../../../assets/static/illustrations/ESP/dashboard/sprite2.svg#danger-center-main" *ngIf="lang =='hindi'"></use>
                             </svg>
 
+                            </ng-container>
 
                         </div>
                         <div class="card-body ">
@@ -296,7 +303,7 @@
                                 <use xlink:href="../../../assets/static/illustrations/Ch/dashboard/sprite1.svg#problem_solving_c" *ngIf="lang =='ch'"></use>
                                 <use xlink:href="../../../assets/static/illustrations/AR/dashboard/sprite1.svg#problem_solving_c" *ngIf="lang =='ar'"></use>
                                 <use xlink:href="../../../assets/static/illustrations/ESP/dashboard/sprite1.svg#problem_solving_c" *ngIf="lang =='spa'"></use>
-                                <use xlink:href="../../../assets/static/illustrations/HI/dashboard/sprite1.svg#problem_solving_c" *ngIf="lang =='hindi'"></use>
+                                <use xlink:href="../../../assets/static/illustrations/HI/dashboard/sprite1.svg#problem_solving" *ngIf="lang =='hindi'"></use>
 
                             </svg>
 
@@ -340,10 +347,11 @@
                             <!-- <img src="../../../assets/static/illustrations/dashboard/balanced_activities_c.svg" height="210px" width="100%" alt=""> -->
 
                             <svg height="13rem" width="100%">
-                                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite2.svg#balanced_activities_c" *ngIf="lang !='ch' && lang !='ar' && lang !='spa' "></use>
+                                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite2.svg#balanced_activities_c" *ngIf="lang !='ch' && lang !='ar' && lang !='spa' &&  lang !='hindi' "></use>
                                 <use xlink:href="../../../assets/static/illustrations/Ch/dashboard/sprite2.svg#balanced_activities_c" *ngIf="lang =='ch'"></use>
                                 <use xlink:href="../../../assets/static/illustrations/AR/dashboard/sprite2.svg#balanced_activities_c" *ngIf="lang =='ar'"></use>
                                 <use xlink:href="../../../assets/static/illustrations/ESP/dashboard/sprite2.svg#balanced_activities_c" *ngIf="lang =='spa'"></use>
+                                <use xlink:href="../../../assets/static/illustrations/HI/dashboard/sprite2.svg#balanced_activities" *ngIf="lang =='hindi'"></use>
                             </svg>
 
                         </div>
@@ -384,12 +392,23 @@
                     <a [routerLink]="module8 || moduleStatus8?.status? '/relationhips':''" (click)="openModal(moduleStatus8?.status)" class="card card-link card-link-pop">
                         <div class="card-body text-center" style="background-color: #FFCF86; border-radius: 4px 4px 0 0;">
                             <!-- <img src="../../../assets/static/illustrations/dashboard/relationships_c.svg" height="210px" width="100%" alt=""> -->
-                            <svg height="13rem" width="100%">
-                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite2.svg#relationships_c" *ngIf="lang !='ch' && lang !='ar' && lang !='spa' "></use>
-                 <use xlink:href="../../../assets/static/illustrations/Ch/dashboard/sprite2.svg#relationships_c" *ngIf="lang =='ch'"></use>
-                 <use xlink:href="../../../assets/static/illustrations/AR/dashboard/sprite2.svg#relationships_c" *ngIf="lang =='ar'"></use>
-                 <use xlink:href="../../../assets/static/illustrations/ESP/dashboard/sprite2.svg#relationships_c" *ngIf="lang =='spa'"></use>
-                </svg>
+                
+                            <ng-container *ngIf="lang === 'hindi'">
+                                <img src="../../../assets/static/illustrations/HI/dashboard/relationships.svg" alt="" style="height: 13rem; width: auto;">
+                            </ng-container>
+
+
+                            <ng-container *ngIf="lang !== 'hindi'">
+
+                                <svg height="13rem" width="100%">
+                                <use xlink:href="../../../assets/static/illustrations/dashboard/sprite2.svg#relationships_c" *ngIf="lang !='ch' && lang !='ar' && lang !='spa' "></use>
+                                <use xlink:href="../../../assets/static/illustrations/Ch/dashboard/sprite2.svg#relationships_c" *ngIf="lang =='ch'"></use>
+                                <use xlink:href="../../../assets/static/illustrations/AR/dashboard/sprite2.svg#relationships_c" *ngIf="lang =='ar'"></use>
+                                <use xlink:href="../../../assets/static/illustrations/ESP/dashboard/sprite2.svg#relationships_c" *ngIf="lang =='spa'"></use>
+                                <use xlink:href="../../../assets/static/illustrations/HI/dashboard/sprite2.svg#relationships" *ngIf="lang =='hindi'"></use>
+                                </svg>
+
+                            </ng-container>
 
                         </div>
                         <div class="card-body ">

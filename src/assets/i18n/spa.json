@@ -103,6 +103,8 @@
         "Downloads": "Descargar Recursos",
         "Downloads-heading": "Descargue archivos PDF para los siguientes temas:",
         "Downloads-heading2": "Puede acceder a una variedad de útiles recursos en PDF para apoyar su salud y bienestar mental.",
+        "Downloads-heading3": "Estamos comprometidos con ampliar nuestra gama de idiomas y recursos para mejorar su experiencia.",
+        
         "Downloads1": "Descargas",
         "examine-thoughts": "Examinar los pensamientos",
         "Fear": "Fear",
@@ -988,6 +990,7 @@
         "Para1": "Al completar con éxito este <strong>'Manejo del estrés'</strong> únicamente con fines de autoayuda y psicoeducación. Este programa tiene como objetivo proporcionar a las personas herramientas y técnicas para gestionar eficazmente el estrés y mejorar su bienestar general.",
         "Para2": "Haga clic en el botón a continuación para recibir su certificado personalizado, que sirve como testimonio de sus logros al completar con éxito el programa <strong>'Manejo del estrés'</strong>.",
         "Para3": "Tenga en cuenta que este programa de autoayuda <strong>no sustituye la terapia profesional ni el asesoramiento médico.</strong> Está diseñado para <strong>complementar las prácticas de autocuidado existentes</strong> y promover la autoconciencia.",
-        "btn": "Obtenga su certificado"
+        "btn": "Obtenga su certificado",
+        "download_certificate":"Descarga el certificado"
     }
 }
