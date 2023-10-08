@@ -104,7 +104,7 @@
         "Downloads-heading": "Descargue archivos PDF para los siguientes temas:",
         "Downloads-heading2": "Puede acceder a una variedad de útiles recursos en PDF para apoyar su salud y bienestar mental.",
         "Downloads-heading3": "Estamos comprometidos con ampliar nuestra gama de idiomas y recursos para mejorar su experiencia.",
-        
+
         "Downloads1": "Descargas",
         "examine-thoughts": "Examinar los pensamientos",
         "Fear": "Fear",
@@ -991,6 +991,26 @@
         "Para2": "Haga clic en el botón a continuación para recibir su certificado personalizado, que sirve como testimonio de sus logros al completar con éxito el programa <strong>'Manejo del estrés'</strong>.",
         "Para3": "Tenga en cuenta que este programa de autoayuda <strong>no sustituye la terapia profesional ni el asesoramiento médico.</strong> Está diseñado para <strong>complementar las prácticas de autocuidado existentes</strong> y promover la autoconciencia.",
         "btn": "Obtenga su certificado",
-        "download_certificate":"Descarga el certificado"
+        "download_certificate": "Descarga el certificado"
+    },
+    "faqsQuestion": {
+        "h1": "1. Introducción",
+        "q1": "¿Qué es 123cbt?",
+        "a1": "123cbt es una aplicación de terapia cognitivo-conductual (TCC) que ayuda a los usuarios a gestionar su salud mental proporcionando técnicas y estrategias basadas en evidencia.",
+        "q2": "¿Cómo funciona la aplicación?",
+        "a2": "La aplicación ofrece una variedad de herramientas, ejercicios y actividades interactivas diseñadas para ayudar a los usuarios a identificar pensamientos, sentimientos y comportamientos negativos, y aprender cómo reemplazarlos por otros más positivos y productivos. Los usuarios pueden realizar un seguimiento de su progreso, establecer objetivos y obtener comentarios y soporte personalizados desde la aplicación.",
+
+        "h2": "2. Público objetivo",
+        "h2q1": "¿Para quién es 123cbt?",
+        "h2a1": "123cbt está diseñado para cualquier persona que desee mejorar su salud mental y su bienestar, incluidos aquellos que puedan estar luchando contra la ansiedad, la depresión, el estrés u otros problemas de salud mental.",
+
+        "h3": "3. Integración con la terapia",
+        "h3q1": "¿Es 123cbt un sustituto de la terapia?",
+        "h3a1": "No, 123cbt no sustituye la terapia profesional ni el tratamiento médico. Está destinado a utilizarse como complemento de la terapia tradicional o como herramienta de autoayuda.",
+
+        "h4": "4. Seguridad y Privacidad",
+        "h4q1": "¿Mis datos son privados y seguros?",
+        "h4a1": "Sí, nos tomamos en serio su privacidad y seguridad. Utilizamos cifrado y medidas de seguridad estándar de la industria para proteger sus datos y no compartimos su información personal con terceros."
+
     }
 }

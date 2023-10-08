@@ -37,6 +37,12 @@ export class DangerCentreScaleComponent implements OnInit {
    this.stress.q_7 +this.stress.q_8 +this.stress.q_9 +this.stress.q_10;
    this.stress.date = Date.now();
    this.stress.module ='D_C';
+   
+   gtag('event',  "post_score", {
+    score: this.stress.score,
+    level: 1,
+    character:this.currentUser.id
+  });
    this.moduleService.addModule(this.stress).toPromise().then((res:any)=>{
      if(res.success){
        this.router.navigate(['../dangercenter/fightscore']);

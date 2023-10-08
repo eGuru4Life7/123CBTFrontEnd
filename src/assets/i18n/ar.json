@@ -104,7 +104,7 @@
         "Downloads-heading": "قم بتنزيل ملفات PDF للمواضيع التالية:",
         "Downloads-heading2": "يمكنك الوصول إلى مجموعة من موارد PDF المفيدة لدعم صحتك العقلية ورفاهيتك.",
         "Downloads-heading3": "نحن ملتزمون بتوسيع نطاق لغاتنا ومواردنا لتعزيز تجربتك.",
-    
+
         "Downloads1": "التنزيلات الخاصة بي",
         "examine-thoughts": "فحص الأفكار",
         "fearandphobia": "الخوف والفوبيا",
@@ -643,14 +643,14 @@
         "prev": "PREV"
     },
     "Problem_solving_4c": {
-        "heading": "Look at the cost and benefit of each solution",
-        "paragraph": "Once a list of problems has been formulated it is necessary to go through them one by one, to look at the cost and benefits of each. To do this, draw a line on a paper and write down the advantages and disadvantages of a solution on each side. You can then decide which solutions is the best. ",
+        "heading": "انظر إلى تكلفة وفائدة كل حل",
+        "paragraph": "بمجرد صياغة قائمة المشاكل، من الضروري معالجتها واحدة تلو الأخرى، للنظر في تكلفة وفوائد كل منها. للقيام بذلك، ارسم خطًا على ورقة واكتب مزايا وعيوب الحل على كل جانب. ويمكنك بعد ذلك تحديد الحلول الأفضل.",
         "next": "NEXT",
         "prev": "PREV"
     },
     "Problem_solving_4d": {
-        "heading": "Break down this solution into as many steps as possible",
-        "paragraph": "Now it is the time to execute the solution. To do this, it is vital that every part is considered carefully. Breaking down the solution in small, doable step can be helpful.  Write down as many small steps as possible, even if they look ridiculous. You might realize that you need more information or even might have to go back and rethink another solution. You can also do “mind rehearsal”- i.e., going through the whole process in imagination. ",
+        "heading": "قم بتقسيم هذا الحل إلى أكبر عدد ممكن من الخطوات",
+        "paragraph": "والآن حان الوقت لتنفيذ الحل. للقيام بذلك، من المهم أن يتم دراسة كل جزء بعناية. قد يكون من المفيد تقسيم الحل إلى خطوات صغيرة وقابلة للتنفيذ. اكتب أكبر عدد ممكن من الخطوات الصغيرة، حتى لو بدت سخيفة. قد تدرك أنك بحاجة إلى مزيد من المعلومات أو قد تضطر إلى العودة وإعادة التفكير في حل آخر. يمكنك أيضًا إجراء 'بروفة ذهنية' - أي إجراء العملية برمتها في الخيال.",
         "next": "NEXT",
         "prev": "PREV"
     },
@@ -1107,7 +1107,27 @@
         "Para1": "عند إكمال <strong>'إدارة التوتر '</strong> بنجاح لأغراض المساعدة الذاتية والتثقيف النفسي فقط. يهدف هذا البرنامج إلى تزويد الأفراد بالأدوات والتقنيات اللازمة لإدارة التوتر بشكل فعال وتعزيز رفاهيتهم بشكل عام.",
         "Para2": "انقر فوق الزر أدناه لتلقي شهادتك الشخصية، والتي تكون بمثابة شهادة على إنجازاتك في إكمال برنامج <strong>'إدارة الإجهاد'</strong> بنجاح.",
         "Para3": "يرجى ملاحظة أن برنامج المساعدة الذاتية هذا <strong>ليس بديلاً عن العلاج المهني أو المشورة الطبية.</strong> فهو مصمم <strong>لتكملة ممارسات الرعاية الذاتية الحالية</strong> وتعزيز الوعي الذاتي. ",
+        "btn": "احصل على شهادتك"
+    },
+    "faqsQuestion": {
+        "h1": "1 المقدمة",
+        "q1": "ما هو 123cbt؟",
+        "a1": "123cbt هو تطبيق للعلاج السلوكي المعرفي (CBT) يساعد المستخدمين على إدارة صحتهم العقلية من خلال توفير تقنيات واستراتيجيات قائمة على الأدلة.",
+        "q2": "كيف يعمل التطبيق؟",
+        "a2": "يقدم التطبيق مجموعة من الأدوات والتمارين والأنشطة التفاعلية المصممة لمساعدة المستخدمين على تحديد الأفكار والمشاعر والسلوكيات السلبية، ومعرفة كيفية استبدالها بأفكار أكثر إيجابية وإنتاجية. يمكن للمستخدمين تتبع تقدمهم وتحديد الأهداف والحصول على تعليقات ودعم شخصي من التطبيق.",
+
+        "h2": "2. الجمهور المستهدف",
+        "h2q1": "لمن هو 123cbt؟",
+        "h2a1": "تم تصميم 123cbt لأي شخص يريد تحسين صحته العقلية ورفاهيته، بما في ذلك أولئك الذين قد يعانون من القلق أو الاكتئاب أو التوتر أو مشاكل الصحة العقلية الأخرى.",
+
+        "h3": "3. التكامل مع العلاج",
+        "h3q1": "هل 123cbt بديل للعلاج؟",
+        "h3a1": "لا، 123cbt ليس بديلاً عن العلاج المهني أو العلاج الطبي. الغرض منه هو استخدامه كمكمل للعلاج التقليدي أو كأداة للمساعدة الذاتية.",
+
+        "h4": "4. الأمن والخصوصية",
+        "h4q1": "هل بياناتي خاصة وآمنة؟",
+        "h4a1": "نعم، نحن نأخذ خصوصيتك وأمنك على محمل الجد. نحن نستخدم إجراءات التشفير والأمان المتوافقة مع معايير الصناعة لحماية بياناتك، ولا نشارك معلوماتك الشخصية مع أطراف ثالثة."
         "btn": "احصل على شهادتك",
-        "download_certificate":"قم بتنزيل الشهادة"
+        "download_certificate": "قم بتنزيل الشهادة"
     }
 }
