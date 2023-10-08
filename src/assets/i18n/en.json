@@ -1108,6 +1108,25 @@
         "Para2": "Click the button below to receive your personalized certificate, which serves as a testament to your achievements in successfully completing the <strong>'Stress Management'</strong> program.",
         "Para3": " Please note that this self-help program is <strong>not a substitute for professional therapy or medical advice.</strong> It is designed to <strong>supplement existing self-care practices</strong> and promote self-awareness.",
         "btn": "Get Your Certificate"
+    },
+    "faqsQuestion": {
+        "h1": "1. Introduction",
+        "q1": "What is 123cbt?",
+        "a1": "123cbt is a cognitive behavioral therapy (CBT) app that helps users manage their mental health by providing evidence-based techniques and strategies.",
+        "q2": "How does the app work?",
+        "a2": "The app offers a range of interactive tools, exercises, and activities that are designed to help users identify negative thoughts, feelings, and behaviors, and learn how to replace them with more positive and productive ones. Users can track their progress, set goals, and get personalized feedback and support from the app.",
+
+        "h2": "2. Target Audience",
+        "h2q1": "Who is 123cbt for?",
+        "h2a1": "123cbt is designed for anyone who wants to improve their mental health and well-being, including those who may be struggling with anxiety, depression, stress, or other mental health issues.",
+
+        "h3": "3. Integration with Therapy",
+        "h3q1": "is 123cbt a substitute for therapy?",
+        "h3a1": "No, 123cbt is not a substitute for professional therapy or medical treatment. It is intended to be used as a supplement to traditional therapy or as a self-help tool.",
+
+        "h4": "4. Security and Privacy",
+        "h4q1": "Is my data private and secure?",
+        "h4a1": "Yes, we take your privacy and security seriously. We use industry-standard encryption and security measures to protect your data, and we do not share your personal information with third parties."
     }
 
 }
