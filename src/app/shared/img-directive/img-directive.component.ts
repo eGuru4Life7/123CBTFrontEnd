@@ -30,6 +30,12 @@ export class ImgDirectiveComponent implements OnInit {
     }else if(this.lang == 'spa'){
       this.path= this.path +'/ESP/'+ this.src;
     }
+    else if(this.lang == 'hindi'){
+      this.path= this.path +'/HI/'+ this.src;
+    }
+    else if(this.lang == 'gm'){
+      this.path= this.path +'/GM/'+ this.src;
+    }
     else{
       this.path= this.path + this.src;
     }

@@ -103,6 +103,8 @@
         "Downloads": "Download Resources",
         "Downloads-heading": "Download PDFs for the following topics:",
         "Downloads-heading2": "You can access a range of helpful PDF resources to support your mental health and wellbeing.",
+        "Downloads-heading3": "We are dedicated to broadening our range of languages and resources to enhance your experience.",
+
         "Downloads1": "My Downloads",
         "examine-thoughts": "Examine Thoughts",
         "Fear": "Fear",
@@ -1107,7 +1109,8 @@
         "Para1": "On successfully completing this <strong>'Stress Management'</strong> for self-help and psychoeducation purposes only. This program aims to provide individuals with tools and techniques to effectively manage stress and enhance their overall well-being.",
         "Para2": "Click the button below to receive your personalized certificate, which serves as a testament to your achievements in successfully completing the <strong>'Stress Management'</strong> program.",
         "Para3": " Please note that this self-help program is <strong>not a substitute for professional therapy or medical advice.</strong> It is designed to <strong>supplement existing self-care practices</strong> and promote self-awareness.",
-        "btn": "Get Your Certificate"
+        "btn": "Get Your Certificate",
+        "download_certificate": "Download Certificate"
     },
     "faqsQuestion": {
         "h1": "1. Introduction",
@@ -1127,6 +1130,7 @@
         "h4": "4. Security and Privacy",
         "h4q1": "Is my data private and secure?",
         "h4a1": "Yes, we take your privacy and security seriously. We use industry-standard encryption and security measures to protect your data, and we do not share your personal information with third parties."
+
     }
 
 }
