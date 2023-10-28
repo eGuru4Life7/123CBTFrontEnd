@@ -1,4 +1,5 @@
 {
+    "langauge": "Language",
     "home": "Home",
     "yourScore": "Your Score",
     "submit": "Submit",
@@ -322,15 +323,15 @@
     "thought_7": {
         "heading": "Now think of the situation that upset you recently and type in the boxes",
         "what-was-happening": "What happened? ",
-        "what-was-happening-desc": "",
+        "what-was-happening-desc": "Describe the situation that upset you e.g. a bad grade on a test etc",
         "how-was-i-feeling": "Your feeling",
-        "how-was-i-feeling-desc": "",
+        "how-was-i-feeling-desc": "e.g. angry, sad, frustrated",
         "what-was-i-thinking": "Your thoughts",
-        "what-was-i-thinking-desc": "",
+        "what-was-i-thinking-desc": "This always happens to me",
         "experienced": "Physical sensations",
-        "experienced-desc": "",
+        "experienced-desc": "e.g. shoulders tension, racing heart",
         "what-did-i-do": "Your action",
-        "what-did-i-do-desc": "",
+        "what-did-i-do-desc": "What action did you take ? (e.g. avoiding the situation, confronting the issue)",
         "next": "NEXT",
         "prev": "PREV"
     },
@@ -469,10 +470,10 @@
         "prev": "PREV"
     },
     "Examining_your_thoughts6b": {
-        "dynamic-data1": "",
+        "dynamic-data1": "List reasons and evidence that support your thought.",
         "evidence-for-thoughts": "Evidence for & Evidence Against",
         "evidence-against-thoughts": "Your Thoughts",
-        "dynamic-data2": "",
+        "dynamic-data2": "List reasons and evidence that do not support your thought. Press Enter after each evidence.",
         "for": "Evidence For",
         "against": "Evidence Against",
         "next": "NEXT",
@@ -1113,6 +1114,7 @@
         "download_certificate": "Download Certificate"
     },
     "faqsQuestion": {
+        "heading": "Frequently Asked Questions",
         "h1": "1. Introduction",
         "q1": "What is 123cbt?",
         "a1": "123cbt is a cognitive behavioral therapy (CBT) app that helps users manage their mental health by providing evidence-based techniques and strategies.",
@@ -1131,6 +1133,19 @@
         "h4q1": "Is my data private and secure?",
         "h4a1": "Yes, we take your privacy and security seriously. We use industry-standard encryption and security measures to protect your data, and we do not share your personal information with third parties."
 
+    },
+    "Examining_your_thoughts4_4": {
+
+        "Anger": "Anger",
+        "Disgust": "Disgust",
+        "Fear": "Fear",
+        "Happiness": "Happiness",
+        "Sadness": "Sadness",
+        "Surprise": "Surprise",
+        "Anxiety": "Anxiety",
+        "Stress": "Stress",
+        "Other": "Other Emotions",
+        "AddEmotion": "Add Emotion"
     }
 
 }

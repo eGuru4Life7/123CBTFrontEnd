@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
@@ -15,6 +15,10 @@ export class SignUpComponent implements OnInit {
   user: any = {};
   userForm!: FormGroup;
   dir:any;
+  @ViewChild('passwordInput') passwordInput!: ElementRef<HTMLInputElement>;
+
+  // Boolean variable to track password visibility
+  hidePassword: boolean = true;
   constructor(private userService: UserServiceService, private route: Router, private localService: LocalCacheService, private messageService: MessageService, private translate: TranslateService) {
     this.createForm();
   }
@@ -95,5 +99,10 @@ export class SignUpComponent implements OnInit {
   addDays(days: any, date: any) {
     date.setDate(date.getDate() + days);
     return date;
+  }
+  togglePasswordVisibility() {
+    const input = this.passwordInput.nativeElement;
+    input.type = this.hidePassword ? 'password' : 'text';
+    this.hidePassword = !this.hidePassword;
   }
 }

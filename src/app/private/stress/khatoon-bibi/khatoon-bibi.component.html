@@ -37,10 +37,12 @@
                             <div class="col-sm-12 col-md-4 col-lg-4 ">
                                 <img-d [src]="'/Stress_module5.svg'" [alt]="'Khatoon'" [class]="'rounded'"></img-d>
                             </div>
-                            <div class="col">
+                            <div class="col" #textToSpeech>
 
                                 <h1 style="font-size: 2.5rem;
-                                margin-bottom: 20px;">{{ 'story_begin2.heading' | translate }}</h1>
+                                margin-bottom: 20px;">{{ 'story_begin2.heading' | translate }}
+                                    <app-text-to-speech [html]="html" style="display: inline-block;"></app-text-to-speech>
+                                </h1>
 
                                 <p>{{ 'story_begin2.story-para' | translate }}</p>
 

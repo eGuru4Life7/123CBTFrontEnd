@@ -1,4 +1,5 @@
 {
+    "langauge": "语言",
     "home": "首页 ",
     "yourScore": "你的分数",
     "submit": "提交",
@@ -322,15 +323,15 @@
     "thought_7": {
         "heading": "现在想想最近让你心烦意乱的情况并在框中输入",
         "what-was-happening": "发生了什么？ ",
-        "what-was-happening-desc": "",
+        "what-was-happening-desc": "描述一下让你心烦意乱的情况，例如考试成绩不好等",
         "how-was-i-feeling": "你的感觉",
-        "how-was-i-feeling-desc": "",
+        "how-was-i-feeling-desc": "例如愤怒、悲伤、沮丧",
         "what-was-i-thinking": "你的想法",
-        "what-was-i-thinking-desc": "",
+        "what-was-i-thinking-desc": "这总是发生在我身上",
         "experienced": "身体感觉",
-        "experienced-desc": "",
+        "experienced-desc": "例如肩膀紧张，心跳加快",
         "what-did-i-do": "你的行动",
-        "what-did-i-do-desc": "",
+        "what-did-i-do-desc": "你采取了什么行动？ （例如，避免这种情况、面对问题）",
         "next": "NEXT",
         "prev": "PREV"
     },
@@ -469,10 +470,10 @@
         "prev": "PREV"
     },
     "Examining_your_thoughts6b": {
-        "dynamic-data1": "",
+        "dynamic-data1": "列出支持你的想法的理由和证据。",
         "evidence-for-thoughts": "支持的证据和反对的证据",
         "evidence-against-thoughts": "你的想法",
-        "dynamic-data2": "",
+        "dynamic-data2": "列出不支持你的想法的理由和证据。在每个证据后按 Enter 键。",
         "for": "证据",
         "against": "反对的证据",
         "next": "NEXT",
@@ -1115,7 +1116,8 @@
         "download_certificate": "下载证书"
     },
     "faqsQuestion": {
-        "h1": "一、简介",
+        "heading": "经常问的问题",
+        "h1": "1. 介绍",
         "q1": "123cbt是什么？",
         "a1": "123cbt 是一款认知行为治疗 (CBT) 应用程序，通过提供循证技术和策略来帮助用户管理心理健康。",
         "q2": "该应用程序如何工作？",
@@ -1133,6 +1135,19 @@
         "h4q1": "我的数据私密且安全吗？",
         "h4a1": "是的，我们认真对待您的隐私和安全。 我们使用行业标准的加密和安全措施来保护您的数据，并且我们不会与第三方共享您的个人信息。"
 
+    },
+    "Examining_your_thoughts4_4": {
+
+        "Anger": "愤怒",
+        "Disgust": "厌恶",
+        "Fear": "害怕",
+        "Happiness": "幸福",
+        "Sadness": "悲伤",
+        "Surprise": "惊喜",
+        "Anxiety": "焦虑",
+        "Stress": "压力",
+        "Other": "其他情绪",
+        "AddEmotion": "添加情感"
     }
 
 }

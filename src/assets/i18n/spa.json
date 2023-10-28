@@ -1,4 +1,5 @@
 {
+    "langauge": "Idioma",
     "home": "Inicios",
     "yourScore": "Su puntuación",
     "submit": "Entregar",
@@ -298,15 +299,15 @@
     "thought_7": {
         "heading": "Ahora piensa en una situación que te haya disgustado recientemente y escribe en las casillas",
         "what-was-happening": "¿Qué ha pasado?",
-        "what-was-happening-desc": "",
+        "what-was-happening-desc": "Describe la situación que te molestó, p.e. una mala nota en un examen, etc.",
         "how-was-i-feeling": "Tu sentimiento",
-        "how-was-i-feeling-desc": "",
+        "how-was-i-feeling-desc": "p.ej. enojado, triste, frustrado",
         "what-was-i-thinking": "Su opinión",
-        "what-was-i-thinking-desc": "",
+        "what-was-i-thinking-desc": "esto siempre me pasa a mi",
         "experienced": "Sensaciones físicas",
-        "experienced-desc": "",
+        "experienced-desc": "p.ej. tensión en los hombros, corazón acelerado",
         "what-did-i-do": "Su acción",
-        "what-did-i-do-desc": ""
+        "what-did-i-do-desc": "¿Qué acción tomaste? (por ejemplo, evitar la situación, afrontar el problema)"
     },
     "thought_8": {
         "heading": "Tu circulo de pensamientos",
@@ -427,10 +428,10 @@
         "thoughts-desc": ""
     },
     "Examining_your_thoughts6b": {
-        "dynamic-data1": "",
+        "dynamic-data1": "Enumere las razones y la evidencia que respaldan su pensamiento.",
         "evidence-for-thoughts": "Evidencia a favor y evidencia en contra",
         "evidence-against-thoughts": "Tus pensamientos",
-        "dynamic-data2": "",
+        "dynamic-data2": "Enumere las razones y la evidencia que no respaldan su pensamiento. Presione Enter después de cada evidencia.",
         "for": "Evidencia para",
         "against": "Evidencia en contra"
     },
@@ -788,11 +789,11 @@
     "relation_2": {
         "heading1": "Cómo ser asertivo",
         "heading1-desc": "Intente parecer tranquilo y relajado y mantenga el contacto visual. Adopte una postura cómoda. No cruces los brazos sobre el pecho. No cuentes historias largas. Sea directo y vaya al grano. Complete sus frases. Escucha el punto de vista de los demás. No interrumpas a los demás. No completes la frase de otra persona, por ejemplo: '¿Entiendo que quieres dejar de trabajar?''. Cuando no entiendas algo, pide a la otra persona que te lo explique. ",
-        "heading2": "Practical Advice:",
+        "heading2": "Consejo practico:",
         "heading2-desc": "Haz una lista de situaciones en las que necesitas ser asertivo. Empieza a practicar con situaciones de bajo riesgo. Piensa en las consecuencias. Elige el momento y el lugar adecuados. Escribe tu declaración en un papel. Practícala con un amigo o frente al espejo.  ",
-        "heading3": "When you have to say something negative:",
+        "heading3": "Cuando tienes que decir algo negativo:",
         "heading3-desc": ". Cuando tengas que decir algo negativo utiliza las palabras 'yo' y 'tú'. En lugar de decir 'la gente dice que algunas personas no hacen bien su trabajo', di 'creo que no te interesas por tu trabajo'. Luego diles qué es exactamente lo que está mal. ",
-        "heading4": "Think of other rights too:",
+        "heading4": "Piensa también en otros derechos:",
         "heading4-desc": "Ser asertivo no significa ser grosero. Escuche el punto de vista de los demás. No los ignores. No los interrumpa en el medio. No mires a tu alrededor cuando alguien te habla. No completes sus frases. No digas en el medio: 'Oh, te tengo, completaste tu trabajo y quieres irte a casa'. No leas sus mentes. Resume lo que dice la otra persona para asegurarte de que entendiste lo que dice. Hágales más preguntas para entender su punto de vista."
     },
     "relation_3": {
@@ -824,6 +825,7 @@
         "paragraph": "Estilos de comunicación que provocan conflictos",
         "heading1": "Afirmaciones extremas:",
         "heading1-desc": "'Sólo hay que hacerlo según mi voluntad', 'Siempre se porta mal conmigo', 'Nunca está de acuerdo conmigo', & 'Todos sois iguales'.",
+        "heading2": "El error del adivino:",
         "heading2-desc": " 'Haga lo que haga, nunca me hará caso' & 'No estará de acuerdo conmigo porque no le caigo bien'.",
         "heading3": "Argumentos emocionales:",
         "heading3-desc": " 'Sé que lo hará', 'Tienes razón, pero no voy a cambiar mi decisión'.",
@@ -946,12 +948,12 @@
         "prev": "PREV"
     },
     "usefulltips": {
-        "heading": "Some tips for dealing with stress",
-        "paragraph1": "<strong>Spiritual & religious practices</strong>: Spiritual and religious practices can help with your stress levels.",
-        "paragraph2": "<strong>Imagery</strong>: You can also reduce stress with the help of imagining beautiful places and pleasant events and things.",
-        "paragraph3": "<strong>Massage</strong>: It is common in our culture for people to get a head and neck massage. It can help with stress and anxiety .",
-        "paragraph4": "<strong>Distraction</strong>: Talking to someone, religious activities (for example, saying your prayers, reciting Quran or using beads), reading, watching TV, listening to the radio and physical activities.",
-        "paragraph5": "<strong>Change in lifestyle</strong>: a healthy lifestyle and regular exercise help. Being very competitive, pessimistic, controlling, perfectionism, narcissism can all lead to stress, anxiety & depression. "
+        "heading": "Algunos consejos para afrontar el estrés",
+        "paragraph1": "<strong>Prácticas espirituales y religiosas</strong>: Las prácticas espirituales y religiosas pueden ayudarle con sus niveles de estrés.",
+        "paragraph2": "<strong>Imágenes</strong>: También puedes reducir el estrés imaginando lugares hermosos y eventos y cosas agradables.",
+        "paragraph3": "<strong>Masaje</strong>: Es común en nuestra cultura que las personas reciban un masaje en la cabeza y el cuello. Puede ayudar con el estrés y la ansiedad.",
+        "paragraph4": "<strong>Distracción</strong>: hablar con alguien, actividades religiosas (por ejemplo, rezar, recitar el Corán o usar cuentas), leer, mirar televisión, escuchar la radio y actividades físicas.",
+        "paragraph5": "<strong>Cambio de estilo de vida</strong>: un estilo de vida saludable y el ejercicio regular ayudan. Ser muy competitivo, pesimista, controlador, perfeccionista y narcisista pueden provocar estrés, ansiedad y depresión. "
     },
     "sleepadvice": {
 
@@ -994,6 +996,7 @@
         "download_certificate": "Descarga el certificado"
     },
     "faqsQuestion": {
+        "heading": "Preguntas frecuentes",
         "h1": "1. Introducción",
         "q1": "¿Qué es 123cbt?",
         "a1": "123cbt es una aplicación de terapia cognitivo-conductual (TCC) que ayuda a los usuarios a gestionar su salud mental proporcionando técnicas y estrategias basadas en evidencia.",
@@ -1012,5 +1015,19 @@
         "h4q1": "¿Mis datos son privados y seguros?",
         "h4a1": "Sí, nos tomamos en serio su privacidad y seguridad. Utilizamos cifrado y medidas de seguridad estándar de la industria para proteger sus datos y no compartimos su información personal con terceros."
 
+    },
+    "Examining_your_thoughts4_4": {
+
+        "Anger": "Enojo",
+        "Disgust": "Asco",
+        "Fear": "Miedo",
+        "Happiness": "Felicidad",
+        "Sadness": "Tristeza",
+        "Surprise": "Sorpresa",
+        "Anxiety": "Ansiedad",
+        "Stress": "Estré",
+        "Other": "Otras emociones",
+        "AddEmotion": "Añadir emoción"
     }
+
 }

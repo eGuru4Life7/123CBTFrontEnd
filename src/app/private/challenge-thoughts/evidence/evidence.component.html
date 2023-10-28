@@ -46,18 +46,18 @@
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
                                     <label for="evidence-for">{{ 'Examining_your_thoughts6b.for' | translate }}</label>
-                                    <textarea id="evidence-for" class="form-control" rows="5" placeholder="List reasons and evidence that support your thought." [(ngModel)]="evidence.for"></textarea>
+                                    <textarea id="evidence-for" class="form-control" rows="5" placeholder="{{ 'Examining_your_thoughts6b.dynamic-data1' | translate }}" [(ngModel)]="evidence.for"></textarea>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
                                     <label for="evidence-against">{{ 'Examining_your_thoughts6b.against' | translate }}</label>
-                                    <textarea id="evidence-against" class="form-control" placeholder="List reasons and evidence that do not support your thought. Press Enter after each evidence." rows="5" [(ngModel)]="evidence.against"></textarea>
+                                    <textarea id="evidence-against" class="form-control" placeholder="{{ 'Examining_your_thoughts6b.dynamic-data2' | translate }}" rows="5" [(ngModel)]="evidence.against"></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-large" (click)="showModal()">Save</button>
+                            <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-large" (click)="showModal()">{{ 'submit' | translate }}</button>
 
                         </div>
 
@@ -69,11 +69,11 @@
 
                     </div>
 
-                    
-              <prev-next-button [prev]="'../circle'" [next]="'../end'" ></prev-next-button>
+
+                    <prev-next-button [prev]="'../circle'" [next]="'../end'"></prev-next-button>
 
 
-                   <!--  <ul class="pagination justify-content-end">
+                    <!--  <ul class="pagination justify-content-end">
                         <li class=" page-prev ">
                             <a class="page-link" [routerLink]="'../circle'">
                                 <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>

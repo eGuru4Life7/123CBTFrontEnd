@@ -31,65 +31,60 @@
         <div class="container-xl">
 
             <div class="col-lg-12">
-                
-                
-                
+
+
+
                 <div class="card fade-in">
                     <div class="card-body">
                         <h1 class="text-center">{{ 'thought_7.heading'|translate}}</h1>
                         <br><br>
                         <div class="row align-items-center">
-                            
-                              
 
 
-                            <form  [formGroup]="diaryForm" class="" style="padding-top:3%;">
+
+
+                            <form [formGroup]="diaryForm" class="" style="padding-top:3%;">
                                 <div class="mb-3">
                                     <label for="happening" class="form-label">{{ 'thought_7.what-was-happening'|translate}}</label>
-                                    <input type="text" placeholder="Describe the situation that upset you e.g. a bad grade on a test etc"  required class="form-control" formControlName="happening" id="happening">
-                                    <div *ngIf="diaryForm.controls['happening'].invalid"
-                                        style="color: red;"> *</div>
+                                    <input type="text" placeholder="{{ 'thought_7.what-was-happening-desc'|translate}}" required class="form-control" formControlName="happening" id="happening">
+                                    <div *ngIf="diaryForm.controls['happening'].invalid" style="color: red;"> *</div>
                                 </div>
-                                  <div class="mb-3">
+                                <div class="mb-3">
                                     <label for="feeling" class="form-label">{{ 'thought_7.how-was-i-feeling'|translate}}</label>
-                                    <input type="text" placeholder="e.g. angry, sad, frustrated"  required class="form-control" formControlName="feeling" id="feeling">
-                                    <div *ngIf="diaryForm.controls['feeling'].invalid"
-                                        style="color: red;"> *</div>
+                                    <input type="text" placeholder="{{ 'thought_7.how-was-i-feeling-desc'|translate}}" required class="form-control" formControlName="feeling" id="feeling">
+                                    <div *ngIf="diaryForm.controls['feeling'].invalid" style="color: red;"> *</div>
                                 </div>
-                                  <div class="mb-3">
+                                <div class="mb-3">
                                     <label for="thinking" class="form-label">{{ 'thought_7.what-was-i-thinking'|translate}}</label>
-                                    <input type="text" placeholder="e.g. 'This always happens to me'"  required class="form-control" formControlName="thinking" id="thinking">
-                                    <div *ngIf="diaryForm.controls['thinking'].invalid"
-                                        style="color: red;"> *</div>
+                                    <input type="text" placeholder="{{ 'thought_7.what-was-i-thinking-desc'|translate}}" required class="form-control" formControlName="thinking" id="thinking">
+                                    <div *ngIf="diaryForm.controls['thinking'].invalid" style="color: red;"> *</div>
                                 </div>
-                                  <div class="mb-3">
+                                <div class="mb-3">
                                     <label for="physical_sensations" class="form-label">{{ 'thought_7.experienced'|translate}}</label>
-                                    <input type="text" placeholder="e.g. shoulders tension, racing heart" required class="form-control" formControlName="physical_sensations" id="physical_sensations">
-                                    <div *ngIf="diaryForm.controls['physical_sensations'].invalid"
-                                        style="color: red;"> *</div>
+                                    <input type="text" placeholder="{{ 'thought_7.experienced-desc'|translate}}" required class="form-control" formControlName="physical_sensations" id="physical_sensations">
+                                    <div *ngIf="diaryForm.controls['physical_sensations'].invalid" style="color: red;"> *</div>
                                 </div>
-                                  <div class="mb-3">
+                                <div class="mb-3">
                                     <label for="do" class="form-label">{{ 'thought_7.what-did-i-do'|translate}}</label>
-                                    <input type="text" placeholder="What action did you take ? (e.g. avoiding the situation, confronting the issue)"  required class="form-control" formControlName="do" id="do">
-                                    <div *ngIf="diaryForm.controls['do'].invalid"
-                                        style="color: red;"> *</div>
+                                    <input type="text" placeholder="{{ 'thought_7.what-did-i-do-desc'|translate}}" required class="form-control" formControlName="do" id="do">
+                                    <div *ngIf="diaryForm.controls['do'].invalid" style="color: red;"> *</div>
                                 </div>
 
                                 <div class="text-end mt-3">
-                                    <button type="button" (click)="addThoughtDairy()" [disabled]="!diaryForm.valid" class="btn btn-primary">Submit</button>
+                                    <button type="button" (click)="addThoughtDairy()" [disabled]="!diaryForm.valid" class="btn btn-primary">{{ 'submit' | translate }}</button>
                                 </div>
-                              </form>
+                            </form>
 
 
 
-                              
+
                         </div>
                     </div>
 
 
-                    <prev-next-button [prev]="'../examin6'" [next]="'../examine8'" ></prev-next-button>
+                    <prev-next-button [prev]="'../examin6'" [next]="'../examine8'"></prev-next-button>
 
-                   <!--  <ul class="pagination justify-content-end">
+                    <!--  <ul class="pagination justify-content-end">
                         <li class=" page-prev ">
                                           <a class="page-link" [routerLink]="'../examine6'">
                                               <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
@@ -103,9 +98,9 @@
                                       </li>
                                   </ul> -->
 
-                                  
+
                 </div>
-                
+
 
 
 

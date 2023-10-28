@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { LocalCacheService } from 'src/app/services/local-cache.service';
 
@@ -8,7 +8,8 @@ import { LocalCacheService } from 'src/app/services/local-cache.service';
   styleUrls: ['./khatoon-bibi.component.scss']
 })
 export class KhatoonBibiComponent implements OnInit {
-
+  html: any;
+  @ViewChild('textToSpeech') public textToSpeech: ElementRef;
   
   constructor(private localService:LocalCacheService,private router:Router) { 
     this.localService.updateModuleStatus({ code:'S',completed:84,nextCode:'D_C'});
@@ -17,5 +18,11 @@ export class KhatoonBibiComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  ngAfterViewInit() {
+    setTimeout(() => {
+      this.html = this.textToSpeech.nativeElement.innerHTML;
+      console.log(this.html);
+    }, 1500)
 
+  }
 }
