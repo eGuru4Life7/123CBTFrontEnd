@@ -16,6 +16,7 @@ export class ExamineThoughts4Component implements OnInit {
     'Surprise',
     'Anxiety',
     'Stress'];
+  additionlEmotions: any =[];  
    constructor(private localService:LocalCacheService,private router:Router) { 
     this.localService.updateModuleStatus({code:'E_T',completed:40,nextCode:'C_T' });
    }
@@ -25,7 +26,7 @@ export class ExamineThoughts4Component implements OnInit {
 
   addEmotion() {
     if (this.emotion) {
-      this.emotions.push(this.emotion);
+      this.additionlEmotions.push(this.emotion);
       this.emotion = null;
     }
   }

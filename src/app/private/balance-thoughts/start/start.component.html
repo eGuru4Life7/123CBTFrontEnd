@@ -37,10 +37,12 @@
                             <div class="col-sm-12 col-md-6 col-lg-6 ">
                                 <img-d [src]="'/balanced1.svg'" [alt]="'Elephant'" [class]="'rounded'"></img-d>
                             </div>
-                            <div class="col">
+                            <div class="col" #textToSpeech>
 
                                 <h1 style="font-size: 2.5rem;
-                                margin-bottom: 20px;">{{'Balanced_thoughts_3.heading'|translate}}</h1>
+                                margin-bottom: 20px;">{{'Balanced_thoughts_3.heading'|translate}}
+                                    <app-text-to-speech [html]="html" style="display: inline-block;"></app-text-to-speech>
+                                </h1>
 
                                 <p>{{'Balanced_thoughts_3.paragraph1'|translate}}</p>
                                 <p>{{'Balanced_thoughts_3.paragraph2'|translate}}</p>

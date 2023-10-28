@@ -39,12 +39,14 @@
                                 <!-- <img src="../../../../assets/static/illustrations/problemsolving3.svg" alt="" class="rounded"> -->
                                 <img-d [src]="'/problemsolving3.svg'" [alt]="''" [class]="'rounded'"></img-d>
                             </div>
-                            <div class="col">
+                            <div class="col" #textToSpeech>
 
                                 <h1 style="font-size: 2.5rem;
                                     margin-bottom: 20px;">
 
-                                    {{ 'Problem_solving_4b.heading' | translate }}</h1>
+                                    {{ 'Problem_solving_4b.heading' | translate }}
+                                    <app-text-to-speech [html]="html" style="display: inline-block;"></app-text-to-speech>
+                                </h1>
                                 <p>{{ 'Problem_solving_4b.paragraph' | translate }}</p>
                             </div>
 

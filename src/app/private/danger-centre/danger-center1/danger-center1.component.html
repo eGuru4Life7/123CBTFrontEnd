@@ -7,6 +7,7 @@
                     <!-- Page pre-title -->
                     <h2 class="page-title">
                         {{ 'index.Danger-Centre' | translate }}
+
                     </h2>
                     <div class="page-pretitle">
                         {{ 'index.Module' | translate }}
@@ -38,11 +39,10 @@
                                 <img-d [src]="'/Danger1.1.svg'" [alt]="'Danger1'" [class]="'rounded fade-in'"></img-d>
 
                             </div>
-                            <div class="col">
+                            <div class="col" #textToSpeech>
 
-                                <h1 style="font-size: 2.5rem;
-                          margin-bottom: 20px;">
-                                    <td>{{ 'get_stressed.heading1' | translate }}</td>
+                                <h1 style="font-size: 2.5rem;margin-bottom: 20px;">{{ 'get_stressed.heading1' | translate }}
+                                    <app-text-to-speech [html]="html" style="display: inline-block;"></app-text-to-speech>
                                 </h1>
 
                                 <p>

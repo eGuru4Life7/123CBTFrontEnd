@@ -10,11 +10,12 @@ import { DisclaimerComponent } from './layout/disclaimer/disclaimer.component';
 import { ForgotPasswordComponent } from './layout/forgot-password/forgot-password.component';
 import { StartComponent } from './layout/start/start.component';
 import { LoaderComponent } from './loader/loader.component';
-
+import { LoginGuard } from './services/guards/login-guard.guard';
 const routes: Routes = [
   {
     path:'auth',
-    component:AuthComponent
+    component:AuthComponent,
+    canActivate:[LoginGuard]
   },
   {
     path:'signup',

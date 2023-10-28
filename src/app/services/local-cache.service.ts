@@ -29,8 +29,12 @@ export class LocalCacheService {
 
   }
 
-  setGmtTimeZone(timeZone: any) {
-    this.setItem(Constants.STORAGE_ITEM.GMT, timeZone);
+  setRememberMe(isRemeberMe: any) {
+    this.setItem("RememberMe",isRemeberMe);
+  }
+  
+  getRememberMe():boolean {
+    return this.getItem("RememberMe") == 'true'?true:false;
   }
   public getGmtTimeZone() {
     return this.getItem(Constants.STORAGE_ITEM.GMT);
@@ -60,13 +64,7 @@ export class LocalCacheService {
 
   }
 
-  public setGateway(gateway: any) {
-    this.setItem('GATEWAY', gateway);
-  }
-
-  public getGateway() {
-    return this.getItem('GATEWAY');
-  }
+  
   public getLoginData() {
     let data = this.getItem(Constants.STORAGE_ITEM.LOGIN_DATA);
 

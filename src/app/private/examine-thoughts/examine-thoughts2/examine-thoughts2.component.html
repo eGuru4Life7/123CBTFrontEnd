@@ -7,6 +7,9 @@
                     <!-- Page pre-title -->
                     <h2 class="page-title">
                         {{ 'index.examine-thoughts' | translate }}
+
+
+
                     </h2>
                     <div class="page-pretitle">
                         {{ 'index.Module' | translate }}
@@ -37,10 +40,12 @@
                             <div class="col-sm-12 col-md-6 col-lg-6 ">
                                 <img-d [src]="'/examine2.svg'" [alt]="'Thoughts'" [class]="'rounded fade-in'"></img-d>
                             </div>
-                            <div class="col">
+                            <div class="col" #textToSpeech>
 
                                 <h1 style="font-size: 2.5rem;
-                                margin-bottom: 20px;">{{ 'thought_3b.heading1' | translate }}</h1>
+                                margin-bottom: 20px;">{{ 'thought_3b.heading1' | translate }}
+                                    <app-text-to-speech [html]="html" style="display: inline-block;"></app-text-to-speech>
+                                </h1>
 
                                 <p>
                                     {{ 'thought_3b.paragraph' | translate }}

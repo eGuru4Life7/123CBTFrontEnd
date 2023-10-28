@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { LocalCacheService } from '../../../app/services/local-cache.service';
 import { ModuleService } from '../../../app/services/module.service';
 import { TranslateService } from "@ngx-translate/core";
-import { HomeComponent } from 'src/app/private/home/home.component';
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -43,7 +43,6 @@ export class MainComponent implements OnInit {
     this.imageClass = this.lang.filter((d: any) => d.code == lang)[0].class;
     this.translate.setDefaultLang(lang);
     this.translate.use(lang);
-
   }
   module1: any = {};
   module2: any = {};
@@ -66,7 +65,7 @@ export class MainComponent implements OnInit {
     this.translate.setDefaultLang(lang);
     this.translate.use(lang);
     localStorage.setItem("lang", lang)
-    if (lang == "ur" || lang == "pun" || lang == "gm" || lang == "hindi" || lang == "ar") {
+    if (lang == "ur" || lang == "pun" || lang == "ar") {
       localStorage.setItem("dir", "rtl");
       this.imageClass = this.lang.filter((d: any) => d.code == lang)[0].class;
       this.dir = "rtl";

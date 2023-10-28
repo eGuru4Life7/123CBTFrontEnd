@@ -6,11 +6,12 @@ import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { ImgDirectiveComponent } from './img-directive/img-directive.component';
 import { SvgDashboardComponent } from './svg-dashboard/svg-dashboard.component';
+import { TextToSpeechComponent } from './text-to-speech/text-to-speech.component';
 
 
 
 @NgModule({
-  declarations: [PrevNextButtonComponent, ImgDirectiveComponent, SvgDashboardComponent],
+  declarations: [PrevNextButtonComponent, ImgDirectiveComponent, SvgDashboardComponent, TextToSpeechComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -20,7 +21,8 @@ import { SvgDashboardComponent } from './svg-dashboard/svg-dashboard.component';
   exports: [
     PrevNextButtonComponent,
     ImgDirectiveComponent,
-    SvgDashboardComponent
+    SvgDashboardComponent,
+    TextToSpeechComponent
   ]
 
 })

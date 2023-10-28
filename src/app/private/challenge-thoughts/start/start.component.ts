@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { LocalCacheService } from 'src/app/services/local-cache.service';
 
@@ -9,11 +9,21 @@ import { LocalCacheService } from 'src/app/services/local-cache.service';
 })
 export class StartComponent implements OnInit {
 
-  constructor(private localService:LocalCacheService,private router:Router) { 
+  constructor(private localService: LocalCacheService, private router: Router) {
     this.localService.updateModuleStatus({ code: 'C_T', completed: 30, nextCode: 'B_T' });
-   }
+  }
 
   ngOnInit(): void {
   }
+  html: any;
+  @ViewChild('textToSpeech') public textToSpeech: ElementRef;
 
+
+  ngAfterViewInit() {
+    setTimeout(() => {
+      this.html = this.textToSpeech.nativeElement.innerHTML;
+      console.log(this.html);
+    }, 1500)
+
+  }
 }

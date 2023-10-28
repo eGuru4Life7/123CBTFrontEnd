@@ -41,16 +41,17 @@
                                 <h1>{{ 'thought_4b.heading1' | translate }}</h1>
                                 <p>{{ 'thought_4b.subheading' | translate }}</p>
                                 <div class="list-group">
-                                    <div class="list-group-item" *ngFor="let item of emotions">{{item}}</div>
+                                    <div class="list-group-item" *ngFor="let item of emotions">{{'Examining_your_thoughts4_4.'+item | translate }}</div>
+                                    <div class="list-group-item" *ngFor="let item of additionlEmotions">{{item }}</div>
 
                                 </div>
                                 <p>{{ 'thought_4b.para2' | translate }}
                                 </p>
                                 <div class="form-floating mb-3">
                                     <textarea class="form-control" placeholder="Enter emotions here" id="other-emotions" [(ngModel)]="emotion"></textarea>
-                                    <label for="other-emotions">Other Emotions</label>
+                                    <label for="other-emotions">{{ 'Examining_your_thoughts4_4.Other' | translate }}</label>
                                 </div>
-                                <button class="btn btn-primary" id="add-emotion-btn" (click)="addEmotion()">Add emotion</button>
+                                <button class="btn btn-primary" id="add-emotion-btn" (click)="addEmotion()">{{ 'Examining_your_thoughts4_4.AddEmotion' | translate }}</button>
                             </div>
                         </div>
                     </div>

@@ -37,10 +37,12 @@
                             <div class="col-sm-12 col-md-6 col-lg-6 ">
                                 <img-d [src]="'/examine1.svg'" [alt]="'thought,emotions'" [class]="'rounded fade-in'"></img-d>
                             </div>
-                            <div class="col">
+                            <div class="col" #textToSpeech>
 
                                 <h1 style="font-size: 2.5rem;
-                                margin-bottom: 20px;">{{ 'thought_3.heading1' | translate }}</h1>
+                                margin-bottom: 20px;">{{ 'thought_3.heading1' | translate }}
+                                    <app-text-to-speech [html]="html" style="display: inline-block;"></app-text-to-speech>
+                                </h1>
 
                                 <p>{{ 'thought_3.paragraph' | translate }}</p>
                                 <!-- <p> However, the first step is to help you recognise the links between situations and your thoughts, emotions and behaviours. Once you can recognise your unhealthy thoughts, you can create a balanced thought which leads to a happy life.</p> -->

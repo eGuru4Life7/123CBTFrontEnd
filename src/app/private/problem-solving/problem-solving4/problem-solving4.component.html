@@ -35,21 +35,23 @@
                     <div class="card-body">
                         <div class="row align-items-center">
                             <div class="col-sm-12 col-md-6 col-lg-6 ">
-                               <!--  <img src="../../../../assets/static/illustrations/problemsolving4.svg" alt="" class="rounded"> -->
+                                <!--  <img src="../../../../assets/static/illustrations/problemsolving4.svg" alt="" class="rounded"> -->
                                 <img-d [src]="'/problemsolving4.svg'" [alt]="''" [class]="'rounded'"></img-d>
                             </div>
-                            <div class="col">
+                            <div class="col" #textToSpeech>
 
                                 <h1 style="font-size: 2.5rem;
                                     margin-bottom: 20px;">
 
-                                    {{ 'Problem_solving_4c.heading' | translate }}</h1>
+                                    {{ 'Problem_solving_4c.heading' | translate }}
+                                    <app-text-to-speech [html]="html" style="display: inline-block;"></app-text-to-speech>
+                                </h1>
                                 <p>{{ 'Problem_solving_4c.paragraph' | translate }}</p>
                             </div>
 
                         </div>
 
-                        <prev-next-button [prev]="'../solutions'" [next]="'../breakdown'" ></prev-next-button>
+                        <prev-next-button [prev]="'../solutions'" [next]="'../breakdown'"></prev-next-button>
 
                         <!-- <ul class="pagination justify-content-end">
                             <li class=" page-prev ">

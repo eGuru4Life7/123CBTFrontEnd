@@ -1,0 +1,11 @@
+<!-- <button > start</button> &nbsp; -->
+
+<a href="javascript:void(0)" class="page-link" (click)="start()" *ngIf="isPlay">
+    <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+</a>
+
+<a href="javascript:void(0)" class="page-link" (click)="pauseResume()" *ngIf="!isPlay">
+    <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+</a>
+<!-- <button (click)="pauseResume()"> pause/resume </button> &nbsp;
+<button (click)="stop()"> stop </button> -->

@@ -37,10 +37,12 @@
                             <div class="col-sm-12 col-md-6 col-lg-6 ">
                                 <img-d [src]="'/challenge2.svg'" [alt]="'Thinking'" [class]="'rounded'"></img-d>
                             </div>
-                            <div class="col">
+                            <div class="col" #textToSpeech>
 
                                 <h1 style="font-size: 2.5rem;
-                                margin-bottom: 20px;">{{'Examining_your_thoughts4.heading-main' |translate}}</h1>
+                                margin-bottom: 20px;">{{'Examining_your_thoughts4.heading-main' |translate}}
+                                    <app-text-to-speech [html]="html" style="display: inline-block;"></app-text-to-speech>
+                                </h1>
 
                                 <p>{{'Examining_your_thoughts4.paragraph' |translate}}</p>
                                 <h2>{{'Examining_your_thoughts4.heading' |translate}}</h2>
