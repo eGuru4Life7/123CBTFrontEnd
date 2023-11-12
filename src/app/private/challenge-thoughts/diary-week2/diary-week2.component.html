@@ -34,8 +34,16 @@
                 <div class="card fade-in">
                     <div class="card-body">
                         <div class="row align-items-center">
-                            <h1 class="text-center" style="font-size: 2.5rem;
-                            margin-bottom: 20px;">{{'Examining_your_thoughts5.heading' |translate}}</h1>
+
+                             <!-- Text to speach Heading with Description also -->
+                            <h1 class="text-center" style="font-size: 2.5rem; margin-bottom: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                                {{'Examining_your_thoughts5.heading' |translate}}
+                                <span style="display: none;">.</span>
+                                <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                    <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                </a>   
+                            </h1>
+                            
                             <div class="col-sm-12 col-md-6 col-lg-6 ">
                                 <img-d [src]="'/khatoon-diary.svg'" [alt]="'Khatoon Diary'" [class]="'rounded fade-in'"></img-d>
                             </div>
@@ -44,13 +52,32 @@
 
                                 <div class="diary-entry">
                                     <div class="diary-entry-heading">
-                                        <h3>{{'Examining_your_thoughts5.situation' |translate}}</h3>
+
+                                        <!-- Text to speach Heading with Description also -->
+                                        <h3 style="display: flex; align-items: center; justify-content: center;">
+                                            {{ 'Examining_your_thoughts5.situation' | translate }}
+                                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                                <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                            </a>
+                                        </h3>
+                                        
                                     </div>
                                     <p>{{'Examining_your_thoughts5.situation-desc' |translate}}</p>
                                 </div>
                                 <div class="diary-entry">
                                     <div class="diary-entry-heading">
-                                        <h3>{{'Examining_your_thoughts5.emotions' |translate}}</h3>
+                                        
+                                         <!-- Text to speach Heading with Description also -->
+                                         <h3 style="display: flex; align-items: center; justify-content: center;">
+                                            {{ 'Examining_your_thoughts5.emotions' | translate }}
+                                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                                <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                            </a>
+                                        </h3>
+                                        
+
+                                        
+
                                     </div>
                                     <ul>
                                         <li>{{'Examining_your_thoughts5.emotions-desc1' |translate}}</li>
@@ -68,7 +95,16 @@
                                 <div class="col-sm-12 col-md-6 col-lg-6">
                                     <div class="diary-entry">
                                         <div class="diary-entry-heading">
-                                            <h3>{{'Examining_your_thoughts5.thoughts' |translate}}</h3>
+
+                                             <!-- Text to speach Heading with Description also -->
+                                         <h3 style="display: flex; align-items: center; justify-content: center;">
+                                            {{ 'Examining_your_thoughts5.thoughts' | translate }}
+                                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                                <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                            </a>
+                                        </h3>
+
+                                            
                                         </div>
                                         <ul>
                                             <li>{{'Examining_your_thoughts5.thought-desc1' |translate}}</li>
@@ -82,7 +118,17 @@
                                 <div class="col-sm-12 col-md-6 col-lg-6 ">
                                     <div class="diary-entry">
                                         <div class="diary-entry-heading">
-                                            <h3>{{'Examining_your_thoughts5.physical' |translate}}</h3>
+
+
+                                              <!-- Text to speach Heading with Description also -->
+                                         <h3 style="display: flex; align-items: center; justify-content: center;">
+                                            {{ 'Examining_your_thoughts5.physical' | translate }}
+                                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                                <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                            </a>
+                                        </h3>
+
+                                          
                                         </div>
                                         <ul>
                                             <li>{{'Examining_your_thoughts5.physical-desc1' |translate}}</li>
@@ -99,7 +145,16 @@
                                 <div class="col-sm-12 col-md-6 col-lg-6 ">
                                     <div class="diary-entry">
                                         <div class="diary-entry-heading">
-                                            <h3>{{'Examining_your_thoughts5.evidence-for-thoughts' |translate}}</h3>
+
+                                            <!-- Text to speach Heading with Description also -->
+                                         <h3 style="display: flex; align-items: center; justify-content: center;">
+                                            {{ 'Examining_your_thoughts5.evidence-for-thoughts' | translate }}
+                                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                                <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                            </a>
+                                        </h3>
+
+                                            
                                         </div>
                                         <ul>
                                             <li>{{'Examining_your_thoughts5.evidence-for-thoughts-desc' |translate}}</li>
@@ -110,7 +165,17 @@
                                 <div class="col-sm-12 col-md-6 col-lg-6 ">
                                     <div class="diary-entry">
                                         <div class="diary-entry-heading">
-                                            <h3>{{'Examining_your_thoughts5.evidence-against-thoughts' |translate}} </h3>
+
+                                              <!-- Text to speach Heading with Description also -->
+                                         <h3 style="display: flex; align-items: center; justify-content: center;">
+                                            {{ 'Examining_your_thoughts5.evidence-against-thoughts' | translate }}
+                                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                                <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                            </a>
+                                        </h3>
+
+                                            
+                                            
                                         </div>
                                         <ul>
                                             <li>{{'Examining_your_thoughts5.evidence-against-thoughts-desc1' |translate}} </li>

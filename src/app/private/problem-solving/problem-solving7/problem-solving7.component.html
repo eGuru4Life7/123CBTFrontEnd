@@ -36,9 +36,14 @@
                 <div class="col-12" *ngIf="problems">
                     <div class="card card1 fade-in">
                         <div class="card-body p-0">
-                            <p class="card-text" style="font-size: 2.5rem;">
+                            <!-- Text to speach Complete Text with speaker icon -->
+                            <p class="card-text" style="font-size: 2.5rem; display: flex; ">
                                 {{ 'Problem_solving_5.paragraph1' | translate }}
+                                <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                    <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                </a>
                             </p>
+                            
                         </div>
                         <br> <br>
                         <div class="arrow" (click)="showProblem()">&#8595;</div>
@@ -49,8 +54,16 @@
                 <div class="col-sm-12 col-lg-12" *ngIf="problemsList">
                     <div class="card card1 fade-in">
                         <div class="card-body p-0 ">
-                            <h1 class="card-title"> {{ 'Problem_solving_5.list-of-problems' | translate }}<span style="display: none;">.</span></h1>
 
+                            <!-- Text to speach Heading with table list also also -->
+                            <h1 class="card-title" style="display: flex;">
+                                {{ 'Problem_solving_5.list-of-problems' | translate }}
+                                <span style="display: none;">.</span>
+                                <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                    <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                </a>
+                            </h1>
+                            
                             <ul class="list-group list-group-flush" style="font-size: 1.5rem;">
                                 <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.prob1' | translate }}</li>
                                 <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.prob2' | translate }}</li>
@@ -68,8 +81,14 @@
                 <div class="col-sm-12 col-lg-12" *ngIf="next">
                     <div class="card card1 fade-in">
                         <div class="card-body p-0">
-                            <p class="card-text card-text1" style="font-size: 2.5rem;">
+
+                             <!-- Text to speach Complete Text with speaker icon -->
+                             
+                            <p class="card-text card-text1" style="font-size: 2.5rem; display: flex;">
                                 {{ 'Problem_solving_5.paragraph2' | translate }}
+                                <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                    <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                </a>
                             </p>
                         </div>
                         <div class="arrow" (click)="showNext1()">&#8595;</div>
@@ -79,7 +98,16 @@
                 <div class="col-sm-6 col-lg-6" *ngIf="solutionList">
                     <div class="card card1 fade-in">
                         <div class="card-body p-0">
-                            <h2 class="card-title">{{ 'Problem_solving_5.list-of-solution' | translate }} </h2>
+
+                            <!-- Text to speach Heading with table list also also -->
+                            
+                            <h2 class="card-title"  style="display: flex;">
+                                {{ 'Problem_solving_5.list-of-solution' | translate }} 
+                                <span style="display: none;">.</span>
+                                <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                    <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                </a>
+                            </h2>
 
                             <ul class="list-group list-group-flush " style="font-size: 1.5rem;">
                                 <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.sol1' | translate }}</li>
@@ -98,8 +126,15 @@
                 <div class="col-sm-6 col-lg-6" *ngIf="chooseSolution">
                     <div class="card card1 fade-in">
                         <div class="card-body p-0">
-                            <p class="card-text card-text1" style="font-size: 2.2rem;">
-                                {{ 'Problem_solving_5.paragraph3' | translate }}</p>
+                            <p class="card-text card-text1" style="font-size: 2.2rem; display: flex;">
+                                {{ 'Problem_solving_5.paragraph3' | translate }}
+                                <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                    <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                </a>
+                            
+                            </p>
+
+
                         </div>
                         <div class="arrow" (click)="showNext3()">&#8595;</div>
                     </div>
@@ -177,7 +212,18 @@
                 <div class="col-sm-12 col-lg-12" *ngIf="appSol">
                     <div class="card card1 fade-in">
                         <div class="card-body p-0">
-                            <h2 class="card-title">{{ 'Problem_solving_5.steps' | translate }}</h2>
+                            <!-- Text to speach Heading with table list also also -->
+                            <h2 class="card-title" style="display: flex;">
+                                {{ 'Problem_solving_5.steps' | translate }}
+                                <span style="display: none;">.</span>
+                                <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                    <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                </a>
+                            </h2>
+
+                            
+                            
+                            
 
                             <ul class="list-group list-group-flush" style="font-size: 1.8rem;">
                                 <li class="list-group-item list-group-item-action">{{ 'Problem_solving_5.step1' | translate }}</li>

@@ -34,8 +34,15 @@
                 <div class="card fade-in">
                     <div class="card-body">
                         <div class="row align-items-center">
-                            <h1 class="text-center" style="font-size: 2.5rem;
-                                margin-bottom: 20px;">{{ 'thought_6.heading' | translate }}<span style="display: none;">.</span></h1>
+                            <!-- Text to speach Heading with Description also -->
+                            <h1 class="text-center" style="font-size: 2.5rem; margin-bottom: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                                {{ 'thought_6.heading' | translate }} <span style="display: none;">.</span>
+                                <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                    <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                </a>   
+                        </h1>
+                            
+                            
                             <div class="col-sm-12 col-md-6 col-lg-6 ">
 
                                 <img-d [src]="'/khatoon-diary.svg'" [alt]="'Khatoon Diary'" [class]="'rounded fade-in'"></img-d>
@@ -53,13 +60,27 @@
 
                                 <div class="diary-entry">
                                     <div class="diary-entry-heading">
-                                        <h3>{{ 'thought_6.situation' | translate }}</h3>
+                                        <h3 style="font-size: 1.2rem; text-align: center; display: flex; align-items: center; justify-content: center;">
+                                            {{ 'thought_6.situation' | translate }}
+                                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                                <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                            </a>
+                                        </h3>
+                                        
                                     </div>
                                     <p>{{ 'thought_6.situation-desc' | translate }}</p>
                                 </div>
                                 <div class="diary-entry">
                                     <div class="diary-entry-heading">
-                                        <h3>{{ 'thought_6.emotions' | translate }}</h3>
+                                        <!-- Text to speach Heading with Description also -->
+                                        <h3 style="font-size: 1.2rem; text-align: center; display: flex; align-items: center; justify-content: center;">
+                                            {{ 'thought_6.emotions' | translate }}
+                                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                                <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                            </a>
+                                        </h3>
+                                        
+                                        
                                     </div>
                                     <ul>
                                         <li>{{ 'thought_6.emotions-desc1' | translate }}</li>
@@ -75,7 +96,14 @@
                                 <div class="col-sm-12 col-md-6 col-lg-6">
                                     <div class="diary-entry">
                                         <div class="diary-entry-heading">
-                                            <h3>{{ 'thought_6.thoughts' | translate }}</h3>
+                                        <!-- Text to speach Heading with Description also -->
+                                        <h3 style="font-size: 1.2rem; text-align: center; display: flex; align-items: center; justify-content: center;">
+                                            {{ 'thought_6.thoughts' | translate }}
+                                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                                <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                            </a>
+                                        </h3>
+                                           
                                         </div>
                                         <ul>
                                             <li>{{ 'thought_6.thought-desc1' | translate }}</li>
@@ -89,7 +117,15 @@
                                 <div class="col-sm-12 col-md-6 col-lg-6">
                                     <div class="diary-entry">
                                         <div class="diary-entry-heading">
-                                            <h3>{{ 'thought_6.physical' | translate }}</h3>
+
+                                            <!-- Text to speach Heading with Description also -->
+                                        <h3 style="font-size: 1.2rem; text-align: center; display: flex; align-items: center; justify-content: center;">
+                                            {{ 'thought_6.physical' | translate }}
+                                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                                <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                            </a>
+                                        </h3>
+                                            
                                         </div>
                                         <ul>
                                             <li>{{ 'thought_6.physical-desc1' | translate }}</li>

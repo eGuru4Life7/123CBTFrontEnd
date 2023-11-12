@@ -25,6 +25,7 @@
     "apexcharts": "^3.37.3",
     "bootstrap": "^5.2.3",
     "dynamic-html-pdf": "^1.0.4",
+    "ga-gtag": "^1.1.7",
     "google-tts-api": "^2.0.2",
     "html-to-image": "^1.11.11",
     "html-to-pdfmake": "^2.4.22",
