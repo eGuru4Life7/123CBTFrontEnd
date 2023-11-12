@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { LocalCacheService } from 'src/app/services/local-cache.service';
 @Component({
@@ -15,4 +15,17 @@ export class Relation11Component implements OnInit {
   ngOnInit(): void {
   }
 
+  html: any;
+  @ViewChild('textToSpeech') public textToSpeech: ElementRef;
+  isShow: boolean = false;
+
+
+  ngAfterViewInit() {
+    setTimeout(() => {
+          this.html = this.textToSpeech.nativeElement.innerHTML;
+      
+      this.isShow = true;
+    }, 1500)
+
+  }
 }

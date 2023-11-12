@@ -1,27 +1,30 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import Speech from 'speak-tts';
-import * as googleTTS from 'google-tts-api';
+import { UserServiceService } from 'src/app/services/user-service.service';
 @Component({
   selector: 'app-text-to-speech',
   templateUrl: './text-to-speech.component.html',
   styleUrls: ['./text-to-speech.component.scss']
 })
-export class TextToSpeechComponent implements OnInit {
+export class TextToSpeechComponent implements OnInit,OnChanges {
   @Input() html: any = null;
   result = '';
   speech: any;
   speechData: any;
-  isPlay: Boolean = true;
+  isPlay: Boolean = false;
   isPaused: Boolean = false;
   text: any;
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService,private userService: UserServiceService) {
 
 
   }
 
   ngOnInit(): void {
-    this.initSpeech();
+
+    this.getBase64Text();
+
+    //this.initSpeech();
   }
 
   stop() {
@@ -29,7 +32,7 @@ export class TextToSpeechComponent implements OnInit {
   }
 
   async initSpeech() {
-    this.speech = new Speech() // will throw an exception if not browser supported
+    this.speech = new Speech(); // will throw an exception if not browser supported
     if (this.speech.hasBrowserSupport()) { // returns a boolean
       await this.speech
         .init({
@@ -38,7 +41,7 @@ export class TextToSpeechComponent implements OnInit {
           rate: 1,
           pitch: 1,
           voice: 'Google UK English Male',
-          splitSentences: true,
+          splitSentences: false,
           listeners: {
             onvoiceschanged: (voices) => {
               console.log('Event voiceschanged', voices);
@@ -51,16 +54,9 @@ export class TextToSpeechComponent implements OnInit {
           console.error("An error occured while initializing : ", e)
         })
     }
-  }
-
-
-  // ngOnChanges(changes: SimpleChanges): void {
-  //   this.speech?.cancel()
-  // }
-
-  async start() {
+    
     this.stop();
-    if (this.isPlay) {
+    if (!this.isPlay) {
       this.isPlay = !this.isPlay;
       let Languages = [
         { lang: 'en-US', voice: 'Google US English', selectedLang: 'en' },
@@ -81,21 +77,16 @@ export class TextToSpeechComponent implements OnInit {
           this.speech.setVoice(d.name);
         }
       })
-      
-      var temporalDivElement = document.createElement("div");
-      temporalDivElement.innerHTML = this.html;
-      this.result = temporalDivElement.textContent || temporalDivElement.innerText || "";
-
-      await this.speech.speak({
-        text: this.result,
-      }).then((res: any) => {
-        console.log(res)
-      }).catch(e => {
-        this.isPlay = false;
-        console.error("An error occurred :", e)
-      })
-
     } 
+  }
+
+
+  ngOnChanges(changes: SimpleChanges): void {
+    this.stop();
+  }
+
+  async start() {
+
   }
 
   pauseResume() {
@@ -119,22 +110,47 @@ export class TextToSpeechComponent implements OnInit {
 
   isSpeak(){
     
-    this.start();
+   /// this.start();
+    var temporalDivElement = document.createElement("div");
+    temporalDivElement.innerHTML = this.html;
+    this.result = temporalDivElement.textContent || temporalDivElement.innerText || "";
 
+   this.speech.speak({
+      text: this.result,
+    }).then((res: any) => {
+      console.log(res)
+    }).catch(e => {
+      this.isPlay = false;
+      console.error("An error occurred :", e)
+    })
   }
-  // speech(): void {
-  //   // 1. get audio URL
-  //   const url = googleTTS.getAudioUrl('Hello World', { lang: 'en-GB' });
-  //   console.log({ url }); // https://translate.google.com/translate_tts?...
 
-  //   // 2. get base64 text
-  //   googleTTS
-  //     .getAudioBase64('Hello World', { lang: 'en-GB', slow: false,
-  // host: 'https://translate.google.com', })
-  //     .then((base64) => {
-  //       console.log({ base64 });
-  //     })
-  //     .catch(console.error);
-  // }
+  getBase64Text(){
+    let Languages = [
+      { lang: 'en', voice: 'Google US English', selectedLang: 'en' },
+      { lang: 'en', voice: 'Google español', selectedLang: 'spa' },
+      { lang: 'zh', voice: 'Google 普通话（中国大陆）', selectedLang: 'ch' },
+      { lang: 'hi', voice: 'Google हिन्दी', selectedLang: 'hindi' },
+      { lang: 'hi', voice: 'Google हिन्दी', selectedLang: 'gm' },
+      { lang: 'ur', voice: 'Google हिन्दी', selectedLang: 'ur' },
+      { lang: 'ar', voice: 'Google US English', selectedLang: 'ar' }
+    ];
+    let currentlang = this.translate.currentLang;
+    let selectedlang: any = {};
+    selectedlang = Languages.filter(d => d.selectedLang == currentlang)[0];
+    this.text = "";
+    var temporalDivElement = document.createElement("div");
+    temporalDivElement.innerHTML = this.html;
+    this.result = temporalDivElement.textContent || temporalDivElement.innerText || "";
+    this.userService.getAudio({lang:selectedlang.lang,text:this.result}).subscribe((resp: any) => {
+      if (resp.success) {
+        resp.data.forEach((d:any)=>{
+          this.text+=d.base64;
+        })
+      
+      }
+    });
+  }
 
+  
 }

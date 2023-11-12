@@ -30,4 +30,7 @@ export class UserServiceService {
   public updateEmail(user: any): Observable<any> {
     return this.http.post(environment.BASE_URL + 'auth/updateEmail', user);
   }
+  public getAudio(data: any): Observable<any> {
+    return this.http.post(environment.BASE_URL + 'auth/getAudio', data);
+  }
 }

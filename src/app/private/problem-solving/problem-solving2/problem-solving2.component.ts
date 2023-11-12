@@ -14,14 +14,16 @@ export class ProblemSolving2Component implements OnInit {
 
   ngOnInit(): void {
   }
+
   html: any;
   @ViewChild('textToSpeech') public textToSpeech: ElementRef;
+  isShow: boolean = false;
 
 
   ngAfterViewInit() {
       setTimeout(() => {
         this.html = this.textToSpeech.nativeElement.innerHTML;
-        console.log(this.html);
+        this.isShow= true;
       }, 1500)
   
     }

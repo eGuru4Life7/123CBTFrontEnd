@@ -67,9 +67,12 @@
                                 <img-d [src]="'/examine3.svg'" [alt]="'Emotion Icon'" [class]="'rounded img-fluid fade-in'"></img-d>
                             </div>
                             <div class="col fade-in-3s" #textToSpeech>
+                                <app-text-to-speech [html]="html" *ngIf="isShow"></app-text-to-speech>
+                                <br>
+                                <br>
                                 <h1 style="font-size: 2.5rem;
                                 margin-bottom: 20px;">{{ 'thought_4.heading1' | translate }}
-                                    <app-text-to-speech [html]="html" style="display: inline-block;"></app-text-to-speech>
+
                                 </h1>
                                 <p>{{ 'thought_4.paragraph1' | translate }}</p>
                                 <h2>{{ 'thought_4.sub-heading' | translate }}</h2>

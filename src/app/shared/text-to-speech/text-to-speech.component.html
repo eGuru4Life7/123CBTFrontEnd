@@ -1,11 +1,13 @@
 <!-- <button > start</button> &nbsp; -->
-
-<a href="javascript:void(0)" class="page-link" (click)="start()" *ngIf="isPlay">
+<!-- 
+<a href="javascript:void(0)" class="page-link" (click)="isSpeak()" *ngIf="isPlay">
     <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
 </a>
 
 <a href="javascript:void(0)" class="page-link" (click)="pauseResume()" *ngIf="!isPlay">
-    <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
-</a>
+    <i [ngClass]="'ti ti-volume-off'" style="font-size: 1em; color: #5190B7;"></i>
+</a> -->
 <!-- <button (click)="pauseResume()"> pause/resume </button> &nbsp;
 <button (click)="stop()"> stop </button> -->
+
+<audio controls src="data:audio/ogg;base64,{{text}}"></audio>

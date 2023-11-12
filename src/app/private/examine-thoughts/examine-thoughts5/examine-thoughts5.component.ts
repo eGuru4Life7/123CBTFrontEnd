@@ -14,12 +14,14 @@ export class ExamineThoughts5Component implements OnInit {
 
   html: any;
   @ViewChild('textToSpeech') public textToSpeech: ElementRef;
+  isShow: boolean = false;
 
 
   ngAfterViewInit() {
     setTimeout(() => {
-      this.html = this.textToSpeech.nativeElement.innerHTML;
-      console.log(this.html);
+          this.html = this.textToSpeech.nativeElement.innerHTML;
+      
+      this.isShow = true;
     }, 1500)
 
   }

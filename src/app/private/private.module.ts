@@ -44,8 +44,6 @@ import { SharedModule } from 'src/app/shared/shared.module';
     NgApexchartsModule,
     SharedModule
    
-  ],exports:[
-   
   ]
 })
 export class PrivateModule { }
