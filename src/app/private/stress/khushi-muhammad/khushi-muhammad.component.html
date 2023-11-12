@@ -38,9 +38,11 @@
                                 <img-d [src]="'/Stress_module4.svg'" [alt]="'Khushi'" [class]="'rounded'"></img-d>
                             </div>
                             <div class="col" #textToSpeech>
+                                <app-text-to-speech [html]="html" *ngIf="isShow"></app-text-to-speech>
+                                <br>
+                                <br>
 
-                                <h1 style="font-size: 2.5rem;margin-bottom: 20px;">{{ 'story_begin.heading' | translate }}
-                                    <app-text-to-speech [html]="html" style="display: inline-block;"></app-text-to-speech>
+                                <h1 style="font-size: 2.5rem;margin-bottom: 20px;">{{ 'story_begin.heading' | translate }}<span style="display: none;">.</span>
                                 </h1>
 
                                 <p>{{ 'story_begin.story-para' | translate }}</p>

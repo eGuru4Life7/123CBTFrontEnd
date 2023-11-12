@@ -38,7 +38,7 @@
                                 <img-d [src]="'/examine4.svg'" [alt]="''" [class]="'rounded img-fluid fade-in'"></img-d>
                             </div>
                             <div class="col fade-in-3s">
-                                <h1>{{ 'thought_4b.heading1' | translate }}</h1>
+                                <h1>{{ 'thought_4b.heading1' | translate }}<span style="display: none;">.</span></h1>
                                 <p>{{ 'thought_4b.subheading' | translate }}</p>
                                 <div class="list-group">
                                     <div class="list-group-item" *ngFor="let item of emotions">{{'Examining_your_thoughts4_4.'+item | translate }}</div>

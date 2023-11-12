@@ -8,21 +8,22 @@ import { LocalCacheService } from 'src/app/services/local-cache.service';
 })
 export class ExamineThoughts3Component implements OnInit {
 
-   constructor(private localService:LocalCacheService,private router:Router) { 
-    this.localService.updateModuleStatus({code:'E_T',completed:30,nextCode:'C_T' });
-   }
+  constructor(private localService: LocalCacheService, private router: Router) {
+    this.localService.updateModuleStatus({ code: 'E_T', completed: 30, nextCode: 'C_T' });
+  }
 
-   html: any;
-   @ViewChild('textToSpeech') public textToSpeech: ElementRef;
+  html: any;
+  @ViewChild('textToSpeech') public textToSpeech: ElementRef;
+  isShow: boolean = false;
 
 
-   ngAfterViewInit() {
-       setTimeout(() => {
-         this.html = this.textToSpeech.nativeElement.innerHTML;
-         console.log(this.html);
-       }, 1500)
-   
-     }
+  ngAfterViewInit() {
+    setTimeout(() => {
+      this.html = this.textToSpeech.nativeElement.innerHTML;
+      this.isShow = true;
+    }, 1500)
+
+  }
   ngOnInit(): void {
   }
 

@@ -36,15 +36,18 @@
                         <div class="row align-items-center">
 
                             <h1 style="font-size: 2.5rem;
-                            margin-bottom: 20px; text-align: center;">{{ 'relation_4.heading' | translate }}</h1>
+                            margin-bottom: 20px; text-align: center;">{{ 'relation_4.heading' | translate }}<span style="display: none;">.</span></h1>
                             <br><br><br>
                             <div class="col-sm-12 col-md-5 col-lg-5 ">
                                 <img-d [src]="'/relation1.svg'" [class]="'rounded fade-in'"></img-d>
                             </div>
-                            <div class="col">
+                            <div class="col" #textToSpeech>
+                                <app-text-to-speech [html]="html" *ngIf="isShow"></app-text-to-speech>
+                                <br>
+                                <br>
 
                                 <h1 style="font-size: 1.5rem;
-                                margin-bottom: 20px;">{{ 'relation_4.paragraph' | translate }}</h1>
+                                margin-bottom: 20px;">{{ 'relation_4.paragraph' | translate }}<span style="display: none;">.</span></h1>
 
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 fade-in-3s">
                                     <p class="think-text"><strong>{{ 'relation_4.heading1' | translate }}</strong> {{ 'relation_4.heading1-desc' | translate }}</p>

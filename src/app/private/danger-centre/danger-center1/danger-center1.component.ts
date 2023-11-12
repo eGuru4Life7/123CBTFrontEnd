@@ -9,6 +9,7 @@ import { LocalCacheService } from 'src/app/services/local-cache.service';
 export class DangerCenter1Component implements OnInit {
   html: any;
   @ViewChild('textToSpeech') public textToSpeech: ElementRef;
+  isShow: boolean = false;
 
   constructor(private localService: LocalCacheService, private router: Router) {
     this.localService.updateModuleStatus({ code: 'D_C', nextCode: 'E_T', completed: 30 });
@@ -18,8 +19,9 @@ export class DangerCenter1Component implements OnInit {
   }
   ngAfterViewInit() {
     setTimeout(() => {
-      this.html = this.textToSpeech.nativeElement.innerHTML;
-      console.log(this.html);
+          this.html = this.textToSpeech.nativeElement.innerHTML;
+      
+      this.isShow = true;
     }, 1200)
 
   }

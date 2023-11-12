@@ -38,11 +38,13 @@
                                 <img-d [src]="'/Stress_module6.svg'" [alt]="'Danger Center'" [class]="'rounded'"></img-d>
                                 <!-- <img src="../../../../assets/static/illustrations/Stress_module6.svg" alt="Danger Center" class=" rounded"> -->
                             </div>
-                            <div class="col" #textToSpeech>
-
+                            <div class="col" #textToSpeech id="root">
+                                <app-text-to-speech [html]="html" *ngIf="isShow"></app-text-to-speech>
+                                <br>
+                                <br>
                                 <h1 style="font-size: 2.5rem;
                                 margin-bottom: 20px;">{{ 'story_begin3.heading' | translate }}
-                                    <app-text-to-speech [html]="html" style="display: inline-block;"></app-text-to-speech>
+
                                 </h1>
 
                                 <p>{{ 'story_begin3.story-para2' | translate }}</p>

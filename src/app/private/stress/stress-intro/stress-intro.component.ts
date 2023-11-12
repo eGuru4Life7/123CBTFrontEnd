@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { TextToSpeechComponent } from 'src/app/shared/text-to-speech/text-to-speech.component';
 
 
 @Component({
@@ -9,6 +10,8 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 export class StressIntroComponent implements OnInit {
   html: any;
   @ViewChild('textToSpeech') public textToSpeech: ElementRef;
+  isShow: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -18,7 +21,8 @@ export class StressIntroComponent implements OnInit {
   ngAfterViewInit() {
     setTimeout(() => {
       this.html = this.textToSpeech.nativeElement.innerHTML;
-      console.log(this.html);
+      
+      this.isShow = true;
     }, 1500)
 
   }

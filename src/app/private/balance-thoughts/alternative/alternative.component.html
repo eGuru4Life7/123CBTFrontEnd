@@ -37,7 +37,7 @@
 
                 <div class="card fade-in">
                     <div class="card-body">
-                        <h1 class="text-center mb-4">{{'Balanced_thoughts_7c.alt_thoughts' | translate }}</h1>
+                        <h1 class="text-center mb-4">{{'Balanced_thoughts_7c.alt_thoughts' | translate }}<span style="display: none;">.</span></h1>
                         <h2 class="text-center">{{ 'Examining_your_thoughts6b.evidence-against-thoughts' | translate }}: <span style="font-size:1.6rem; color:#007bff;"><strong>{{thoughts}}</strong></span></h2>
                         <form>
                             <div class="row">
@@ -56,9 +56,9 @@
 
 
 
-                        <prev-next-button [prev]="'../evidence'" [next]="'../end'" ></prev-next-button>
+                        <prev-next-button [prev]="'../evidence'" [next]="'../end'"></prev-next-button>
 
-<!--                         <ul class="pagination justify-content-end">
+                        <!--                         <ul class="pagination justify-content-end">
                             <li class=" page-prev ">
                                 <a class="page-link" [routerLink]="'../evidence'">
                                     <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>
