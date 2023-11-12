@@ -1,6 +1,6 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import Speech from 'speak-tts';
+// import Speech from 'speak-tts';
 import { UserServiceService } from 'src/app/services/user-service.service';
 @Component({
   selector: 'app-text-to-speech',
@@ -32,7 +32,7 @@ export class TextToSpeechComponent implements OnInit,OnChanges {
   }
 
   async initSpeech() {
-    this.speech = new Speech(); // will throw an exception if not browser supported
+   // this.speech = new Speech(); // will throw an exception if not browser supported
     if (this.speech.hasBrowserSupport()) { // returns a boolean
       await this.speech
         .init({

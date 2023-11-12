@@ -51,11 +51,11 @@ export class AppComponent implements OnInit {
       if (event instanceof NavigationEnd) {
         const title = this.getTitle(this.router.routerState, this.router.routerState.root).join('-');
         this.titleService.setTitle(title);
-        gtag('event', 'page_view', {
-          page_title: title,
-          page_path: event.urlAfterRedirects,
-          page_location: this.document.location.href
-        })
+        // gtag('event', 'page_view', {
+        //   page_title: title,
+        //   page_path: event.urlAfterRedirects,
+        //   page_location: this.document.location.href
+        // })
       }
     });
   }

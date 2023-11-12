@@ -42,7 +42,7 @@
 
                         ],
                         "scripts": [
-                            "node_modules/talkify-tts/dist/talkify.min.js",
+                         
                             "src/assets/dist/libs/apexcharts/dist/apexcharts.min.js",
                             "src/assets/dist/libs/jsvectormap/dist/js/jsvectormap.min.js",
                             "src/assets/dist/libs/jsvectormap/dist/maps/world.js",
