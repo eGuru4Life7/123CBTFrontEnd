@@ -6,7 +6,7 @@
                 <div class="col">
                     <!-- Page pre-title -->
                     <h2 class="page-title">
-                        
+
                         {{ 'index.balanced-activities' | translate }}
                     </h2>
                     <div class="page-pretitle">
@@ -48,7 +48,10 @@
                             <div class=" col-sm-12 col-md-6 col-lg-6">
 
                                 <br><br><br><br><br><br><br><br>
-                                <h2 style="font-size: 1.5rem;
+                                <app-text-to-speech [html]="html" *ngIf="isShow"></app-text-to-speech>
+                                <br>
+                                <br>
+                                <h2 #textToSpeech style="font-size: 1.5rem;
                             margin-bottom: 20px;">{{ 'balanced_activities_11.paragraph' | translate }} {{usersixthMod}} </h2>
 
 
@@ -58,7 +61,7 @@
 
                         </div>
 
-                        <prev-next-button [prev]="'../activitylist'" [next]="''" ></prev-next-button>
+                        <prev-next-button [prev]="'../activitylist'" [next]="''"></prev-next-button>
                         <!-- <ul class="pagination justify-content-end">
                             <li class=" page-prev ">
                                 <a class="page-link" [routerLink]="'../activitylist'">

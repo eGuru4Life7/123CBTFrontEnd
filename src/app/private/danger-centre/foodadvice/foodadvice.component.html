@@ -40,13 +40,13 @@
                             </div>
                             <div class="col">
 
-                                <h2 style="font-size: 1.5rem; margin-bottom: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                                <h2 #textToSpeech style="font-size: 1.5rem; margin-bottom: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
                                     {{ 'foodadvice.heading' | translate }}
-                                    <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                    <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;" (click)="playAudio(textToSpeech)" *ngIf="isPlay">
                                         <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
                                     </a>
                                 </h2>
-                                
+
 
                                 <table class="table table-hover fade-in-3s">
                                     <thead>

@@ -56,20 +56,20 @@
 
                             <div class=" col-sm-12 col-md-5 col-lg-5">
 
-                                <div class="card-body">
-                                  
-                                      <!-- Text to speach Heading with Description also -->
-                                    
+                                <div class="card-body" #textToSpeech>
+
+                                    <!-- Text to speach Heading with Description also -->
+
                                     <h2 class="card-title" style="text-align: center; display: flex; align-items: center; justify-content: center;">
                                         {{ 'balanced_activities_10.heading' | translate }}
                                         <span style="display: none;">.</span>
-                                        <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                        <a href="javascript:void(0)" class="page-link" (click)="playAudio(textToSpeech)" *ngIf="isPlay">
                                             <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
-                                        </a>  
-                                    
+                                        </a>
+
                                     </h2>
-                                  
-                                  
+
+
                                     <div class="row">
                                         <div class="col-md-6">
                                             <ul class="list-group list-group-flush" style="font-size: 1rem;">

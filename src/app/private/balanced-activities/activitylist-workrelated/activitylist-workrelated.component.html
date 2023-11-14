@@ -57,30 +57,34 @@
 
                             <div class=" col-sm-12 col-md-6 col-lg-6">
 
-                                <div class="card-body">
-                                    <h2 class="card-title">{{ 'balanced_activities_9.heading' | translate }}</h2>
+                                <div class="card-body" #textToSpeech>
+                                    <h2 class="card-title">{{ 'balanced_activities_9.heading' | translate }}
+                                        <a href="javascript:void(0)" class="page-link" (click)="playAudio(textToSpeech)" *ngIf="isPlay">
+                                            <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                        </a>
+                                    </h2>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <ul class="list-group list-group-flush" style="font-size: 0.9rem;">
-                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity1' | translate }}</li>
-                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity2' | translate }}</li>
-                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity3' | translate }}</li>
-                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity4' | translate }}</li>
-                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity11' | translate }}</li>
-                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity6' | translate }}</li>
-                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity7' | translate }}</li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity1' | translate }} <span style="display: none;">.</span></li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity2' | translate }} <span style="display: none;">.</span></li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity3' | translate }} <span style="display: none;">.</span></li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity4' | translate }} <span style="display: none;">.</span></li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity11' | translate }} <span style="display: none;">.</span></li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity6' | translate }} <span style="display: none;">.</span></li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity7' | translate }} <span style="display: none;">.</span></li>
                                             </ul>
                                         </div>
                                         <div class="col-md-6">
                                             <ul class="list-group list-group-flush" style="font-size: 0.9rem;">
-                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity8' | translate }}</li>
-                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity9' | translate }}</li>
-                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity10' | translate }}</li>
-                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity5' | translate }}</li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity8' | translate }} <span style="display: none;">.</span></li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity9' | translate }} <span style="display: none;">.</span></li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity10' | translate }} <span style="display: none;">.</span></li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity5' | translate }} <span style="display: none;">.</span></li>
 
-                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity12' | translate }}</li>
-                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity13' | translate }}</li>
-                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity14' | translate }}</li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity12' | translate }} <span style="display: none;">.</span></li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity13' | translate }} <span style="display: none;">.</span></li>
+                                                <li class="list-group-item list-group-item-action">{{ 'balanced_activities_9.activity14' | translate }} <span style="display: none;">.</span></li>
                                             </ul>
                                         </div>
                                     </div>

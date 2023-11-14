@@ -35,14 +35,14 @@
                     <div class="card-body">
                         <h1 class="text-center" style="font-size: 2.5rem; 
                         margin-bottom: 20px;" #textToSpeech> {{ 'stressb.heading' | translate }}
-                            <a href="javascript:void(0)" class="page-link" (click)="playAudio()" *ngIf="isPlay">
+                            <a href="javascript:void(0)" class="page-link" (click)="playAudio(textToSpeech)" *ngIf="isPlay">
                                 <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
                             </a>
 
-<!--                             <a href="javascript:void(0)" class="page-link">
+                            <!--                             <a href="javascript:void(0)" class="page-link">
                                 <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
                             </a>
- -->                        </h1>
+ --></h1>
                         <br><br>
                         <div class="row align-items-center">
 

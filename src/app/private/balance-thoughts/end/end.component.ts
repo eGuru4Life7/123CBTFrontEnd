@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { LocalCacheService } from 'src/app/services/local-cache.service';
 
 @Component({
@@ -8,12 +8,25 @@ import { LocalCacheService } from 'src/app/services/local-cache.service';
 })
 export class EndComponent implements OnInit {
 
-  userfifthMod:any;
-  constructor(private localService:LocalCacheService) { 
-   this.localService.updateModuleStatus({ code: 'B_T', completed: 100, nextCode: 'P_S' });
+  userfifthMod: any;
+  constructor(private localService: LocalCacheService) {
+    this.localService.updateModuleStatus({ code: 'B_T', completed: 100, nextCode: 'P_S' });
   }
 
   ngOnInit(): void {
-    this.userfifthMod =this.localService.getCurrentUser().fifth_mod;
+    this.userfifthMod = this.localService.getCurrentUser().fifth_mod;
+  }
+  html: any;
+  @ViewChild('textToSpeech') public textToSpeech: ElementRef;
+  isShow: boolean = false;
+
+
+  ngAfterViewInit() {
+    setTimeout(() => {
+      this.html = this.textToSpeech.nativeElement.innerHTML;
+
+      this.isShow = true;
+    }, 1500)
+
   }
 }

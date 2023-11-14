@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LocalCacheService } from 'src/app/services/local-cache.service';
+import { SpeechServiceService } from '../../../services/speech-service.service';
 
 
 @Component({
@@ -13,12 +14,15 @@ import { LocalCacheService } from 'src/app/services/local-cache.service';
 export class WriteActivitiesComponent implements OnInit {
   
 
-
+  text: any = "";
+  prevText: any = "";
+  base64: any = "";
+  isPlay: boolean = false;
   
   activitiesForm!: FormGroup;
   isSmallScreen: boolean=false; 
   
-  constructor(private fb: FormBuilder,private localService:LocalCacheService,private router:Router) { 
+  constructor(private fb: FormBuilder,private localService:LocalCacheService,private router:Router,private speechService: SpeechServiceService) { 
     this.localService.updateModuleStatus( { code: 'B_A', completed: 50, nextCode: 'R' });
     this.activitiesForm = this.fb.group({
       mondayText: '',
@@ -50,4 +54,31 @@ export class WriteActivitiesComponent implements OnInit {
     }
   }
 
+  ngAfterViewInit() {
+    setTimeout(async () => {
+      // 
+      this.isPlay = true;
+    }, 1500)
+  }
+
+  playAudio(html: any) {
+
+    if (this.prevText.innerHTML == html.innerHTML) {
+      this.speechService.playAudio(this.text);
+      return;
+    }
+     this.speechService.getBase64Text(html.innerHTML).subscribe((resp: any) => {
+      if (resp.success) {
+        this.text = "";
+        this.prevText = html;
+        resp.data.forEach((d: any) => {
+          this.text += d.base64;
+          this.speechService.playAudio(this.text);
+        })
+
+      }
+    });
+
+
+  }
 }

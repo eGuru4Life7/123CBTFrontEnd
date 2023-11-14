@@ -6,8 +6,10 @@ import { Observable } from 'rxjs/internal/Observable';
   providedIn: 'root'
 })
 export class SpeechServiceService {
+  snd: any;
+  constructor(private translate: TranslateService, private userService: UserServiceService) {
+  }
 
-  constructor(private translate: TranslateService, private userService: UserServiceService) { }
 
 
   getBase64Text(html: any): Observable<any> {
@@ -31,8 +33,12 @@ export class SpeechServiceService {
   }
 
   playAudio(base64: any) {
-    var snd = new Audio("data:audio/ogg;base64," + base64);
-    snd.play();
+    if (this.snd) {
+      this.snd.pause();
+      this.snd.currentTime = 0;
+    }
+    this.snd = new Audio("data:audio/ogg;base64," + base64);
+    this.snd.play();
   }
 
 }
