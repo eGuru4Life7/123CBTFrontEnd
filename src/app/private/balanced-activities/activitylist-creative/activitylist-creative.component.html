@@ -58,25 +58,25 @@
 
                             <div class=" col-lg-4 col-md-12 col-sm-12 col-xs-12">
 
-                                <div class="card-body ">
+                                <div class="card-body " #textToSpeech>
 
-                                     <!-- Text to speach Heading with Description also -->
+                                    <!-- Text to speach Heading with Description also -->
                                     <h2 class="card-title" style="text-align: center; display: flex; align-items: center; justify-content: center;">
                                         {{ 'balanced_activities_7.heading' | translate }}
                                         <span style="display: none;">.</span>
-                                        <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                        <a href="javascript:void(0)" class="page-link" (click)="playAudio(textToSpeech)" *ngIf="isPlay">
                                             <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
-                                        </a>  
+                                        </a>
                                     </h2>
 
 
                                     <ul class="list-group list-group-flush" style="font-size: 1.rem;">
-                                        <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity1' | translate }}   <span style="display: none;">.</span></li>
-                                        <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity2' | translate }}   <span style="display: none;">.</span></li>
-                                        <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity3' | translate }}   <span style="display: none;">.</span></li>
-                                        <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity4' | translate }}   <span style="display: none;">.</span></li>
-                                        <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity5' | translate }}   <span style="display: none;">.</span></li>
-                                        <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity6' | translate }}    <span style="display: none;">.</span></li>
+                                        <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity1' | translate }} <span style="display: none;">.</span></li>
+                                        <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity2' | translate }} <span style="display: none;">.</span></li>
+                                        <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity3' | translate }} <span style="display: none;">.</span></li>
+                                        <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity4' | translate }} <span style="display: none;">.</span></li>
+                                        <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity5' | translate }} <span style="display: none;">.</span></li>
+                                        <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity6' | translate }} <span style="display: none;">.</span></li>
                                         <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity7' | translate }}<span style="display: none;">.</span></li>
                                         <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity8' | translate }}<span style="display: none;">.</span></li>
                                         <li class="list-group-item list-group-item-action">{{ 'balanced_activities_7.activity9' | translate }}<span style="display: none;">.</span></li>

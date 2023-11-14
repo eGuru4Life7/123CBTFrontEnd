@@ -31,17 +31,17 @@
             <div class="col-lg-12">
                 <div class="card fade-in">
                     <div class="card-body">
-                        <h1 class="text-center" style="text-align: center; display: flex; align-items: center; justify-content: center;">
+                        <h1 class="text-center" #textToSpeech style="text-align: center; display: flex; align-items: center; justify-content: center;">
                             {{ 'thought_8.heading' | translate }}
                             <span style="display: none;">.</span>
-                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                            <a href="javascript:void(0)" class="page-link" (click)="playAudio(textToSpeech)" *ngIf="isPlay">
                                 <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
                             </a>
 
                         </h1>
-                        
-                       
-                       
+
+
+
                         <br><br>
 
                         <div class="row d-flex justify-content-center align-items-center">
@@ -158,9 +158,9 @@
 
                     </div>
 
-          <prev-next-button [prev]="'../situation'" [next]="'../evidence'" ></prev-next-button>
+                    <prev-next-button [prev]="'../situation'" [next]="'../evidence'"></prev-next-button>
 
-          <!-- <ul class="pagination justify-content-end">
+                    <!-- <ul class="pagination justify-content-end">
             <li class=" page-prev ">
                 <a class="page-link" [routerLink]="'../situation'">
                     <i class="ti ti-circle-arrow-left-filled" style="font-size: 5em; color: #5190B7;"></i>       
@@ -174,8 +174,8 @@
             </li>
         </ul>
  -->
-        </div>
-      </div>
+                </div>
+            </div>
 
 
             <br>

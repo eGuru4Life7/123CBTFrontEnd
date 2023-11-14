@@ -36,9 +36,9 @@
 
                 <div class="card fade-in">
                     <div class="card-body">
-                        <h1 class="text-center" style="text-align: center; display: flex; align-items: center; justify-content: center;">
+                        <h1 class="text-center" #textToSpeech style="text-align: center; display: flex; align-items: center; justify-content: center;">
                             {{ 'thought_7.heading'|translate}}
-                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                            <a href="javascript:void(0)" class="page-link" (click)="playAudio(textToSpeech)" *ngIf="isPlay">
                                 <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
                             </a>
                         </h1>

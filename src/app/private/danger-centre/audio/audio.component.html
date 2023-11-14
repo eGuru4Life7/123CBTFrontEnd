@@ -32,7 +32,11 @@
             <div class="col-lg-12">
                 <div class="card fade-in">
 
-                    <div class="card-body">
+                    <div class="card-body" #textToSpeech>
+
+                        <app-text-to-speech [html]="html" *ngIf="isShow" class="text-center"></app-text-to-speech>
+                        <br>
+                        <br>
                         <h1 class="text-center" style="font-size: 2.5rem;
                 margin-bottom: 20px;"> {{ 'index.RelaxationExcercises' | translate }}<span style="display: none;">.</span></h1>
                         <br>

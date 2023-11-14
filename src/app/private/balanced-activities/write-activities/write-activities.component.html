@@ -44,15 +44,15 @@
                     <div class="card-body">
 
 
-                        <h1 class="text-center" style="font-size: 2.5rem; margin-bottom: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
-                            
+                        <h1 class="text-center" #textToSpeech style="font-size: 2.5rem; margin-bottom: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
+
                             {{ 'balanced_activities_4.heading' | translate }}<span style="display: none;">.</span>
-                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                            <a href="javascript:void(0)" class="page-link" (click)="playAudio(textToSpeech)" *ngIf="isPlay">
                                 <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
-                            </a>  
+                            </a>
                         </h1>
-                        
-                        
+
+
                         <br>
 
                         <div class="card-header">

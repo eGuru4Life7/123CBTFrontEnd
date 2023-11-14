@@ -38,18 +38,18 @@
                 <div class="card fade-in">
                     <div class="card-body">
 
-                       
+
                         <!-- Text to speach Heading with Description also -->
-                        
-                        <h1 class="text-center mb-4" style="text-align: center; display: flex; align-items: center; justify-content: center;">
+
+                        <h1 class="text-center mb-4" #textToSpeech style="text-align: center; display: flex; align-items: center; justify-content: center;">
                             {{ 'Balanced_thoughts_7c.alt_thoughts' | translate }}<span style="display: none;">.</span>
-                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                            <a href="javascript:void(0)" class="page-link" (click)="playAudio(textToSpeech)" *ngIf="isPlay">
                                 <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
-                            </a>  
+                            </a>
                         </h1>
-                        
+
                         <h2 class="text-center">{{ 'Examining_your_thoughts6b.evidence-against-thoughts' | translate }}:<span style="display: none;">.</span> <span style="font-size:1.6rem; color:#007bff;"><strong>{{thoughts}}</strong></span></h2>
-                        
+
                         <form>
                             <div class="row">
 

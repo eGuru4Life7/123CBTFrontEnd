@@ -37,7 +37,10 @@
                             <div class="col-sm-12 col-md-6 col-lg-6 ">
                                 <img-d [src]="'/examine1.svg'" [alt]="'Thinking'"></img-d>
                             </div>
-                            <div class="col">
+                            <div class="col" #textToSpeech>
+                                <app-text-to-speech [html]="html" *ngIf="isShow"></app-text-to-speech>
+                                <br>
+                                <br>
                                 <h2 style="font-size: 1.5rem;
                             margin-bottom: 20px;">
                                     {{"Balanced_thoughts_8.paragraph" |translate }} [{{userfifthMod}}]

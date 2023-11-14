@@ -36,51 +36,46 @@
                         <div class="row">
                             <div class="col-sm-12 col-md-12 col-lg-4 ">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 fade-in-3s">
-                                     <!-- Text to speach Heading with Description also -->
-                                     <p class="think-text" >
-                                        <strong>{{ 'staying_well_2.heading1' | translate }}</strong>
-                                        {{ 'staying_well_2.heading1-desc' | translate }}
-                                        <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                    <!-- Text to speach Heading with Description also -->
+                                    <p class="think-text" #textToSpeech>
+                                        <strong>{{ 'staying_well_2.heading1' | translate }}</strong> {{ 'staying_well_2.heading1-desc' | translate }}
+                                        <a href="javascript:void(0)" class="page-link" (click)="playAudio(textToSpeech)" *ngIf="isPlay">
                                             <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
                                         </a>
                                     </p>
 
                                     <!-- Text to speach Heading with Description also -->
-                                    <p class="think-text" style=" ">
-                                        <strong>{{ 'staying_well_2.heading2' | translate }}</strong>
-                                        {{ 'staying_well_2.heading2-desc' | translate }}
-                                        <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                    <p class="think-text" style=" " #textToSpeech11>
+                                        <strong>{{ 'staying_well_2.heading2' | translate }}</strong> {{ 'staying_well_2.heading2-desc' | translate }}
+                                        <a href="javascript:void(0)" class="page-link" (click)="playAudio(textToSpeech11)" *ngIf="isPlay">
                                             <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
                                         </a>
                                     </p>
 
                                     <!-- Text to speach Heading with Description also -->
-                                    <p class="think-text" >
-                                        <strong>{{ 'staying_well_2.heading3' | translate }}</strong>
-                                        {{ 'staying_well_2.heading3-desc' | translate }}
-                                        <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                    <p class="think-text" #textToSpeech1>
+                                        <strong>{{ 'staying_well_2.heading3' | translate }}</strong> {{ 'staying_well_2.heading3-desc' | translate }}
+                                        <a href="javascript:void(0)" class="page-link" (click)="playAudio(textToSpeech1)" *ngIf="isPlay">
                                             <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
                                         </a>
                                     </p>
 
-                                     <!-- Text to speach Heading with Description also -->
-                                     <p class="think-text" >
-                                        <strong>{{ 'staying_well_2.heading4' | translate }}</strong>
-                                        {{ 'staying_well_2.heading4-desc' | translate }}
-                                        <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                    <!-- Text to speach Heading with Description also -->
+                                    <p class="think-text" #textToSpeech2>
+                                        <strong>{{ 'staying_well_2.heading4' | translate }}</strong> {{ 'staying_well_2.heading4-desc' | translate }}
+                                        <a href="javascript:void(0)" class="page-link" (click)="playAudio(textToSpeech2)" *ngIf="isPlay">
                                             <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
                                         </a>
                                     </p>
 
-                                    
-                                   <!-- Text to speach Heading with Description also -->
-                                   <p class="think-text" >
-                                    <strong>{{ 'staying_well_2.heading5' | translate }}</strong>
-                                    {{ 'staying_well_2.heading5-desc' | translate }}
-                                    <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
-                                        <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
-                                    </a>
-                                </p>
+
+                                    <!-- Text to speach Heading with Description also -->
+                                    <p class="think-text" #textToSpeech3>
+                                        <strong>{{ 'staying_well_2.heading5' | translate }}</strong> {{ 'staying_well_2.heading5-desc' | translate }}
+                                        <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;" (click)="playAudio(textToSpeech3)" *ngIf="isPlay">
+                                            <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                        </a>
+                                    </p>
 
 
                                 </div>
@@ -92,39 +87,35 @@
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 fade-in-3s">
 
                                     <!-- Text to speach Heading with Description also -->
-                                    <p class="think-text" >
-                                        <strong>{{ 'staying_well_2.heading6' | translate }}</strong>
-                                        {{ 'staying_well_2.heading6-desc' | translate }}
-                                        <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                    <p class="think-text" #textToSpeech4>
+                                        <strong>{{ 'staying_well_2.heading6' | translate }}</strong> {{ 'staying_well_2.heading6-desc' | translate }}
+                                        <a href="javascript:void(0)" class="page-link" (click)="playAudio(textToSpeech4)" *ngIf="isPlay">
                                             <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
                                         </a>
                                     </p>
 
-                                  <!-- Text to speach Heading with Description also -->
-                                  <p class="think-text" >
-                                    <strong>{{ 'staying_well_2.heading7' | translate }}</strong>
-                                    {{ 'staying_well_2.heading7-desc' | translate }}
-                                    <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
-                                        <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
-                                    </a>
-                                </p>
                                     <!-- Text to speach Heading with Description also -->
-                                    <p class="think-text" >
-                                        <strong>{{ 'staying_well_2.heading8' | translate }}</strong>
-                                        {{ 'staying_well_2.heading8-desc' | translate }}
-                                        <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                    <p class="think-text" #textToSpeech5>
+                                        <strong>{{ 'staying_well_2.heading7' | translate }}</strong> {{ 'staying_well_2.heading7-desc' | translate }}
+                                        <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;" (click)="playAudio(textToSpeech5)" *ngIf="isPlay">
                                             <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
                                         </a>
                                     </p>
                                     <!-- Text to speach Heading with Description also -->
-                                    <p class="think-text" >
-                                        <strong>{{ 'staying_well_2.heading9' | translate }}</strong>
-                                        {{ 'staying_well_2.heading9-desc' | translate }}
-                                        <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                    <p class="think-text" #textToSpeech6>
+                                        <strong>{{ 'staying_well_2.heading8' | translate }}</strong> {{ 'staying_well_2.heading8-desc' | translate }}
+                                        <a href="javascript:void(0)" class="page-link" (click)="playAudio(textToSpeech6)" *ngIf="isPlay">
                                             <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
                                         </a>
                                     </p>
-                                   
+                                    <!-- Text to speach Heading with Description also -->
+                                    <p class="think-text" #textToSpeech7>
+                                        <strong>{{ 'staying_well_2.heading9' | translate }}</strong> {{ 'staying_well_2.heading9-desc' | translate }}
+                                        <a href="javascript:void(0)" class="page-link" (click)="playAudio(textToSpeech7)" *ngIf="isPlay">
+                                            <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                        </a>
+                                    </p>
+
                                 </div>
 
                             </div>
