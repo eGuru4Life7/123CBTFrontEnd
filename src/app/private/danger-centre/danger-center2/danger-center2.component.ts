@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { LocalCacheService } from 'src/app/services/local-cache.service';
 
 @Component({
@@ -14,6 +14,18 @@ export class DangerCenter2Component implements OnInit {
 
   ngOnInit(): void {
     this.userSecondMod =this.localService.getCurrentUser().second_mod;
+  }
+  html: any;
+  @ViewChild('textToSpeech') public textToSpeech: ElementRef;
+  isShow: boolean = false;
+
+
+  ngAfterViewInit() {
+    setTimeout(() => {
+      this.html = this.textToSpeech.nativeElement.innerHTML;
+      this.isShow = true;
+    }, 1200)
+
   }
 
 }

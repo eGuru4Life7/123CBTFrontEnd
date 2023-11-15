@@ -35,14 +35,14 @@
                     <div class="card-body">
                         <div class="row align-items-center">
                             <!-- Text to speach Heading with Description also -->
-                            <h1 class="text-center" style="font-size: 2.5rem; margin-bottom: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                            <h1 class="text-center" #textToSpeech style="font-size: 2.5rem; margin-bottom: 20px; text-align: center; display: flex; align-items: center; justify-content: center;">
                                 {{ 'thought_6.heading' | translate }} <span style="display: none;">.</span>
-                                <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                <a href="javascript:void(0)" class="page-link" (click)="playAudio(textToSpeech)" *ngIf="isPlay">
                                     <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
-                                </a>   
-                        </h1>
-                            
-                            
+                                </a>
+                            </h1>
+
+
                             <div class="col-sm-12 col-md-6 col-lg-6 ">
 
                                 <img-d [src]="'/khatoon-diary.svg'" [alt]="'Khatoon Diary'" [class]="'rounded fade-in'"></img-d>
@@ -54,33 +54,33 @@
 
                                 <!-- <h1 style="font-size: 2.5rem;
                                 margin-bottom: 20px;">{{ 'thought_6.heading' | translate }}<span style="display: none;">.</span></h1> -->
-                                <p>{{ 'thought_6.paragraph' | translate }}</p>
+                                <p #textToSpeech>{{ 'thought_6.paragraph' | translate }}</p>
 
 
 
-                                <div class="diary-entry">
+                                <div class="diary-entry" #textToSpeech1>
                                     <div class="diary-entry-heading">
                                         <h3 style="font-size: 1.2rem; text-align: center; display: flex; align-items: center; justify-content: center;">
                                             {{ 'thought_6.situation' | translate }}
-                                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;" (click)="playAudio(textToSpeech1)" *ngIf="isPlay">
                                                 <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
                                             </a>
                                         </h3>
-                                        
+
                                     </div>
                                     <p>{{ 'thought_6.situation-desc' | translate }}</p>
                                 </div>
-                                <div class="diary-entry">
+                                <div class="diary-entry" textToSpeech2>
                                     <div class="diary-entry-heading">
                                         <!-- Text to speach Heading with Description also -->
                                         <h3 style="font-size: 1.2rem; text-align: center; display: flex; align-items: center; justify-content: center;">
                                             {{ 'thought_6.emotions' | translate }}
-                                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;" (click)="playAudio(textToSpeech2)" *ngIf="isPlay">
                                                 <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
                                             </a>
                                         </h3>
-                                        
-                                        
+
+
                                     </div>
                                     <ul>
                                         <li>{{ 'thought_6.emotions-desc1' | translate }}</li>
@@ -93,17 +93,17 @@
 
                             </div>
                             <div class="row align-items-center fade-in-l">
-                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                <div class="col-sm-12 col-md-6 col-lg-6" #textToSpeech3>
                                     <div class="diary-entry">
                                         <div class="diary-entry-heading">
-                                        <!-- Text to speach Heading with Description also -->
-                                        <h3 style="font-size: 1.2rem; text-align: center; display: flex; align-items: center; justify-content: center;">
-                                            {{ 'thought_6.thoughts' | translate }}
-                                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
-                                                <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
-                                            </a>
-                                        </h3>
-                                           
+                                            <!-- Text to speach Heading with Description also -->
+                                            <h3 style="font-size: 1.2rem; text-align: center; display: flex; align-items: center; justify-content: center;">
+                                                {{ 'thought_6.thoughts' | translate }}
+                                                <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;" (click)="playAudio(textToSpeech3)" *ngIf="isPlay">
+                                                    <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
+                                                </a>
+                                            </h3>
+
                                         </div>
                                         <ul>
                                             <li>{{ 'thought_6.thought-desc1' | translate }}</li>
@@ -115,17 +115,17 @@
 
                                 </div>
                                 <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <div class="diary-entry">
+                                    <div class="diary-entry" #textToSpeech4>
                                         <div class="diary-entry-heading">
 
                                             <!-- Text to speach Heading with Description also -->
-                                        <h3 style="font-size: 1.2rem; text-align: center; display: flex; align-items: center; justify-content: center;">
-                                            {{ 'thought_6.physical' | translate }}
-                                            <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
-                                                <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;"></i>
-                                            </a>
-                                        </h3>
-                                            
+                                            <h3 style="font-size: 1.2rem; text-align: center; display: flex; align-items: center; justify-content: center;">
+                                                {{ 'thought_6.physical' | translate }}
+                                                <a href="javascript:void(0)" class="page-link" style="margin-left: 5px;">
+                                                    <i [ngClass]="'ti ti-volume'" style="font-size: 1em; color: #5190B7;" (click)="playAudio(textToSpeech4)" *ngIf="isPlay"></i>
+                                                </a>
+                                            </h3>
+
                                         </div>
                                         <ul>
                                             <li>{{ 'thought_6.physical-desc1' | translate }}</li>

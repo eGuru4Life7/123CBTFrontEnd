@@ -19,8 +19,7 @@ export class DangerCenter1Component implements OnInit {
   }
   ngAfterViewInit() {
     setTimeout(() => {
-          this.html = this.textToSpeech.nativeElement.innerHTML;
-      
+      this.html = this.textToSpeech.nativeElement.innerHTML;
       this.isShow = true;
     }, 1200)
 

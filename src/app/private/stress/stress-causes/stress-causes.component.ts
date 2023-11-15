@@ -9,8 +9,9 @@ import { SpeechServiceService } from 'src/app/services/speech-service.service';
   styleUrls: ['./stress-causes.component.scss']
 })
 export class StressCausesComponent implements OnInit {
-  @ViewChild('textToSpeech') public textToSpeech: ElementRef;
   text: any = "";
+  prevText: any = "";
+  base64: any = "";
   isPlay: boolean = false;
   constructor(private localService: LocalCacheService, private router: Router, private speechService: SpeechServiceService) {
     this.localService.updateModuleStatus({ code: 'S', completed: 36, nextCode: 'D_C' });
@@ -21,20 +22,30 @@ export class StressCausesComponent implements OnInit {
 
   ngAfterViewInit() {
     setTimeout(async () => {
-      this.speechService.getBase64Text(this.textToSpeech.nativeElement.innerHTML).subscribe((resp: any) => {
-        if (resp.success) {
-          resp.data.forEach((d: any) => {
-            this.text += d.base64;
-          })
-          this.isPlay= true;
-        }
-      });
+      // 
+      this.isPlay = true;
     }, 1500)
   }
 
-  playAudio() {
-    console.log(this.text)
-    this.speechService.playAudio(this.text);
+  playAudio(html: any) {
+
+    if (this.prevText.innerHTML == html.innerHTML) {
+      this.speechService.playAudio(this.text);
+      return;
+    }
+     this.speechService.getBase64Text(html.innerHTML).subscribe((resp: any) => {
+      if (resp.success) {
+        this.text = "";
+        this.prevText = html;
+        resp.data.forEach((d: any) => {
+          this.text += d.base64;
+          this.speechService.playAudio(this.text);
+        })
+
+      }
+    });
+
+
   }
 
 

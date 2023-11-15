@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
+import { Component, OnInit, HostListener, ElementRef, ViewChild } from '@angular/core';
 import { LocalCacheService } from 'src/app/services/local-cache.service';
 
 @Component({
@@ -33,5 +33,16 @@ export class SleepadviceComponent implements OnInit {
       }
     });
   }
+  html: any;
+  @ViewChild('textToSpeech') public textToSpeech: ElementRef;
+  isShow: boolean = false;
 
+
+  ngAfterViewInit() {
+    setTimeout(() => {
+      this.html = this.textToSpeech.nativeElement.innerHTML;
+      this.isShow = true;
+    }, 1200)
+
+  }
 }

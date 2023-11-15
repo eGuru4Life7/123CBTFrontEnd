@@ -37,10 +37,13 @@
                                 <img-d [src]="'/Stress_module1.svg'" [alt]="'Danger1'" [class]="'rounded fade-in'"></img-d>
 
                             </div>
-                            <div class="col">
+                            <div class="col" #textToSpeech>
+                                <app-text-to-speech [html]="html" *ngIf="isShow"></app-text-to-speech>
+                                <br>
+                                <br>
 
                                 <h2 style="font-size: 1.5rem;
-                      margin-bottom: 20px;">{{ 'usefulltips.heading' | translate }}</h2>
+                      margin-bottom: 20px;">{{ 'usefulltips.heading' | translate }} <span style="display: none;">.</span></h2>
 
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 fade-in-3s">
                                     <p class="think-text" [innerHTML]="'usefulltips.paragraph1' | translate"></p>
